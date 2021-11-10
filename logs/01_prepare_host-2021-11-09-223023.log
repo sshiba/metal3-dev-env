@@ -1,0 +1,1255 @@
++ source lib/common.sh
+++ [[ :/home/capm3/.krew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\g\o\/\b\i\n\:* ]]
++++ go env
+++ eval 'GO111MODULE=""
+GOARCH="amd64"
+GOBIN=""
+GOCACHE="/home/capm3/.cache/go-build"
+GOENV="/home/capm3/.config/go/env"
+GOEXE=""
+GOFLAGS=""
+GOHOSTARCH="amd64"
+GOHOSTOS="linux"
+GOINSECURE=""
+GOMODCACHE="/home/capm3/go/pkg/mod"
+GONOPROXY=""
+GONOSUMDB=""
+GOOS="linux"
+GOPATH="/home/capm3/go"
+GOPRIVATE=""
+GOPROXY="https://proxy.golang.org,direct"
+GOROOT="/usr/local/go"
+GOSUMDB="sum.golang.org"
+GOTMPDIR=""
+GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
+GOVCS=""
+GOVERSION="go1.16.7"
+GCCGO="gccgo"
+AR="ar"
+CC="gcc"
+CXX="g++"
+CGO_ENABLED="1"
+GOMOD="/dev/null"
+CGO_CFLAGS="-g -O2"
+CGO_CPPFLAGS=""
+CGO_CXXFLAGS="-g -O2"
+CGO_FFLAGS="-g -O2"
+CGO_LDFLAGS="-g -O2"
+PKG_CONFIG="pkg-config"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build1963809162=/tmp/go-build -gno-record-gcc-switches"'
++++ GO111MODULE=
++++ GOARCH=amd64
++++ GOBIN=
++++ GOCACHE=/home/capm3/.cache/go-build
++++ GOENV=/home/capm3/.config/go/env
++++ GOEXE=
++++ GOFLAGS=
++++ GOHOSTARCH=amd64
++++ GOHOSTOS=linux
++++ GOINSECURE=
++++ GOMODCACHE=/home/capm3/go/pkg/mod
++++ GONOPROXY=
++++ GONOSUMDB=
++++ GOOS=linux
++++ GOPATH=/home/capm3/go
++++ GOPRIVATE=
++++ GOPROXY=https://proxy.golang.org,direct
++++ GOROOT=/usr/local/go
++++ GOSUMDB=sum.golang.org
++++ GOTMPDIR=
++++ GOTOOLDIR=/usr/local/go/pkg/tool/linux_amd64
++++ GOVCS=
++++ GOVERSION=go1.16.7
++++ GCCGO=gccgo
++++ AR=ar
++++ CC=gcc
++++ CXX=g++
++++ CGO_ENABLED=1
++++ GOMOD=/dev/null
++++ CGO_CFLAGS='-g -O2'
++++ CGO_CPPFLAGS=
++++ CGO_CXXFLAGS='-g -O2'
++++ CGO_FFLAGS='-g -O2'
++++ CGO_LDFLAGS='-g -O2'
++++ PKG_CONFIG=pkg-config
++++ GOGCCFLAGS='-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build1963809162=/tmp/go-build -gno-record-gcc-switches'
+++ export GOPATH
+++++ dirname lib/common.sh
++++ cd lib/..
++++ pwd
+++ SCRIPTDIR=/home/capm3/projects/metal3-dev-env
++++ whoami
+++ USER=capm3
+++ export USER=capm3
+++ USER=capm3
+++ '[' -z '' ']'
+++ '[' '!' -f /home/capm3/projects/metal3-dev-env/config_capm3.sh ']'
+++ CONFIG=/home/capm3/projects/metal3-dev-env/config_capm3.sh
+++ source /home/capm3/projects/metal3-dev-env/config_capm3.sh
++++ export KUBECONFIG=/home/capm3/.kube/config
++++ KUBECONFIG=/home/capm3/.kube/config
++++ export K8S_AUTH_KUBECONFIG=/home/capm3/.kube/config
++++ K8S_AUTH_KUBECONFIG=/home/capm3/.kube/config
++++ export NUM_NODES=7
++++ NUM_NODES=7
++++ export NUM_OF_MASTER_REPLICAS=3
++++ NUM_OF_MASTER_REPLICAS=3
++++ export NUM_OF_WORKER_REPLICAS=3
++++ NUM_OF_WORKER_REPLICAS=3
++++ export CAPM3_VERSION=v1beta1
++++ CAPM3_VERSION=v1beta1
++++ export CAPI_VERSION=v1beta1
++++ CAPI_VERSION=v1beta1
++++ export KUBERNETES_VERSION=v1.21.1
++++ KUBERNETES_VERSION=v1.21.1
++++ export UPGRADED_K8S_VERSION=v1.22.2
++++ UPGRADED_K8S_VERSION=v1.22.2
++++ export IMAGE_OS=Ubuntu
++++ IMAGE_OS=Ubuntu
++++ export IMAGE_USERNAME=metal3
++++ IMAGE_USERNAME=metal3
++++ export EPHEMERAL_CLUSTER=minikube
++++ EPHEMERAL_CLUSTER=minikube
+++ export MARIADB_HOST=mariaDB
+++ MARIADB_HOST=mariaDB
+++ export MARIADB_HOST_IP=127.0.0.1
+++ MARIADB_HOST_IP=127.0.0.1
+++ ADDN_DNS=
+++ EXT_IF=
+++ PRO_IF=
+++ MANAGE_BR_BRIDGE=y
+++ MANAGE_PRO_BRIDGE=y
+++ MANAGE_INT_BRIDGE=y
+++ INT_IF=
+++ ROOT_DISK_NAME=/dev/sda
+++ NODE_HOSTNAME_FORMAT=node-%d
+++ source /etc/os-release
++++ NAME=Ubuntu
++++ VERSION='20.04.3 LTS (Focal Fossa)'
++++ ID=ubuntu
++++ ID_LIKE=debian
++++ PRETTY_NAME='Ubuntu 20.04.3 LTS'
++++ VERSION_ID=20.04
++++ HOME_URL=https://www.ubuntu.com/
++++ SUPPORT_URL=https://help.ubuntu.com/
++++ BUG_REPORT_URL=https://bugs.launchpad.net/ubuntu/
++++ PRIVACY_POLICY_URL=https://www.ubuntu.com/legal/terms-and-policies/privacy-policy
++++ VERSION_CODENAME=focal
++++ UBUNTU_CODENAME=focal
+++ export DISTRO=ubuntu20
+++ DISTRO=ubuntu20
+++ export OS=ubuntu
+++ OS=ubuntu
+++ export OS_VERSION_ID=20.04
+++ OS_VERSION_ID=20.04
+++ SUPPORTED_DISTROS=(centos8 rhel8 ubuntu18 ubuntu20)
+++ export SUPPORTED_DISTROS
+++ [[ ! centos8 rhel8 ubuntu18 ubuntu20 =~ ubuntu20 ]]
+++ [[ ubuntu == ubuntu ]]
+++ export CONTAINER_RUNTIME=docker
+++ CONTAINER_RUNTIME=docker
+++ [[ docker == \p\o\d\m\a\n ]]
+++ export POD_NAME=
+++ POD_NAME=
+++ export POD_NAME_INFRA=
+++ POD_NAME_INFRA=
+++ export SSH_KEY=/home/capm3/.ssh/id_rsa
+++ SSH_KEY=/home/capm3/.ssh/id_rsa
+++ export SSH_PUB_KEY=/home/capm3/.ssh/id_rsa.pub
+++ SSH_PUB_KEY=/home/capm3/.ssh/id_rsa.pub
+++ '[' '!' -f /home/capm3/.ssh/id_rsa ']'
+++ FILESYSTEM=/
+++ CAPM3_VERSION_LIST='v1alpha4 v1alpha5 v1beta1'
+++ export CAPM3_VERSION=v1beta1
+++ CAPM3_VERSION=v1beta1
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ '[' v1beta1 == v1beta1 ']'
+++ export CAPI_VERSION=v1beta1
+++ CAPI_VERSION=v1beta1
+++ export M3PATH=/home/capm3/go/src/github.com/metal3-io
+++ M3PATH=/home/capm3/go/src/github.com/metal3-io
+++ export BMOPATH=/home/capm3/go/src/github.com/metal3-io/baremetal-operator
+++ BMOPATH=/home/capm3/go/src/github.com/metal3-io/baremetal-operator
+++ export RUN_LOCAL_IRONIC_SCRIPT=/home/capm3/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ RUN_LOCAL_IRONIC_SCRIPT=/home/capm3/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ export CAPM3PATH=/home/capm3/go/src/github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3PATH=/home/capm3/go/src/github.com/metal3-io/cluster-api-provider-metal3
+++ export CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ export CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ export IPAMPATH=/home/capm3/go/src/github.com/metal3-io/ip-address-manager
+++ IPAMPATH=/home/capm3/go/src/github.com/metal3-io/ip-address-manager
+++ export IPAM_BASE_URL=metal3-io/ip-address-manager
+++ IPAM_BASE_URL=metal3-io/ip-address-manager
+++ export IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ '[' v1beta1 == v1alpha3 ']'
+++ '[' v1beta1 == v1alpha4 ']'
+++ IPAMBRANCH=main
+++ IPA_DOWNLOAD_ENABLED=true
+++ CAPI_BASE_URL=kubernetes-sigs/cluster-api
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ CAPM3BRANCH=main
+++ BMOREPO=https://github.com/metal3-io/baremetal-operator.git
+++ BMOBRANCH=master
+++ FORCE_REPO_UPDATE=true
+++ BMOCOMMIT=HEAD
+++ BMO_RUN_LOCAL=false
+++ CAPM3_RUN_LOCAL=false
+++ WORKING_DIR=/opt/metal3-dev-env
+++ NODES_FILE=/opt/metal3-dev-env/ironic_nodes.json
+++ NODES_PLATFORM=libvirt
+++ export NAMESPACE=metal3
+++ NAMESPACE=metal3
+++ export NUM_NODES=7
+++ NUM_NODES=7
+++ export NUM_OF_MASTER_REPLICAS=3
+++ NUM_OF_MASTER_REPLICAS=3
+++ export NUM_OF_WORKER_REPLICAS=3
+++ NUM_OF_WORKER_REPLICAS=3
+++ export VM_EXTRADISKS=false
+++ VM_EXTRADISKS=false
+++ export VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ export VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ export NODE_DRAIN_TIMEOUT=0s
+++ NODE_DRAIN_TIMEOUT=0s
+++ export MAX_SURGE_VALUE=1
+++ MAX_SURGE_VALUE=1
+++ export DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ export CONTAINER_REGISTRY=quay.io
+++ CONTAINER_REGISTRY=quay.io
+++ export VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ export SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ export IRONIC_TLS_SETUP=true
+++ IRONIC_TLS_SETUP=true
+++ export IRONIC_BASIC_AUTH=true
+++ IRONIC_BASIC_AUTH=true
+++ export IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ export IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ export IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ export IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ export IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ export IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ '[' v1beta1 == v1alpha4 ']'
+++ export IRONIC_NAMESPACE=baremetal-operator-system
+++ IRONIC_NAMESPACE=baremetal-operator-system
+++ export NAMEPREFIX=baremetal-operator
+++ NAMEPREFIX=baremetal-operator
+++ export RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ export BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ export OPENSTACK_CONFIG=/home/capm3/.config/openstack/clouds.yaml
+++ OPENSTACK_CONFIG=/home/capm3/.config/openstack/clouds.yaml
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ export CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
+++ CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
+++ export IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
+++ IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
+++ export DEFAULT_HOSTS_MEMORY=4096
+++ DEFAULT_HOSTS_MEMORY=4096
+++ export CLUSTER_NAME=test1
+++ CLUSTER_NAME=test1
+++ export CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ export KUBERNETES_VERSION=v1.21.1
+++ KUBERNETES_VERSION=v1.21.1
+++ export KUBERNETES_BINARIES_VERSION=v1.21.1
+++ KUBERNETES_BINARIES_VERSION=v1.21.1
+++ export KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ '[' docker == docker ']'
+++ export EPHEMERAL_CLUSTER=minikube
+++ EPHEMERAL_CLUSTER=minikube
+++ export KUSTOMIZE_VERSION=v4.1.3
+++ KUSTOMIZE_VERSION=v4.1.3
+++ export KIND_VERSION=v0.11.1
+++ KIND_VERSION=v0.11.1
+++ '[' v1.21.1 == v1.21.2 ']'
+++ export KIND_NODE_IMAGE_VERSION=v1.22.2
+++ KIND_NODE_IMAGE_VERSION=v1.22.2
+++ export MINIKUBE_VERSION=v1.23.2
+++ MINIKUBE_VERSION=v1.23.2
+++ export ANSIBLE_VERSION=4.8.0
+++ ANSIBLE_VERSION=4.8.0
+++ SKIP_RETRIES=false
+++ TEST_TIME_INTERVAL=10
+++ TEST_MAX_TIME=240
+++ FAILS=0
+++ RESULT_STR=
+++ export ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ '[' 7 -lt 6 ']'
+++ export LIBVIRT_DEFAULT_URI=qemu:///system
+++ LIBVIRT_DEFAULT_URI=qemu:///system
+++ '[' capm3 '!=' root ']'
+++ '[' /run/user/1000 == /run/user/0 ']'
+++ sudo -n uptime
+++ export USE_FIREWALLD=False
+++ USE_FIREWALLD=False
+++ [[ ubuntu20 == \r\h\e\l\8 ]]
+++ [[ ubuntu20 == \c\e\n\t\o\s\8 ]]
++++ df / --output=fstype
++++ tail -n 1
+++ FSTYPE=ext4
+++ case ${FSTYPE} in
+++ '[' '!' -d /opt/metal3-dev-env ']'
+++ id -u
++ [[ 1000 == 0 ]]
++ [[ ubuntu == ubuntu ]]
++ sudo apt-get update
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:5 https://download.docker.com/linux/ubuntu focal InRelease
+Hit:6 https://dl.yarnpkg.com/debian stable InRelease
+Hit:7 https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  InRelease
+Fetched 328 kB in 2s (188 kB/s)
+Reading package lists...
++ sudo apt -y install python3-pip
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-pip is already the newest version (20.0.2-5ubuntu1.6).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
++ [[ ubuntu20 == \u\b\u\n\t\u\1\8 ]]
++ [[ ubuntu20 == \u\b\u\n\t\u\2\0 ]]
++ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
++ sudo pip3 install ansible==4.8.0
+Requirement already satisfied: ansible==4.8.0 in /usr/local/lib/python3.8/dist-packages (4.8.0)
+Requirement already satisfied: ansible-core<2.12,>=2.11.6 in /usr/local/lib/python3.8/dist-packages (from ansible==4.8.0) (2.11.6)
+Requirement already satisfied: resolvelib<0.6.0,>=0.5.3 in /usr/local/lib/python3.8/dist-packages (from ansible-core<2.12,>=2.11.6->ansible==4.8.0) (0.5.4)
+Requirement already satisfied: cryptography in /usr/lib/python3/dist-packages (from ansible-core<2.12,>=2.11.6->ansible==4.8.0) (2.8)
+Requirement already satisfied: jinja2 in /usr/lib/python3/dist-packages (from ansible-core<2.12,>=2.11.6->ansible==4.8.0) (2.10.1)
+Requirement already satisfied: PyYAML in /usr/lib/python3/dist-packages (from ansible-core<2.12,>=2.11.6->ansible==4.8.0) (5.3.1)
+Requirement already satisfied: packaging in /usr/local/lib/python3.8/dist-packages (from ansible-core<2.12,>=2.11.6->ansible==4.8.0) (21.2)
+Requirement already satisfied: pyparsing<3,>=2.0.2 in /usr/local/lib/python3.8/dist-packages (from packaging->ansible-core<2.12,>=2.11.6->ansible==4.8.0) (2.4.7)
++ source lib/network.sh
+++ export CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ export POD_CIDR=192.168.0.0/18
+++ POD_CIDR=192.168.0.0/18
+++ PROVISIONING_IPV6=false
+++ IPV6_ADDR_PREFIX=fd2e:6f44:5dd8:b856
+++ [[ false == \t\r\u\e ]]
+++ export BOOT_MODE=legacy
+++ BOOT_MODE=legacy
+++ export PROVISIONING_NETWORK=172.22.0.0/24
+++ PROVISIONING_NETWORK=172.22.0.0/24
+++ [[ legacy == \l\e\g\a\c\y ]]
+++ export LIBVIRT_FIRMWARE=bios
+++ LIBVIRT_FIRMWARE=bios
+++ export LIBVIRT_SECURE_BOOT=false
+++ LIBVIRT_SECURE_BOOT=false
+++ prefixlen PROVISIONING_CIDR 172.22.0.0/24
+++ resultvar=PROVISIONING_CIDR
+++ network=172.22.0.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").prefixlen)'
+++ result=24
+++ eval PROVISIONING_CIDR=24
++++ PROVISIONING_CIDR=24
+++ export PROVISIONING_CIDR
+++ export PROVISIONING_CIDR
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").netmask)'
+++ export PROVISIONING_NETMASK=255.255.255.0
+++ PROVISIONING_NETMASK=255.255.255.0
+++ network_address PROVISIONING_IP 172.22.0.0/24 1
+++ resultvar=PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 1 - 1, None)))'
+++ result=172.22.0.1
+++ eval PROVISIONING_IP=172.22.0.1
++++ PROVISIONING_IP=172.22.0.1
+++ export PROVISIONING_IP
+++ network_address CLUSTER_PROVISIONING_IP 172.22.0.0/24 2
+++ resultvar=CLUSTER_PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=2
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 2 - 1, None)))'
+++ result=172.22.0.2
+++ eval CLUSTER_PROVISIONING_IP=172.22.0.2
++++ CLUSTER_PROVISIONING_IP=172.22.0.2
+++ export CLUSTER_PROVISIONING_IP
+++ export PROVISIONING_IP
+++ export CLUSTER_PROVISIONING_IP
+++ [[ 172.22.0.1 == *\:* ]]
+++ export PROVISIONING_URL_HOST=172.22.0.1
+++ PROVISIONING_URL_HOST=172.22.0.1
+++ export CLUSTER_URL_HOST=172.22.0.2
+++ CLUSTER_URL_HOST=172.22.0.2
+++ [[ 192.168.111.249 == *\:* ]]
+++ export CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ export CLUSTER_APIENDPOINT_PORT=6443
+++ CLUSTER_APIENDPOINT_PORT=6443
+++ network_address dhcp_range_start 172.22.0.0/24 10
+++ resultvar=dhcp_range_start
+++ network=172.22.0.0/24
+++ record=10
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 10 - 1, None)))'
+++ result=172.22.0.10
+++ eval dhcp_range_start=172.22.0.10
++++ dhcp_range_start=172.22.0.10
+++ export dhcp_range_start
+++ network_address dhcp_range_end 172.22.0.0/24 100
+++ resultvar=dhcp_range_end
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval dhcp_range_end=172.22.0.100
++++ dhcp_range_end=172.22.0.100
+++ export dhcp_range_end
+++ network_address PROVISIONING_POOL_RANGE_START 172.22.0.0/24 100
+++ resultvar=PROVISIONING_POOL_RANGE_START
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval PROVISIONING_POOL_RANGE_START=172.22.0.100
++++ PROVISIONING_POOL_RANGE_START=172.22.0.100
+++ export PROVISIONING_POOL_RANGE_START
+++ network_address PROVISIONING_POOL_RANGE_END 172.22.0.0/24 200
+++ resultvar=PROVISIONING_POOL_RANGE_END
+++ network=172.22.0.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 200 - 1, None)))'
+++ result=172.22.0.200
+++ eval PROVISIONING_POOL_RANGE_END=172.22.0.200
++++ PROVISIONING_POOL_RANGE_END=172.22.0.200
+++ export PROVISIONING_POOL_RANGE_END
+++ export PROVISIONING_POOL_RANGE_START
+++ export PROVISIONING_POOL_RANGE_END
+++ export CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ EXTERNAL_SUBNET=
+++ [[ -n '' ]]
+++ export IP_STACK=v4
+++ IP_STACK=v4
+++ [[ v4 == \v\4 ]]
+++ export EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ export EXTERNAL_SUBNET_V6=
+++ EXTERNAL_SUBNET_V6=
+++ [[ minikube == \m\i\n\i\k\u\b\e ]]
+++ [[ -n '' ]]
+++ [[ -n 192.168.111.0/24 ]]
+++ prefixlen EXTERNAL_SUBNET_V4_PREFIX 192.168.111.0/24
+++ resultvar=EXTERNAL_SUBNET_V4_PREFIX
+++ network=192.168.111.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"192.168.111.0/24").prefixlen)'
+++ result=24
+++ eval EXTERNAL_SUBNET_V4_PREFIX=24
++++ EXTERNAL_SUBNET_V4_PREFIX=24
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ [[ -z '' ]]
+++ network_address EXTERNAL_SUBNET_V4_HOST 192.168.111.0/24 1
+++ resultvar=EXTERNAL_SUBNET_V4_HOST
+++ network=192.168.111.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 1 - 1, None)))'
+++ result=192.168.111.1
+++ eval EXTERNAL_SUBNET_V4_HOST=192.168.111.1
++++ EXTERNAL_SUBNET_V4_HOST=192.168.111.1
+++ export EXTERNAL_SUBNET_V4_HOST
+++ network_address VIRSH_DHCP_V4_START 192.168.111.0/24 20
+++ resultvar=VIRSH_DHCP_V4_START
+++ network=192.168.111.0/24
+++ record=20
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 20 - 1, None)))'
+++ result=192.168.111.20
+++ eval VIRSH_DHCP_V4_START=192.168.111.20
++++ VIRSH_DHCP_V4_START=192.168.111.20
+++ export VIRSH_DHCP_V4_START
+++ network_address VIRSH_DHCP_V4_END 192.168.111.0/24 60
+++ resultvar=VIRSH_DHCP_V4_END
+++ network=192.168.111.0/24
+++ record=60
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 60 - 1, None)))'
+++ result=192.168.111.60
+++ eval VIRSH_DHCP_V4_END=192.168.111.60
++++ VIRSH_DHCP_V4_END=192.168.111.60
+++ export VIRSH_DHCP_V4_END
+++ network_address BAREMETALV4_POOL_RANGE_START 192.168.111.0/24 100
+++ resultvar=BAREMETALV4_POOL_RANGE_START
+++ network=192.168.111.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 100 - 1, None)))'
+++ result=192.168.111.100
+++ eval BAREMETALV4_POOL_RANGE_START=192.168.111.100
++++ BAREMETALV4_POOL_RANGE_START=192.168.111.100
+++ export BAREMETALV4_POOL_RANGE_START
+++ network_address BAREMETALV4_POOL_RANGE_END 192.168.111.0/24 200
+++ resultvar=BAREMETALV4_POOL_RANGE_END
+++ network=192.168.111.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 200 - 1, None)))'
+++ result=192.168.111.200
+++ eval BAREMETALV4_POOL_RANGE_END=192.168.111.200
++++ BAREMETALV4_POOL_RANGE_END=192.168.111.200
+++ export BAREMETALV4_POOL_RANGE_END
+++ export VIRSH_DHCP_V4_START
+++ export VIRSH_DHCP_V4_END
+++ export BAREMETALV4_POOL_RANGE_START
+++ export BAREMETALV4_POOL_RANGE_END
+++ [[ -n '' ]]
+++ export EXTERNAL_SUBNET_V6_HOST=
+++ EXTERNAL_SUBNET_V6_HOST=
+++ export EXTERNAL_SUBNET_V6_PREFIX=
+++ EXTERNAL_SUBNET_V6_PREFIX=
+++ export BAREMETALV6_POOL_RANGE_START=
+++ BAREMETALV6_POOL_RANGE_START=
+++ export BAREMETALV6_POOL_RANGE_END=
+++ BAREMETALV6_POOL_RANGE_END=
+++ export REGISTRY_PORT=5000
+++ REGISTRY_PORT=5000
+++ export HTTP_PORT=6180
+++ HTTP_PORT=6180
+++ export IRONIC_INSPECTOR_PORT=5050
+++ IRONIC_INSPECTOR_PORT=5050
+++ export IRONIC_API_PORT=6385
+++ IRONIC_API_PORT=6385
+++ [[ -n 192.168.111.1 ]]
+++ export REGISTRY=192.168.111.1:5000
+++ REGISTRY=192.168.111.1:5000
+++ network_address INITIAL_IRONICBRIDGE_IP 172.22.0.0/24 9
+++ resultvar=INITIAL_IRONICBRIDGE_IP
+++ network=172.22.0.0/24
+++ record=9
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 9 - 1, None)))'
+++ result=172.22.0.9
+++ eval INITIAL_IRONICBRIDGE_IP=172.22.0.9
++++ INITIAL_IRONICBRIDGE_IP=172.22.0.9
+++ export INITIAL_IRONICBRIDGE_IP
+++ export DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ export DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ '[' true == true ']'
+++ export IRONIC_URL=https://172.22.0.2:6385/v1/
+++ IRONIC_URL=https://172.22.0.2:6385/v1/
+++ export IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
+++ IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
++ ansible-galaxy install -r vm-setup/requirements.yml
+[DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+Starting galaxy role install process
+- fubarhouse.golang (master) is already installed, skipping.
+Starting galaxy collection install process
+Nothing to do. All requested collections are already installed. If you want to reinstall them, consider using `--force`.
++ ANSIBLE_FORCE_COLOR=true
++ ansible-playbook -e working_dir=/opt/metal3-dev-env -e metal3_dir=/home/capm3/projects/metal3-dev-env -e virthost=capm3 -i vm-setup/inventory.ini -b vm-setup/install-package-playbook.yml
+[0;35m[DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names [0m
+[0;35mto new standard, use callbacks_enabled instead. This feature will be removed [0m
+[0;35mfrom ansible-core in version 2.15. Deprecation warnings can be disabled by [0m
+[0;35msetting deprecation_warnings=False in ansible.cfg.[0m
+
+PLAY [Install packages needed for the Dev-env] *********************************
+Tuesday 09 November 2021  22:30:29 +0000 (0:00:00.011)       0:00:00.011 ****** 
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:30 +0000 (0:00:01.271)       0:00:01.283 ****** 
+
+TASK [packages_installation : Install required packages for Ubuntu] ************
+[0;36mincluded: /home/capm3/projects/metal3-dev-env/vm-setup/roles/packages_installation/tasks/ubuntu_required_packages.yml for localhost[0m
+Tuesday 09 November 2021  22:30:30 +0000 (0:00:00.055)       0:00:01.339 ****** 
+
+TASK [packages_installation : Update all packages to their latest version] *****
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:32 +0000 (0:00:01.310)       0:00:02.650 ****** 
+
+TASK [packages_installation : Fetch yarn gpg key] ******************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:33 +0000 (0:00:00.909)       0:00:03.559 ****** 
+
+TASK [packages_installation : Add yarn release key] ****************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:33 +0000 (0:00:00.356)       0:00:03.916 ****** 
+
+TASK [packages_installation : Add OS release key] ******************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:33 +0000 (0:00:00.238)       0:00:04.154 ****** 
+
+TASK [packages_installation : Fetch OS release key] ****************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:34 +0000 (0:00:01.070)       0:00:05.225 ****** 
+
+TASK [packages_installation : Update all packages to their latest version] *****
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:35 +0000 (0:00:01.199)       0:00:06.424 ****** 
+Tuesday 09 November 2021  22:30:35 +0000 (0:00:00.048)       0:00:06.473 ****** 
+Tuesday 09 November 2021  22:30:35 +0000 (0:00:00.065)       0:00:06.539 ****** 
+
+TASK [packages_installation : Add Docker’s GPG key] ****************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:36 +0000 (0:00:00.667)       0:00:07.207 ****** 
+
+TASK [packages_installation : Add Docker Repository] ***************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:37 +0000 (0:00:00.557)       0:00:07.764 ****** 
+
+TASK [packages_installation : Update all packages to their latest version] *****
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:38 +0000 (0:00:01.168)       0:00:08.932 ****** 
+
+TASK [packages_installation : Install docker] **********************************
+[0;32mok: [localhost] => (item=docker-ce)[0m
+[0;32mok: [localhost] => (item=docker-ce-cli)[0m
+[0;32mok: [localhost] => (item=containerd.io)[0m
+Tuesday 09 November 2021  22:30:45 +0000 (0:00:06.714)       0:00:15.646 ****** 
+
+TASK [packages_installation : Template daemon.json to /etc/docker/daemon.json] ***
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:45 +0000 (0:00:00.730)       0:00:16.377 ****** 
+
+TASK [packages_installation : Restart docker systemd service] ******************
+[0;33mchanged: [localhost][0m
+Tuesday 09 November 2021  22:30:48 +0000 (0:00:02.172)       0:00:18.549 ****** 
+
+TASK [packages_installation : Add current user to the docker group] ************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:48 +0000 (0:00:00.441)       0:00:18.990 ****** 
+
+TASK [packages_installation : Install common packages using standard package manager for Ubuntu] ***
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:49 +0000 (0:00:01.069)       0:00:20.060 ****** 
+Tuesday 09 November 2021  22:30:49 +0000 (0:00:00.043)       0:00:20.104 ****** 
+
+TASK [packages_installation : Install packages using standard package manager for Ubuntu 20.04] ***
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:50 +0000 (0:00:00.947)       0:00:21.051 ****** 
+Tuesday 09 November 2021  22:30:50 +0000 (0:00:00.045)       0:00:21.097 ****** 
+
+TASK [packages_installation : Install packages using pip3] *********************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:01.790)       0:00:22.887 ****** 
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.036)       0:00:22.924 ****** 
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.036)       0:00:22.960 ****** 
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.042)       0:00:23.002 ****** 
+
+TASK [fubarhouse.golang : Include tasks gathering system information] **********
+[0;36mincluded: /home/capm3/.ansible/roles/fubarhouse.golang/tasks/setup.yml for localhost[0m
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.051)       0:00:23.054 ****** 
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.041)       0:00:23.095 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define user variable for non-ssh use] ******
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.045)       0:00:23.140 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Set $HOME] *********************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.045)       0:00:23.186 ****** 
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.038)       0:00:23.224 ****** 
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.036)       0:00:23.261 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Include OS-Specific tasks (Debian)] ********
+[0;36mincluded: /home/capm3/.ansible/roles/fubarhouse.golang/tasks/tasks-Debian.yml for localhost[0m
+Tuesday 09 November 2021  22:30:52 +0000 (0:00:00.051)       0:00:23.313 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Install dependencies] **********************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:53 +0000 (0:00:00.873)       0:00:24.186 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define GOARCH] *****************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:53 +0000 (0:00:00.046)       0:00:24.232 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define GOOS] *******************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:53 +0000 (0:00:00.045)       0:00:24.277 ****** 
+Tuesday 09 November 2021  22:30:53 +0000 (0:00:00.037)       0:00:24.314 ****** 
+Tuesday 09 November 2021  22:30:53 +0000 (0:00:00.035)       0:00:24.350 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define GO111MODULE] ************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:53 +0000 (0:00:00.044)       0:00:24.395 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define GOROOT] *****************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:53 +0000 (0:00:00.043)       0:00:24.438 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define GOPATH] *****************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:53 +0000 (0:00:00.044)       0:00:24.483 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define GOPROXY] ****************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:53 +0000 (0:00:00.043)       0:00:24.527 ****** 
+Tuesday 09 November 2021  22:30:54 +0000 (0:00:00.041)       0:00:24.568 ****** 
+Tuesday 09 November 2021  22:30:54 +0000 (0:00:00.043)       0:00:24.611 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define version comparrison string] *********
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:54 +0000 (0:00:00.038)       0:00:24.649 ****** 
+Tuesday 09 November 2021  22:30:54 +0000 (0:00:00.040)       0:00:24.690 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define URL for distribution] ***************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:54 +0000 (0:00:00.042)       0:00:24.732 ****** 
+Tuesday 09 November 2021  22:30:54 +0000 (0:00:00.035)       0:00:24.768 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Looking for existing installation] *********
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:54 +0000 (0:00:00.409)       0:00:25.178 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Getting version information] ***************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:55 +0000 (0:00:00.392)       0:00:25.571 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Define expected version output] ************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:55 +0000 (0:00:00.047)       0:00:25.618 ****** 
+
+TASK [fubarhouse.golang : Include tasks to clean installation] *****************
+[0;36mincluded: /home/capm3/.ansible/roles/fubarhouse.golang/tasks/cleanup.yml for localhost[0m
+Tuesday 09 November 2021  22:30:55 +0000 (0:00:00.055)       0:00:25.674 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Removing GOROOT] ***************************
+[0;33mchanged: [localhost][0m
+Tuesday 09 November 2021  22:30:55 +0000 (0:00:00.799)       0:00:26.473 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Removing GOPATH] ***************************
+[0;33mchanged: [localhost][0m
+Tuesday 09 November 2021  22:30:56 +0000 (0:00:00.266)       0:00:26.739 ****** 
+Tuesday 09 November 2021  22:30:56 +0000 (0:00:00.042)       0:00:26.781 ****** 
+Tuesday 09 November 2021  22:30:56 +0000 (0:00:00.042)       0:00:26.824 ****** 
+
+TASK [fubarhouse.golang : Include tasks for installation] **********************
+[0;36mincluded: /home/capm3/.ansible/roles/fubarhouse.golang/tasks/install.yml for localhost[0m
+Tuesday 09 November 2021  22:30:56 +0000 (0:00:00.082)       0:00:26.906 ****** 
+Tuesday 09 November 2021  22:30:56 +0000 (0:00:00.065)       0:00:26.972 ****** 
+Tuesday 09 November 2021  22:30:56 +0000 (0:00:00.058)       0:00:27.030 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Include distro install tasks] **************
+[0;36mincluded: /home/capm3/.ansible/roles/fubarhouse.golang/tasks/install-distro.yml for localhost[0m
+Tuesday 09 November 2021  22:30:56 +0000 (0:00:00.071)       0:00:27.102 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Download distribution] *********************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:57 +0000 (0:00:00.638)       0:00:27.741 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Empty destination directory] ***************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:30:57 +0000 (0:00:00.256)       0:00:27.997 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Ensure directory is writable] **************
+[0;33mchanged: [localhost][0m
+Tuesday 09 November 2021  22:30:57 +0000 (0:00:00.236)       0:00:28.234 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Unpack distribution] ***********************
+[0;33mchanged: [localhost][0m
+Tuesday 09 November 2021  22:31:07 +0000 (0:00:09.615)       0:00:37.849 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Removing existing installation] ************
+[0;33mchanged: [localhost][0m
+Tuesday 09 November 2021  22:31:07 +0000 (0:00:00.242)       0:00:38.091 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Moving to installation directory] **********
+[0;33mchanged: [localhost][0m
+Tuesday 09 November 2021  22:31:07 +0000 (0:00:00.267)       0:00:38.359 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Remove temporary data] *********************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:31:08 +0000 (0:00:00.264)       0:00:38.624 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Verify version] ****************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:31:08 +0000 (0:00:00.240)       0:00:38.864 ****** 
+Tuesday 09 November 2021  22:31:08 +0000 (0:00:00.063)       0:00:38.927 ****** 
+Tuesday 09 November 2021  22:31:08 +0000 (0:00:00.042)       0:00:38.970 ****** 
+
+TASK [fubarhouse.golang : Include tasks for setting Go permissions] ************
+[0;36mincluded: /home/capm3/.ansible/roles/fubarhouse.golang/tasks/perm.yml for localhost[0m
+Tuesday 09 November 2021  22:31:08 +0000 (0:00:00.055)       0:00:39.026 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Set codebase permissions] ******************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  22:31:08 +0000 (0:00:00.271)       0:00:39.297 ****** 
+
+TASK [fubarhouse.golang : Go-Lang | Set workspace permissions] *****************
+[0;32mok: [localhost] => (item=src)[0m
+[0;32mok: [localhost] => (item=pkg)[0m
+[0;32mok: [localhost] => (item=bin)[0m
+Tuesday 09 November 2021  22:31:09 +0000 (0:00:00.688)       0:00:39.986 ****** 
+
+PLAY RECAP *********************************************************************
+[0;33mlocalhost[0m                  : [0;32mok=50  [0m [0;33mchanged=7   [0m unreachable=0    failed=0    [0;36mskipped=23  [0m rescued=0    ignored=0   
+
+Tuesday 09 November 2021  22:31:09 +0000 (0:00:00.056)       0:00:40.042 ****** 
+=============================================================================== 
+fubarhouse.golang : Go-Lang | Unpack distribution ----------------------- 9.62s
+packages_installation : Install docker ---------------------------------- 6.71s
+packages_installation : Restart docker systemd service ------------------ 2.17s
++ source lib/network.sh
+++ export CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ export POD_CIDR=192.168.0.0/18
+++ POD_CIDR=192.168.0.0/18
+++ PROVISIONING_IPV6=false
+++ IPV6_ADDR_PREFIX=fd2e:6f44:5dd8:b856
+++ [[ false == \t\r\u\e ]]
+++ export BOOT_MODE=legacy
+++ BOOT_MODE=legacy
+++ export PROVISIONING_NETWORK=172.22.0.0/24
+++ PROVISIONING_NETWORK=172.22.0.0/24
+++ [[ legacy == \l\e\g\a\c\y ]]
+++ export LIBVIRT_FIRMWARE=bios
+++ LIBVIRT_FIRMWARE=bios
+++ export LIBVIRT_SECURE_BOOT=false
+++ LIBVIRT_SECURE_BOOT=false
+++ prefixlen PROVISIONING_CIDR 172.22.0.0/24
+++ resultvar=PROVISIONING_CIDR
+++ network=172.22.0.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").prefixlen)'
+++ result=24
+++ eval PROVISIONING_CIDR=24
++++ PROVISIONING_CIDR=24
+++ export PROVISIONING_CIDR
+++ export PROVISIONING_CIDR
+++ export PROVISIONING_NETMASK=255.255.255.0
+++ PROVISIONING_NETMASK=255.255.255.0
+++ network_address PROVISIONING_IP 172.22.0.0/24 1
+++ resultvar=PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 1 - 1, None)))'
+++ result=172.22.0.1
+++ eval PROVISIONING_IP=172.22.0.1
++++ PROVISIONING_IP=172.22.0.1
+++ export PROVISIONING_IP
+++ network_address CLUSTER_PROVISIONING_IP 172.22.0.0/24 2
+++ resultvar=CLUSTER_PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=2
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 2 - 1, None)))'
+++ result=172.22.0.2
+++ eval CLUSTER_PROVISIONING_IP=172.22.0.2
++++ CLUSTER_PROVISIONING_IP=172.22.0.2
+++ export CLUSTER_PROVISIONING_IP
+++ export PROVISIONING_IP
+++ export CLUSTER_PROVISIONING_IP
+++ [[ 172.22.0.1 == *\:* ]]
+++ export PROVISIONING_URL_HOST=172.22.0.1
+++ PROVISIONING_URL_HOST=172.22.0.1
+++ export CLUSTER_URL_HOST=172.22.0.2
+++ CLUSTER_URL_HOST=172.22.0.2
+++ [[ 192.168.111.249 == *\:* ]]
+++ export CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ export CLUSTER_APIENDPOINT_PORT=6443
+++ CLUSTER_APIENDPOINT_PORT=6443
+++ network_address dhcp_range_start 172.22.0.0/24 10
+++ resultvar=dhcp_range_start
+++ network=172.22.0.0/24
+++ record=10
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 10 - 1, None)))'
+++ result=172.22.0.10
+++ eval dhcp_range_start=172.22.0.10
++++ dhcp_range_start=172.22.0.10
+++ export dhcp_range_start
+++ network_address dhcp_range_end 172.22.0.0/24 100
+++ resultvar=dhcp_range_end
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval dhcp_range_end=172.22.0.100
++++ dhcp_range_end=172.22.0.100
+++ export dhcp_range_end
+++ network_address PROVISIONING_POOL_RANGE_START 172.22.0.0/24 100
+++ resultvar=PROVISIONING_POOL_RANGE_START
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval PROVISIONING_POOL_RANGE_START=172.22.0.100
++++ PROVISIONING_POOL_RANGE_START=172.22.0.100
+++ export PROVISIONING_POOL_RANGE_START
+++ network_address PROVISIONING_POOL_RANGE_END 172.22.0.0/24 200
+++ resultvar=PROVISIONING_POOL_RANGE_END
+++ network=172.22.0.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 200 - 1, None)))'
+++ result=172.22.0.200
+++ eval PROVISIONING_POOL_RANGE_END=172.22.0.200
++++ PROVISIONING_POOL_RANGE_END=172.22.0.200
+++ export PROVISIONING_POOL_RANGE_END
+++ export PROVISIONING_POOL_RANGE_START
+++ export PROVISIONING_POOL_RANGE_END
+++ export CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ EXTERNAL_SUBNET=
+++ [[ -n '' ]]
+++ export IP_STACK=v4
+++ IP_STACK=v4
+++ [[ v4 == \v\4 ]]
+++ export EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ export EXTERNAL_SUBNET_V6=
+++ EXTERNAL_SUBNET_V6=
+++ [[ minikube == \m\i\n\i\k\u\b\e ]]
+++ [[ -n '' ]]
+++ [[ -n 192.168.111.0/24 ]]
+++ prefixlen EXTERNAL_SUBNET_V4_PREFIX 192.168.111.0/24
+++ resultvar=EXTERNAL_SUBNET_V4_PREFIX
+++ network=192.168.111.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"192.168.111.0/24").prefixlen)'
+++ result=24
+++ eval EXTERNAL_SUBNET_V4_PREFIX=24
++++ EXTERNAL_SUBNET_V4_PREFIX=24
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ [[ -z 192.168.111.1 ]]
+++ network_address VIRSH_DHCP_V4_START 192.168.111.0/24 20
+++ resultvar=VIRSH_DHCP_V4_START
+++ network=192.168.111.0/24
+++ record=20
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 20 - 1, None)))'
+++ result=192.168.111.20
+++ eval VIRSH_DHCP_V4_START=192.168.111.20
++++ VIRSH_DHCP_V4_START=192.168.111.20
+++ export VIRSH_DHCP_V4_START
+++ network_address VIRSH_DHCP_V4_END 192.168.111.0/24 60
+++ resultvar=VIRSH_DHCP_V4_END
+++ network=192.168.111.0/24
+++ record=60
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 60 - 1, None)))'
+++ result=192.168.111.60
+++ eval VIRSH_DHCP_V4_END=192.168.111.60
++++ VIRSH_DHCP_V4_END=192.168.111.60
+++ export VIRSH_DHCP_V4_END
+++ network_address BAREMETALV4_POOL_RANGE_START 192.168.111.0/24 100
+++ resultvar=BAREMETALV4_POOL_RANGE_START
+++ network=192.168.111.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 100 - 1, None)))'
+++ result=192.168.111.100
+++ eval BAREMETALV4_POOL_RANGE_START=192.168.111.100
++++ BAREMETALV4_POOL_RANGE_START=192.168.111.100
+++ export BAREMETALV4_POOL_RANGE_START
+++ network_address BAREMETALV4_POOL_RANGE_END 192.168.111.0/24 200
+++ resultvar=BAREMETALV4_POOL_RANGE_END
+++ network=192.168.111.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 200 - 1, None)))'
+++ result=192.168.111.200
+++ eval BAREMETALV4_POOL_RANGE_END=192.168.111.200
++++ BAREMETALV4_POOL_RANGE_END=192.168.111.200
+++ export BAREMETALV4_POOL_RANGE_END
+++ export VIRSH_DHCP_V4_START
+++ export VIRSH_DHCP_V4_END
+++ export BAREMETALV4_POOL_RANGE_START
+++ export BAREMETALV4_POOL_RANGE_END
+++ [[ -n '' ]]
+++ export EXTERNAL_SUBNET_V6_HOST=
+++ EXTERNAL_SUBNET_V6_HOST=
+++ export EXTERNAL_SUBNET_V6_PREFIX=
+++ EXTERNAL_SUBNET_V6_PREFIX=
+++ export BAREMETALV6_POOL_RANGE_START=
+++ BAREMETALV6_POOL_RANGE_START=
+++ export BAREMETALV6_POOL_RANGE_END=
+++ BAREMETALV6_POOL_RANGE_END=
+++ export REGISTRY_PORT=5000
+++ REGISTRY_PORT=5000
+++ export HTTP_PORT=6180
+++ HTTP_PORT=6180
+++ export IRONIC_INSPECTOR_PORT=5050
+++ IRONIC_INSPECTOR_PORT=5050
+++ export IRONIC_API_PORT=6385
+++ IRONIC_API_PORT=6385
+++ [[ -n 192.168.111.1 ]]
+++ export REGISTRY=192.168.111.1:5000
+++ REGISTRY=192.168.111.1:5000
+++ network_address INITIAL_IRONICBRIDGE_IP 172.22.0.0/24 9
+++ resultvar=INITIAL_IRONICBRIDGE_IP
+++ network=172.22.0.0/24
+++ record=9
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 9 - 1, None)))'
+++ result=172.22.0.9
+++ eval INITIAL_IRONICBRIDGE_IP=172.22.0.9
++++ INITIAL_IRONICBRIDGE_IP=172.22.0.9
+++ export INITIAL_IRONICBRIDGE_IP
+++ export DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ export DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ '[' true == true ']'
+++ export IRONIC_URL=https://172.22.0.2:6385/v1/
+++ IRONIC_URL=https://172.22.0.2:6385/v1/
+++ export IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
+++ IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
++ source lib/images.sh
+++ IMAGE_OS=Ubuntu
+++ [[ Ubuntu == \U\b\u\n\t\u ]]
+++ export IMAGE_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2
+++ IMAGE_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2
+++ export IMAGE_LOCATION=https://artifactory.nordix.org/artifactory/airship/images/k8s_v1.21.1/
+++ IMAGE_LOCATION=https://artifactory.nordix.org/artifactory/airship/images/k8s_v1.21.1/
+++ export IMAGE_URL=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2
+++ IMAGE_URL=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2
+++ export IMAGE_CHECKSUM=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2.md5sum
+++ IMAGE_CHECKSUM=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2.md5sum
+++ export IMAGE_USERNAME=metal3
+++ IMAGE_USERNAME=metal3
+++ IMAGE_BASE_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1
+++ export IMAGE_RAW_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img
+++ IMAGE_RAW_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img
+++ export IMAGE_RAW_URL=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img
+++ IMAGE_RAW_URL=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img
+++ export IMAGE_RAW_CHECKSUM=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum
+++ IMAGE_RAW_CHECKSUM=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum
++ GOBINARY=/usr/local/go/bin
++ [[ :/home/capm3/.krew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\g\o\/\b\i\n\:* ]]
++ source lib/releases.sh
+++ CAPM3RELEASEPATH=https://api.github.com/repos/metal3-io/cluster-api-provider-metal3/releases
+++ CAPIRELEASEPATH=https://api.github.com/repos/kubernetes-sigs/cluster-api/releases
+++ '[' v1beta1 == v1alpha3 ']'
+++ '[' v1beta1 == v1alpha4 ']'
++++ get_latest_release https://api.github.com/repos/kubernetes-sigs/cluster-api/releases v1.0.
++++ set +x
++++ echo v1.0.0
+++ export CAPIRELEASE=v1.0.0
+++ CAPIRELEASE=v1.0.0
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ export CAPM3RELEASE=v1.0.0
+++ CAPM3RELEASE=v1.0.0
+++ [[ v1.0.0 == '' ]]
+++ [[ v1.0.0 == '' ]]
++ kubectl krew
++ id capm3
++ grep -q libvirt
++ '[' minikube == minikube ']'
++ command -v minikube
+/usr/local/bin/minikube
+++ minikube version --short
++ [[ v1.23.2 != \v\1\.\2\3\.\2 ]]
++ command -v docker-machine-driver-kvm2
+/usr/local/bin/docker-machine-driver-kvm2
+++ curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
++ KUBECTL_LATEST=v1.22.3
+++ kubectl version --client --short
+++ cut -d : -f2
+++ sed 's/[[:space:]]//g'
++ KUBECTL_LOCAL=v1.22.3
+++ whereis -b kubectl
+++ cut -d : -f2
+++ awk '{print $1}'
++ KUBECTL_PATH=/usr/local/bin/kubectl
++ '[' v1.22.3 '!=' v1.22.3 ']'
++ command -v kustomize
+/usr/local/bin/kustomize
+++ command -v clusterctl
++ '[' -x /usr/local/bin/clusterctl ']'
+++ clusterctl version
+++ grep -o -P '(?<=GitVersion:").*?(?=",)'
++ '[' v0.4.1 '!=' v1.0.0 ']'
++ sudo rm /usr/local/bin/clusterctl
++ install_clusterctl
++ curl -L https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.0.0/clusterctl-linux-amd64 -o clusterctl
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   630  100   630    0     0   3684      0 --:--:-- --:--:-- --:--:--  3684
+  0 51.5M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 51.5M  100 51.5M    0     0  65.0M      0 --:--:-- --:--:-- --:--:--  113M
++ chmod +x ./clusterctl
++ sudo mv ./clusterctl /usr/local/bin/clusterctl
++ remove_ironic_containers
++ for name in ipa-downloader vbmc sushy-tools httpd-infra
++ sudo docker ps
++ grep -w 'ipa-downloader$'
++ true
++ sudo docker ps --all
++ grep -w 'ipa-downloader$'
++ true
++ for name in ipa-downloader vbmc sushy-tools httpd-infra
++ sudo docker ps
++ grep -w 'vbmc$'
++ true
++ sudo docker ps --all
++ grep -w 'vbmc$'
++ true
++ for name in ipa-downloader vbmc sushy-tools httpd-infra
++ sudo docker ps
++ grep -w 'sushy-tools$'
++ true
++ sudo docker ps --all
++ grep -w 'sushy-tools$'
++ true
++ for name in ipa-downloader vbmc sushy-tools httpd-infra
++ sudo docker ps
++ grep -w 'httpd-infra$'
++ true
++ sudo docker ps --all
++ grep -w 'httpd-infra$'
++ true
++ case $CONTAINER_RUNTIME in
++ mkdir -p /opt/metal3-dev-env/ironic/html/images
++ pushd /opt/metal3-dev-env/ironic/html/images
+/opt/metal3-dev-env/ironic/html/images ~/projects/metal3-dev-env
++ '[' '!' -f UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2 ']'
++ popd
+~/projects/metal3-dev-env
+++ env
+++ grep -v _LOCAL_IMAGE=
+++ grep _IMAGE=
+++ grep -o '^[^=]*'
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=registry:2.7.1
++ pull_container_image_if_missing registry:2.7.1
++ local IMAGE=registry:2.7.1
++ '[' docker == docker ']'
+++ sudo docker image ls registry:2.7.1
+++ tail -n +2
++ [[ -z registry     2.7.1     b2cb11db9d3d   2 months ago   26.2MB ]]
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/baremetal-operator
++ pull_container_image_if_missing quay.io/metal3-io/baremetal-operator
++ local IMAGE=quay.io/metal3-io/baremetal-operator
++ '[' docker == docker ']'
+++ sudo docker image ls quay.io/metal3-io/baremetal-operator
+++ tail -n +2
++ [[ -z quay.io/metal3-io/baremetal-operator   latest    f3da3d8803c1   30 hours ago   67.3MB ]]
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic-client
++ pull_container_image_if_missing quay.io/metal3-io/ironic-client
++ local IMAGE=quay.io/metal3-io/ironic-client
++ '[' docker == docker ']'
+++ sudo docker image ls quay.io/metal3-io/ironic-client
+++ tail -n +2
++ [[ -z quay.io/metal3-io/ironic-client   latest    012b3427a728   7 months ago   359MB ]]
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic
++ pull_container_image_if_missing quay.io/metal3-io/ironic
++ local IMAGE=quay.io/metal3-io/ironic
++ '[' docker == docker ']'
+++ sudo docker image ls quay.io/metal3-io/ironic
+++ tail -n +2
++ [[ -z quay.io/metal3-io/ironic   latest    f3d7b4ec112e   7 hours ago   873MB ]]
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic-ipa-downloader
++ pull_container_image_if_missing quay.io/metal3-io/ironic-ipa-downloader
++ local IMAGE=quay.io/metal3-io/ironic-ipa-downloader
++ '[' docker == docker ']'
+++ sudo docker image ls quay.io/metal3-io/ironic-ipa-downloader
+++ tail -n +2
++ [[ -z quay.io/metal3-io/ironic-ipa-downloader   latest    96c905be59f4   7 months ago   310MB ]]
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/sushy-tools
++ pull_container_image_if_missing quay.io/metal3-io/sushy-tools
++ local IMAGE=quay.io/metal3-io/sushy-tools
++ '[' docker == docker ']'
+++ sudo docker image ls quay.io/metal3-io/sushy-tools
+++ tail -n +2
++ [[ -z quay.io/metal3-io/sushy-tools   latest    7b89988598f2   7 days ago   1.02GB ]]
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/keepalived
++ pull_container_image_if_missing quay.io/metal3-io/keepalived
++ local IMAGE=quay.io/metal3-io/keepalived
++ '[' docker == docker ']'
+++ sudo docker image ls quay.io/metal3-io/keepalived
+++ tail -n +2
++ [[ -z quay.io/metal3-io/keepalived   latest    5826341e1b25   3 weeks ago   219MB ]]
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/vbmc
++ pull_container_image_if_missing quay.io/metal3-io/vbmc
++ local IMAGE=quay.io/metal3-io/vbmc
++ '[' docker == docker ']'
+++ sudo docker image ls quay.io/metal3-io/vbmc
+++ tail -n +2
++ [[ -z quay.io/metal3-io/vbmc   latest    a2439b22f7c3   8 hours ago   522MB ]]
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ip-address-manager:main
++ pull_container_image_if_missing quay.io/metal3-io/ip-address-manager:main
++ local IMAGE=quay.io/metal3-io/ip-address-manager:main
++ '[' docker == docker ']'
+++ sudo docker image ls quay.io/metal3-io/ip-address-manager:main
+++ tail -n +2
++ [[ -z quay.io/metal3-io/ip-address-manager   main      6e9e5766bc02   4 days ago   50.2MB ]]
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
++ pull_container_image_if_missing quay.io/metal3-io/cluster-api-provider-metal3:main
++ local IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
++ '[' docker == docker ']'
+++ sudo docker image ls quay.io/metal3-io/cluster-api-provider-metal3:main
+++ tail -n +2
++ [[ -z quay.io/metal3-io/cluster-api-provider-metal3   main      8e68685041f1   11 hours ago   53.1MB ]]
++ true
++ sudo docker run -d --net host --name ipa-downloader -e IPA_BASEURI= -v /opt/metal3-dev-env/ironic:/shared quay.io/metal3-io/ironic-ipa-downloader /usr/local/bin/get-resource.sh
+de448517b6058d9b685fca38b230f965b112a2ff444419f07013c2d098c9d0a2
++ sudo docker wait ipa-downloader
+0
++ '[' minikube == minikube ']'
++ init_minikube
+++ sudo virsh list --name --all
++ [[ '' != *\m\i\n\i\k\u\b\e* ]]
++ /bin/true
++ minikube_error=0
++ sudo systemctl restart libvirtd.service
++ configure_minikube
++ minikube config set driver kvm2
+! These changes will take effect upon a minikube delete and then a minikube start
++ minikube config set memory 4096
+! These changes will take effect upon a minikube delete and then a minikube start
++ sudo su -l -c 'minikube start --insecure-registry 192.168.111.1:5000' capm3
+* minikube v1.23.2 on Ubuntu 20.04
+* Using the kvm2 driver based on user configuration
+* Starting control plane node minikube in cluster minikube
+* Creating kvm2 VM (CPUs=2, Memory=4096MB, Disk=20000MB) ...
+* Preparing Kubernetes v1.22.2 on Docker 20.10.8 ...
+  - Generating certificates and keys ...
+  - Booting up control plane ...
+  - Configuring RBAC rules ...
+* Verifying Kubernetes components...
+  - Using image gcr.io/k8s-minikube/storage-provisioner:v5
+* Enabled addons: storage-provisioner, default-storageclass
+* Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
++ [[ 0 -eq 0 ]]
++ break
++ sudo su -l -c 'minikube stop' capm3
+* Stopping node "minikube"  ...
+* 1 nodes stopped.
+++ sudo virsh domiflist minikube
++ MINIKUBE_IFACES=' Interface   Type      Source        Model    MAC
+-----------------------------------------------------------------
+ -           network   mk-minikube   virtio   52:54:00:16:a6:57
+ -           network   default       virtio   52:54:00:51:0d:55'
++ echo ' Interface   Type      Source        Model    MAC
+-----------------------------------------------------------------
+ -           network   mk-minikube   virtio   52:54:00:16:a6:57
+ -           network   default       virtio   52:54:00:51:0d:55'
++ grep -w provisioning
++ sudo virsh attach-interface --domain minikube --model virtio --source provisioning --type network --config
+Interface attached successfully
+
++ echo ' Interface   Type      Source        Model    MAC
+-----------------------------------------------------------------
+ -           network   mk-minikube   virtio   52:54:00:16:a6:57
+ -           network   default       virtio   52:54:00:51:0d:55'
++ grep -w baremetal
++ sudo virsh attach-interface --domain minikube --model virtio --source baremetal --type network --config
+Interface attached successfully
+

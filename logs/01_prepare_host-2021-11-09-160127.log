@@ -1,0 +1,881 @@
++ source lib/common.sh
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\g\o\/\b\i\n\:* ]]
+++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin
++++ go env
+lib/common.sh: line 5: go: command not found
+++ eval ''
+++ export GOPATH
+++++ dirname lib/common.sh
++++ cd lib/..
++++ pwd
+++ SCRIPTDIR=/home/capm3/projects/metal3-dev-env
++++ whoami
+++ USER=capm3
+++ export USER=capm3
+++ USER=capm3
+++ '[' -z '' ']'
+++ '[' '!' -f /home/capm3/projects/metal3-dev-env/config_capm3.sh ']'
+++ CONFIG=/home/capm3/projects/metal3-dev-env/config_capm3.sh
+++ source /home/capm3/projects/metal3-dev-env/config_capm3.sh
++++ export KUBECONFIG=/home/capm3/.kube/config
++++ KUBECONFIG=/home/capm3/.kube/config
++++ export K8S_AUTH_KUBECONFIG=/home/capm3/.kube/config
++++ K8S_AUTH_KUBECONFIG=/home/capm3/.kube/config
++++ export NUM_NODES=7
++++ NUM_NODES=7
++++ export NUM_OF_MASTER_REPLICAS=3
++++ NUM_OF_MASTER_REPLICAS=3
++++ export NUM_OF_WORKER_REPLICAS=3
++++ NUM_OF_WORKER_REPLICAS=3
++++ export CAPM3_VERSION=v1beta1
++++ CAPM3_VERSION=v1beta1
++++ export CAPI_VERSION=v1beta1
++++ CAPI_VERSION=v1beta1
++++ export KUBERNETES_VERSION=v1.21.0
++++ KUBERNETES_VERSION=v1.21.0
++++ export UPGRADED_K8S_VERSION=v1.22.2
++++ UPGRADED_K8S_VERSION=v1.22.2
++++ export IMAGE_OS=Ubuntu
++++ IMAGE_OS=Ubuntu
++++ export IMAGE_USERNAME=metal3
++++ IMAGE_USERNAME=metal3
++++ export EPHEMERAL_CLUSTER=kind
++++ EPHEMERAL_CLUSTER=kind
+++ export MARIADB_HOST=mariaDB
+++ MARIADB_HOST=mariaDB
+++ export MARIADB_HOST_IP=127.0.0.1
+++ MARIADB_HOST_IP=127.0.0.1
+++ ADDN_DNS=
+++ EXT_IF=
+++ PRO_IF=
+++ MANAGE_BR_BRIDGE=y
+++ MANAGE_PRO_BRIDGE=y
+++ MANAGE_INT_BRIDGE=y
+++ INT_IF=
+++ ROOT_DISK_NAME=/dev/sda
+++ NODE_HOSTNAME_FORMAT=node-%d
+++ source /etc/os-release
++++ NAME=Ubuntu
++++ VERSION='20.04.3 LTS (Focal Fossa)'
++++ ID=ubuntu
++++ ID_LIKE=debian
++++ PRETTY_NAME='Ubuntu 20.04.3 LTS'
++++ VERSION_ID=20.04
++++ HOME_URL=https://www.ubuntu.com/
++++ SUPPORT_URL=https://help.ubuntu.com/
++++ BUG_REPORT_URL=https://bugs.launchpad.net/ubuntu/
++++ PRIVACY_POLICY_URL=https://www.ubuntu.com/legal/terms-and-policies/privacy-policy
++++ VERSION_CODENAME=focal
++++ UBUNTU_CODENAME=focal
+++ export DISTRO=ubuntu20
+++ DISTRO=ubuntu20
+++ export OS=ubuntu
+++ OS=ubuntu
+++ export OS_VERSION_ID=20.04
+++ OS_VERSION_ID=20.04
+++ SUPPORTED_DISTROS=(centos8 rhel8 ubuntu18 ubuntu20)
+++ export SUPPORTED_DISTROS
+++ [[ ! centos8 rhel8 ubuntu18 ubuntu20 =~ ubuntu20 ]]
+++ [[ ubuntu == ubuntu ]]
+++ export CONTAINER_RUNTIME=docker
+++ CONTAINER_RUNTIME=docker
+++ [[ docker == \p\o\d\m\a\n ]]
+++ export POD_NAME=
+++ POD_NAME=
+++ export POD_NAME_INFRA=
+++ POD_NAME_INFRA=
+++ export SSH_KEY=/home/capm3/.ssh/id_rsa
+++ SSH_KEY=/home/capm3/.ssh/id_rsa
+++ export SSH_PUB_KEY=/home/capm3/.ssh/id_rsa.pub
+++ SSH_PUB_KEY=/home/capm3/.ssh/id_rsa.pub
+++ '[' '!' -f /home/capm3/.ssh/id_rsa ']'
++++ dirname /home/capm3/.ssh/id_rsa
+++ mkdir -p /home/capm3/.ssh
+++ ssh-keygen -f /home/capm3/.ssh/id_rsa -P ''
+Generating public/private rsa key pair.
+Your identification has been saved in /home/capm3/.ssh/id_rsa
+Your public key has been saved in /home/capm3/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:/S2P5uasBKlxLTMr9XCH9wS0T/j2oYGFjJh53kRlers capm3@capm3
+The key's randomart image is:
++---[RSA 3072]----+
+|           .oo   |
+|        + +.+o   |
+|       + o =+o.  |
+|        o+o.+=.  |
+|      . S.=ooo=. |
+|       = X + =+..|
+|      o . o oEo .|
+|       . . .o+   |
+|          .*= .  |
++----[SHA256]-----+
+++ FILESYSTEM=/
+++ CAPM3_VERSION_LIST='v1alpha4 v1alpha5 v1beta1'
+++ export CAPM3_VERSION=v1beta1
+++ CAPM3_VERSION=v1beta1
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ '[' v1beta1 == v1beta1 ']'
+++ export CAPI_VERSION=v1beta1
+++ CAPI_VERSION=v1beta1
+++ export M3PATH=/src/github.com/metal3-io
+++ M3PATH=/src/github.com/metal3-io
+++ export BMOPATH=/src/github.com/metal3-io/baremetal-operator
+++ BMOPATH=/src/github.com/metal3-io/baremetal-operator
+++ export RUN_LOCAL_IRONIC_SCRIPT=/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ RUN_LOCAL_IRONIC_SCRIPT=/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ export CAPM3PATH=/src/github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3PATH=/src/github.com/metal3-io/cluster-api-provider-metal3
+++ export CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ export CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ export IPAMPATH=/src/github.com/metal3-io/ip-address-manager
+++ IPAMPATH=/src/github.com/metal3-io/ip-address-manager
+++ export IPAM_BASE_URL=metal3-io/ip-address-manager
+++ IPAM_BASE_URL=metal3-io/ip-address-manager
+++ export IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ '[' v1beta1 == v1alpha3 ']'
+++ '[' v1beta1 == v1alpha4 ']'
+++ IPAMBRANCH=main
+++ IPA_DOWNLOAD_ENABLED=true
+++ CAPI_BASE_URL=kubernetes-sigs/cluster-api
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ CAPM3BRANCH=main
+++ BMOREPO=https://github.com/metal3-io/baremetal-operator.git
+++ BMOBRANCH=master
+++ FORCE_REPO_UPDATE=true
+++ BMOCOMMIT=HEAD
+++ BMO_RUN_LOCAL=false
+++ CAPM3_RUN_LOCAL=false
+++ WORKING_DIR=/opt/metal3-dev-env
+++ NODES_FILE=/opt/metal3-dev-env/ironic_nodes.json
+++ NODES_PLATFORM=libvirt
+++ export NAMESPACE=metal3
+++ NAMESPACE=metal3
+++ export NUM_NODES=7
+++ NUM_NODES=7
+++ export NUM_OF_MASTER_REPLICAS=3
+++ NUM_OF_MASTER_REPLICAS=3
+++ export NUM_OF_WORKER_REPLICAS=3
+++ NUM_OF_WORKER_REPLICAS=3
+++ export VM_EXTRADISKS=false
+++ VM_EXTRADISKS=false
+++ export VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ export VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ export NODE_DRAIN_TIMEOUT=0s
+++ NODE_DRAIN_TIMEOUT=0s
+++ export MAX_SURGE_VALUE=1
+++ MAX_SURGE_VALUE=1
+++ export DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ export CONTAINER_REGISTRY=quay.io
+++ CONTAINER_REGISTRY=quay.io
+++ export VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ export SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ export IRONIC_TLS_SETUP=true
+++ IRONIC_TLS_SETUP=true
+++ export IRONIC_BASIC_AUTH=true
+++ IRONIC_BASIC_AUTH=true
+++ export IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ export IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ export IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ export IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ export IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ export IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ '[' v1beta1 == v1alpha4 ']'
+++ export IRONIC_NAMESPACE=baremetal-operator-system
+++ IRONIC_NAMESPACE=baremetal-operator-system
+++ export NAMEPREFIX=baremetal-operator
+++ NAMEPREFIX=baremetal-operator
+++ export RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ export BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ export OPENSTACK_CONFIG=/home/capm3/.config/openstack/clouds.yaml
+++ OPENSTACK_CONFIG=/home/capm3/.config/openstack/clouds.yaml
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ export CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
+++ CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
+++ export IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
+++ IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
+++ export DEFAULT_HOSTS_MEMORY=4096
+++ DEFAULT_HOSTS_MEMORY=4096
+++ export CLUSTER_NAME=test1
+++ CLUSTER_NAME=test1
+++ export CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ export KUBERNETES_VERSION=v1.21.0
+++ KUBERNETES_VERSION=v1.21.0
+++ export KUBERNETES_BINARIES_VERSION=v1.21.0
+++ KUBERNETES_BINARIES_VERSION=v1.21.0
+++ export KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ '[' docker == docker ']'
+++ export EPHEMERAL_CLUSTER=kind
+++ EPHEMERAL_CLUSTER=kind
+++ export KUSTOMIZE_VERSION=v4.1.3
+++ KUSTOMIZE_VERSION=v4.1.3
+++ export KIND_VERSION=v0.11.1
+++ KIND_VERSION=v0.11.1
+++ '[' v1.21.0 == v1.21.2 ']'
+++ export KIND_NODE_IMAGE_VERSION=v1.22.2
+++ KIND_NODE_IMAGE_VERSION=v1.22.2
+++ export MINIKUBE_VERSION=v1.23.2
+++ MINIKUBE_VERSION=v1.23.2
+++ export ANSIBLE_VERSION=4.8.0
+++ ANSIBLE_VERSION=4.8.0
+++ SKIP_RETRIES=false
+++ TEST_TIME_INTERVAL=10
+++ TEST_MAX_TIME=240
+++ FAILS=0
+++ RESULT_STR=
+++ export ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ '[' 7 -lt 6 ']'
+++ export LIBVIRT_DEFAULT_URI=qemu:///system
+++ LIBVIRT_DEFAULT_URI=qemu:///system
+++ '[' capm3 '!=' root ']'
+++ '[' /run/user/1000 == /run/user/0 ']'
+++ sudo -n uptime
+++ export USE_FIREWALLD=False
+++ USE_FIREWALLD=False
+++ [[ ubuntu20 == \r\h\e\l\8 ]]
+++ [[ ubuntu20 == \c\e\n\t\o\s\8 ]]
++++ df / --output=fstype
++++ tail -n 1
+++ FSTYPE=ext4
+++ case ${FSTYPE} in
+++ '[' '!' -d /opt/metal3-dev-env ']'
+++ echo 'Creating Working Dir'
+Creating Working Dir
+++ sudo mkdir /opt/metal3-dev-env
+++ sudo chown capm3:capm3 /opt/metal3-dev-env
+++ chmod 755 /opt/metal3-dev-env
+++ id -u
++ [[ 1000 == 0 ]]
++ [[ ubuntu == ubuntu ]]
++ sudo apt-get update
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:6 http://azure.archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:7 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:11 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1340 kB]
+Get:12 http://azure.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [275 kB]
+Get:13 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.4 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [567 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [81.6 kB]
+Get:16 http://azure.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [528 B]
+Get:17 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [871 kB]
+Get:18 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [188 kB]
+Get:19 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [19.5 kB]
+Get:20 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.6 kB]
+Get:21 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [6856 B]
+Get:22 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [616 B]
+Get:23 http://azure.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [2568 B]
+Get:24 http://azure.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [1120 B]
+Get:25 http://azure.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [400 B]
+Get:26 http://azure.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:27 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [6584 B]
+Get:28 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [3292 B]
+Get:29 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [580 B]
+Get:30 http://azure.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:31 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [982 kB]
+Get:32 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [182 kB]
+Get:33 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [8844 B]
+Get:34 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [523 kB]
+Get:35 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [75.0 kB]
+Get:36 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [528 B]
+Get:37 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [650 kB]
+Get:38 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [106 kB]
+Get:39 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [12.8 kB]
+Get:40 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.9 kB]
+Get:41 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [4948 B]
+Get:42 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+Fetched 20.6 MB in 3s (6938 kB/s)
+Reading package lists...
++ sudo apt -y install python3-pip
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-9
+  dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+  libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-9-dev libgomp1 libisl22 libitm1 liblsan0 libmpc3 libpython3-dev
+  libpython3.8-dev libquadmath0 libstdc++-9-dev libtsan0 libubsan1
+  linux-libc-dev manpages-dev python-pip-whl python3-dev python3-wheel
+  python3.8-dev zlib1g-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-9-locales debian-keyring g++-multilib
+  g++-9-multilib gcc-9-doc gcc-multilib autoconf automake libtool flex bison
+  gdb gcc-doc gcc-9-multilib glibc-doc bzr libstdc++-9-doc
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-9
+  dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+  libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-9-dev libgomp1 libisl22 libitm1 liblsan0 libmpc3 libpython3-dev
+  libpython3.8-dev libquadmath0 libstdc++-9-dev libtsan0 libubsan1
+  linux-libc-dev manpages-dev python-pip-whl python3-dev python3-pip
+  python3-wheel python3.8-dev zlib1g-dev
+0 upgraded, 49 newly installed, 0 to remove and 18 not upgraded.
+Need to get 49.6 MB of archives.
+After this operation, 214 MB of additional disk space will be used.
+Get:1 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-common amd64 2.34-6ubuntu1.3 [207 kB]
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libbinutils amd64 2.34-6ubuntu1.3 [474 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf-nobfd0 amd64 2.34-6ubuntu1.3 [47.4 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf0 amd64 2.34-6ubuntu1.3 [46.6 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.34-6ubuntu1.3 [1613 kB]
+Get:6 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils amd64 2.34-6ubuntu1.3 [3380 B]
+Get:7 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libc-dev-bin amd64 2.31-0ubuntu9.2 [71.8 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-libc-dev amd64 5.4.0-90.101 [1123 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libcrypt-dev amd64 1:4.4.10-10ubuntu4 [104 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libc6-dev amd64 2.31-0ubuntu9.2 [2520 kB]
+Get:11 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9-base amd64 9.3.0-17ubuntu1~20.04 [19.1 kB]
+Get:12 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libisl22 amd64 0.22.1-1 [592 kB]
+Get:13 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 cpp-9 amd64 9.3.0-17ubuntu1~20.04 [7494 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 cpp amd64 4:9.3.0-1ubuntu2 [27.6 kB]
+Get:16 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libcc1-0 amd64 10.3.0-1ubuntu1~20.04 [48.8 kB]
+Get:17 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgomp1 amd64 10.3.0-1ubuntu1~20.04 [102 kB]
+Get:18 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libitm1 amd64 10.3.0-1ubuntu1~20.04 [26.2 kB]
+Get:19 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libatomic1 amd64 10.3.0-1ubuntu1~20.04 [9284 B]
+Get:20 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libasan5 amd64 9.3.0-17ubuntu1~20.04 [394 kB]
+Get:21 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 liblsan0 amd64 10.3.0-1ubuntu1~20.04 [835 kB]
+Get:22 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libtsan0 amd64 10.3.0-1ubuntu1~20.04 [2009 kB]
+Get:23 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libubsan1 amd64 10.3.0-1ubuntu1~20.04 [784 kB]
+Get:24 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libquadmath0 amd64 10.3.0-1ubuntu1~20.04 [146 kB]
+Get:25 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgcc-9-dev amd64 9.3.0-17ubuntu1~20.04 [2360 kB]
+Get:26 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9 amd64 9.3.0-17ubuntu1~20.04 [8241 kB]
+Get:27 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 gcc amd64 4:9.3.0-1ubuntu2 [5208 B]
+Get:28 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libstdc++-9-dev amd64 9.3.0-17ubuntu1~20.04 [1714 kB]
+Get:29 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 g++-9 amd64 9.3.0-17ubuntu1~20.04 [8405 kB]
+Get:30 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 g++ amd64 4:9.3.0-1ubuntu2 [1604 B]
+Get:31 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libdpkg-perl all 1.19.7ubuntu3 [230 kB]
+Get:32 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 dpkg-dev all 1.19.7ubuntu3 [679 kB]
+Get:33 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 build-essential amd64 12.8ubuntu1.1 [4664 B]
+Get:34 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libfakeroot amd64 1.24-1 [25.7 kB]
+Get:35 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 fakeroot amd64 1.24-1 [62.6 kB]
+Get:36 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-perl all 1.19.03-2 [46.6 kB]
+Get:37 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-xs-perl amd64 0.04-6 [11.3 kB]
+Get:38 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+Get:39 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libexpat1-dev amd64 2.2.9-1build1 [116 kB]
+Get:40 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libfile-fcntllock-perl amd64 0.22-3build4 [33.1 kB]
+Get:41 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-dev amd64 3.8.10-0ubuntu1~20.04.1 [3948 kB]
+Get:42 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libpython3-dev amd64 3.8.2-0ubuntu2 [7236 B]
+Get:43 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 manpages-dev all 5.05-1 [2266 kB]
+Get:44 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-pip-whl all 20.0.2-5ubuntu1.6 [1805 kB]
+Get:45 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.2 [155 kB]
+Get:46 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8-dev amd64 3.8.10-0ubuntu1~20.04.1 [510 kB]
+Get:47 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 python3-dev amd64 3.8.2-0ubuntu2 [1212 B]
+Get:48 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 python3-wheel all 0.34.2-1 [23.8 kB]
+Get:49 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3-pip all 20.0.2-5ubuntu1.6 [231 kB]
+Fetched 49.6 MB in 0s (99.5 MB/s)
+Selecting previously unselected package binutils-common:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59723 files and directories currently installed.)
+Preparing to unpack .../00-binutils-common_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking binutils-common:amd64 (2.34-6ubuntu1.3) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../01-libbinutils_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking libbinutils:amd64 (2.34-6ubuntu1.3) ...
+Selecting previously unselected package libctf-nobfd0:amd64.
+Preparing to unpack .../02-libctf-nobfd0_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.34-6ubuntu1.3) ...
+Selecting previously unselected package libctf0:amd64.
+Preparing to unpack .../03-libctf0_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking libctf0:amd64 (2.34-6ubuntu1.3) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../04-binutils-x86-64-linux-gnu_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.34-6ubuntu1.3) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../05-binutils_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking binutils (2.34-6ubuntu1.3) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../06-libc-dev-bin_2.31-0ubuntu9.2_amd64.deb ...
+Unpacking libc-dev-bin (2.31-0ubuntu9.2) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../07-linux-libc-dev_5.4.0-90.101_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (5.4.0-90.101) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../08-libcrypt-dev_1%3a4.4.10-10ubuntu4_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.10-10ubuntu4) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../09-libc6-dev_2.31-0ubuntu9.2_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.31-0ubuntu9.2) ...
+Selecting previously unselected package gcc-9-base:amd64.
+Preparing to unpack .../10-gcc-9-base_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking gcc-9-base:amd64 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package libisl22:amd64.
+Preparing to unpack .../11-libisl22_0.22.1-1_amd64.deb ...
+Unpacking libisl22:amd64 (0.22.1-1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../12-libmpc3_1.1.0-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.1.0-1) ...
+Selecting previously unselected package cpp-9.
+Preparing to unpack .../13-cpp-9_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking cpp-9 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../14-cpp_4%3a9.3.0-1ubuntu2_amd64.deb ...
+Unpacking cpp (4:9.3.0-1ubuntu2) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../15-libcc1-0_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../16-libgomp1_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libgomp1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../17-libitm1_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libitm1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../18-libatomic1_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libatomic1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libasan5:amd64.
+Preparing to unpack .../19-libasan5_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking libasan5:amd64 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../20-liblsan0_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking liblsan0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../21-libtsan0_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libtsan0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../22-libubsan1_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libubsan1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../23-libquadmath0_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libgcc-9-dev:amd64.
+Preparing to unpack .../24-libgcc-9-dev_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking libgcc-9-dev:amd64 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package gcc-9.
+Preparing to unpack .../25-gcc-9_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking gcc-9 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../26-gcc_4%3a9.3.0-1ubuntu2_amd64.deb ...
+Unpacking gcc (4:9.3.0-1ubuntu2) ...
+Selecting previously unselected package libstdc++-9-dev:amd64.
+Preparing to unpack .../27-libstdc++-9-dev_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking libstdc++-9-dev:amd64 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package g++-9.
+Preparing to unpack .../28-g++-9_9.3.0-17ubuntu1~20.04_amd64.deb ...
+Unpacking g++-9 (9.3.0-17ubuntu1~20.04) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../29-g++_4%3a9.3.0-1ubuntu2_amd64.deb ...
+Unpacking g++ (4:9.3.0-1ubuntu2) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../30-libdpkg-perl_1.19.7ubuntu3_all.deb ...
+Unpacking libdpkg-perl (1.19.7ubuntu3) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../31-dpkg-dev_1.19.7ubuntu3_all.deb ...
+Unpacking dpkg-dev (1.19.7ubuntu3) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../32-build-essential_12.8ubuntu1.1_amd64.deb ...
+Unpacking build-essential (12.8ubuntu1.1) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../33-libfakeroot_1.24-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.24-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../34-fakeroot_1.24-1_amd64.deb ...
+Unpacking fakeroot (1.24-1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../35-libalgorithm-diff-perl_1.19.03-2_all.deb ...
+Unpacking libalgorithm-diff-perl (1.19.03-2) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../36-libalgorithm-diff-xs-perl_0.04-6_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-6) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../37-libalgorithm-merge-perl_0.08-3_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-3) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../38-libexpat1-dev_2.2.9-1build1_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.2.9-1build1) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../39-libfile-fcntllock-perl_0.22-3build4_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-3build4) ...
+Selecting previously unselected package libpython3.8-dev:amd64.
+Preparing to unpack .../40-libpython3.8-dev_3.8.10-0ubuntu1~20.04.1_amd64.deb ...
+Unpacking libpython3.8-dev:amd64 (3.8.10-0ubuntu1~20.04.1) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../41-libpython3-dev_3.8.2-0ubuntu2_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.8.2-0ubuntu2) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../42-manpages-dev_5.05-1_all.deb ...
+Unpacking manpages-dev (5.05-1) ...
+Selecting previously unselected package python-pip-whl.
+Preparing to unpack .../43-python-pip-whl_20.0.2-5ubuntu1.6_all.deb ...
+Unpacking python-pip-whl (20.0.2-5ubuntu1.6) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../44-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.2_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.2) ...
+Selecting previously unselected package python3.8-dev.
+Preparing to unpack .../45-python3.8-dev_3.8.10-0ubuntu1~20.04.1_amd64.deb ...
+Unpacking python3.8-dev (3.8.10-0ubuntu1~20.04.1) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../46-python3-dev_3.8.2-0ubuntu2_amd64.deb ...
+Unpacking python3-dev (3.8.2-0ubuntu2) ...
+Selecting previously unselected package python3-wheel.
+Preparing to unpack .../47-python3-wheel_0.34.2-1_all.deb ...
+Unpacking python3-wheel (0.34.2-1) ...
+Selecting previously unselected package python3-pip.
+Preparing to unpack .../48-python3-pip_20.0.2-5ubuntu1.6_all.deb ...
+Unpacking python3-pip (20.0.2-5ubuntu1.6) ...
+Setting up manpages-dev (5.05-1) ...
+Setting up libfile-fcntllock-perl (0.22-3build4) ...
+Setting up libalgorithm-diff-perl (1.19.03-2) ...
+Setting up binutils-common:amd64 (2.34-6ubuntu1.3) ...
+Setting up linux-libc-dev:amd64 (5.4.0-90.101) ...
+Setting up libctf-nobfd0:amd64 (2.34-6ubuntu1.3) ...
+Setting up libgomp1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up python3-wheel (0.34.2-1) ...
+Setting up libfakeroot:amd64 (1.24-1) ...
+Setting up fakeroot (1.24-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up libquadmath0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libmpc3:amd64 (1.1.0-1) ...
+Setting up libatomic1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libdpkg-perl (1.19.7ubuntu3) ...
+Setting up libubsan1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libcrypt-dev:amd64 (1:4.4.10-10ubuntu4) ...
+Setting up libisl22:amd64 (0.22.1-1) ...
+Setting up python-pip-whl (20.0.2-5ubuntu1.6) ...
+Setting up libbinutils:amd64 (2.34-6ubuntu1.3) ...
+Setting up libc-dev-bin (2.31-0ubuntu9.2) ...
+Setting up libalgorithm-diff-xs-perl (0.04-6) ...
+Setting up libcc1-0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up liblsan0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libitm1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up gcc-9-base:amd64 (9.3.0-17ubuntu1~20.04) ...
+Setting up libalgorithm-merge-perl (0.08-3) ...
+Setting up libtsan0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libctf0:amd64 (2.34-6ubuntu1.3) ...
+Setting up libasan5:amd64 (9.3.0-17ubuntu1~20.04) ...
+Setting up python3-pip (20.0.2-5ubuntu1.6) ...
+Setting up cpp-9 (9.3.0-17ubuntu1~20.04) ...
+Setting up libc6-dev:amd64 (2.31-0ubuntu9.2) ...
+Setting up binutils-x86-64-linux-gnu (2.34-6ubuntu1.3) ...
+Setting up binutils (2.34-6ubuntu1.3) ...
+Setting up dpkg-dev (1.19.7ubuntu3) ...
+Setting up libgcc-9-dev:amd64 (9.3.0-17ubuntu1~20.04) ...
+Setting up libexpat1-dev:amd64 (2.2.9-1build1) ...
+Setting up libpython3.8-dev:amd64 (3.8.10-0ubuntu1~20.04.1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.2) ...
+Setting up cpp (4:9.3.0-1ubuntu2) ...
+Setting up gcc-9 (9.3.0-17ubuntu1~20.04) ...
+Setting up libpython3-dev:amd64 (3.8.2-0ubuntu2) ...
+Setting up libstdc++-9-dev:amd64 (9.3.0-17ubuntu1~20.04) ...
+Setting up gcc (4:9.3.0-1ubuntu2) ...
+Setting up g++-9 (9.3.0-17ubuntu1~20.04) ...
+Setting up python3.8-dev (3.8.10-0ubuntu1~20.04.1) ...
+Setting up g++ (4:9.3.0-1ubuntu2) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.8ubuntu1.1) ...
+Setting up python3-dev (3.8.2-0ubuntu2) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
++ [[ ubuntu20 == \u\b\u\n\t\u\1\8 ]]
++ [[ ubuntu20 == \u\b\u\n\t\u\2\0 ]]
++ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
+update-alternatives: using /usr/bin/python3.8 to provide /usr/bin/python (python) in auto mode
++ sudo pip3 install ansible==4.8.0
+Collecting ansible==4.8.0
+  Downloading ansible-4.8.0.tar.gz (36.1 MB)
+Collecting ansible-core<2.12,>=2.11.6
+  Downloading ansible-core-2.11.6.tar.gz (7.0 MB)
+Requirement already satisfied: PyYAML in /usr/lib/python3/dist-packages (from ansible-core<2.12,>=2.11.6->ansible==4.8.0) (5.3.1)
+Requirement already satisfied: cryptography in /usr/lib/python3/dist-packages (from ansible-core<2.12,>=2.11.6->ansible==4.8.0) (2.8)
+Requirement already satisfied: jinja2 in /usr/lib/python3/dist-packages (from ansible-core<2.12,>=2.11.6->ansible==4.8.0) (2.10.1)
+Collecting packaging
+  Downloading packaging-21.2-py3-none-any.whl (40 kB)
+Collecting resolvelib<0.6.0,>=0.5.3
+  Downloading resolvelib-0.5.4-py2.py3-none-any.whl (12 kB)
+Collecting pyparsing<3,>=2.0.2
+  Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Building wheels for collected packages: ansible, ansible-core
+  Building wheel for ansible (setup.py): started
+  Building wheel for ansible (setup.py): finished with status 'done'
+  Created wheel for ansible: filename=ansible-4.8.0-py3-none-any.whl size=59454442 sha256=56be044479d6ae2f94e0d87059b276792b49c362b7aad0f37cdab01f51811f04
+  Stored in directory: /root/.cache/pip/wheels/3d/db/ed/6c8b0ffe3008371db04f2098374dfa21b22823bd7bf30fe5b1
+  Building wheel for ansible-core (setup.py): started
+  Building wheel for ansible-core (setup.py): finished with status 'done'
+  Created wheel for ansible-core: filename=ansible_core-2.11.6-py3-none-any.whl size=1959295 sha256=5cf662a9f3287f90bb77487f2100dc5a82f489c8662c0d19d4edeb59d3fd6de3
+  Stored in directory: /root/.cache/pip/wheels/11/e3/41/39946a5f418fe614f955a9ba4de0edee55a209f46a53089846
+Successfully built ansible ansible-core
+Installing collected packages: pyparsing, packaging, resolvelib, ansible-core, ansible
+Successfully installed ansible-4.8.0 ansible-core-2.11.6 packaging-21.2 pyparsing-2.4.7 resolvelib-0.5.4
++ source lib/network.sh
+++ export CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ export POD_CIDR=192.168.0.0/18
+++ POD_CIDR=192.168.0.0/18
+++ PROVISIONING_IPV6=false
+++ IPV6_ADDR_PREFIX=fd2e:6f44:5dd8:b856
+++ [[ false == \t\r\u\e ]]
+++ export BOOT_MODE=legacy
+++ BOOT_MODE=legacy
+++ export PROVISIONING_NETWORK=172.22.0.0/24
+++ PROVISIONING_NETWORK=172.22.0.0/24
+++ [[ legacy == \l\e\g\a\c\y ]]
+++ export LIBVIRT_FIRMWARE=bios
+++ LIBVIRT_FIRMWARE=bios
+++ export LIBVIRT_SECURE_BOOT=false
+++ LIBVIRT_SECURE_BOOT=false
+++ prefixlen PROVISIONING_CIDR 172.22.0.0/24
+++ resultvar=PROVISIONING_CIDR
+++ network=172.22.0.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").prefixlen)'
+++ result=24
+++ eval PROVISIONING_CIDR=24
++++ PROVISIONING_CIDR=24
+++ export PROVISIONING_CIDR
+++ export PROVISIONING_CIDR
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").netmask)'
+++ export PROVISIONING_NETMASK=255.255.255.0
+++ PROVISIONING_NETMASK=255.255.255.0
+++ network_address PROVISIONING_IP 172.22.0.0/24 1
+++ resultvar=PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 1 - 1, None)))'
+++ result=172.22.0.1
+++ eval PROVISIONING_IP=172.22.0.1
++++ PROVISIONING_IP=172.22.0.1
+++ export PROVISIONING_IP
+++ network_address CLUSTER_PROVISIONING_IP 172.22.0.0/24 2
+++ resultvar=CLUSTER_PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=2
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 2 - 1, None)))'
+++ result=172.22.0.2
+++ eval CLUSTER_PROVISIONING_IP=172.22.0.2
++++ CLUSTER_PROVISIONING_IP=172.22.0.2
+++ export CLUSTER_PROVISIONING_IP
+++ export PROVISIONING_IP
+++ export CLUSTER_PROVISIONING_IP
+++ [[ 172.22.0.1 == *\:* ]]
+++ export PROVISIONING_URL_HOST=172.22.0.1
+++ PROVISIONING_URL_HOST=172.22.0.1
+++ export CLUSTER_URL_HOST=172.22.0.2
+++ CLUSTER_URL_HOST=172.22.0.2
+++ [[ 192.168.111.249 == *\:* ]]
+++ export CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ export CLUSTER_APIENDPOINT_PORT=6443
+++ CLUSTER_APIENDPOINT_PORT=6443
+++ network_address dhcp_range_start 172.22.0.0/24 10
+++ resultvar=dhcp_range_start
+++ network=172.22.0.0/24
+++ record=10
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 10 - 1, None)))'
+++ result=172.22.0.10
+++ eval dhcp_range_start=172.22.0.10
++++ dhcp_range_start=172.22.0.10
+++ export dhcp_range_start
+++ network_address dhcp_range_end 172.22.0.0/24 100
+++ resultvar=dhcp_range_end
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval dhcp_range_end=172.22.0.100
++++ dhcp_range_end=172.22.0.100
+++ export dhcp_range_end
+++ network_address PROVISIONING_POOL_RANGE_START 172.22.0.0/24 100
+++ resultvar=PROVISIONING_POOL_RANGE_START
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval PROVISIONING_POOL_RANGE_START=172.22.0.100
++++ PROVISIONING_POOL_RANGE_START=172.22.0.100
+++ export PROVISIONING_POOL_RANGE_START
+++ network_address PROVISIONING_POOL_RANGE_END 172.22.0.0/24 200
+++ resultvar=PROVISIONING_POOL_RANGE_END
+++ network=172.22.0.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 200 - 1, None)))'
+++ result=172.22.0.200
+++ eval PROVISIONING_POOL_RANGE_END=172.22.0.200
++++ PROVISIONING_POOL_RANGE_END=172.22.0.200
+++ export PROVISIONING_POOL_RANGE_END
+++ export PROVISIONING_POOL_RANGE_START
+++ export PROVISIONING_POOL_RANGE_END
+++ export CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ EXTERNAL_SUBNET=
+++ [[ -n '' ]]
+++ export IP_STACK=v4
+++ IP_STACK=v4
+++ [[ v4 == \v\4 ]]
+++ export EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ export EXTERNAL_SUBNET_V6=
+++ EXTERNAL_SUBNET_V6=
+++ [[ kind == \m\i\n\i\k\u\b\e ]]
+++ [[ -n 192.168.111.0/24 ]]
+++ prefixlen EXTERNAL_SUBNET_V4_PREFIX 192.168.111.0/24
+++ resultvar=EXTERNAL_SUBNET_V4_PREFIX
+++ network=192.168.111.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"192.168.111.0/24").prefixlen)'
+++ result=24
+++ eval EXTERNAL_SUBNET_V4_PREFIX=24
++++ EXTERNAL_SUBNET_V4_PREFIX=24
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ [[ -z '' ]]
+++ network_address EXTERNAL_SUBNET_V4_HOST 192.168.111.0/24 1
+++ resultvar=EXTERNAL_SUBNET_V4_HOST
+++ network=192.168.111.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 1 - 1, None)))'
+++ result=192.168.111.1
+++ eval EXTERNAL_SUBNET_V4_HOST=192.168.111.1
++++ EXTERNAL_SUBNET_V4_HOST=192.168.111.1
+++ export EXTERNAL_SUBNET_V4_HOST
+++ network_address VIRSH_DHCP_V4_START 192.168.111.0/24 20
+++ resultvar=VIRSH_DHCP_V4_START
+++ network=192.168.111.0/24
+++ record=20
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 20 - 1, None)))'
+++ result=192.168.111.20
+++ eval VIRSH_DHCP_V4_START=192.168.111.20
++++ VIRSH_DHCP_V4_START=192.168.111.20
+++ export VIRSH_DHCP_V4_START
+++ network_address VIRSH_DHCP_V4_END 192.168.111.0/24 60
+++ resultvar=VIRSH_DHCP_V4_END
+++ network=192.168.111.0/24
+++ record=60
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 60 - 1, None)))'
+++ result=192.168.111.60
+++ eval VIRSH_DHCP_V4_END=192.168.111.60
++++ VIRSH_DHCP_V4_END=192.168.111.60
+++ export VIRSH_DHCP_V4_END
+++ network_address BAREMETALV4_POOL_RANGE_START 192.168.111.0/24 100
+++ resultvar=BAREMETALV4_POOL_RANGE_START
+++ network=192.168.111.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 100 - 1, None)))'
+++ result=192.168.111.100
+++ eval BAREMETALV4_POOL_RANGE_START=192.168.111.100
++++ BAREMETALV4_POOL_RANGE_START=192.168.111.100
+++ export BAREMETALV4_POOL_RANGE_START
+++ network_address BAREMETALV4_POOL_RANGE_END 192.168.111.0/24 200
+++ resultvar=BAREMETALV4_POOL_RANGE_END
+++ network=192.168.111.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 200 - 1, None)))'
+++ result=192.168.111.200
+++ eval BAREMETALV4_POOL_RANGE_END=192.168.111.200
++++ BAREMETALV4_POOL_RANGE_END=192.168.111.200
+++ export BAREMETALV4_POOL_RANGE_END
+++ export VIRSH_DHCP_V4_START
+++ export VIRSH_DHCP_V4_END
+++ export BAREMETALV4_POOL_RANGE_START
+++ export BAREMETALV4_POOL_RANGE_END
+++ [[ -n '' ]]
+++ export EXTERNAL_SUBNET_V6_HOST=
+++ EXTERNAL_SUBNET_V6_HOST=
+++ export EXTERNAL_SUBNET_V6_PREFIX=
+++ EXTERNAL_SUBNET_V6_PREFIX=
+++ export BAREMETALV6_POOL_RANGE_START=
+++ BAREMETALV6_POOL_RANGE_START=
+++ export BAREMETALV6_POOL_RANGE_END=
+++ BAREMETALV6_POOL_RANGE_END=
+++ export REGISTRY_PORT=5000
+++ REGISTRY_PORT=5000
+++ export HTTP_PORT=6180
+++ HTTP_PORT=6180
+++ export IRONIC_INSPECTOR_PORT=5050
+++ IRONIC_INSPECTOR_PORT=5050
+++ export IRONIC_API_PORT=6385
+++ IRONIC_API_PORT=6385
+++ [[ -n 192.168.111.1 ]]
+++ export REGISTRY=192.168.111.1:5000
+++ REGISTRY=192.168.111.1:5000
+++ network_address INITIAL_IRONICBRIDGE_IP 172.22.0.0/24 9
+++ resultvar=INITIAL_IRONICBRIDGE_IP
+++ network=172.22.0.0/24
+++ record=9
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 9 - 1, None)))'
+++ result=172.22.0.9
+++ eval INITIAL_IRONICBRIDGE_IP=172.22.0.9
++++ INITIAL_IRONICBRIDGE_IP=172.22.0.9
+++ export INITIAL_IRONICBRIDGE_IP
+++ export DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ export DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ '[' true == true ']'
+++ export IRONIC_URL=https://172.22.0.2:6385/v1/
+++ IRONIC_URL=https://172.22.0.2:6385/v1/
+++ export IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
+++ IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
++ ansible-galaxy install -r vm-setup/requirements.yml
+[DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+Starting galaxy role install process
+- extracting fubarhouse.golang to /home/capm3/.ansible/roles/fubarhouse.golang
+- fubarhouse.golang (master) was installed successfully
+Starting galaxy collection install process
+Process install dependency map
+Starting collection install process
+Downloading https://galaxy.ansible.com/download/kubernetes-core-2.2.1.tar.gz to /home/capm3/.ansible/tmp/ansible-local-22525zprsmv93/tmp58cbal3s/kubernetes-core-2.2.1-gt73d800
+Installing 'kubernetes.core:2.2.1' to '/home/capm3/.ansible/collections/ansible_collections/kubernetes/core'
+kubernetes.core:2.2.1 was installed successfully
++ ANSIBLE_FORCE_COLOR=true
++ ansible-playbook -e working_dir=/opt/metal3-dev-env -e metal3_dir=/home/capm3/projects/metal3-dev-env -e virthost=capm3 -i vm-setup/inventory.ini -b vm-setup/install-package-playbook.yml
+[0;35m[DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names [0m
+[0;35mto new standard, use callbacks_enabled instead. This feature will be removed [0m
+[0;35mfrom ansible-core in version 2.15. Deprecation warnings can be disabled by [0m
+[0;35msetting deprecation_warnings=False in ansible.cfg.[0m
+
+PLAY [Install packages needed for the Dev-env] *********************************
+Tuesday 09 November 2021  16:03:56 +0000 (0:00:00.011)       0:00:00.011 ****** 
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [localhost][0m
+Tuesday 09 November 2021  16:03:57 +0000 (0:00:01.390)       0:00:01.402 ****** 
+
+TASK [packages_installation : Install required packages for Ubuntu] ************
+[0;36mincluded: /home/capm3/projects/metal3-dev-env/vm-setup/roles/packages_installation/tasks/ubuntu_required_packages.yml for localhost[0m
+Tuesday 09 November 2021  16:03:57 +0000 (0:00:00.049)       0:00:01.452 ****** 
+
+TASK [packages_installation : Update all packages to their latest version] *****
+[1;30mtask path: /home/capm3/projects/metal3-dev-env/vm-setup/roles/packages_installation/tasks/ubuntu_required_packages.yml:4[0m
+[0;31mfatal: [localhost]: FAILED! => {"changed": false, "msg": "'/usr/bin/apt-get upgrade --with-new-pkgs ' failed: E: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 22455 (apt)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?\n", "rc": 100, "stdout": "", "stdout_lines": []}[0m
+
+PLAY RECAP *********************************************************************
+[0;31mlocalhost[0m                  : [0;32mok=2   [0m changed=0    unreachable=0    [0;31mfailed=1   [0m skipped=0    rescued=0    ignored=0   
+
+Tuesday 09 November 2021  16:03:58 +0000 (0:00:00.783)       0:00:02.236 ****** 
+=============================================================================== 
+Gathering Facts --------------------------------------------------------- 1.39s
+packages_installation : Update all packages to their latest version ----- 0.78s
+packages_installation : Install required packages for Ubuntu ------------ 0.05s

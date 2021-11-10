@@ -1,0 +1,202 @@
+apiVersion: controlplane.cluster.x-k8s.io/v1beta1
+kind: KubeadmControlPlane
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"controlplane.cluster.x-k8s.io/v1beta1","kind":"KubeadmControlPlane","metadata":{"annotations":{},"name":"test1","namespace":"metal3"},"spec":{"kubeadmConfigSpec":{"clusterConfiguration":{},"files":[{"content":"#!/bin/bash\nwhile :; do\n  curl -sk https://127.0.0.1:6443/healthz 1\u003e\u00262 \u003e /dev/null\n  isOk=$?\n  isActive=$(systemctl show -p ActiveState keepalived.service | cut -d'=' -f2)\n  if [ $isOk == \"0\" ] \u0026\u0026  [ $isActive != \"active\" ]; then\n    logger 'API server is healthy, however keepalived is not running, starting keepalived'\n    echo 'API server is healthy, however keepalived is not running, starting keepalived'\n    sudo systemctl start keepalived.service\n  elif [ $isOk != \"0\" ] \u0026\u0026  [ $isActive == \"active\" ]; then\n    logger 'API server is not healthy, however keepalived running, stopping keepalived'\n    echo 'API server is not healthy, however keepalived running, stopping keepalived'\n    sudo systemctl stop keepalived.service\n  fi\n  sleep 5\ndone\n","owner":"root:root","path":"/usr/local/bin/monitor.keepalived.sh","permissions":"0755"},{"content":"[Unit]\nDescription=Monitors keepalived adjusts status with that of API server\nAfter=syslog.target network-online.target\n\n[Service]\nType=simple\nRestart=always\nExecStart=/usr/local/bin/monitor.keepalived.sh\n\n[Install]\nWantedBy=multi-user.target\n","owner":"root:root","path":"/lib/systemd/system/monitor.keepalived.service"},{"content":"! Configuration File for keepalived\nglobal_defs {\n    notification_email {\n    sysadmin@example.com\n    support@example.com\n    }\n    notification_email_from lb@example.com\n    smtp_server localhost\n    smtp_connect_timeout 30\n}\nvrrp_instance VI_2 {\n    state MASTER\n    interface enp2s0\n    virtual_router_id 2\n    priority 101\n    advert_int 1\n    virtual_ipaddress {\n        192.168.111.249\n    }\n}\n","path":"/etc/keepalived/keepalived.conf"},{"content":"network:\n  version: 2\n  renderer: networkd\n  bridges:\n    ironicendpoint:\n      interfaces: [enp1s0]\n      addresses:\n      - {{ ds.meta_data.provisioningIP }}/{{ ds.meta_data.provisioningCIDR }}\n","owner":"root:root","path":"/etc/netplan/52-ironicendpoint.yaml","permissions":"0644"},{"content":"[registries.search]\nregistries = ['docker.io']\n\n[registries.insecure]\nregistries = ['192.168.111.1:5000']\n","path":"/etc/containers/registries.conf"}],"initConfiguration":{"nodeRegistration":{"kubeletExtraArgs":{"cgroup-driver":"systemd","container-runtime":"remote","container-runtime-endpoint":"unix:///var/run/crio/crio.sock","feature-gates":"AllAlpha=false","node-labels":"metal3.io/uuid={{ ds.meta_data.uuid }}","provider-id":"metal3://{{ ds.meta_data.uuid }}","runtime-request-timeout":"5m"},"name":"{{ ds.meta_data.name }}"}},"joinConfiguration":{"controlPlane":{},"nodeRegistration":{"kubeletExtraArgs":{"cgroup-driver":"systemd","container-runtime":"remote","container-runtime-endpoint":"unix:///var/run/crio/crio.sock","feature-gates":"AllAlpha=false","node-labels":"metal3.io/uuid={{ ds.meta_data.uuid }}","provider-id":"metal3://{{ ds.meta_data.uuid }}","runtime-request-timeout":"5m"},"name":"{{ ds.meta_data.name }}"}},"postKubeadmCommands":["mkdir -p /home/metal3/.kube","cp /etc/kubernetes/admin.conf /home/metal3/.kube/config","systemctl enable --now keepalived","chown metal3:metal3 /home/metal3/.kube/config"],"preKubeadmCommands":["netplan apply","systemctl enable --now crio kubelet","if (curl -sk --max-time 10 https://192.168.111.249:6443/healthz); then echo \"keepalived already running\";else systemctl start keepalived; fi","systemctl link /lib/systemd/system/monitor.keepalived.service","systemctl enable monitor.keepalived.service","systemctl start monitor.keepalived.service"],"users":[{"name":"metal3","sshAuthorizedKeys":["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC0aKU/BbVr0FwTPKXFry6KAQ84SoE9MKSHfmbivmo1ZGPzRH7V28X6nbFq9o25xp0h9YfOH7piu2QjPezC3m/LoozAIWJslNqInyZ8n3AO9zftd5TXwZ0U9jAUaDruDy9XgZJlpvF3JV5ksCeg3MdGNk9xUYu6V1Bbx/ESeKejgxrDdvzY7huRK3T9zwq9p2Mvt5K3QlwEWNjTdK3h0xH8V3ua8zK71Sj1X7RByspmxAeCkY9YiVXaQI5gWGPBP2WXYg0VjuKDhDeHFVpkuII1QiC/5iJtfLwWb9SSSJZIU48P2KE+LO16oEziLvMi/CNVA9+639nN55+TUlnGQGy6J9uO6CdvJYsnuvRM/uGpGcyU8xQsWy+9dlUdkYIlMTOTGjCG6jCHFTxaOS60CtsDQAMkq4pjt6bMXTF8zCODAoWPtCRW5WwRy3O0H62DJZkf2bV6BoPyp+C3NjM9C6RdzmY1ROloQfvJN0pl7DdL9tXDogSdTWK90Yefh1jTMi0= capm3@capm3"],"sudo":"ALL=(ALL) NOPASSWD:ALL"}]},"machineTemplate":{"infrastructureRef":{"apiVersion":"infrastructure.cluster.x-k8s.io/v1beta1","kind":"Metal3MachineTemplate","name":"test1-controlplane"},"nodeDrainTimeout":"0s"},"replicas":1,"rolloutStrategy":{"rollingUpdate":{"maxSurge":1}},"version":"v1.21.0"}}
+  creationTimestamp: "2021-11-09T17:53:14Z"
+  finalizers:
+  - kubeadm.controlplane.cluster.x-k8s.io
+  generation: 1
+  labels:
+    cluster.x-k8s.io/cluster-name: test1
+  name: test1
+  namespace: metal3
+  ownerReferences:
+  - apiVersion: cluster.x-k8s.io/v1beta1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Cluster
+    name: test1
+    uid: 2fee2a62-c52a-43b6-839f-489bfbe925fb
+  resourceVersion: "11750"
+  uid: 1b0c630b-c36e-4918-84b2-f479c13be37b
+spec:
+  kubeadmConfigSpec:
+    clusterConfiguration:
+      apiServer: {}
+      controllerManager: {}
+      dns: {}
+      etcd: {}
+      networking: {}
+      scheduler: {}
+    files:
+    - content: |
+        #!/bin/bash
+        while :; do
+          curl -sk https://127.0.0.1:6443/healthz 1>&2 > /dev/null
+          isOk=$?
+          isActive=$(systemctl show -p ActiveState keepalived.service | cut -d'=' -f2)
+          if [ $isOk == "0" ] &&  [ $isActive != "active" ]; then
+            logger 'API server is healthy, however keepalived is not running, starting keepalived'
+            echo 'API server is healthy, however keepalived is not running, starting keepalived'
+            sudo systemctl start keepalived.service
+          elif [ $isOk != "0" ] &&  [ $isActive == "active" ]; then
+            logger 'API server is not healthy, however keepalived running, stopping keepalived'
+            echo 'API server is not healthy, however keepalived running, stopping keepalived'
+            sudo systemctl stop keepalived.service
+          fi
+          sleep 5
+        done
+      owner: root:root
+      path: /usr/local/bin/monitor.keepalived.sh
+      permissions: "0755"
+    - content: |
+        [Unit]
+        Description=Monitors keepalived adjusts status with that of API server
+        After=syslog.target network-online.target
+
+        [Service]
+        Type=simple
+        Restart=always
+        ExecStart=/usr/local/bin/monitor.keepalived.sh
+
+        [Install]
+        WantedBy=multi-user.target
+      owner: root:root
+      path: /lib/systemd/system/monitor.keepalived.service
+    - content: |
+        ! Configuration File for keepalived
+        global_defs {
+            notification_email {
+            sysadmin@example.com
+            support@example.com
+            }
+            notification_email_from lb@example.com
+            smtp_server localhost
+            smtp_connect_timeout 30
+        }
+        vrrp_instance VI_2 {
+            state MASTER
+            interface enp2s0
+            virtual_router_id 2
+            priority 101
+            advert_int 1
+            virtual_ipaddress {
+                192.168.111.249
+            }
+        }
+      path: /etc/keepalived/keepalived.conf
+    - content: |
+        network:
+          version: 2
+          renderer: networkd
+          bridges:
+            ironicendpoint:
+              interfaces: [enp1s0]
+              addresses:
+              - {{ ds.meta_data.provisioningIP }}/{{ ds.meta_data.provisioningCIDR }}
+      owner: root:root
+      path: /etc/netplan/52-ironicendpoint.yaml
+      permissions: "0644"
+    - content: |
+        [registries.search]
+        registries = ['docker.io']
+
+        [registries.insecure]
+        registries = ['192.168.111.1:5000']
+      path: /etc/containers/registries.conf
+    initConfiguration:
+      localAPIEndpoint: {}
+      nodeRegistration:
+        kubeletExtraArgs:
+          cgroup-driver: systemd
+          container-runtime: remote
+          container-runtime-endpoint: unix:///var/run/crio/crio.sock
+          feature-gates: AllAlpha=false
+          node-labels: metal3.io/uuid={{ ds.meta_data.uuid }}
+          provider-id: metal3://{{ ds.meta_data.uuid }}
+          runtime-request-timeout: 5m
+        name: '{{ ds.meta_data.name }}'
+    joinConfiguration:
+      controlPlane:
+        localAPIEndpoint: {}
+      discovery: {}
+      nodeRegistration:
+        kubeletExtraArgs:
+          cgroup-driver: systemd
+          container-runtime: remote
+          container-runtime-endpoint: unix:///var/run/crio/crio.sock
+          feature-gates: AllAlpha=false
+          node-labels: metal3.io/uuid={{ ds.meta_data.uuid }}
+          provider-id: metal3://{{ ds.meta_data.uuid }}
+          runtime-request-timeout: 5m
+        name: '{{ ds.meta_data.name }}'
+    postKubeadmCommands:
+    - mkdir -p /home/metal3/.kube
+    - cp /etc/kubernetes/admin.conf /home/metal3/.kube/config
+    - systemctl enable --now keepalived
+    - chown metal3:metal3 /home/metal3/.kube/config
+    preKubeadmCommands:
+    - netplan apply
+    - systemctl enable --now crio kubelet
+    - if (curl -sk --max-time 10 https://192.168.111.249:6443/healthz); then echo
+      "keepalived already running";else systemctl start keepalived; fi
+    - systemctl link /lib/systemd/system/monitor.keepalived.service
+    - systemctl enable monitor.keepalived.service
+    - systemctl start monitor.keepalived.service
+    users:
+    - name: metal3
+      sshAuthorizedKeys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC0aKU/BbVr0FwTPKXFry6KAQ84SoE9MKSHfmbivmo1ZGPzRH7V28X6nbFq9o25xp0h9YfOH7piu2QjPezC3m/LoozAIWJslNqInyZ8n3AO9zftd5TXwZ0U9jAUaDruDy9XgZJlpvF3JV5ksCeg3MdGNk9xUYu6V1Bbx/ESeKejgxrDdvzY7huRK3T9zwq9p2Mvt5K3QlwEWNjTdK3h0xH8V3ua8zK71Sj1X7RByspmxAeCkY9YiVXaQI5gWGPBP2WXYg0VjuKDhDeHFVpkuII1QiC/5iJtfLwWb9SSSJZIU48P2KE+LO16oEziLvMi/CNVA9+639nN55+TUlnGQGy6J9uO6CdvJYsnuvRM/uGpGcyU8xQsWy+9dlUdkYIlMTOTGjCG6jCHFTxaOS60CtsDQAMkq4pjt6bMXTF8zCODAoWPtCRW5WwRy3O0H62DJZkf2bV6BoPyp+C3NjM9C6RdzmY1ROloQfvJN0pl7DdL9tXDogSdTWK90Yefh1jTMi0=
+        capm3@capm3
+      sudo: ALL=(ALL) NOPASSWD:ALL
+  machineTemplate:
+    infrastructureRef:
+      apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+      kind: Metal3MachineTemplate
+      name: test1-controlplane
+      namespace: metal3
+    metadata: {}
+    nodeDrainTimeout: 0s
+  replicas: 1
+  rolloutStrategy:
+    rollingUpdate:
+      maxSurge: 1
+    type: RollingUpdate
+  version: v1.21.0
+status:
+  conditions:
+  - lastTransitionTime: "2021-11-09T17:59:14Z"
+    status: "True"
+    type: Ready
+  - lastTransitionTime: "2021-11-09T17:59:14Z"
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2021-11-09T17:58:14Z"
+    status: "True"
+    type: CertificatesAvailable
+  - lastTransitionTime: "2021-11-09T17:59:17Z"
+    status: "True"
+    type: ControlPlaneComponentsHealthy
+  - lastTransitionTime: "2021-11-09T17:59:16Z"
+    status: "True"
+    type: EtcdClusterHealthy
+  - lastTransitionTime: "2021-11-09T17:53:52Z"
+    status: "True"
+    type: MachinesCreated
+  - lastTransitionTime: "2021-11-09T17:59:14Z"
+    status: "True"
+    type: MachinesReady
+  - lastTransitionTime: "2021-11-09T17:59:14Z"
+    status: "True"
+    type: Resized
+  initialized: true
+  observedGeneration: 1
+  ready: true
+  readyReplicas: 1
+  replicas: 1
+  selector: cluster.x-k8s.io/cluster-name=test1,cluster.x-k8s.io/control-plane
+  unavailableReplicas: 0
+  updatedReplicas: 1
+  version: v1.21.0

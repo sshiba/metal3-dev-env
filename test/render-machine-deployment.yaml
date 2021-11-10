@@ -1,0 +1,70 @@
+apiVersion: cluster.x-k8s.io/v1beta1
+kind: MachineDeployment
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"cluster.x-k8s.io/v1beta1","kind":"MachineDeployment","metadata":{"annotations":{},"labels":{"cluster.x-k8s.io/cluster-name":"test1","nodepool":"nodepool-0"},"name":"test1","namespace":"metal3"},"spec":{"clusterName":"test1","replicas":1,"selector":{"matchLabels":{"cluster.x-k8s.io/cluster-name":"test1","nodepool":"nodepool-0"}},"template":{"metadata":{"labels":{"cluster.x-k8s.io/cluster-name":"test1","nodepool":"nodepool-0"}},"spec":{"bootstrap":{"configRef":{"apiVersion":"bootstrap.cluster.x-k8s.io/v1beta1","kind":"KubeadmConfigTemplate","name":"test1-workers"}},"clusterName":"test1","infrastructureRef":{"apiVersion":"infrastructure.cluster.x-k8s.io/v1beta1","kind":"Metal3MachineTemplate","name":"test1-workers"},"nodeDrainTimeout":"0s","version":"v1.21.0"}}}}
+    machinedeployment.clusters.x-k8s.io/revision: "1"
+  creationTimestamp: "2021-11-09T17:59:01Z"
+  generation: 1
+  labels:
+    cluster.x-k8s.io/cluster-name: test1
+    nodepool: nodepool-0
+  name: test1
+  namespace: metal3
+  ownerReferences:
+  - apiVersion: cluster.x-k8s.io/v1beta1
+    kind: Cluster
+    name: test1
+    uid: 2fee2a62-c52a-43b6-839f-489bfbe925fb
+  resourceVersion: "11749"
+  uid: 17dc49ab-ea3f-4229-945b-d07e7a915bf7
+spec:
+  clusterName: test1
+  minReadySeconds: 0
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 1
+  selector:
+    matchLabels:
+      cluster.x-k8s.io/cluster-name: test1
+      nodepool: nodepool-0
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        cluster.x-k8s.io/cluster-name: test1
+        nodepool: nodepool-0
+    spec:
+      bootstrap:
+        configRef:
+          apiVersion: bootstrap.cluster.x-k8s.io/v1beta1
+          kind: KubeadmConfigTemplate
+          name: test1-workers
+      clusterName: test1
+      infrastructureRef:
+        apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+        kind: Metal3MachineTemplate
+        name: test1-workers
+      nodeDrainTimeout: 0s
+      version: v1.21.0
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2021-11-09T18:27:29Z"
+    status: "True"
+    type: Ready
+  - lastTransitionTime: "2021-11-09T18:27:29Z"
+    status: "True"
+    type: Available
+  observedGeneration: 1
+  phase: Running
+  readyReplicas: 1
+  replicas: 1
+  selector: cluster.x-k8s.io/cluster-name=test1,nodepool=nodepool-0
+  unavailableReplicas: 0
+  updatedReplicas: 1

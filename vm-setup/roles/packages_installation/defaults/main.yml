@@ -1,0 +1,96 @@
+packages:
+  ubuntu:
+    common:
+      packages:
+        - python3-setuptools
+        - zlib1g-dev
+        - openssh-server
+        - wget
+        - curl
+        - dnsmasq
+        - nmap
+        - ovmf
+        - patch
+        - psmisc
+        - libvirt-clients
+        - libvirt-dev
+        - bridge-utils
+        - jq
+        - unzip
+        - yarn
+        - genisoimage
+        - qemu-kvm
+        - libguestfs-tools
+        - gir1.2-polkit-1.0
+        - libpolkit-agent-1-0
+        - libpolkit-gobject-1-0
+        - apache2-utils
+    podman:
+      packages:
+        - apt-transport-https
+        - ca-certificates
+        - gnupg-agent
+        - software-properties-common
+    bionic:
+      packages:
+        - libvirt-bin
+        - libpolkit-backend-1-0
+        - libssl1.0-dev
+    focal:
+      packages:
+        - libvirt-daemon
+        - libvirt-daemon-system
+        - libssl-dev
+    pip3:
+     - python-apt
+     - kubernetes==17.17.0
+     - pyYAML
+     - virtualbmc
+     - lxml
+     - netaddr
+     - libvirt-python
+     - six
+     - docker-py
+     - jmespath
+     - passlib
+  centos:
+    rhel8:
+        packages:
+         - curl
+         - dnsmasq
+         - edk2-ovmf
+         - NetworkManager
+         - nmap
+         - patch
+         - psmisc
+         - vim-enhanced
+         - wget
+         - bind-utils
+         - jq
+         - libguestfs-tools
+         - redhat-lsb-core
+         - unzip
+         - genisoimage
+         - qemu-kvm
+         - libvirt
+         - libvirt-devel
+         - libvirt-daemon-kvm
+         - python3-libvirt
+         - libguestfs-tools
+         - python3-lxml
+         - polkit-pkla-compat
+         - python3-netaddr
+         - virt-install
+         - network-scripts
+         - firewalld
+         - python3-six
+         - httpd-tools
+         - python3-passlib
+         - python3-bcrypt
+        pip3:
+          - jmespath
+          - kubernetes==17.17.0
+DAEMON_JSON_PATH: "{{ metal3_dir }}/vm-setup/roles/packages_installation/files"
+CONTAINER_RUNTIME: "{{ lookup('env', 'CONTAINER_RUNTIME') }}"
+OS_VERSION_ID: "{{ lookup('env', 'OS_VERSION_ID') }}"
+REGISTRY: "{{ lookup('env', 'REGISTRY') }}"

@@ -1,0 +1,721 @@
++ source /home/capm3/projects/metal3-dev-env/scripts/../lib/common.sh
+++ [[ :/home/capm3/.krew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\g\o\/\b\i\n\:* ]]
++++ go env
+++ eval 'GO111MODULE=""
+GOARCH="amd64"
+GOBIN=""
+GOCACHE="/home/capm3/.cache/go-build"
+GOENV="/home/capm3/.config/go/env"
+GOEXE=""
+GOFLAGS=""
+GOHOSTARCH="amd64"
+GOHOSTOS="linux"
+GOINSECURE=""
+GOMODCACHE="/home/capm3/go/pkg/mod"
+GONOPROXY=""
+GONOSUMDB=""
+GOOS="linux"
+GOPATH="/home/capm3/go"
+GOPRIVATE=""
+GOPROXY="https://proxy.golang.org,direct"
+GOROOT="/usr/local/go"
+GOSUMDB="sum.golang.org"
+GOTMPDIR=""
+GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
+GOVCS=""
+GOVERSION="go1.16.7"
+GCCGO="gccgo"
+AR="ar"
+CC="gcc"
+CXX="g++"
+CGO_ENABLED="1"
+GOMOD="/dev/null"
+CGO_CFLAGS="-g -O2"
+CGO_CPPFLAGS=""
+CGO_CXXFLAGS="-g -O2"
+CGO_FFLAGS="-g -O2"
+CGO_LDFLAGS="-g -O2"
+PKG_CONFIG="pkg-config"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build3023117508=/tmp/go-build -gno-record-gcc-switches"'
++++ GO111MODULE=
++++ GOARCH=amd64
++++ GOBIN=
++++ GOCACHE=/home/capm3/.cache/go-build
++++ GOENV=/home/capm3/.config/go/env
++++ GOEXE=
++++ GOFLAGS=
++++ GOHOSTARCH=amd64
++++ GOHOSTOS=linux
++++ GOINSECURE=
++++ GOMODCACHE=/home/capm3/go/pkg/mod
++++ GONOPROXY=
++++ GONOSUMDB=
++++ GOOS=linux
++++ GOPATH=/home/capm3/go
++++ GOPRIVATE=
++++ GOPROXY=https://proxy.golang.org,direct
++++ GOROOT=/usr/local/go
++++ GOSUMDB=sum.golang.org
++++ GOTMPDIR=
++++ GOTOOLDIR=/usr/local/go/pkg/tool/linux_amd64
++++ GOVCS=
++++ GOVERSION=go1.16.7
++++ GCCGO=gccgo
++++ AR=ar
++++ CC=gcc
++++ CXX=g++
++++ CGO_ENABLED=1
++++ GOMOD=/dev/null
++++ CGO_CFLAGS='-g -O2'
++++ CGO_CPPFLAGS=
++++ CGO_CXXFLAGS='-g -O2'
++++ CGO_FFLAGS='-g -O2'
++++ CGO_LDFLAGS='-g -O2'
++++ PKG_CONFIG=pkg-config
++++ GOGCCFLAGS='-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build3023117508=/tmp/go-build -gno-record-gcc-switches'
+++ export GOPATH
+++++ dirname /home/capm3/projects/metal3-dev-env/scripts/../lib/common.sh
++++ cd /home/capm3/projects/metal3-dev-env/scripts/../lib/..
++++ pwd
+++ SCRIPTDIR=/home/capm3/projects/metal3-dev-env
++++ whoami
+++ USER=capm3
+++ export USER=capm3
+++ USER=capm3
+++ '[' -z '' ']'
+++ '[' '!' -f /home/capm3/projects/metal3-dev-env/config_capm3.sh ']'
+++ CONFIG=/home/capm3/projects/metal3-dev-env/config_capm3.sh
+++ source /home/capm3/projects/metal3-dev-env/config_capm3.sh
++++ export KUBECONFIG=/home/capm3/.kube/config
++++ KUBECONFIG=/home/capm3/.kube/config
++++ export K8S_AUTH_KUBECONFIG=/home/capm3/.kube/config
++++ K8S_AUTH_KUBECONFIG=/home/capm3/.kube/config
++++ export IMAGE_OS=Ubuntu
++++ IMAGE_OS=Ubuntu
++++ export EPHEMERAL_CLUSTER=kind
++++ EPHEMERAL_CLUSTER=kind
++++ export CONTAINER_RUNTIME=docker
++++ CONTAINER_RUNTIME=docker
++++ export NUM_NODES=4
++++ NUM_NODES=4
++++ export NUM_OF_MASTER_REPLICAS=3
++++ NUM_OF_MASTER_REPLICAS=3
++++ export NUM_OF_WORKER_REPLICAS=1
++++ NUM_OF_WORKER_REPLICAS=1
++++ export CAPM3_VERSION=v1alpha5
++++ CAPM3_VERSION=v1alpha5
++++ export CAPI_VERSION=v1alpha4
++++ CAPI_VERSION=v1alpha4
++++ export KUBERNETES_VERSION=v1.21.1
++++ KUBERNETES_VERSION=v1.21.1
++++ export UPGRADED_K8S_VERSION=v1.22.2
++++ UPGRADED_K8S_VERSION=v1.22.2
++++ export IMAGE_USERNAME=metal3
++++ IMAGE_USERNAME=metal3
+++ export MARIADB_HOST=mariaDB
+++ MARIADB_HOST=mariaDB
+++ export MARIADB_HOST_IP=127.0.0.1
+++ MARIADB_HOST_IP=127.0.0.1
+++ ADDN_DNS=
+++ EXT_IF=
+++ PRO_IF=
+++ MANAGE_BR_BRIDGE=y
+++ MANAGE_PRO_BRIDGE=y
+++ MANAGE_INT_BRIDGE=y
+++ INT_IF=
+++ ROOT_DISK_NAME=/dev/sda
+++ NODE_HOSTNAME_FORMAT=node-%d
+++ source /etc/os-release
++++ NAME=Ubuntu
++++ VERSION='20.04.3 LTS (Focal Fossa)'
++++ ID=ubuntu
++++ ID_LIKE=debian
++++ PRETTY_NAME='Ubuntu 20.04.3 LTS'
++++ VERSION_ID=20.04
++++ HOME_URL=https://www.ubuntu.com/
++++ SUPPORT_URL=https://help.ubuntu.com/
++++ BUG_REPORT_URL=https://bugs.launchpad.net/ubuntu/
++++ PRIVACY_POLICY_URL=https://www.ubuntu.com/legal/terms-and-policies/privacy-policy
++++ VERSION_CODENAME=focal
++++ UBUNTU_CODENAME=focal
+++ export DISTRO=ubuntu20
+++ DISTRO=ubuntu20
+++ export OS=ubuntu
+++ OS=ubuntu
+++ export OS_VERSION_ID=20.04
+++ OS_VERSION_ID=20.04
+++ SUPPORTED_DISTROS=(centos8 rhel8 ubuntu18 ubuntu20)
+++ export SUPPORTED_DISTROS
+++ [[ ! centos8 rhel8 ubuntu18 ubuntu20 =~ ubuntu20 ]]
+++ [[ ubuntu == ubuntu ]]
+++ export CONTAINER_RUNTIME=docker
+++ CONTAINER_RUNTIME=docker
+++ [[ docker == \p\o\d\m\a\n ]]
+++ export POD_NAME=
+++ POD_NAME=
+++ export POD_NAME_INFRA=
+++ POD_NAME_INFRA=
+++ export SSH_KEY=/home/capm3/.ssh/id_rsa
+++ SSH_KEY=/home/capm3/.ssh/id_rsa
+++ export SSH_PUB_KEY=/home/capm3/.ssh/id_rsa.pub
+++ SSH_PUB_KEY=/home/capm3/.ssh/id_rsa.pub
+++ '[' '!' -f /home/capm3/.ssh/id_rsa ']'
+++ FILESYSTEM=/
+++ CAPM3_VERSION_LIST='v1alpha4 v1alpha5 v1beta1'
+++ export CAPM3_VERSION=v1alpha5
+++ CAPM3_VERSION=v1alpha5
+++ '[' v1alpha5 == v1alpha4 ']'
+++ '[' v1alpha5 == v1alpha5 ']'
+++ export CAPI_VERSION=v1alpha4
+++ CAPI_VERSION=v1alpha4
+++ export M3PATH=/home/capm3/go/src/github.com/metal3-io
+++ M3PATH=/home/capm3/go/src/github.com/metal3-io
+++ export BMOPATH=/home/capm3/go/src/github.com/metal3-io/baremetal-operator
+++ BMOPATH=/home/capm3/go/src/github.com/metal3-io/baremetal-operator
+++ export RUN_LOCAL_IRONIC_SCRIPT=/home/capm3/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ RUN_LOCAL_IRONIC_SCRIPT=/home/capm3/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ export CAPM3PATH=/home/capm3/go/src/github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3PATH=/home/capm3/go/src/github.com/metal3-io/cluster-api-provider-metal3
+++ export CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ export CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ export IPAMPATH=/home/capm3/go/src/github.com/metal3-io/ip-address-manager
+++ IPAMPATH=/home/capm3/go/src/github.com/metal3-io/ip-address-manager
+++ export IPAM_BASE_URL=metal3-io/ip-address-manager
+++ IPAM_BASE_URL=metal3-io/ip-address-manager
+++ export IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ '[' v1alpha4 == v1alpha3 ']'
+++ '[' v1alpha4 == v1alpha4 ']'
+++ IPAMBRANCH=release-0.1
+++ IPA_DOWNLOAD_ENABLED=true
+++ CAPI_BASE_URL=kubernetes-sigs/cluster-api
+++ '[' v1alpha5 == v1alpha4 ']'
+++ '[' v1alpha5 == v1alpha5 ']'
+++ CAPM3BRANCH=release-0.5
+++ BMOREPO=https://github.com/metal3-io/baremetal-operator.git
+++ BMOBRANCH=master
+++ FORCE_REPO_UPDATE=true
+++ BMOCOMMIT=HEAD
+++ BMO_RUN_LOCAL=false
+++ CAPM3_RUN_LOCAL=false
+++ WORKING_DIR=/opt/metal3-dev-env
+++ NODES_FILE=/opt/metal3-dev-env/ironic_nodes.json
+++ NODES_PLATFORM=libvirt
+++ export NAMESPACE=metal3
+++ NAMESPACE=metal3
+++ export NUM_NODES=4
+++ NUM_NODES=4
+++ export NUM_OF_MASTER_REPLICAS=3
+++ NUM_OF_MASTER_REPLICAS=3
+++ export NUM_OF_WORKER_REPLICAS=1
+++ NUM_OF_WORKER_REPLICAS=1
+++ export VM_EXTRADISKS=false
+++ VM_EXTRADISKS=false
+++ export VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ export VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ export NODE_DRAIN_TIMEOUT=0s
+++ NODE_DRAIN_TIMEOUT=0s
+++ export MAX_SURGE_VALUE=0
+++ MAX_SURGE_VALUE=0
+++ export DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ export CONTAINER_REGISTRY=quay.io
+++ CONTAINER_REGISTRY=quay.io
+++ export VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ export SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ export IRONIC_TLS_SETUP=true
+++ IRONIC_TLS_SETUP=true
+++ export IRONIC_BASIC_AUTH=true
+++ IRONIC_BASIC_AUTH=true
+++ export IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ export IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ export IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ export IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ export IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ export IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ '[' v1alpha5 == v1alpha4 ']'
+++ export IRONIC_NAMESPACE=baremetal-operator-system
+++ IRONIC_NAMESPACE=baremetal-operator-system
+++ export NAMEPREFIX=baremetal-operator
+++ NAMEPREFIX=baremetal-operator
+++ export RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ export BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ export OPENSTACK_CONFIG=/home/capm3/.config/openstack/clouds.yaml
+++ OPENSTACK_CONFIG=/home/capm3/.config/openstack/clouds.yaml
+++ '[' v1alpha5 == v1alpha4 ']'
+++ '[' v1alpha5 == v1alpha5 ']'
+++ export CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:release-0.5
+++ CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:release-0.5
+++ export IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:release-0.1
+++ IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:release-0.1
+++ export DEFAULT_HOSTS_MEMORY=4096
+++ DEFAULT_HOSTS_MEMORY=4096
+++ export CLUSTER_NAME=test1
+++ CLUSTER_NAME=test1
+++ export CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ export KUBERNETES_VERSION=v1.21.1
+++ KUBERNETES_VERSION=v1.21.1
+++ export KUBERNETES_BINARIES_VERSION=v1.21.1
+++ KUBERNETES_BINARIES_VERSION=v1.21.1
+++ export KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ '[' docker == docker ']'
+++ export EPHEMERAL_CLUSTER=kind
+++ EPHEMERAL_CLUSTER=kind
+++ export KUSTOMIZE_VERSION=v4.1.3
+++ KUSTOMIZE_VERSION=v4.1.3
+++ export KIND_VERSION=v0.11.1
+++ KIND_VERSION=v0.11.1
+++ '[' v1.21.1 == v1.21.2 ']'
+++ export KIND_NODE_IMAGE_VERSION=v1.22.2
+++ KIND_NODE_IMAGE_VERSION=v1.22.2
+++ export MINIKUBE_VERSION=v1.23.2
+++ MINIKUBE_VERSION=v1.23.2
+++ export ANSIBLE_VERSION=4.8.0
+++ ANSIBLE_VERSION=4.8.0
+++ SKIP_RETRIES=false
+++ TEST_TIME_INTERVAL=10
+++ TEST_MAX_TIME=240
+++ FAILS=0
+++ RESULT_STR=
+++ export ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ '[' 4 -lt 4 ']'
+++ export LIBVIRT_DEFAULT_URI=qemu:///system
+++ LIBVIRT_DEFAULT_URI=qemu:///system
+++ '[' capm3 '!=' root ']'
+++ '[' /run/user/1000 == /run/user/0 ']'
+++ sudo -n uptime
+++ export USE_FIREWALLD=False
+++ USE_FIREWALLD=False
+++ [[ ubuntu20 == \r\h\e\l\8 ]]
+++ [[ ubuntu20 == \c\e\n\t\o\s\8 ]]
++++ df / --output=fstype
++++ tail -n 1
+++ FSTYPE=ext4
+++ case ${FSTYPE} in
+++ '[' '!' -d /opt/metal3-dev-env ']'
++ source /home/capm3/projects/metal3-dev-env/scripts/../lib/releases.sh
+++ CAPM3RELEASEPATH=https://api.github.com/repos/metal3-io/cluster-api-provider-metal3/releases
+++ CAPIRELEASEPATH=https://api.github.com/repos/kubernetes-sigs/cluster-api/releases
+++ '[' v1alpha4 == v1alpha3 ']'
+++ '[' v1alpha4 == v1alpha4 ']'
+++ export CAPIRELEASE=v0.4.1
+++ CAPIRELEASE=v0.4.1
+++ '[' v1alpha5 == v1alpha4 ']'
+++ '[' v1alpha5 == v1alpha5 ']'
+++ export CAPM3RELEASE=v0.5.2
+++ CAPM3RELEASE=v0.5.2
+++ [[ v0.4.1 == '' ]]
+++ [[ v0.5.2 == '' ]]
++ source /home/capm3/projects/metal3-dev-env/scripts/../lib/network.sh
+++ export CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ export POD_CIDR=192.168.0.0/18
+++ POD_CIDR=192.168.0.0/18
+++ PROVISIONING_IPV6=false
+++ IPV6_ADDR_PREFIX=fd2e:6f44:5dd8:b856
+++ [[ false == \t\r\u\e ]]
+++ export BOOT_MODE=legacy
+++ BOOT_MODE=legacy
+++ export PROVISIONING_NETWORK=172.22.0.0/24
+++ PROVISIONING_NETWORK=172.22.0.0/24
+++ [[ legacy == \l\e\g\a\c\y ]]
+++ export LIBVIRT_FIRMWARE=bios
+++ LIBVIRT_FIRMWARE=bios
+++ export LIBVIRT_SECURE_BOOT=false
+++ LIBVIRT_SECURE_BOOT=false
+++ prefixlen PROVISIONING_CIDR 172.22.0.0/24
+++ resultvar=PROVISIONING_CIDR
+++ network=172.22.0.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").prefixlen)'
+++ result=24
+++ eval PROVISIONING_CIDR=24
++++ PROVISIONING_CIDR=24
+++ export PROVISIONING_CIDR
+++ export PROVISIONING_CIDR
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").netmask)'
+++ export PROVISIONING_NETMASK=255.255.255.0
+++ PROVISIONING_NETMASK=255.255.255.0
+++ network_address PROVISIONING_IP 172.22.0.0/24 1
+++ resultvar=PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 1 - 1, None)))'
+++ result=172.22.0.1
+++ eval PROVISIONING_IP=172.22.0.1
++++ PROVISIONING_IP=172.22.0.1
+++ export PROVISIONING_IP
+++ network_address CLUSTER_PROVISIONING_IP 172.22.0.0/24 2
+++ resultvar=CLUSTER_PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=2
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 2 - 1, None)))'
+++ result=172.22.0.2
+++ eval CLUSTER_PROVISIONING_IP=172.22.0.2
++++ CLUSTER_PROVISIONING_IP=172.22.0.2
+++ export CLUSTER_PROVISIONING_IP
+++ export PROVISIONING_IP
+++ export CLUSTER_PROVISIONING_IP
+++ [[ 172.22.0.1 == *\:* ]]
+++ export PROVISIONING_URL_HOST=172.22.0.1
+++ PROVISIONING_URL_HOST=172.22.0.1
+++ export CLUSTER_URL_HOST=172.22.0.2
+++ CLUSTER_URL_HOST=172.22.0.2
+++ [[ 192.168.111.249 == *\:* ]]
+++ export CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ export CLUSTER_APIENDPOINT_PORT=6443
+++ CLUSTER_APIENDPOINT_PORT=6443
+++ network_address dhcp_range_start 172.22.0.0/24 10
+++ resultvar=dhcp_range_start
+++ network=172.22.0.0/24
+++ record=10
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 10 - 1, None)))'
+++ result=172.22.0.10
+++ eval dhcp_range_start=172.22.0.10
++++ dhcp_range_start=172.22.0.10
+++ export dhcp_range_start
+++ network_address dhcp_range_end 172.22.0.0/24 100
+++ resultvar=dhcp_range_end
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval dhcp_range_end=172.22.0.100
++++ dhcp_range_end=172.22.0.100
+++ export dhcp_range_end
+++ network_address PROVISIONING_POOL_RANGE_START 172.22.0.0/24 100
+++ resultvar=PROVISIONING_POOL_RANGE_START
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval PROVISIONING_POOL_RANGE_START=172.22.0.100
++++ PROVISIONING_POOL_RANGE_START=172.22.0.100
+++ export PROVISIONING_POOL_RANGE_START
+++ network_address PROVISIONING_POOL_RANGE_END 172.22.0.0/24 200
+++ resultvar=PROVISIONING_POOL_RANGE_END
+++ network=172.22.0.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 200 - 1, None)))'
+++ result=172.22.0.200
+++ eval PROVISIONING_POOL_RANGE_END=172.22.0.200
++++ PROVISIONING_POOL_RANGE_END=172.22.0.200
+++ export PROVISIONING_POOL_RANGE_END
+++ export PROVISIONING_POOL_RANGE_START
+++ export PROVISIONING_POOL_RANGE_END
+++ export CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ EXTERNAL_SUBNET=
+++ [[ -n '' ]]
+++ export IP_STACK=v4
+++ IP_STACK=v4
+++ [[ v4 == \v\4 ]]
+++ export EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ export EXTERNAL_SUBNET_V6=
+++ EXTERNAL_SUBNET_V6=
+++ [[ kind == \m\i\n\i\k\u\b\e ]]
+++ [[ -n 192.168.111.0/24 ]]
+++ prefixlen EXTERNAL_SUBNET_V4_PREFIX 192.168.111.0/24
+++ resultvar=EXTERNAL_SUBNET_V4_PREFIX
+++ network=192.168.111.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"192.168.111.0/24").prefixlen)'
+++ result=24
+++ eval EXTERNAL_SUBNET_V4_PREFIX=24
++++ EXTERNAL_SUBNET_V4_PREFIX=24
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ [[ -z '' ]]
+++ network_address EXTERNAL_SUBNET_V4_HOST 192.168.111.0/24 1
+++ resultvar=EXTERNAL_SUBNET_V4_HOST
+++ network=192.168.111.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 1 - 1, None)))'
+++ result=192.168.111.1
+++ eval EXTERNAL_SUBNET_V4_HOST=192.168.111.1
++++ EXTERNAL_SUBNET_V4_HOST=192.168.111.1
+++ export EXTERNAL_SUBNET_V4_HOST
+++ network_address VIRSH_DHCP_V4_START 192.168.111.0/24 20
+++ resultvar=VIRSH_DHCP_V4_START
+++ network=192.168.111.0/24
+++ record=20
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 20 - 1, None)))'
+++ result=192.168.111.20
+++ eval VIRSH_DHCP_V4_START=192.168.111.20
++++ VIRSH_DHCP_V4_START=192.168.111.20
+++ export VIRSH_DHCP_V4_START
+++ network_address VIRSH_DHCP_V4_END 192.168.111.0/24 60
+++ resultvar=VIRSH_DHCP_V4_END
+++ network=192.168.111.0/24
+++ record=60
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 60 - 1, None)))'
+++ result=192.168.111.60
+++ eval VIRSH_DHCP_V4_END=192.168.111.60
++++ VIRSH_DHCP_V4_END=192.168.111.60
+++ export VIRSH_DHCP_V4_END
+++ network_address BAREMETALV4_POOL_RANGE_START 192.168.111.0/24 100
+++ resultvar=BAREMETALV4_POOL_RANGE_START
+++ network=192.168.111.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 100 - 1, None)))'
+++ result=192.168.111.100
+++ eval BAREMETALV4_POOL_RANGE_START=192.168.111.100
++++ BAREMETALV4_POOL_RANGE_START=192.168.111.100
+++ export BAREMETALV4_POOL_RANGE_START
+++ network_address BAREMETALV4_POOL_RANGE_END 192.168.111.0/24 200
+++ resultvar=BAREMETALV4_POOL_RANGE_END
+++ network=192.168.111.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 200 - 1, None)))'
+++ result=192.168.111.200
+++ eval BAREMETALV4_POOL_RANGE_END=192.168.111.200
++++ BAREMETALV4_POOL_RANGE_END=192.168.111.200
+++ export BAREMETALV4_POOL_RANGE_END
+++ export VIRSH_DHCP_V4_START
+++ export VIRSH_DHCP_V4_END
+++ export BAREMETALV4_POOL_RANGE_START
+++ export BAREMETALV4_POOL_RANGE_END
+++ [[ -n '' ]]
+++ export EXTERNAL_SUBNET_V6_HOST=
+++ EXTERNAL_SUBNET_V6_HOST=
+++ export EXTERNAL_SUBNET_V6_PREFIX=
+++ EXTERNAL_SUBNET_V6_PREFIX=
+++ export BAREMETALV6_POOL_RANGE_START=
+++ BAREMETALV6_POOL_RANGE_START=
+++ export BAREMETALV6_POOL_RANGE_END=
+++ BAREMETALV6_POOL_RANGE_END=
+++ export REGISTRY_PORT=5000
+++ REGISTRY_PORT=5000
+++ export HTTP_PORT=6180
+++ HTTP_PORT=6180
+++ export IRONIC_INSPECTOR_PORT=5050
+++ IRONIC_INSPECTOR_PORT=5050
+++ export IRONIC_API_PORT=6385
+++ IRONIC_API_PORT=6385
+++ [[ -n 192.168.111.1 ]]
+++ export REGISTRY=192.168.111.1:5000
+++ REGISTRY=192.168.111.1:5000
+++ network_address INITIAL_IRONICBRIDGE_IP 172.22.0.0/24 9
+++ resultvar=INITIAL_IRONICBRIDGE_IP
+++ network=172.22.0.0/24
+++ record=9
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 9 - 1, None)))'
+++ result=172.22.0.9
+++ eval INITIAL_IRONICBRIDGE_IP=172.22.0.9
++++ INITIAL_IRONICBRIDGE_IP=172.22.0.9
+++ export INITIAL_IRONICBRIDGE_IP
+++ export DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ export DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ '[' true == true ']'
+++ export IRONIC_URL=https://172.22.0.2:6385/v1/
+++ IRONIC_URL=https://172.22.0.2:6385/v1/
+++ export IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
+++ IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
++ source /home/capm3/projects/metal3-dev-env/scripts/../lib/images.sh
+++ IMAGE_OS=Ubuntu
+++ [[ Ubuntu == \U\b\u\n\t\u ]]
+++ export IMAGE_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2
+++ IMAGE_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2
+++ export IMAGE_LOCATION=https://artifactory.nordix.org/artifactory/airship/images/k8s_v1.21.1/
+++ IMAGE_LOCATION=https://artifactory.nordix.org/artifactory/airship/images/k8s_v1.21.1/
+++ export IMAGE_URL=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2
+++ IMAGE_URL=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2
+++ export IMAGE_CHECKSUM=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2.md5sum
+++ IMAGE_CHECKSUM=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1.qcow2.md5sum
+++ export IMAGE_USERNAME=metal3
+++ IMAGE_USERNAME=metal3
+++ IMAGE_BASE_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1
+++ export IMAGE_RAW_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img
+++ IMAGE_RAW_NAME=UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img
+++ export IMAGE_RAW_URL=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img
+++ IMAGE_RAW_URL=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img
+++ export IMAGE_RAW_CHECKSUM=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum
+++ IMAGE_RAW_CHECKSUM=http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum
++ source /home/capm3/projects/metal3-dev-env/scripts/../lib/ironic_tls_setup.sh
+++ '[' true == true ']'
+++ pushd /opt/metal3-dev-env
+/opt/metal3-dev-env ~/projects/metal3-dev-env/scripts/feature_tests/upgrade
+++ mkdir -p /opt/metal3-dev-env/certs
+++ pushd /opt/metal3-dev-env/certs
+/opt/metal3-dev-env/certs /opt/metal3-dev-env ~/projects/metal3-dev-env/scripts/feature_tests/upgrade
+++ export IRONIC_BASE_URL=https://172.22.0.2
+++ IRONIC_BASE_URL=https://172.22.0.2
+++ export IRONIC_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ IRONIC_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ export IRONIC_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ IRONIC_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ export IRONIC_CERT_FILE=/opt/metal3-dev-env/certs/ironic.crt
+++ IRONIC_CERT_FILE=/opt/metal3-dev-env/certs/ironic.crt
+++ export IRONIC_KEY_FILE=/opt/metal3-dev-env/certs/ironic.key
+++ IRONIC_KEY_FILE=/opt/metal3-dev-env/certs/ironic.key
+++ export IRONIC_INSPECTOR_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ IRONIC_INSPECTOR_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ export IRONIC_INSPECTOR_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ IRONIC_INSPECTOR_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ export IRONIC_INSPECTOR_CERT_FILE=/opt/metal3-dev-env/certs/ironic-inspector.crt
+++ IRONIC_INSPECTOR_CERT_FILE=/opt/metal3-dev-env/certs/ironic-inspector.crt
+++ export IRONIC_INSPECTOR_KEY_FILE=/opt/metal3-dev-env/certs/ironic-inspector.key
+++ IRONIC_INSPECTOR_KEY_FILE=/opt/metal3-dev-env/certs/ironic-inspector.key
+++ export MARIADB_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ MARIADB_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ export MARIADB_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ MARIADB_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ export MARIADB_CERT_FILE=/opt/metal3-dev-env/certs/mariadb.crt
+++ MARIADB_CERT_FILE=/opt/metal3-dev-env/certs/mariadb.crt
+++ export MARIADB_KEY_FILE=/opt/metal3-dev-env/certs/mariadb.key
+++ MARIADB_KEY_FILE=/opt/metal3-dev-env/certs/mariadb.key
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.key ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.key ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.key ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.pem ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.pem ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.pem ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic.key ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-inspector.key ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/mariadb.key ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic.crt ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-inspector.crt ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/mariadb.crt ']'
+++ '[' /opt/metal3-dev-env/certs/ironic-ca.pem == /opt/metal3-dev-env/certs/ironic-ca.pem ']'
++++ base64 -w 0
+++ IRONIC_CA_CERT_B64=LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDVENDQWZHZ0F3SUJBZ0lVT3VuNm5LYy9vS29sc0FyVXQ0RWJNMXNMWkM4d0RRWUpLb1pJaHZjTkFRRUwKQlFBd0ZERVNNQkFHQTFVRUF3d0phWEp2Ym1saklFTkJNQjRYRFRJeE1URXdPVEUyTXpFME5sb1hEVEkyTVRFdwpPREUyTXpFME5sb3dGREVTTUJBR0ExVUVBd3dKYVhKdmJtbGpJRU5CTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGCkFBT0NBUThBTUlJQkNnS0NBUUVBblJQdFNlT0VnSnZGN05oS2k2U0Z0bkFkelhJM0ZLckZmTjhzdkpCR0FqYU0KS2xxeUhvY1haUmFLWiswM1NXWDBzOHBlYkpKZFQxUUpZRURCbEY1MnlNeEt1TTZ6elZocmNiTU5mWExmbE1YbwpYekhFVGdRZmVvRXRPL1RLWWlyTWQ0WmU2a0VvSGI5Yk9EWk9XRUoweWJSQUgzNFdOdjRvV2s5TkdWenlFN012ClRqVWcrZ0lzdWdQbGhTeXc3L3lzL1hoeEtnYXN0UXRjZnZ2clBBY0hsd3YrT3UyMkVFZk5sbGprNDQzU2gzMGkKSzR6ZCtZRW02ZnBFdDI3SFEybXhqL2hlWWcxQW9rTC8xcVNaaGlkWnM0cU03R3Z6WVRZc3ZLZ3haYXNUR2NuSAp3Ylc5WmpFNk40Y1piTVFIM1dmbnRqcWk0VmJSbmRmM3JTRHQ2RFlJOVFJREFRQUJvMU13VVRBZEJnTlZIUTRFCkZnUVVRQnpRM2FHK3h6Sm5tK0FjV2wrbTZyVlRXbll3SHdZRFZSMGpCQmd3Rm9BVVFCelEzYUcreHpKbm0rQWMKV2wrbTZyVlRXbll3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBSjZzVgpGV3VpT3lMUzNTWnBrak00YWJmMmI0blZIalI0UllsZWZITjd1SUpMUnQwSFdJWmNDbThmOVJkMitodUhkTTh1Cm5QRVcxQWFPZkFiNFVqRWM1WHhmN3UrbGdvSHBiSy9jQURJWTBsQ09pK2Q0MHM3VDNCRFJhakNXVHl2NlBuYkMKTXRKV2FDWkhFcElGdGtqbmZ3MFNHOEdOaTBsbWRyVmFPdmo4NmpRUVlRVEFsWk96ek8yZ3p6TjJCdVVLZ0hUZApOWlZ3a29jWkVwVS9tT1ZKZ2l2YnJBeFpLcmVYUXN4dWFWbys3eXNwR2lyKzF2dklOc29pNlRsV1d5Syt0ZVlrCitNODg0VStUQ2lJRE5EbTI1T09scWhPYlVScW5HWUpmdXBNSlREbGpLNDhJZytodk55a05EdGQ1RFczWGVpUkIKWjZiQURWc2pOelZVNm83YmhRPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+++ export IRONIC_CA_CERT_B64
+++ popd
+/opt/metal3-dev-env ~/projects/metal3-dev-env/scripts/feature_tests/upgrade
+++ popd
+~/projects/metal3-dev-env/scripts/feature_tests/upgrade
+++ unset IRONIC_NO_CA_CERT
++ source /home/capm3/projects/metal3-dev-env/scripts/../lib/ironic_basic_auth.sh
+++ '[' true == true ']'
+++ IRONIC_AUTH_DIR=/opt/metal3-dev-env/ironic/auth/
+++ mkdir -p /opt/metal3-dev-env/ironic/auth/
+++ '[' -z '' ']'
+++ '[' '!' -f /opt/metal3-dev-env/ironic/auth/ironic-username ']'
++++ cat /opt/metal3-dev-env/ironic/auth/ironic-username
+++ IRONIC_USERNAME=beEjrgcnZkhE
+++ '[' -z '' ']'
+++ '[' '!' -f /opt/metal3-dev-env/ironic/auth/ironic-password ']'
++++ cat /opt/metal3-dev-env/ironic/auth/ironic-password
+++ IRONIC_PASSWORD=mT7bb6QxcdIT
+++ IRONIC_INSPECTOR_USERNAME=beEjrgcnZkhE
+++ IRONIC_INSPECTOR_PASSWORD=mT7bb6QxcdIT
+++ export IRONIC_USERNAME
+++ export IRONIC_PASSWORD
+++ export IRONIC_INSPECTOR_USERNAME
+++ export IRONIC_INSPECTOR_PASSWORD
+++ unset IRONIC_NO_BASIC_AUTH
+++ unset IRONIC_INSPECTOR_NO_BASIC_AUTH
++ export ANSIBLE_HOST_KEY_CHECKING=False
++ ANSIBLE_HOST_KEY_CHECKING=False
++ export ANSIBLE_CONFIG=/home/capm3/projects/metal3-dev-env/scripts/../ansible.cfg
++ ANSIBLE_CONFIG=/home/capm3/projects/metal3-dev-env/scripts/../ansible.cfg
++ ANSIBLE_FORCE_COLOR=true
++ ansible-playbook -e metal3_dir=/home/capm3/projects/metal3-dev-env -e v1aX_integration_test_action=upgrading -i /home/capm3/projects/metal3-dev-env/scripts/../vm-setup/inventory.ini -b -v /home/capm3/projects/metal3-dev-env/scripts/../vm-setup/v1aX_integration_test.yml
+[0;34mUsing /home/capm3/projects/metal3-dev-env/ansible.cfg as config file[0m
+[0;35m[DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names [0m
+[0;35mto new standard, use callbacks_enabled instead. This feature will be removed [0m
+[0;35mfrom ansible-core in version 2.15. Deprecation warnings can be disabled by [0m
+[0;35msetting deprecation_warnings=False in ansible.cfg.[0m
+[1;35m[WARNING]: Skipping plugin (/home/capm3/projects/metal3-dev-env/vm-[0m
+[1;35msetup/roles/v1aX_integration_test/filter_plugins/k8s_fields_test.py) as it[0m
+[1;35mseems to be invalid: No module named 'k8s_fields'[0m
+
+PLAY [v1alpha5 integration test] ***********************************************
+Wednesday 10 November 2021  20:31:58 +0000 (0:00:00.041)       0:00:00.041 **** 
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [localhost][0m
+Wednesday 10 November 2021  20:32:00 +0000 (0:00:01.562)       0:00:01.604 **** 
+
+TASK [v1aX_integration_test : Generate templates] ******************************
+[0;36mincluded: /home/capm3/projects/metal3-dev-env/vm-setup/roles/v1aX_integration_test/tasks/generate_templates.yml for localhost[0m
+Wednesday 10 November 2021  20:32:00 +0000 (0:00:00.102)       0:00:01.706 **** 
+
+TASK [v1aX_integration_test : Get BMH facts] ***********************************
+[0;32mok: [localhost] => {"api_found": true, "changed": false, "resources": [{"apiVersion": "metal3.io/v1alpha1", "kind": "BareMetalHost", "metadata": {"annotations": {"kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"metal3.io/v1alpha1\",\"kind\":\"BareMetalHost\",\"metadata\":{\"annotations\":{},\"name\":\"node-0\",\"namespace\":\"metal3\"},\"spec\":{\"bmc\":{\"address\":\"ipmi://192.168.111.1:6230\",\"credentialsName\":\"node-0-bmc-secret\"},\"bootMACAddress\":\"00:4a:e3:eb:f8:42\",\"bootMode\":\"legacy\",\"online\":true}}\n"}, "creationTimestamp": "2021-11-10T15:54:10Z", "finalizers": ["baremetalhost.metal3.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1"}, "managedFields": [{"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:finalizers": {".": {}, "v:\"baremetalhost.metal3.io\"": {}}}}, "manager": "baremetal-operator", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:annotations": {".": {}, "f:kubectl.kubernetes.io/last-applied-configuration": {}}}, "f:spec": {".": {}, "f:automatedCleaningMode": {}, "f:bmc": {".": {}, "f:address": {}, "f:credentialsName": {}}, "f:bootMACAddress": {}, "f:bootMode": {}, "f:online": {}}}, "manager": "kubectl-client-side-apply", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:labels": {".": {}, "f:cluster.x-k8s.io/cluster-name": {}}, "f:ownerReferences": {".": {}, "k:{\"uid\":\"9dbec15f-bfd5-4373-ae81-96822021daf7\"}": {}}}, "f:spec": {"f:consumerRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:namespace": {}}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:metaData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:networkData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:userData": {".": {}, "f:name": {}, "f:namespace": {}}}}, "manager": "cluster-api-provider-metal3-manager", "operation": "Update", "time": "2021-11-10T16:41:42Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {".": {}, "f:errorCount": {}, "f:errorMessage": {}, "f:goodCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}, "f:hardware": {".": {}, "f:cpu": {".": {}, "f:arch": {}, "f:clockMegahertz": {}, "f:count": {}, "f:flags": {}, "f:model": {}}, "f:firmware": {".": {}, "f:bios": {".": {}, "f:date": {}, "f:vendor": {}, "f:version": {}}}, "f:hostname": {}, "f:nics": {}, "f:ramMebibytes": {}, "f:storage": {}, "f:systemVendor": {".": {}, "f:manufacturer": {}, "f:productName": {}}}, "f:hardwareProfile": {}, "f:lastUpdated": {}, "f:operationHistory": {".": {}, "f:deprovision": {".": {}, "f:end": {}, "f:start": {}}, "f:inspect": {".": {}, "f:end": {}, "f:start": {}}, "f:provision": {".": {}, "f:end": {}, "f:start": {}}, "f:register": {".": {}, "f:end": {}, "f:start": {}}}, "f:operationalStatus": {}, "f:poweredOn": {}, "f:provisioning": {".": {}, "f:ID": {}, "f:bootMode": {}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:raid": {".": {}, "f:hardwareRAIDVolumes": {}, "f:softwareRAIDVolumes": {}}, "f:rootDeviceHints": {".": {}, "f:deviceName": {}}, "f:state": {}}, "f:triedCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}}}, "manager": "baremetal-operator", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:48:17Z"}], "name": "node-0", "namespace": "metal3", "ownerReferences": [{"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "controller": true, "kind": "Metal3Machine", "name": "test1-controlplane-42wj6", "uid": "9dbec15f-bfd5-4373-ae81-96822021daf7"}], "resourceVersion": "14095", "uid": "0a41f459-3dd4-428f-8b71-1f8ce6e218c0"}, "spec": {"automatedCleaningMode": "metadata", "bmc": {"address": "ipmi://192.168.111.1:6230", "credentialsName": "node-0-bmc-secret"}, "bootMACAddress": "00:4a:e3:eb:f8:42", "bootMode": "legacy", "consumerRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-controlplane-42wj6", "namespace": "metal3"}, "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "metaData": {"name": "test1-controlplane-42wj6-metadata", "namespace": "metal3"}, "networkData": {"name": "test1-controlplane-42wj6-networkdata", "namespace": "metal3"}, "online": true, "userData": {"name": "test1-w6ntq", "namespace": "metal3"}}, "status": {"errorCount": 0, "errorMessage": "", "goodCredentials": {"credentials": {"name": "node-0-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "12999"}, "hardware": {"cpu": {"arch": "x86_64", "clockMegahertz": 2095, "count": 2, "flags": ["3dnowprefetch", "abm", "adx", "aes", "apic", "arat", "arch_capabilities", "avx", "avx2", "avx512bw", "avx512cd", "avx512dq", "avx512f", "avx512vl", "bmi1", "bmi2", "clflush", "clflushopt", "cmov", "constant_tsc", "cpuid", "cpuid_fault", "cx16", "cx8", "de", "ept", "erms", "f16c", "fma", "fpu", "fsgsbase", "fxsr", "hle", "hypervisor", "invpcid", "invpcid_single", "lahf_lm", "lm", "mca", "mce", "md_clear", "mmx", "movbe", "mpx", "msr", "mtrr", "nopl", "nx", "pae", "pat", "pcid", "pclmulqdq", "pdpe1gb", "pge", "pni", "popcnt", "pse", "pse36", "pti", "rdrand", "rdseed", "rdtscp", "rep_good", "rtm", "sep", "smap", "smep", "ss", "sse", "sse2", "sse4_1", "sse4_2", "ssse3", "syscall", "tpr_shadow", "tsc", "tsc_adjust", "tsc_deadline_timer", "tsc_known_freq", "umip", "vme", "vmx", "vnmi", "vpid", "x2apic", "xsave", "xsavec", "xsaveopt", "xsaves", "xtopology"], "model": "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"}, "firmware": {"bios": {"date": "04/01/2014", "vendor": "SeaBIOS", "version": "1.13.0-1ubuntu1.1"}}, "hostname": "node-0", "nics": [{"ip": "192.168.111.20", "mac": "00:4a:e3:eb:f8:44", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "fe80::4759:40e9:3ace:820c%enp2s0", "mac": "00:4a:e3:eb:f8:44", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "172.22.0.67", "mac": "00:4a:e3:eb:f8:42", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "fe80::370:db5e:5d36:1385%enp1s0", "mac": "00:4a:e3:eb:f8:42", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}], "ramMebibytes": 4096, "storage": [{"hctl": "0:0:0:0", "model": "QEMU HARDDISK", "name": "/dev/sda", "rotational": true, "serialNumber": "drive-scsi0-0-0-0", "sizeBytes": 53687091200, "type": "HDD", "vendor": "QEMU"}], "systemVendor": {"manufacturer": "QEMU", "productName": "Standard PC (Q35 + ICH9, 2009)"}}, "hardwareProfile": "unknown", "lastUpdated": "2021-11-10T16:48:17Z", "operationHistory": {"deprovision": {"end": null, "start": null}, "inspect": {"end": "2021-11-10T15:58:39Z", "start": "2021-11-10T15:54:55Z"}, "provision": {"end": "2021-11-10T16:48:17Z", "start": "2021-11-10T16:41:43Z"}, "register": {"end": "2021-11-10T16:41:43Z", "start": "2021-11-10T16:41:42Z"}}, "operationalStatus": "OK", "poweredOn": true, "provisioning": {"ID": "dd8afd36-42cb-435d-889b-eef745d34fff", "bootMode": "legacy", "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "raid": {"hardwareRAIDVolumes": null, "softwareRAIDVolumes": []}, "rootDeviceHints": {"deviceName": "/dev/sda"}, "state": "provisioned"}, "triedCredentials": {"credentials": {"name": "node-0-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "12999"}}}, {"apiVersion": "metal3.io/v1alpha1", "kind": "BareMetalHost", "metadata": {"annotations": {"kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"metal3.io/v1alpha1\",\"kind\":\"BareMetalHost\",\"metadata\":{\"annotations\":{},\"name\":\"node-1\",\"namespace\":\"metal3\"},\"spec\":{\"bmc\":{\"address\":\"redfish+http://192.168.111.1:8000/redfish/v1/Systems/5414b5e7-bae3-4f7e-8e59-cf44f009a7a1\",\"credentialsName\":\"node-1-bmc-secret\"},\"bootMACAddress\":\"00:4a:e3:eb:f8:46\",\"bootMode\":\"legacy\",\"online\":true}}\n"}, "creationTimestamp": "2021-11-10T15:54:10Z", "finalizers": ["baremetalhost.metal3.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1"}, "managedFields": [{"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:finalizers": {".": {}, "v:\"baremetalhost.metal3.io\"": {}}}}, "manager": "baremetal-operator", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:annotations": {".": {}, "f:kubectl.kubernetes.io/last-applied-configuration": {}}}, "f:spec": {".": {}, "f:automatedCleaningMode": {}, "f:bmc": {".": {}, "f:address": {}, "f:credentialsName": {}}, "f:bootMACAddress": {}, "f:bootMode": {}, "f:online": {}}}, "manager": "kubectl-client-side-apply", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:labels": {".": {}, "f:cluster.x-k8s.io/cluster-name": {}}, "f:ownerReferences": {".": {}, "k:{\"uid\":\"e42d05a1-4860-44fc-b495-7567aba97ed1\"}": {}}}, "f:spec": {"f:consumerRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:namespace": {}}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:metaData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:networkData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:userData": {".": {}, "f:name": {}, "f:namespace": {}}}}, "manager": "cluster-api-provider-metal3-manager", "operation": "Update", "time": "2021-11-10T16:02:26Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {".": {}, "f:errorCount": {}, "f:errorMessage": {}, "f:goodCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}, "f:hardware": {".": {}, "f:cpu": {".": {}, "f:arch": {}, "f:clockMegahertz": {}, "f:count": {}, "f:flags": {}, "f:model": {}}, "f:firmware": {".": {}, "f:bios": {".": {}, "f:date": {}, "f:vendor": {}, "f:version": {}}}, "f:hostname": {}, "f:nics": {}, "f:ramMebibytes": {}, "f:storage": {}, "f:systemVendor": {".": {}, "f:manufacturer": {}, "f:productName": {}}}, "f:hardwareProfile": {}, "f:lastUpdated": {}, "f:operationHistory": {".": {}, "f:deprovision": {".": {}, "f:end": {}, "f:start": {}}, "f:inspect": {".": {}, "f:end": {}, "f:start": {}}, "f:provision": {".": {}, "f:end": {}, "f:start": {}}, "f:register": {".": {}, "f:end": {}, "f:start": {}}}, "f:operationalStatus": {}, "f:poweredOn": {}, "f:provisioning": {".": {}, "f:ID": {}, "f:bootMode": {}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:raid": {".": {}, "f:hardwareRAIDVolumes": {}, "f:softwareRAIDVolumes": {}}, "f:rootDeviceHints": {".": {}, "f:deviceName": {}}, "f:state": {}}, "f:triedCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}}}, "manager": "baremetal-operator", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:19:02Z"}], "name": "node-1", "namespace": "metal3", "ownerReferences": [{"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "controller": true, "kind": "Metal3Machine", "name": "test1-controlplane-9z8sd", "uid": "e42d05a1-4860-44fc-b495-7567aba97ed1"}], "resourceVersion": "8004", "uid": "44016cf3-4182-4fb6-9325-3c76d7ac4c45"}, "spec": {"automatedCleaningMode": "metadata", "bmc": {"address": "redfish+http://192.168.111.1:8000/redfish/v1/Systems/5414b5e7-bae3-4f7e-8e59-cf44f009a7a1", "credentialsName": "node-1-bmc-secret"}, "bootMACAddress": "00:4a:e3:eb:f8:46", "bootMode": "legacy", "consumerRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-controlplane-9z8sd", "namespace": "metal3"}, "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "metaData": {"name": "test1-controlplane-9z8sd-metadata", "namespace": "metal3"}, "networkData": {"name": "test1-controlplane-9z8sd-networkdata", "namespace": "metal3"}, "online": true, "userData": {"name": "test1-86wzb", "namespace": "metal3"}}, "status": {"errorCount": 0, "errorMessage": "", "goodCredentials": {"credentials": {"name": "node-1-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "4784"}, "hardware": {"cpu": {"arch": "x86_64", "clockMegahertz": 2095, "count": 2, "flags": ["3dnowprefetch", "abm", "adx", "aes", "apic", "arat", "arch_capabilities", "avx", "avx2", "avx512bw", "avx512cd", "avx512dq", "avx512f", "avx512vl", "bmi1", "bmi2", "clflush", "clflushopt", "cmov", "constant_tsc", "cpuid", "cpuid_fault", "cx16", "cx8", "de", "ept", "erms", "f16c", "fma", "fpu", "fsgsbase", "fxsr", "hle", "hypervisor", "invpcid", "invpcid_single", "lahf_lm", "lm", "mca", "mce", "md_clear", "mmx", "movbe", "mpx", "msr", "mtrr", "nopl", "nx", "pae", "pat", "pcid", "pclmulqdq", "pdpe1gb", "pge", "pni", "popcnt", "pse", "pse36", "pti", "rdrand", "rdseed", "rdtscp", "rep_good", "rtm", "sep", "smap", "smep", "ss", "sse", "sse2", "sse4_1", "sse4_2", "ssse3", "syscall", "tpr_shadow", "tsc", "tsc_adjust", "tsc_deadline_timer", "tsc_known_freq", "umip", "vme", "vmx", "vnmi", "vpid", "x2apic", "xsave", "xsavec", "xsaveopt", "xsaves", "xtopology"], "model": "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"}, "firmware": {"bios": {"date": "04/01/2014", "vendor": "SeaBIOS", "version": "1.13.0-1ubuntu1.1"}}, "hostname": "node-1", "nics": [{"ip": "172.22.0.71", "mac": "00:4a:e3:eb:f8:46", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "fe80::7ea5:8770:bf6c:a746%enp1s0", "mac": "00:4a:e3:eb:f8:46", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "192.168.111.21", "mac": "00:4a:e3:eb:f8:48", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "fe80::6797:d34:31c5:8f05%enp2s0", "mac": "00:4a:e3:eb:f8:48", "model": "0x1af4 0x0001", "name": "enp2s0"}], "ramMebibytes": 4096, "storage": [{"hctl": "0:0:0:0", "model": "QEMU HARDDISK", "name": "/dev/sda", "rotational": true, "serialNumber": "drive-scsi0-0-0-0", "sizeBytes": 53687091200, "type": "HDD", "vendor": "QEMU"}], "systemVendor": {"manufacturer": "QEMU", "productName": "Standard PC (Q35 + ICH9, 2009)"}}, "hardwareProfile": "unknown", "lastUpdated": "2021-11-10T16:19:02Z", "operationHistory": {"deprovision": {"end": "2021-11-10T16:15:31Z", "start": "2021-11-10T16:14:10Z"}, "inspect": {"end": "2021-11-10T15:58:38Z", "start": "2021-11-10T15:54:55Z"}, "provision": {"end": "2021-11-10T16:19:02Z", "start": "2021-11-10T16:15:32Z"}, "register": {"end": "2021-11-10T16:02:27Z", "start": "2021-11-10T16:02:26Z"}}, "operationalStatus": "OK", "poweredOn": true, "provisioning": {"ID": "cac5fa5f-7eae-4f70-8cbe-672834a26ca0", "bootMode": "legacy", "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "raid": {"hardwareRAIDVolumes": null, "softwareRAIDVolumes": []}, "rootDeviceHints": {"deviceName": "/dev/sda"}, "state": "provisioned"}, "triedCredentials": {"credentials": {"name": "node-1-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "4784"}}}, {"apiVersion": "metal3.io/v1alpha1", "kind": "BareMetalHost", "metadata": {"annotations": {"kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"metal3.io/v1alpha1\",\"kind\":\"BareMetalHost\",\"metadata\":{\"annotations\":{},\"name\":\"node-2\",\"namespace\":\"metal3\"},\"spec\":{\"bmc\":{\"address\":\"ipmi://192.168.111.1:6232\",\"credentialsName\":\"node-2-bmc-secret\"},\"bootMACAddress\":\"00:4a:e3:eb:f8:4a\",\"bootMode\":\"legacy\",\"online\":true}}\n"}, "creationTimestamp": "2021-11-10T15:54:10Z", "finalizers": ["baremetalhost.metal3.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1"}, "managedFields": [{"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:finalizers": {".": {}, "v:\"baremetalhost.metal3.io\"": {}}}}, "manager": "baremetal-operator", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:annotations": {".": {}, "f:kubectl.kubernetes.io/last-applied-configuration": {}}}, "f:spec": {".": {}, "f:automatedCleaningMode": {}, "f:bmc": {".": {}, "f:address": {}, "f:credentialsName": {}}, "f:bootMACAddress": {}, "f:bootMode": {}, "f:online": {}}}, "manager": "kubectl-client-side-apply", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:labels": {".": {}, "f:cluster.x-k8s.io/cluster-name": {}}, "f:ownerReferences": {".": {}, "k:{\"uid\":\"191e4d98-6281-4156-ab55-015e2161d3f7\"}": {}}}, "f:spec": {"f:consumerRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:namespace": {}}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:metaData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:networkData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:userData": {".": {}, "f:name": {}, "f:namespace": {}}}}, "manager": "cluster-api-provider-metal3-manager", "operation": "Update", "time": "2021-11-10T16:50:44Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {".": {}, "f:errorCount": {}, "f:errorMessage": {}, "f:goodCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}, "f:hardware": {".": {}, "f:cpu": {".": {}, "f:arch": {}, "f:clockMegahertz": {}, "f:count": {}, "f:flags": {}, "f:model": {}}, "f:firmware": {".": {}, "f:bios": {".": {}, "f:date": {}, "f:vendor": {}, "f:version": {}}}, "f:hostname": {}, "f:nics": {}, "f:ramMebibytes": {}, "f:storage": {}, "f:systemVendor": {".": {}, "f:manufacturer": {}, "f:productName": {}}}, "f:hardwareProfile": {}, "f:lastUpdated": {}, "f:operationHistory": {".": {}, "f:deprovision": {".": {}, "f:end": {}, "f:start": {}}, "f:inspect": {".": {}, "f:end": {}, "f:start": {}}, "f:provision": {".": {}, "f:end": {}, "f:start": {}}, "f:register": {".": {}, "f:end": {}, "f:start": {}}}, "f:operationalStatus": {}, "f:poweredOn": {}, "f:provisioning": {".": {}, "f:ID": {}, "f:bootMode": {}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:raid": {".": {}, "f:hardwareRAIDVolumes": {}, "f:softwareRAIDVolumes": {}}, "f:rootDeviceHints": {".": {}, "f:deviceName": {}}, "f:state": {}}, "f:triedCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}}}, "manager": "baremetal-operator", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:54:56Z"}], "name": "node-2", "namespace": "metal3", "ownerReferences": [{"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "controller": true, "kind": "Metal3Machine", "name": "test1-workers-xb9ks", "uid": "191e4d98-6281-4156-ab55-015e2161d3f7"}], "resourceVersion": "15508", "uid": "d367f112-8bbc-41f2-9f53-9dd493bbe9b8"}, "spec": {"automatedCleaningMode": "metadata", "bmc": {"address": "ipmi://192.168.111.1:6232", "credentialsName": "node-2-bmc-secret"}, "bootMACAddress": "00:4a:e3:eb:f8:4a", "bootMode": "legacy", "consumerRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-workers-xb9ks", "namespace": "metal3"}, "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "metaData": {"name": "test1-workers-xb9ks-metadata", "namespace": "metal3"}, "networkData": {"name": "test1-workers-xb9ks-networkdata", "namespace": "metal3"}, "online": true, "userData": {"name": "test1-workers-xcrc8", "namespace": "metal3"}}, "status": {"errorCount": 0, "errorMessage": "", "goodCredentials": {"credentials": {"name": "node-2-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "14934"}, "hardware": {"cpu": {"arch": "x86_64", "clockMegahertz": 2095, "count": 2, "flags": ["3dnowprefetch", "abm", "adx", "aes", "apic", "arat", "arch_capabilities", "avx", "avx2", "avx512bw", "avx512cd", "avx512dq", "avx512f", "avx512vl", "bmi1", "bmi2", "clflush", "clflushopt", "cmov", "constant_tsc", "cpuid", "cpuid_fault", "cx16", "cx8", "de", "ept", "erms", "f16c", "fma", "fpu", "fsgsbase", "fxsr", "hle", "hypervisor", "invpcid", "invpcid_single", "lahf_lm", "lm", "mca", "mce", "md_clear", "mmx", "movbe", "mpx", "msr", "mtrr", "nopl", "nx", "pae", "pat", "pcid", "pclmulqdq", "pdpe1gb", "pge", "pni", "popcnt", "pse", "pse36", "pti", "rdrand", "rdseed", "rdtscp", "rep_good", "rtm", "sep", "smap", "smep", "ss", "sse", "sse2", "sse4_1", "sse4_2", "ssse3", "syscall", "tpr_shadow", "tsc", "tsc_adjust", "tsc_deadline_timer", "tsc_known_freq", "umip", "vme", "vmx", "vnmi", "vpid", "x2apic", "xsave", "xsavec", "xsaveopt", "xsaves", "xtopology"], "model": "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"}, "firmware": {"bios": {"date": "04/01/2014", "vendor": "SeaBIOS", "version": "1.13.0-1ubuntu1.1"}}, "hostname": "node-2", "nics": [{"ip": "172.22.0.75", "mac": "00:4a:e3:eb:f8:4a", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "fe80::72e9:a34d:2642:ca46%enp1s0", "mac": "00:4a:e3:eb:f8:4a", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "192.168.111.22", "mac": "00:4a:e3:eb:f8:4c", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "fe80::7d6a:52da:c2d1:79ea%enp2s0", "mac": "00:4a:e3:eb:f8:4c", "model": "0x1af4 0x0001", "name": "enp2s0"}], "ramMebibytes": 4096, "storage": [{"hctl": "0:0:0:0", "model": "QEMU HARDDISK", "name": "/dev/sda", "rotational": true, "serialNumber": "drive-scsi0-0-0-0", "sizeBytes": 53687091200, "type": "HDD", "vendor": "QEMU"}], "systemVendor": {"manufacturer": "QEMU", "productName": "Standard PC (Q35 + ICH9, 2009)"}}, "hardwareProfile": "unknown", "lastUpdated": "2021-11-10T16:54:56Z", "operationHistory": {"deprovision": {"end": null, "start": null}, "inspect": {"end": "2021-11-10T15:58:39Z", "start": "2021-11-10T15:54:55Z"}, "provision": {"end": "2021-11-10T16:54:56Z", "start": "2021-11-10T16:50:44Z"}, "register": {"end": "2021-11-10T16:50:44Z", "start": "2021-11-10T16:50:44Z"}}, "operationalStatus": "OK", "poweredOn": true, "provisioning": {"ID": "08c01e5d-b46e-49d0-a478-f790a9b9628a", "bootMode": "legacy", "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "raid": {"hardwareRAIDVolumes": null, "softwareRAIDVolumes": []}, "rootDeviceHints": {"deviceName": "/dev/sda"}, "state": "provisioned"}, "triedCredentials": {"credentials": {"name": "node-2-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "14934"}}}, {"apiVersion": "metal3.io/v1alpha1", "kind": "BareMetalHost", "metadata": {"annotations": {"kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"metal3.io/v1alpha1\",\"kind\":\"BareMetalHost\",\"metadata\":{\"annotations\":{},\"name\":\"node-3\",\"namespace\":\"metal3\"},\"spec\":{\"bmc\":{\"address\":\"redfish+http://192.168.111.1:8000/redfish/v1/Systems/88c87873-8426-41bd-b43a-934c4041474b\",\"credentialsName\":\"node-3-bmc-secret\"},\"bootMACAddress\":\"00:4a:e3:eb:f8:4e\",\"bootMode\":\"legacy\",\"online\":true}}\n"}, "creationTimestamp": "2021-11-10T15:54:10Z", "finalizers": ["baremetalhost.metal3.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1"}, "managedFields": [{"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:finalizers": {".": {}, "v:\"baremetalhost.metal3.io\"": {}}}}, "manager": "baremetal-operator", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:annotations": {".": {}, "f:kubectl.kubernetes.io/last-applied-configuration": {}}}, "f:spec": {".": {}, "f:automatedCleaningMode": {}, "f:bmc": {".": {}, "f:address": {}, "f:credentialsName": {}}, "f:bootMACAddress": {}, "f:bootMode": {}, "f:online": {}}}, "manager": "kubectl-client-side-apply", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:labels": {".": {}, "f:cluster.x-k8s.io/cluster-name": {}}, "f:ownerReferences": {".": {}, "k:{\"uid\":\"c22cdded-d5e2-4c90-a998-20b230c8c580\"}": {}}}, "f:spec": {"f:consumerRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:namespace": {}}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:metaData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:networkData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:userData": {".": {}, "f:name": {}, "f:namespace": {}}}}, "manager": "cluster-api-provider-metal3-manager", "operation": "Update", "time": "2021-11-10T16:20:27Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {".": {}, "f:errorCount": {}, "f:errorMessage": {}, "f:goodCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}, "f:hardware": {".": {}, "f:cpu": {".": {}, "f:arch": {}, "f:clockMegahertz": {}, "f:count": {}, "f:flags": {}, "f:model": {}}, "f:firmware": {".": {}, "f:bios": {".": {}, "f:date": {}, "f:vendor": {}, "f:version": {}}}, "f:hostname": {}, "f:nics": {}, "f:ramMebibytes": {}, "f:storage": {}, "f:systemVendor": {".": {}, "f:manufacturer": {}, "f:productName": {}}}, "f:hardwareProfile": {}, "f:lastUpdated": {}, "f:operationHistory": {".": {}, "f:deprovision": {".": {}, "f:end": {}, "f:start": {}}, "f:inspect": {".": {}, "f:end": {}, "f:start": {}}, "f:provision": {".": {}, "f:end": {}, "f:start": {}}, "f:register": {".": {}, "f:end": {}, "f:start": {}}}, "f:operationalStatus": {}, "f:poweredOn": {}, "f:provisioning": {".": {}, "f:ID": {}, "f:bootMode": {}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:raid": {".": {}, "f:hardwareRAIDVolumes": {}, "f:softwareRAIDVolumes": {}}, "f:rootDeviceHints": {".": {}, "f:deviceName": {}}, "f:state": {}}, "f:triedCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}}}, "manager": "baremetal-operator", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:38:11Z"}], "name": "node-3", "namespace": "metal3", "ownerReferences": [{"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "controller": true, "kind": "Metal3Machine", "name": "test1-controlplane-st75s", "uid": "c22cdded-d5e2-4c90-a998-20b230c8c580"}], "resourceVersion": "11981", "uid": "ea568c6d-2491-4ffa-909b-f57ce0cb407c"}, "spec": {"automatedCleaningMode": "metadata", "bmc": {"address": "redfish+http://192.168.111.1:8000/redfish/v1/Systems/88c87873-8426-41bd-b43a-934c4041474b", "credentialsName": "node-3-bmc-secret"}, "bootMACAddress": "00:4a:e3:eb:f8:4e", "bootMode": "legacy", "consumerRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-controlplane-st75s", "namespace": "metal3"}, "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "metaData": {"name": "test1-controlplane-st75s-metadata", "namespace": "metal3"}, "networkData": {"name": "test1-controlplane-st75s-networkdata", "namespace": "metal3"}, "online": true, "userData": {"name": "test1-tz8qx", "namespace": "metal3"}}, "status": {"errorCount": 0, "errorMessage": "", "goodCredentials": {"credentials": {"name": "node-3-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "8402"}, "hardware": {"cpu": {"arch": "x86_64", "clockMegahertz": 2095, "count": 2, "flags": ["3dnowprefetch", "abm", "adx", "aes", "apic", "arat", "arch_capabilities", "avx", "avx2", "avx512bw", "avx512cd", "avx512dq", "avx512f", "avx512vl", "bmi1", "bmi2", "clflush", "clflushopt", "cmov", "constant_tsc", "cpuid", "cpuid_fault", "cx16", "cx8", "de", "ept", "erms", "f16c", "fma", "fpu", "fsgsbase", "fxsr", "hle", "hypervisor", "invpcid", "invpcid_single", "lahf_lm", "lm", "mca", "mce", "md_clear", "mmx", "movbe", "mpx", "msr", "mtrr", "nopl", "nx", "pae", "pat", "pcid", "pclmulqdq", "pdpe1gb", "pge", "pni", "popcnt", "pse", "pse36", "pti", "rdrand", "rdseed", "rdtscp", "rep_good", "rtm", "sep", "smap", "smep", "ss", "sse", "sse2", "sse4_1", "sse4_2", "ssse3", "syscall", "tpr_shadow", "tsc", "tsc_adjust", "tsc_deadline_timer", "tsc_known_freq", "umip", "vme", "vmx", "vnmi", "vpid", "x2apic", "xsave", "xsavec", "xsaveopt", "xsaves", "xtopology"], "model": "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"}, "firmware": {"bios": {"date": "04/01/2014", "vendor": "SeaBIOS", "version": "1.13.0-1ubuntu1.1"}}, "hostname": "node-3", "nics": [{"ip": "192.168.111.23", "mac": "00:4a:e3:eb:f8:50", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "fe80::574b:d072:30b:524b%enp2s0", "mac": "00:4a:e3:eb:f8:50", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "172.22.0.79", "mac": "00:4a:e3:eb:f8:4e", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "fe80::bd73:acea:cfd1:da79%enp1s0", "mac": "00:4a:e3:eb:f8:4e", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}], "ramMebibytes": 4096, "storage": [{"hctl": "0:0:0:0", "model": "QEMU HARDDISK", "name": "/dev/sda", "rotational": true, "serialNumber": "drive-scsi0-0-0-0", "sizeBytes": 53687091200, "type": "HDD", "vendor": "QEMU"}], "systemVendor": {"manufacturer": "QEMU", "productName": "Standard PC (Q35 + ICH9, 2009)"}}, "hardwareProfile": "unknown", "lastUpdated": "2021-11-10T16:38:11Z", "operationHistory": {"deprovision": {"end": "2021-11-10T16:32:19Z", "start": "2021-11-10T16:30:57Z"}, "inspect": {"end": "2021-11-10T15:58:38Z", "start": "2021-11-10T15:54:55Z"}, "provision": {"end": "2021-11-10T16:38:11Z", "start": "2021-11-10T16:32:19Z"}, "register": {"end": "2021-11-10T16:20:27Z", "start": "2021-11-10T16:20:27Z"}}, "operationalStatus": "OK", "poweredOn": true, "provisioning": {"ID": "2fa3356e-4f9a-46b3-b4fd-792df6fa5c74", "bootMode": "legacy", "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "raid": {"hardwareRAIDVolumes": null, "softwareRAIDVolumes": []}, "rootDeviceHints": {"deviceName": "/dev/sda"}, "state": "provisioned"}, "triedCredentials": {"credentials": {"name": "node-3-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "8402"}}}]}[0m
+Wednesday 10 November 2021  20:32:01 +0000 (0:00:01.158)       0:00:02.865 **** 
+
+TASK [v1aX_integration_test : Set fact for NIC names for the first BMH found] ***
+[0;32mok: [localhost] => {"ansible_facts": {"bmh_nic_names": ["enp1s0", "enp2s0"]}, "changed": false}[0m
+Wednesday 10 November 2021  20:32:01 +0000 (0:00:00.071)       0:00:02.937 **** 
+
+TASK [v1aX_integration_test : Create a temporary manifest directory if it does not exist] ***
+[0;32mok: [localhost] => {"changed": false, "gid": 1000, "group": "capm3", "mode": "0755", "owner": "capm3", "path": "/home/capm3/projects/metal3-dev-env/vm-setup/roles/v1aX_integration_test/files/manifests", "size": 4096, "state": "directory", "uid": 1000}[0m
+Wednesday 10 November 2021  20:32:01 +0000 (0:00:00.440)       0:00:03.378 **** 
+
+TASK [v1aX_integration_test : Deploy clusterctl variables to clusterctl config] ***
+[0;32mok: [localhost] => {"changed": false, "checksum": "5567578392c7f59ce1d211bc7065528d40f6f6d8", "dest": "/home/capm3/.cluster-api/clusterctl.yaml", "gid": 1000, "group": "capm3", "mode": "0664", "owner": "capm3", "path": "/home/capm3/.cluster-api/clusterctl.yaml", "size": 867, "state": "file", "uid": 1000}[0m
+Wednesday 10 November 2021  20:32:02 +0000 (0:00:00.776)       0:00:04.154 **** 
+
+TASK [v1aX_integration_test : Generate clusterctl cluster template] ************
+[0;32mok: [localhost] => (item=cluster) => {"ansible_loop_var": "item", "changed": false, "checksum": "ea6c9b080a8d37e9747980d9c9396adb0eb5ebc1", "dest": "/home/capm3/.cluster-api/overrides/infrastructure-metal3/v0.5.2/cluster-template-cluster.yaml", "gid": 1000, "group": "capm3", "item": "cluster", "mode": "0664", "owner": "capm3", "path": "/home/capm3/.cluster-api/overrides/infrastructure-metal3/v0.5.2/cluster-template-cluster.yaml", "size": 1472, "state": "file", "uid": 1000}[0m
+[0;32mok: [localhost] => (item=controlplane) => {"ansible_loop_var": "item", "changed": false, "checksum": "fad2bc8dac61883fcc37e34596a75d23ba12c2f7", "dest": "/home/capm3/.cluster-api/overrides/infrastructure-metal3/v0.5.2/cluster-template-controlplane.yaml", "gid": 1000, "group": "capm3", "item": "controlplane", "mode": "0664", "owner": "capm3", "path": "/home/capm3/.cluster-api/overrides/infrastructure-metal3/v0.5.2/cluster-template-controlplane.yaml", "size": 7283, "state": "file", "uid": 1000}[0m
+[0;32mok: [localhost] => (item=workers) => {"ansible_loop_var": "item", "changed": false, "checksum": "43a64fb099c78f74c78e1335ba7309784b325055", "dest": "/home/capm3/.cluster-api/overrides/infrastructure-metal3/v0.5.2/cluster-template-workers.yaml", "gid": 1000, "group": "capm3", "item": "workers", "mode": "0664", "owner": "capm3", "path": "/home/capm3/.cluster-api/overrides/infrastructure-metal3/v0.5.2/cluster-template-workers.yaml", "size": 4737, "state": "file", "uid": 1000}[0m
+Wednesday 10 November 2021  20:32:04 +0000 (0:00:01.478)       0:00:05.633 **** 
+
+TASK [v1aX_integration_test : Generate templates] ******************************
+[0;33mchanged: [localhost] => (item=cluster) => {"ansible_loop_var": "item", "changed": true, "cmd": "clusterctl config cluster test1 --from /home/capm3/.cluster-api/overrides/infrastructure-metal3/v0.5.2/cluster-template-cluster.yaml --kubernetes-version v1.21.1 --control-plane-machine-count=3 --worker-machine-count=1 --target-namespace=metal3 > /home/capm3/projects/metal3-dev-env/vm-setup/roles/v1aX_integration_test/files/manifests/v1alpha5_cluster_ubuntu.yaml\n", "delta": "0:00:00.044513", "end": "2021-11-10 20:32:04.562555", "item": "cluster", "msg": "", "rc": 0, "start": "2021-11-10 20:32:04.518042", "stderr": "Command \"cluster\" is deprecated, use `clusterctl generate cluster` instead", "stderr_lines": ["Command \"cluster\" is deprecated, use `clusterctl generate cluster` instead"], "stdout": "", "stdout_lines": []}[0m
+[0;33mchanged: [localhost] => (item=controlplane) => {"ansible_loop_var": "item", "changed": true, "cmd": "clusterctl config cluster test1 --from /home/capm3/.cluster-api/overrides/infrastructure-metal3/v0.5.2/cluster-template-controlplane.yaml --kubernetes-version v1.21.1 --control-plane-machine-count=3 --worker-machine-count=1 --target-namespace=metal3 > /home/capm3/projects/metal3-dev-env/vm-setup/roles/v1aX_integration_test/files/manifests/v1alpha5_controlplane_ubuntu.yaml\n", "delta": "0:00:00.043406", "end": "2021-11-10 20:32:04.830037", "item": "controlplane", "msg": "", "rc": 0, "start": "2021-11-10 20:32:04.786631", "stderr": "Command \"cluster\" is deprecated, use `clusterctl generate cluster` instead", "stderr_lines": ["Command \"cluster\" is deprecated, use `clusterctl generate cluster` instead"], "stdout": "", "stdout_lines": []}[0m
+[0;33mchanged: [localhost] => (item=workers) => {"ansible_loop_var": "item", "changed": true, "cmd": "clusterctl config cluster test1 --from /home/capm3/.cluster-api/overrides/infrastructure-metal3/v0.5.2/cluster-template-workers.yaml --kubernetes-version v1.21.1 --control-plane-machine-count=3 --worker-machine-count=1 --target-namespace=metal3 > /home/capm3/projects/metal3-dev-env/vm-setup/roles/v1aX_integration_test/files/manifests/v1alpha5_workers_ubuntu.yaml\n", "delta": "0:00:00.040945", "end": "2021-11-10 20:32:05.101815", "item": "workers", "msg": "", "rc": 0, "start": "2021-11-10 20:32:05.060870", "stderr": "Command \"cluster\" is deprecated, use `clusterctl generate cluster` instead", "stderr_lines": ["Command \"cluster\" is deprecated, use `clusterctl generate cluster` instead"], "stdout": "", "stdout_lines": []}[0m
+Wednesday 10 November 2021  20:32:05 +0000 (0:00:01.026)       0:00:06.659 **** 
+Wednesday 10 November 2021  20:32:05 +0000 (0:00:00.057)       0:00:06.716 **** 
+Wednesday 10 November 2021  20:32:05 +0000 (0:00:00.057)       0:00:06.774 **** 
+
+TASK [v1aX_integration_test : Provision cluster] *******************************
+[0;32mok: [localhost] => {"changed": false, "cmd": "kubectl apply -f \"/home/capm3/projects/metal3-dev-env/vm-setup/roles/v1aX_integration_test/files/manifests/v1alpha5_cluster_ubuntu.yaml\" -n \"metal3\"", "delta": "0:00:00.387958", "end": "2021-11-10 20:32:05.894939", "msg": "", "rc": 0, "start": "2021-11-10 20:32:05.506981", "stderr": "", "stderr_lines": [], "stdout": "cluster.cluster.x-k8s.io/test1 unchanged\nmetal3cluster.infrastructure.cluster.x-k8s.io/test1 unchanged\nippool.ipam.metal3.io/provisioning-pool unchanged\nippool.ipam.metal3.io/baremetalv4-pool unchanged", "stdout_lines": ["cluster.cluster.x-k8s.io/test1 unchanged", "metal3cluster.infrastructure.cluster.x-k8s.io/test1 unchanged", "ippool.ipam.metal3.io/provisioning-pool unchanged", "ippool.ipam.metal3.io/baremetalv4-pool unchanged"]}[0m
+Wednesday 10 November 2021  20:32:05 +0000 (0:00:00.667)       0:00:07.441 **** 
+
+TASK [v1aX_integration_test : Create control plane] ****************************
+[0;33mchanged: [localhost] => {"changed": true, "cmd": "kubectl apply -f \"/home/capm3/projects/metal3-dev-env/vm-setup/roles/v1aX_integration_test/files/manifests/v1alpha5_controlplane_ubuntu.yaml\" -n \"metal3\"", "delta": "0:00:00.678779", "end": "2021-11-10 20:32:06.868286", "msg": "", "rc": 0, "start": "2021-11-10 20:32:06.189507", "stderr": "", "stderr_lines": [], "stdout": "kubeadmcontrolplane.controlplane.cluster.x-k8s.io/test1 unchanged\nmetal3machinetemplate.infrastructure.cluster.x-k8s.io/test1-controlplane unchanged\nmetal3datatemplate.infrastructure.cluster.x-k8s.io/test1-controlplane-template configured", "stdout_lines": ["kubeadmcontrolplane.controlplane.cluster.x-k8s.io/test1 unchanged", "metal3machinetemplate.infrastructure.cluster.x-k8s.io/test1-controlplane unchanged", "metal3datatemplate.infrastructure.cluster.x-k8s.io/test1-controlplane-template configured"]}[0m
+Wednesday 10 November 2021  20:32:06 +0000 (0:00:00.972)       0:00:08.414 **** 
+
+TASK [v1aX_integration_test : Create worker nodes] *****************************
+[0;33mchanged: [localhost] => {"changed": true, "cmd": "kubectl apply -f \"/home/capm3/projects/metal3-dev-env/vm-setup/roles/v1aX_integration_test/files/manifests/v1alpha5_workers_ubuntu.yaml\" -n \"metal3\"", "delta": "0:00:00.369020", "end": "2021-11-10 20:32:07.525211", "msg": "", "rc": 0, "start": "2021-11-10 20:32:07.156191", "stderr": "", "stderr_lines": [], "stdout": "machinedeployment.cluster.x-k8s.io/test1 unchanged\nmetal3machinetemplate.infrastructure.cluster.x-k8s.io/test1-workers unchanged\nmetal3datatemplate.infrastructure.cluster.x-k8s.io/test1-workers-template configured\nkubeadmconfigtemplate.bootstrap.cluster.x-k8s.io/test1-workers unchanged", "stdout_lines": ["machinedeployment.cluster.x-k8s.io/test1 unchanged", "metal3machinetemplate.infrastructure.cluster.x-k8s.io/test1-workers unchanged", "metal3datatemplate.infrastructure.cluster.x-k8s.io/test1-workers-template configured", "kubeadmconfigtemplate.bootstrap.cluster.x-k8s.io/test1-workers unchanged"]}[0m
+Wednesday 10 November 2021  20:32:07 +0000 (0:00:00.660)       0:00:09.075 **** 
+
+TASK [v1aX_integration_test : verify deployment] *******************************
+[0;36mincluded: /home/capm3/projects/metal3-dev-env/vm-setup/roles/v1aX_integration_test/tasks/verify.yml for localhost[0m
+Wednesday 10 November 2021  20:32:07 +0000 (0:00:00.090)       0:00:09.166 **** 
+
+TASK [v1aX_integration_test : Define number of BMH's] **************************
+[0;32mok: [localhost] => {"ansible_facts": {"NUMBER_OF_BMH": "4"}, "changed": false}[0m
+Wednesday 10 November 2021  20:32:07 +0000 (0:00:00.071)       0:00:09.237 **** 
+
+TASK [v1aX_integration_test : Wait until cluster becomes provisioned.] *********
+[0;32mok: [localhost] => {"api_found": true, "attempts": 1, "changed": false, "resources": [{"apiVersion": "cluster.x-k8s.io/v1alpha4", "kind": "Cluster", "metadata": {"annotations": {"kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"cluster.x-k8s.io/v1alpha4\",\"kind\":\"Cluster\",\"metadata\":{\"annotations\":{},\"name\":\"test1\",\"namespace\":\"metal3\"},\"spec\":{\"clusterNetwork\":{\"pods\":{\"cidrBlocks\":[\"192.168.0.0/18\"]},\"services\":{\"cidrBlocks\":[\"10.96.0.0/12\"]}},\"controlPlaneRef\":{\"apiVersion\":\"controlplane.cluster.x-k8s.io/v1alpha4\",\"kind\":\"KubeadmControlPlane\",\"name\":\"test1\"},\"infrastructureRef\":{\"apiVersion\":\"infrastructure.cluster.x-k8s.io/v1alpha5\",\"kind\":\"Metal3Cluster\",\"name\":\"test1\"}}}\n"}, "creationTimestamp": "2021-11-10T15:59:24Z", "finalizers": ["cluster.cluster.x-k8s.io"], "generation": 2, "managedFields": [{"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:annotations": {".": {}, "f:kubectl.kubernetes.io/last-applied-configuration": {}}}, "f:spec": {".": {}, "f:clusterNetwork": {".": {}, "f:pods": {".": {}, "f:cidrBlocks": {}}, "f:services": {".": {}, "f:cidrBlocks": {}}}, "f:controlPlaneRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}}, "f:infrastructureRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}}}}, "manager": "kubectl-client-side-apply", "operation": "Update", "time": "2021-11-10T15:59:24Z"}, {"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {}}, "manager": "manager", "operation": "Update", "time": "2021-11-10T15:59:24Z"}, {"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {"f:conditions": {}, "f:controlPlaneReady": {}, "f:infrastructureReady": {}, "f:observedGeneration": {}, "f:phase": {}}}, "manager": "manager", "operation": "Update", "subresource": "status", "time": "2021-11-10T18:47:20Z"}], "name": "test1", "namespace": "metal3", "resourceVersion": "56253", "uid": "60d86cfe-ef1c-4788-bc7f-ba930704a2f4"}, "spec": {"clusterNetwork": {"pods": {"cidrBlocks": ["192.168.0.0/18"]}, "services": {"cidrBlocks": ["10.96.0.0/12"]}}, "controlPlaneEndpoint": {"host": "192.168.111.249", "port": 6443}, "controlPlaneRef": {"apiVersion": "controlplane.cluster.x-k8s.io/v1alpha4", "kind": "KubeadmControlPlane", "name": "test1", "namespace": "metal3"}, "infrastructureRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Cluster", "name": "test1", "namespace": "metal3"}}, "status": {"conditions": [{"lastTransitionTime": "2021-11-10T16:48:18Z", "status": "True", "type": "Ready"}, {"lastTransitionTime": "2021-11-10T16:19:59Z", "status": "True", "type": "ControlPlaneInitialized"}, {"lastTransitionTime": "2021-11-10T16:48:18Z", "status": "True", "type": "ControlPlaneReady"}, {"lastTransitionTime": "2021-11-10T15:59:24Z", "status": "True", "type": "InfrastructureReady"}], "controlPlaneReady": true, "infrastructureReady": true, "observedGeneration": 2, "phase": "Provisioned"}}]}[0m
+Wednesday 10 November 2021  20:32:08 +0000 (0:00:00.749)       0:00:09.987 **** 
+
+TASK [v1aX_integration_test : Wait until "4" BMHs become provisioned.] *********
+[0;32mok: [localhost] => {"api_found": true, "attempts": 1, "changed": false, "resources": [{"apiVersion": "metal3.io/v1alpha1", "kind": "BareMetalHost", "metadata": {"annotations": {"kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"metal3.io/v1alpha1\",\"kind\":\"BareMetalHost\",\"metadata\":{\"annotations\":{},\"name\":\"node-0\",\"namespace\":\"metal3\"},\"spec\":{\"bmc\":{\"address\":\"ipmi://192.168.111.1:6230\",\"credentialsName\":\"node-0-bmc-secret\"},\"bootMACAddress\":\"00:4a:e3:eb:f8:42\",\"bootMode\":\"legacy\",\"online\":true}}\n"}, "creationTimestamp": "2021-11-10T15:54:10Z", "finalizers": ["baremetalhost.metal3.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1"}, "managedFields": [{"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:finalizers": {".": {}, "v:\"baremetalhost.metal3.io\"": {}}}}, "manager": "baremetal-operator", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:annotations": {".": {}, "f:kubectl.kubernetes.io/last-applied-configuration": {}}}, "f:spec": {".": {}, "f:automatedCleaningMode": {}, "f:bmc": {".": {}, "f:address": {}, "f:credentialsName": {}}, "f:bootMACAddress": {}, "f:bootMode": {}, "f:online": {}}}, "manager": "kubectl-client-side-apply", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:labels": {".": {}, "f:cluster.x-k8s.io/cluster-name": {}}, "f:ownerReferences": {".": {}, "k:{\"uid\":\"9dbec15f-bfd5-4373-ae81-96822021daf7\"}": {}}}, "f:spec": {"f:consumerRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:namespace": {}}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:metaData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:networkData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:userData": {".": {}, "f:name": {}, "f:namespace": {}}}}, "manager": "cluster-api-provider-metal3-manager", "operation": "Update", "time": "2021-11-10T16:41:42Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {".": {}, "f:errorCount": {}, "f:errorMessage": {}, "f:goodCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}, "f:hardware": {".": {}, "f:cpu": {".": {}, "f:arch": {}, "f:clockMegahertz": {}, "f:count": {}, "f:flags": {}, "f:model": {}}, "f:firmware": {".": {}, "f:bios": {".": {}, "f:date": {}, "f:vendor": {}, "f:version": {}}}, "f:hostname": {}, "f:nics": {}, "f:ramMebibytes": {}, "f:storage": {}, "f:systemVendor": {".": {}, "f:manufacturer": {}, "f:productName": {}}}, "f:hardwareProfile": {}, "f:lastUpdated": {}, "f:operationHistory": {".": {}, "f:deprovision": {".": {}, "f:end": {}, "f:start": {}}, "f:inspect": {".": {}, "f:end": {}, "f:start": {}}, "f:provision": {".": {}, "f:end": {}, "f:start": {}}, "f:register": {".": {}, "f:end": {}, "f:start": {}}}, "f:operationalStatus": {}, "f:poweredOn": {}, "f:provisioning": {".": {}, "f:ID": {}, "f:bootMode": {}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:raid": {".": {}, "f:hardwareRAIDVolumes": {}, "f:softwareRAIDVolumes": {}}, "f:rootDeviceHints": {".": {}, "f:deviceName": {}}, "f:state": {}}, "f:triedCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}}}, "manager": "baremetal-operator", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:48:17Z"}], "name": "node-0", "namespace": "metal3", "ownerReferences": [{"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "controller": true, "kind": "Metal3Machine", "name": "test1-controlplane-42wj6", "uid": "9dbec15f-bfd5-4373-ae81-96822021daf7"}], "resourceVersion": "14095", "uid": "0a41f459-3dd4-428f-8b71-1f8ce6e218c0"}, "spec": {"automatedCleaningMode": "metadata", "bmc": {"address": "ipmi://192.168.111.1:6230", "credentialsName": "node-0-bmc-secret"}, "bootMACAddress": "00:4a:e3:eb:f8:42", "bootMode": "legacy", "consumerRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-controlplane-42wj6", "namespace": "metal3"}, "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "metaData": {"name": "test1-controlplane-42wj6-metadata", "namespace": "metal3"}, "networkData": {"name": "test1-controlplane-42wj6-networkdata", "namespace": "metal3"}, "online": true, "userData": {"name": "test1-w6ntq", "namespace": "metal3"}}, "status": {"errorCount": 0, "errorMessage": "", "goodCredentials": {"credentials": {"name": "node-0-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "12999"}, "hardware": {"cpu": {"arch": "x86_64", "clockMegahertz": 2095, "count": 2, "flags": ["3dnowprefetch", "abm", "adx", "aes", "apic", "arat", "arch_capabilities", "avx", "avx2", "avx512bw", "avx512cd", "avx512dq", "avx512f", "avx512vl", "bmi1", "bmi2", "clflush", "clflushopt", "cmov", "constant_tsc", "cpuid", "cpuid_fault", "cx16", "cx8", "de", "ept", "erms", "f16c", "fma", "fpu", "fsgsbase", "fxsr", "hle", "hypervisor", "invpcid", "invpcid_single", "lahf_lm", "lm", "mca", "mce", "md_clear", "mmx", "movbe", "mpx", "msr", "mtrr", "nopl", "nx", "pae", "pat", "pcid", "pclmulqdq", "pdpe1gb", "pge", "pni", "popcnt", "pse", "pse36", "pti", "rdrand", "rdseed", "rdtscp", "rep_good", "rtm", "sep", "smap", "smep", "ss", "sse", "sse2", "sse4_1", "sse4_2", "ssse3", "syscall", "tpr_shadow", "tsc", "tsc_adjust", "tsc_deadline_timer", "tsc_known_freq", "umip", "vme", "vmx", "vnmi", "vpid", "x2apic", "xsave", "xsavec", "xsaveopt", "xsaves", "xtopology"], "model": "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"}, "firmware": {"bios": {"date": "04/01/2014", "vendor": "SeaBIOS", "version": "1.13.0-1ubuntu1.1"}}, "hostname": "node-0", "nics": [{"ip": "192.168.111.20", "mac": "00:4a:e3:eb:f8:44", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "fe80::4759:40e9:3ace:820c%enp2s0", "mac": "00:4a:e3:eb:f8:44", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "172.22.0.67", "mac": "00:4a:e3:eb:f8:42", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "fe80::370:db5e:5d36:1385%enp1s0", "mac": "00:4a:e3:eb:f8:42", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}], "ramMebibytes": 4096, "storage": [{"hctl": "0:0:0:0", "model": "QEMU HARDDISK", "name": "/dev/sda", "rotational": true, "serialNumber": "drive-scsi0-0-0-0", "sizeBytes": 53687091200, "type": "HDD", "vendor": "QEMU"}], "systemVendor": {"manufacturer": "QEMU", "productName": "Standard PC (Q35 + ICH9, 2009)"}}, "hardwareProfile": "unknown", "lastUpdated": "2021-11-10T16:48:17Z", "operationHistory": {"deprovision": {"end": null, "start": null}, "inspect": {"end": "2021-11-10T15:58:39Z", "start": "2021-11-10T15:54:55Z"}, "provision": {"end": "2021-11-10T16:48:17Z", "start": "2021-11-10T16:41:43Z"}, "register": {"end": "2021-11-10T16:41:43Z", "start": "2021-11-10T16:41:42Z"}}, "operationalStatus": "OK", "poweredOn": true, "provisioning": {"ID": "dd8afd36-42cb-435d-889b-eef745d34fff", "bootMode": "legacy", "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "raid": {"hardwareRAIDVolumes": null, "softwareRAIDVolumes": []}, "rootDeviceHints": {"deviceName": "/dev/sda"}, "state": "provisioned"}, "triedCredentials": {"credentials": {"name": "node-0-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "12999"}}}, {"apiVersion": "metal3.io/v1alpha1", "kind": "BareMetalHost", "metadata": {"annotations": {"kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"metal3.io/v1alpha1\",\"kind\":\"BareMetalHost\",\"metadata\":{\"annotations\":{},\"name\":\"node-1\",\"namespace\":\"metal3\"},\"spec\":{\"bmc\":{\"address\":\"redfish+http://192.168.111.1:8000/redfish/v1/Systems/5414b5e7-bae3-4f7e-8e59-cf44f009a7a1\",\"credentialsName\":\"node-1-bmc-secret\"},\"bootMACAddress\":\"00:4a:e3:eb:f8:46\",\"bootMode\":\"legacy\",\"online\":true}}\n"}, "creationTimestamp": "2021-11-10T15:54:10Z", "finalizers": ["baremetalhost.metal3.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1"}, "managedFields": [{"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:finalizers": {".": {}, "v:\"baremetalhost.metal3.io\"": {}}}}, "manager": "baremetal-operator", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:annotations": {".": {}, "f:kubectl.kubernetes.io/last-applied-configuration": {}}}, "f:spec": {".": {}, "f:automatedCleaningMode": {}, "f:bmc": {".": {}, "f:address": {}, "f:credentialsName": {}}, "f:bootMACAddress": {}, "f:bootMode": {}, "f:online": {}}}, "manager": "kubectl-client-side-apply", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:labels": {".": {}, "f:cluster.x-k8s.io/cluster-name": {}}, "f:ownerReferences": {".": {}, "k:{\"uid\":\"e42d05a1-4860-44fc-b495-7567aba97ed1\"}": {}}}, "f:spec": {"f:consumerRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:namespace": {}}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:metaData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:networkData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:userData": {".": {}, "f:name": {}, "f:namespace": {}}}}, "manager": "cluster-api-provider-metal3-manager", "operation": "Update", "time": "2021-11-10T16:02:26Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {".": {}, "f:errorCount": {}, "f:errorMessage": {}, "f:goodCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}, "f:hardware": {".": {}, "f:cpu": {".": {}, "f:arch": {}, "f:clockMegahertz": {}, "f:count": {}, "f:flags": {}, "f:model": {}}, "f:firmware": {".": {}, "f:bios": {".": {}, "f:date": {}, "f:vendor": {}, "f:version": {}}}, "f:hostname": {}, "f:nics": {}, "f:ramMebibytes": {}, "f:storage": {}, "f:systemVendor": {".": {}, "f:manufacturer": {}, "f:productName": {}}}, "f:hardwareProfile": {}, "f:lastUpdated": {}, "f:operationHistory": {".": {}, "f:deprovision": {".": {}, "f:end": {}, "f:start": {}}, "f:inspect": {".": {}, "f:end": {}, "f:start": {}}, "f:provision": {".": {}, "f:end": {}, "f:start": {}}, "f:register": {".": {}, "f:end": {}, "f:start": {}}}, "f:operationalStatus": {}, "f:poweredOn": {}, "f:provisioning": {".": {}, "f:ID": {}, "f:bootMode": {}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:raid": {".": {}, "f:hardwareRAIDVolumes": {}, "f:softwareRAIDVolumes": {}}, "f:rootDeviceHints": {".": {}, "f:deviceName": {}}, "f:state": {}}, "f:triedCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}}}, "manager": "baremetal-operator", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:19:02Z"}], "name": "node-1", "namespace": "metal3", "ownerReferences": [{"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "controller": true, "kind": "Metal3Machine", "name": "test1-controlplane-9z8sd", "uid": "e42d05a1-4860-44fc-b495-7567aba97ed1"}], "resourceVersion": "8004", "uid": "44016cf3-4182-4fb6-9325-3c76d7ac4c45"}, "spec": {"automatedCleaningMode": "metadata", "bmc": {"address": "redfish+http://192.168.111.1:8000/redfish/v1/Systems/5414b5e7-bae3-4f7e-8e59-cf44f009a7a1", "credentialsName": "node-1-bmc-secret"}, "bootMACAddress": "00:4a:e3:eb:f8:46", "bootMode": "legacy", "consumerRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-controlplane-9z8sd", "namespace": "metal3"}, "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "metaData": {"name": "test1-controlplane-9z8sd-metadata", "namespace": "metal3"}, "networkData": {"name": "test1-controlplane-9z8sd-networkdata", "namespace": "metal3"}, "online": true, "userData": {"name": "test1-86wzb", "namespace": "metal3"}}, "status": {"errorCount": 0, "errorMessage": "", "goodCredentials": {"credentials": {"name": "node-1-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "4784"}, "hardware": {"cpu": {"arch": "x86_64", "clockMegahertz": 2095, "count": 2, "flags": ["3dnowprefetch", "abm", "adx", "aes", "apic", "arat", "arch_capabilities", "avx", "avx2", "avx512bw", "avx512cd", "avx512dq", "avx512f", "avx512vl", "bmi1", "bmi2", "clflush", "clflushopt", "cmov", "constant_tsc", "cpuid", "cpuid_fault", "cx16", "cx8", "de", "ept", "erms", "f16c", "fma", "fpu", "fsgsbase", "fxsr", "hle", "hypervisor", "invpcid", "invpcid_single", "lahf_lm", "lm", "mca", "mce", "md_clear", "mmx", "movbe", "mpx", "msr", "mtrr", "nopl", "nx", "pae", "pat", "pcid", "pclmulqdq", "pdpe1gb", "pge", "pni", "popcnt", "pse", "pse36", "pti", "rdrand", "rdseed", "rdtscp", "rep_good", "rtm", "sep", "smap", "smep", "ss", "sse", "sse2", "sse4_1", "sse4_2", "ssse3", "syscall", "tpr_shadow", "tsc", "tsc_adjust", "tsc_deadline_timer", "tsc_known_freq", "umip", "vme", "vmx", "vnmi", "vpid", "x2apic", "xsave", "xsavec", "xsaveopt", "xsaves", "xtopology"], "model": "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"}, "firmware": {"bios": {"date": "04/01/2014", "vendor": "SeaBIOS", "version": "1.13.0-1ubuntu1.1"}}, "hostname": "node-1", "nics": [{"ip": "172.22.0.71", "mac": "00:4a:e3:eb:f8:46", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "fe80::7ea5:8770:bf6c:a746%enp1s0", "mac": "00:4a:e3:eb:f8:46", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "192.168.111.21", "mac": "00:4a:e3:eb:f8:48", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "fe80::6797:d34:31c5:8f05%enp2s0", "mac": "00:4a:e3:eb:f8:48", "model": "0x1af4 0x0001", "name": "enp2s0"}], "ramMebibytes": 4096, "storage": [{"hctl": "0:0:0:0", "model": "QEMU HARDDISK", "name": "/dev/sda", "rotational": true, "serialNumber": "drive-scsi0-0-0-0", "sizeBytes": 53687091200, "type": "HDD", "vendor": "QEMU"}], "systemVendor": {"manufacturer": "QEMU", "productName": "Standard PC (Q35 + ICH9, 2009)"}}, "hardwareProfile": "unknown", "lastUpdated": "2021-11-10T16:19:02Z", "operationHistory": {"deprovision": {"end": "2021-11-10T16:15:31Z", "start": "2021-11-10T16:14:10Z"}, "inspect": {"end": "2021-11-10T15:58:38Z", "start": "2021-11-10T15:54:55Z"}, "provision": {"end": "2021-11-10T16:19:02Z", "start": "2021-11-10T16:15:32Z"}, "register": {"end": "2021-11-10T16:02:27Z", "start": "2021-11-10T16:02:26Z"}}, "operationalStatus": "OK", "poweredOn": true, "provisioning": {"ID": "cac5fa5f-7eae-4f70-8cbe-672834a26ca0", "bootMode": "legacy", "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "raid": {"hardwareRAIDVolumes": null, "softwareRAIDVolumes": []}, "rootDeviceHints": {"deviceName": "/dev/sda"}, "state": "provisioned"}, "triedCredentials": {"credentials": {"name": "node-1-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "4784"}}}, {"apiVersion": "metal3.io/v1alpha1", "kind": "BareMetalHost", "metadata": {"annotations": {"kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"metal3.io/v1alpha1\",\"kind\":\"BareMetalHost\",\"metadata\":{\"annotations\":{},\"name\":\"node-2\",\"namespace\":\"metal3\"},\"spec\":{\"bmc\":{\"address\":\"ipmi://192.168.111.1:6232\",\"credentialsName\":\"node-2-bmc-secret\"},\"bootMACAddress\":\"00:4a:e3:eb:f8:4a\",\"bootMode\":\"legacy\",\"online\":true}}\n"}, "creationTimestamp": "2021-11-10T15:54:10Z", "finalizers": ["baremetalhost.metal3.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1"}, "managedFields": [{"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:finalizers": {".": {}, "v:\"baremetalhost.metal3.io\"": {}}}}, "manager": "baremetal-operator", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:annotations": {".": {}, "f:kubectl.kubernetes.io/last-applied-configuration": {}}}, "f:spec": {".": {}, "f:automatedCleaningMode": {}, "f:bmc": {".": {}, "f:address": {}, "f:credentialsName": {}}, "f:bootMACAddress": {}, "f:bootMode": {}, "f:online": {}}}, "manager": "kubectl-client-side-apply", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:labels": {".": {}, "f:cluster.x-k8s.io/cluster-name": {}}, "f:ownerReferences": {".": {}, "k:{\"uid\":\"191e4d98-6281-4156-ab55-015e2161d3f7\"}": {}}}, "f:spec": {"f:consumerRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:namespace": {}}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:metaData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:networkData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:userData": {".": {}, "f:name": {}, "f:namespace": {}}}}, "manager": "cluster-api-provider-metal3-manager", "operation": "Update", "time": "2021-11-10T16:50:44Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {".": {}, "f:errorCount": {}, "f:errorMessage": {}, "f:goodCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}, "f:hardware": {".": {}, "f:cpu": {".": {}, "f:arch": {}, "f:clockMegahertz": {}, "f:count": {}, "f:flags": {}, "f:model": {}}, "f:firmware": {".": {}, "f:bios": {".": {}, "f:date": {}, "f:vendor": {}, "f:version": {}}}, "f:hostname": {}, "f:nics": {}, "f:ramMebibytes": {}, "f:storage": {}, "f:systemVendor": {".": {}, "f:manufacturer": {}, "f:productName": {}}}, "f:hardwareProfile": {}, "f:lastUpdated": {}, "f:operationHistory": {".": {}, "f:deprovision": {".": {}, "f:end": {}, "f:start": {}}, "f:inspect": {".": {}, "f:end": {}, "f:start": {}}, "f:provision": {".": {}, "f:end": {}, "f:start": {}}, "f:register": {".": {}, "f:end": {}, "f:start": {}}}, "f:operationalStatus": {}, "f:poweredOn": {}, "f:provisioning": {".": {}, "f:ID": {}, "f:bootMode": {}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:raid": {".": {}, "f:hardwareRAIDVolumes": {}, "f:softwareRAIDVolumes": {}}, "f:rootDeviceHints": {".": {}, "f:deviceName": {}}, "f:state": {}}, "f:triedCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}}}, "manager": "baremetal-operator", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:54:56Z"}], "name": "node-2", "namespace": "metal3", "ownerReferences": [{"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "controller": true, "kind": "Metal3Machine", "name": "test1-workers-xb9ks", "uid": "191e4d98-6281-4156-ab55-015e2161d3f7"}], "resourceVersion": "15508", "uid": "d367f112-8bbc-41f2-9f53-9dd493bbe9b8"}, "spec": {"automatedCleaningMode": "metadata", "bmc": {"address": "ipmi://192.168.111.1:6232", "credentialsName": "node-2-bmc-secret"}, "bootMACAddress": "00:4a:e3:eb:f8:4a", "bootMode": "legacy", "consumerRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-workers-xb9ks", "namespace": "metal3"}, "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "metaData": {"name": "test1-workers-xb9ks-metadata", "namespace": "metal3"}, "networkData": {"name": "test1-workers-xb9ks-networkdata", "namespace": "metal3"}, "online": true, "userData": {"name": "test1-workers-xcrc8", "namespace": "metal3"}}, "status": {"errorCount": 0, "errorMessage": "", "goodCredentials": {"credentials": {"name": "node-2-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "14934"}, "hardware": {"cpu": {"arch": "x86_64", "clockMegahertz": 2095, "count": 2, "flags": ["3dnowprefetch", "abm", "adx", "aes", "apic", "arat", "arch_capabilities", "avx", "avx2", "avx512bw", "avx512cd", "avx512dq", "avx512f", "avx512vl", "bmi1", "bmi2", "clflush", "clflushopt", "cmov", "constant_tsc", "cpuid", "cpuid_fault", "cx16", "cx8", "de", "ept", "erms", "f16c", "fma", "fpu", "fsgsbase", "fxsr", "hle", "hypervisor", "invpcid", "invpcid_single", "lahf_lm", "lm", "mca", "mce", "md_clear", "mmx", "movbe", "mpx", "msr", "mtrr", "nopl", "nx", "pae", "pat", "pcid", "pclmulqdq", "pdpe1gb", "pge", "pni", "popcnt", "pse", "pse36", "pti", "rdrand", "rdseed", "rdtscp", "rep_good", "rtm", "sep", "smap", "smep", "ss", "sse", "sse2", "sse4_1", "sse4_2", "ssse3", "syscall", "tpr_shadow", "tsc", "tsc_adjust", "tsc_deadline_timer", "tsc_known_freq", "umip", "vme", "vmx", "vnmi", "vpid", "x2apic", "xsave", "xsavec", "xsaveopt", "xsaves", "xtopology"], "model": "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"}, "firmware": {"bios": {"date": "04/01/2014", "vendor": "SeaBIOS", "version": "1.13.0-1ubuntu1.1"}}, "hostname": "node-2", "nics": [{"ip": "172.22.0.75", "mac": "00:4a:e3:eb:f8:4a", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "fe80::72e9:a34d:2642:ca46%enp1s0", "mac": "00:4a:e3:eb:f8:4a", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "192.168.111.22", "mac": "00:4a:e3:eb:f8:4c", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "fe80::7d6a:52da:c2d1:79ea%enp2s0", "mac": "00:4a:e3:eb:f8:4c", "model": "0x1af4 0x0001", "name": "enp2s0"}], "ramMebibytes": 4096, "storage": [{"hctl": "0:0:0:0", "model": "QEMU HARDDISK", "name": "/dev/sda", "rotational": true, "serialNumber": "drive-scsi0-0-0-0", "sizeBytes": 53687091200, "type": "HDD", "vendor": "QEMU"}], "systemVendor": {"manufacturer": "QEMU", "productName": "Standard PC (Q35 + ICH9, 2009)"}}, "hardwareProfile": "unknown", "lastUpdated": "2021-11-10T16:54:56Z", "operationHistory": {"deprovision": {"end": null, "start": null}, "inspect": {"end": "2021-11-10T15:58:39Z", "start": "2021-11-10T15:54:55Z"}, "provision": {"end": "2021-11-10T16:54:56Z", "start": "2021-11-10T16:50:44Z"}, "register": {"end": "2021-11-10T16:50:44Z", "start": "2021-11-10T16:50:44Z"}}, "operationalStatus": "OK", "poweredOn": true, "provisioning": {"ID": "08c01e5d-b46e-49d0-a478-f790a9b9628a", "bootMode": "legacy", "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "raid": {"hardwareRAIDVolumes": null, "softwareRAIDVolumes": []}, "rootDeviceHints": {"deviceName": "/dev/sda"}, "state": "provisioned"}, "triedCredentials": {"credentials": {"name": "node-2-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "14934"}}}, {"apiVersion": "metal3.io/v1alpha1", "kind": "BareMetalHost", "metadata": {"annotations": {"kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"metal3.io/v1alpha1\",\"kind\":\"BareMetalHost\",\"metadata\":{\"annotations\":{},\"name\":\"node-3\",\"namespace\":\"metal3\"},\"spec\":{\"bmc\":{\"address\":\"redfish+http://192.168.111.1:8000/redfish/v1/Systems/88c87873-8426-41bd-b43a-934c4041474b\",\"credentialsName\":\"node-3-bmc-secret\"},\"bootMACAddress\":\"00:4a:e3:eb:f8:4e\",\"bootMode\":\"legacy\",\"online\":true}}\n"}, "creationTimestamp": "2021-11-10T15:54:10Z", "finalizers": ["baremetalhost.metal3.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1"}, "managedFields": [{"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:finalizers": {".": {}, "v:\"baremetalhost.metal3.io\"": {}}}}, "manager": "baremetal-operator", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:annotations": {".": {}, "f:kubectl.kubernetes.io/last-applied-configuration": {}}}, "f:spec": {".": {}, "f:automatedCleaningMode": {}, "f:bmc": {".": {}, "f:address": {}, "f:credentialsName": {}}, "f:bootMACAddress": {}, "f:bootMode": {}, "f:online": {}}}, "manager": "kubectl-client-side-apply", "operation": "Update", "time": "2021-11-10T15:54:10Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:metadata": {"f:labels": {".": {}, "f:cluster.x-k8s.io/cluster-name": {}}, "f:ownerReferences": {".": {}, "k:{\"uid\":\"c22cdded-d5e2-4c90-a998-20b230c8c580\"}": {}}}, "f:spec": {"f:consumerRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:namespace": {}}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:metaData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:networkData": {".": {}, "f:name": {}, "f:namespace": {}}, "f:userData": {".": {}, "f:name": {}, "f:namespace": {}}}}, "manager": "cluster-api-provider-metal3-manager", "operation": "Update", "time": "2021-11-10T16:20:27Z"}, {"apiVersion": "metal3.io/v1alpha1", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {".": {}, "f:errorCount": {}, "f:errorMessage": {}, "f:goodCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}, "f:hardware": {".": {}, "f:cpu": {".": {}, "f:arch": {}, "f:clockMegahertz": {}, "f:count": {}, "f:flags": {}, "f:model": {}}, "f:firmware": {".": {}, "f:bios": {".": {}, "f:date": {}, "f:vendor": {}, "f:version": {}}}, "f:hostname": {}, "f:nics": {}, "f:ramMebibytes": {}, "f:storage": {}, "f:systemVendor": {".": {}, "f:manufacturer": {}, "f:productName": {}}}, "f:hardwareProfile": {}, "f:lastUpdated": {}, "f:operationHistory": {".": {}, "f:deprovision": {".": {}, "f:end": {}, "f:start": {}}, "f:inspect": {".": {}, "f:end": {}, "f:start": {}}, "f:provision": {".": {}, "f:end": {}, "f:start": {}}, "f:register": {".": {}, "f:end": {}, "f:start": {}}}, "f:operationalStatus": {}, "f:poweredOn": {}, "f:provisioning": {".": {}, "f:ID": {}, "f:bootMode": {}, "f:image": {".": {}, "f:checksum": {}, "f:checksumType": {}, "f:format": {}, "f:url": {}}, "f:raid": {".": {}, "f:hardwareRAIDVolumes": {}, "f:softwareRAIDVolumes": {}}, "f:rootDeviceHints": {".": {}, "f:deviceName": {}}, "f:state": {}}, "f:triedCredentials": {".": {}, "f:credentials": {".": {}, "f:name": {}, "f:namespace": {}}, "f:credentialsVersion": {}}}}, "manager": "baremetal-operator", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:38:11Z"}], "name": "node-3", "namespace": "metal3", "ownerReferences": [{"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "controller": true, "kind": "Metal3Machine", "name": "test1-controlplane-st75s", "uid": "c22cdded-d5e2-4c90-a998-20b230c8c580"}], "resourceVersion": "11981", "uid": "ea568c6d-2491-4ffa-909b-f57ce0cb407c"}, "spec": {"automatedCleaningMode": "metadata", "bmc": {"address": "redfish+http://192.168.111.1:8000/redfish/v1/Systems/88c87873-8426-41bd-b43a-934c4041474b", "credentialsName": "node-3-bmc-secret"}, "bootMACAddress": "00:4a:e3:eb:f8:4e", "bootMode": "legacy", "consumerRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-controlplane-st75s", "namespace": "metal3"}, "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "metaData": {"name": "test1-controlplane-st75s-metadata", "namespace": "metal3"}, "networkData": {"name": "test1-controlplane-st75s-networkdata", "namespace": "metal3"}, "online": true, "userData": {"name": "test1-tz8qx", "namespace": "metal3"}}, "status": {"errorCount": 0, "errorMessage": "", "goodCredentials": {"credentials": {"name": "node-3-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "8402"}, "hardware": {"cpu": {"arch": "x86_64", "clockMegahertz": 2095, "count": 2, "flags": ["3dnowprefetch", "abm", "adx", "aes", "apic", "arat", "arch_capabilities", "avx", "avx2", "avx512bw", "avx512cd", "avx512dq", "avx512f", "avx512vl", "bmi1", "bmi2", "clflush", "clflushopt", "cmov", "constant_tsc", "cpuid", "cpuid_fault", "cx16", "cx8", "de", "ept", "erms", "f16c", "fma", "fpu", "fsgsbase", "fxsr", "hle", "hypervisor", "invpcid", "invpcid_single", "lahf_lm", "lm", "mca", "mce", "md_clear", "mmx", "movbe", "mpx", "msr", "mtrr", "nopl", "nx", "pae", "pat", "pcid", "pclmulqdq", "pdpe1gb", "pge", "pni", "popcnt", "pse", "pse36", "pti", "rdrand", "rdseed", "rdtscp", "rep_good", "rtm", "sep", "smap", "smep", "ss", "sse", "sse2", "sse4_1", "sse4_2", "ssse3", "syscall", "tpr_shadow", "tsc", "tsc_adjust", "tsc_deadline_timer", "tsc_known_freq", "umip", "vme", "vmx", "vnmi", "vpid", "x2apic", "xsave", "xsavec", "xsaveopt", "xsaves", "xtopology"], "model": "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"}, "firmware": {"bios": {"date": "04/01/2014", "vendor": "SeaBIOS", "version": "1.13.0-1ubuntu1.1"}}, "hostname": "node-3", "nics": [{"ip": "192.168.111.23", "mac": "00:4a:e3:eb:f8:50", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "fe80::574b:d072:30b:524b%enp2s0", "mac": "00:4a:e3:eb:f8:50", "model": "0x1af4 0x0001", "name": "enp2s0"}, {"ip": "172.22.0.79", "mac": "00:4a:e3:eb:f8:4e", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}, {"ip": "fe80::bd73:acea:cfd1:da79%enp1s0", "mac": "00:4a:e3:eb:f8:4e", "model": "0x1af4 0x0001", "name": "enp1s0", "pxe": true}], "ramMebibytes": 4096, "storage": [{"hctl": "0:0:0:0", "model": "QEMU HARDDISK", "name": "/dev/sda", "rotational": true, "serialNumber": "drive-scsi0-0-0-0", "sizeBytes": 53687091200, "type": "HDD", "vendor": "QEMU"}], "systemVendor": {"manufacturer": "QEMU", "productName": "Standard PC (Q35 + ICH9, 2009)"}}, "hardwareProfile": "unknown", "lastUpdated": "2021-11-10T16:38:11Z", "operationHistory": {"deprovision": {"end": "2021-11-10T16:32:19Z", "start": "2021-11-10T16:30:57Z"}, "inspect": {"end": "2021-11-10T15:58:38Z", "start": "2021-11-10T15:54:55Z"}, "provision": {"end": "2021-11-10T16:38:11Z", "start": "2021-11-10T16:32:19Z"}, "register": {"end": "2021-11-10T16:20:27Z", "start": "2021-11-10T16:20:27Z"}}, "operationalStatus": "OK", "poweredOn": true, "provisioning": {"ID": "2fa3356e-4f9a-46b3-b4fd-792df6fa5c74", "bootMode": "legacy", "image": {"checksum": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img.md5sum", "checksumType": "md5", "format": "raw", "url": "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_v1.21.1-raw.img"}, "raid": {"hardwareRAIDVolumes": null, "softwareRAIDVolumes": []}, "rootDeviceHints": {"deviceName": "/dev/sda"}, "state": "provisioned"}, "triedCredentials": {"credentials": {"name": "node-3-bmc-secret", "namespace": "metal3"}, "credentialsVersion": "8402"}}}]}[0m
+Wednesday 10 November 2021  20:32:09 +0000 (0:00:00.990)       0:00:10.977 **** 
+
+TASK [v1aX_integration_test : Wait until "4" machines become running.] *********
+[0;32mok: [localhost] => {"api_found": true, "attempts": 1, "changed": false, "resources": [{"apiVersion": "cluster.x-k8s.io/v1alpha4", "kind": "Machine", "metadata": {"creationTimestamp": "2021-11-10T16:50:28Z", "finalizers": ["machine.cluster.x-k8s.io"], "generateName": "test1-849bcb9bdc-", "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1", "machine-template-hash": "4056765687", "nodepool": "nodepool-0"}, "managedFields": [{"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {"f:bootstrapReady": {}}}, "manager": "manager", "operation": "Update", "time": "2021-11-10T16:55:25Z"}, {"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {"f:addresses": {}, "f:conditions": {}, "f:infrastructureReady": {}, "f:lastUpdated": {}, "f:nodeInfo": {".": {}, "f:architecture": {}, "f:bootID": {}, "f:containerRuntimeVersion": {}, "f:kernelVersion": {}, "f:kubeProxyVersion": {}, "f:kubeletVersion": {}, "f:machineID": {}, "f:operatingSystem": {}, "f:osImage": {}, "f:systemUUID": {}}, "f:nodeRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:uid": {}}, "f:observedGeneration": {}, "f:phase": {}}}, "manager": "manager", "operation": "Update", "subresource": "status", "time": "2021-11-10T18:47:20Z"}], "name": "test1-849bcb9bdc-mt9bv", "namespace": "metal3", "ownerReferences": [{"apiVersion": "cluster.x-k8s.io/v1alpha4", "blockOwnerDeletion": true, "controller": true, "kind": "MachineSet", "name": "test1-849bcb9bdc", "uid": "046e0803-5951-4862-a0f6-5b7cda44bc4d"}], "resourceVersion": "56259", "uid": "b632183a-0a35-47af-ae02-cd8df7fd8449"}, "spec": {"bootstrap": {"configRef": {"apiVersion": "bootstrap.cluster.x-k8s.io/v1alpha4", "kind": "KubeadmConfig", "name": "test1-workers-xcrc8", "namespace": "metal3", "uid": "73ebcd9b-13d1-478b-bb2d-4997d85065ef"}, "dataSecretName": "test1-workers-xcrc8"}, "clusterName": "test1", "infrastructureRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-workers-xb9ks", "namespace": "metal3", "uid": "191e4d98-6281-4156-ab55-015e2161d3f7"}, "nodeDrainTimeout": "0s", "providerID": "metal3://d367f112-8bbc-41f2-9f53-9dd493bbe9b8", "version": "v1.21.1"}, "status": {"addresses": [{"address": "172.22.0.75", "type": "InternalIP"}, {"address": "fe80::72e9:a34d:2642:ca46%enp1s0", "type": "InternalIP"}, {"address": "192.168.111.22", "type": "InternalIP"}, {"address": "fe80::7d6a:52da:c2d1:79ea%enp2s0", "type": "InternalIP"}, {"address": "node-2", "type": "Hostname"}, {"address": "node-2", "type": "InternalDNS"}], "bootstrapReady": true, "conditions": [{"lastTransitionTime": "2021-11-10T16:55:25Z", "status": "True", "type": "Ready"}, {"lastTransitionTime": "2021-11-10T16:50:43Z", "status": "True", "type": "BootstrapReady"}, {"lastTransitionTime": "2021-11-10T16:55:25Z", "status": "True", "type": "InfrastructureReady"}, {"lastTransitionTime": "2021-11-10T18:47:20Z", "status": "True", "type": "NodeHealthy"}], "infrastructureReady": true, "lastUpdated": "2021-11-10T16:55:25Z", "nodeInfo": {"architecture": "amd64", "bootID": "a8cff6d0-df1d-4381-a6af-d08ecaf2573e", "containerRuntimeVersion": "cri-o://1.21.2", "kernelVersion": "5.4.0-42-generic", "kubeProxyVersion": "v1.21.1", "kubeletVersion": "v1.21.1", "machineID": "97eeb30f3f214f52a873db643b927c1e", "operatingSystem": "linux", "osImage": "Ubuntu 20.04 LTS", "systemUUID": "4757b466-419f-4d0e-86a2-4efb517e615a"}, "nodeRef": {"apiVersion": "v1", "kind": "Node", "name": "test1-849bcb9bdc-mt9bv", "uid": "a61a4ab6-98b4-4457-94ed-7186e43ddd97"}, "observedGeneration": 3, "phase": "Running"}}, {"apiVersion": "cluster.x-k8s.io/v1alpha4", "kind": "Machine", "metadata": {"annotations": {"controlplane.cluster.x-k8s.io/kubeadm-cluster-configuration": "{\"etcd\":{},\"networking\":{},\"apiServer\":{},\"controllerManager\":{},\"scheduler\":{},\"dns\":{}}"}, "creationTimestamp": "2021-11-10T16:02:26Z", "finalizers": ["machine.cluster.x-k8s.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1", "cluster.x-k8s.io/control-plane": ""}, "managedFields": [{"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {"f:addresses": {}, "f:bootstrapReady": {}, "f:infrastructureReady": {}, "f:nodeInfo": {".": {}, "f:architecture": {}, "f:bootID": {}, "f:containerRuntimeVersion": {}, "f:kernelVersion": {}, "f:kubeProxyVersion": {}, "f:kubeletVersion": {}, "f:machineID": {}, "f:operatingSystem": {}, "f:osImage": {}, "f:systemUUID": {}}, "f:nodeRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:uid": {}}, "f:phase": {}}}, "manager": "manager", "operation": "Update", "time": "2021-11-10T16:20:26Z"}, {"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {"f:conditions": {}, "f:lastUpdated": {}, "f:observedGeneration": {}}}, "manager": "manager", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:20:26Z"}], "name": "test1-crxn4", "namespace": "metal3", "ownerReferences": [{"apiVersion": "controlplane.cluster.x-k8s.io/v1alpha4", "blockOwnerDeletion": true, "controller": true, "kind": "KubeadmControlPlane", "name": "test1", "uid": "357d56c5-8128-4707-bcf6-b03093050365"}], "resourceVersion": "56263", "uid": "0e75f27d-3203-4336-8c06-ca7f9cd9a7ff"}, "spec": {"bootstrap": {"configRef": {"apiVersion": "bootstrap.cluster.x-k8s.io/v1alpha4", "kind": "KubeadmConfig", "name": "test1-86wzb", "namespace": "metal3", "uid": "f741cc9e-3bdb-430e-b989-52281dd84a27"}, "dataSecretName": "test1-86wzb"}, "clusterName": "test1", "infrastructureRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-controlplane-9z8sd", "namespace": "metal3", "uid": "e42d05a1-4860-44fc-b495-7567aba97ed1"}, "nodeDrainTimeout": "0s", "providerID": "metal3://44016cf3-4182-4fb6-9325-3c76d7ac4c45", "version": "v1.21.1"}, "status": {"addresses": [{"address": "172.22.0.71", "type": "InternalIP"}, {"address": "fe80::7ea5:8770:bf6c:a746%enp1s0", "type": "InternalIP"}, {"address": "192.168.111.21", "type": "InternalIP"}, {"address": "fe80::6797:d34:31c5:8f05%enp2s0", "type": "InternalIP"}, {"address": "node-1", "type": "Hostname"}, {"address": "node-1", "type": "InternalDNS"}], "bootstrapReady": true, "conditions": [{"lastTransitionTime": "2021-11-10T16:20:16Z", "status": "True", "type": "Ready"}, {"lastTransitionTime": "2021-11-10T16:37:33Z", "status": "True", "type": "APIServerPodHealthy"}, {"lastTransitionTime": "2021-11-10T16:02:26Z", "status": "True", "type": "BootstrapReady"}, {"lastTransitionTime": "2021-11-10T16:37:33Z", "status": "True", "type": "ControllerManagerPodHealthy"}, {"lastTransitionTime": "2021-11-10T16:20:26Z", "status": "True", "type": "EtcdMemberHealthy"}, {"lastTransitionTime": "2021-11-10T16:37:33Z", "status": "True", "type": "EtcdPodHealthy"}, {"lastTransitionTime": "2021-11-10T16:20:16Z", "status": "True", "type": "InfrastructureReady"}, {"lastTransitionTime": "2021-11-10T18:47:20Z", "status": "True", "type": "NodeHealthy"}, {"lastTransitionTime": "2021-11-10T16:37:33Z", "status": "True", "type": "SchedulerPodHealthy"}], "infrastructureReady": true, "lastUpdated": "2021-11-10T16:20:26Z", "nodeInfo": {"architecture": "amd64", "bootID": "c2b05f6d-e9b8-438a-a5bc-1778ae2b936a", "containerRuntimeVersion": "cri-o://1.21.2", "kernelVersion": "5.4.0-42-generic", "kubeProxyVersion": "v1.21.1", "kubeletVersion": "v1.21.1", "machineID": "97eeb30f3f214f52a873db643b927c1e", "operatingSystem": "linux", "osImage": "Ubuntu 20.04 LTS", "systemUUID": "5414b5e7-bae3-4f7e-8e59-cf44f009a7a1"}, "nodeRef": {"apiVersion": "v1", "kind": "Node", "name": "test1-crxn4", "uid": "0354e288-4484-4958-bc30-83a28e576e71"}, "observedGeneration": 3, "phase": "Running"}}, {"apiVersion": "cluster.x-k8s.io/v1alpha4", "kind": "Machine", "metadata": {"annotations": {"controlplane.cluster.x-k8s.io/kubeadm-cluster-configuration": "{\"etcd\":{},\"networking\":{},\"apiServer\":{},\"controllerManager\":{},\"scheduler\":{},\"dns\":{}}"}, "creationTimestamp": "2021-11-10T16:41:42Z", "finalizers": ["machine.cluster.x-k8s.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1", "cluster.x-k8s.io/control-plane": ""}, "managedFields": [{"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {"f:bootstrapReady": {}}}, "manager": "manager", "operation": "Update", "time": "2021-11-10T16:48:17Z"}, {"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {"f:addresses": {}, "f:conditions": {}, "f:infrastructureReady": {}, "f:lastUpdated": {}, "f:nodeInfo": {".": {}, "f:architecture": {}, "f:bootID": {}, "f:containerRuntimeVersion": {}, "f:kernelVersion": {}, "f:kubeProxyVersion": {}, "f:kubeletVersion": {}, "f:machineID": {}, "f:operatingSystem": {}, "f:osImage": {}, "f:systemUUID": {}}, "f:nodeRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:uid": {}}, "f:observedGeneration": {}, "f:phase": {}}}, "manager": "manager", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:48:20Z"}], "name": "test1-tdcbq", "namespace": "metal3", "ownerReferences": [{"apiVersion": "controlplane.cluster.x-k8s.io/v1alpha4", "blockOwnerDeletion": true, "controller": true, "kind": "KubeadmControlPlane", "name": "test1", "uid": "357d56c5-8128-4707-bcf6-b03093050365"}], "resourceVersion": "56261", "uid": "c86e243b-d479-4fb6-b044-468585b7b1e0"}, "spec": {"bootstrap": {"configRef": {"apiVersion": "bootstrap.cluster.x-k8s.io/v1alpha4", "kind": "KubeadmConfig", "name": "test1-w6ntq", "namespace": "metal3", "uid": "6134638f-5a94-499f-bb6e-b93beb3f18ea"}, "dataSecretName": "test1-w6ntq"}, "clusterName": "test1", "infrastructureRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-controlplane-42wj6", "namespace": "metal3", "uid": "9dbec15f-bfd5-4373-ae81-96822021daf7"}, "nodeDrainTimeout": "0s", "providerID": "metal3://0a41f459-3dd4-428f-8b71-1f8ce6e218c0", "version": "v1.21.1"}, "status": {"addresses": [{"address": "192.168.111.20", "type": "InternalIP"}, {"address": "fe80::4759:40e9:3ace:820c%enp2s0", "type": "InternalIP"}, {"address": "172.22.0.67", "type": "InternalIP"}, {"address": "fe80::370:db5e:5d36:1385%enp1s0", "type": "InternalIP"}, {"address": "node-0", "type": "Hostname"}, {"address": "node-0", "type": "InternalDNS"}], "bootstrapReady": true, "conditions": [{"lastTransitionTime": "2021-11-10T16:48:17Z", "status": "True", "type": "Ready"}, {"lastTransitionTime": "2021-11-10T16:48:19Z", "status": "True", "type": "APIServerPodHealthy"}, {"lastTransitionTime": "2021-11-10T16:41:42Z", "status": "True", "type": "BootstrapReady"}, {"lastTransitionTime": "2021-11-10T16:48:19Z", "status": "True", "type": "ControllerManagerPodHealthy"}, {"lastTransitionTime": "2021-11-10T16:48:20Z", "status": "True", "type": "EtcdMemberHealthy"}, {"lastTransitionTime": "2021-11-10T16:48:20Z", "status": "True", "type": "EtcdPodHealthy"}, {"lastTransitionTime": "2021-11-10T16:48:17Z", "status": "True", "type": "InfrastructureReady"}, {"lastTransitionTime": "2021-11-10T18:47:20Z", "status": "True", "type": "NodeHealthy"}, {"lastTransitionTime": "2021-11-10T16:48:19Z", "status": "True", "type": "SchedulerPodHealthy"}], "infrastructureReady": true, "lastUpdated": "2021-11-10T16:48:17Z", "nodeInfo": {"architecture": "amd64", "bootID": "4bd1f10d-b963-45ce-a712-37bfae4cc407", "containerRuntimeVersion": "cri-o://1.21.2", "kernelVersion": "5.4.0-42-generic", "kubeProxyVersion": "v1.21.1", "kubeletVersion": "v1.21.1", "machineID": "97eeb30f3f214f52a873db643b927c1e", "operatingSystem": "linux", "osImage": "Ubuntu 20.04 LTS", "systemUUID": "fbf93ce0-df11-4e33-a075-5214a2d9bce3"}, "nodeRef": {"apiVersion": "v1", "kind": "Node", "name": "test1-tdcbq", "uid": "323baa1e-a460-4041-a3ad-6d7a17a1cc58"}, "observedGeneration": 3, "phase": "Running"}}, {"apiVersion": "cluster.x-k8s.io/v1alpha4", "kind": "Machine", "metadata": {"annotations": {"controlplane.cluster.x-k8s.io/kubeadm-cluster-configuration": "{\"etcd\":{},\"networking\":{},\"apiServer\":{},\"controllerManager\":{},\"scheduler\":{},\"dns\":{}}"}, "creationTimestamp": "2021-11-10T16:20:26Z", "finalizers": ["machine.cluster.x-k8s.io"], "generation": 3, "labels": {"cluster.x-k8s.io/cluster-name": "test1", "cluster.x-k8s.io/control-plane": ""}, "managedFields": [{"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {"f:bootstrapReady": {}}}, "manager": "manager", "operation": "Update", "time": "2021-11-10T16:41:41Z"}, {"apiVersion": "cluster.x-k8s.io/v1alpha4", "fieldsType": "FieldsV1", "fieldsV1": {"f:status": {"f:addresses": {}, "f:conditions": {}, "f:infrastructureReady": {}, "f:lastUpdated": {}, "f:nodeInfo": {".": {}, "f:architecture": {}, "f:bootID": {}, "f:containerRuntimeVersion": {}, "f:kernelVersion": {}, "f:kubeProxyVersion": {}, "f:kubeletVersion": {}, "f:machineID": {}, "f:operatingSystem": {}, "f:osImage": {}, "f:systemUUID": {}}, "f:nodeRef": {".": {}, "f:apiVersion": {}, "f:kind": {}, "f:name": {}, "f:uid": {}}, "f:observedGeneration": {}, "f:phase": {}}}, "manager": "manager", "operation": "Update", "subresource": "status", "time": "2021-11-10T16:41:42Z"}], "name": "test1-xzxfp", "namespace": "metal3", "ownerReferences": [{"apiVersion": "controlplane.cluster.x-k8s.io/v1alpha4", "blockOwnerDeletion": true, "controller": true, "kind": "KubeadmControlPlane", "name": "test1", "uid": "357d56c5-8128-4707-bcf6-b03093050365"}], "resourceVersion": "56262", "uid": "d0bde614-7860-41ef-8d3b-e8a88ad14c07"}, "spec": {"bootstrap": {"configRef": {"apiVersion": "bootstrap.cluster.x-k8s.io/v1alpha4", "kind": "KubeadmConfig", "name": "test1-tz8qx", "namespace": "metal3", "uid": "a8b96bf8-3648-48fe-bb16-d58a91fb06f0"}, "dataSecretName": "test1-tz8qx"}, "clusterName": "test1", "infrastructureRef": {"apiVersion": "infrastructure.cluster.x-k8s.io/v1alpha5", "kind": "Metal3Machine", "name": "test1-controlplane-st75s", "namespace": "metal3", "uid": "c22cdded-d5e2-4c90-a998-20b230c8c580"}, "nodeDrainTimeout": "0s", "providerID": "metal3://ea568c6d-2491-4ffa-909b-f57ce0cb407c", "version": "v1.21.1"}, "status": {"addresses": [{"address": "192.168.111.23", "type": "InternalIP"}, {"address": "fe80::574b:d072:30b:524b%enp2s0", "type": "InternalIP"}, {"address": "172.22.0.79", "type": "InternalIP"}, {"address": "fe80::bd73:acea:cfd1:da79%enp1s0", "type": "InternalIP"}, {"address": "node-3", "type": "Hostname"}, {"address": "node-3", "type": "InternalDNS"}], "bootstrapReady": true, "conditions": [{"lastTransitionTime": "2021-11-10T16:41:41Z", "status": "True", "type": "Ready"}, {"lastTransitionTime": "2021-11-10T16:41:42Z", "status": "True", "type": "APIServerPodHealthy"}, {"lastTransitionTime": "2021-11-10T16:20:26Z", "status": "True", "type": "BootstrapReady"}, {"lastTransitionTime": "2021-11-10T16:41:42Z", "status": "True", "type": "ControllerManagerPodHealthy"}, {"lastTransitionTime": "2021-11-10T16:41:42Z", "status": "True", "type": "EtcdMemberHealthy"}, {"lastTransitionTime": "2021-11-10T16:41:42Z", "status": "True", "type": "EtcdPodHealthy"}, {"lastTransitionTime": "2021-11-10T16:41:41Z", "status": "True", "type": "InfrastructureReady"}, {"lastTransitionTime": "2021-11-10T18:47:20Z", "status": "True", "type": "NodeHealthy"}, {"lastTransitionTime": "2021-11-10T16:41:42Z", "status": "True", "type": "SchedulerPodHealthy"}], "infrastructureReady": true, "lastUpdated": "2021-11-10T16:41:41Z", "nodeInfo": {"architecture": "amd64", "bootID": "2158d241-9376-4b61-b920-14314f40ecf2", "containerRuntimeVersion": "cri-o://1.21.2", "kernelVersion": "5.4.0-42-generic", "kubeProxyVersion": "v1.21.1", "kubeletVersion": "v1.21.1", "machineID": "97eeb30f3f214f52a873db643b927c1e", "operatingSystem": "linux", "osImage": "Ubuntu 20.04 LTS", "systemUUID": "88c87873-8426-41bd-b43a-934c4041474b"}, "nodeRef": {"apiVersion": "v1", "kind": "Node", "name": "test1-xzxfp", "uid": "ca7a632a-f74b-4ea1-ac9d-9d17fe24b578"}, "observedGeneration": 3, "phase": "Running"}}]}[0m
+Wednesday 10 November 2021  20:32:10 +0000 (0:00:00.797)       0:00:11.774 **** 
+
+TASK [v1aX_integration_test : Fetch target cluster kubeconfig] *****************
+[0;32mok: [localhost] => {"api_found": true, "changed": false, "resources": [{"apiVersion": "v1", "data": {"value": "YXBpVmVyc2lvbjogdjEKY2x1c3RlcnM6Ci0gY2x1c3RlcjoKICAgIGNlcnRpZmljYXRlLWF1dGhvcml0eS1kYXRhOiBMUzB0TFMxQ1JVZEpUaUJEUlZKVVNVWkpRMEZVUlMwdExTMHRDazFKU1VNMmFrTkRRV1JMWjBGM1NVSkJaMGxDUVVSQlRrSm5hM0ZvYTJsSE9YY3dRa0ZSYzBaQlJFRldUVkpOZDBWUldVUldVVkZFUlhkd2NtUlhTbXdLWTIwMWJHUkhWbnBOUWpSWVJGUkplRTFVUlhoTlJFVXhUbFJqZVU1R2IxaEVWRTE0VFZSRmQwOUVSVEpOUkVsNVRrWnZkMFpVUlZSTlFrVkhRVEZWUlFwQmVFMUxZVE5XYVZwWVNuVmFXRkpzWTNwRFEwRlRTWGRFVVZsS1MyOWFTV2gyWTA1QlVVVkNRbEZCUkdkblJWQkJSRU5EUVZGdlEyZG5SVUpCVDAxcUNuSnpXVUpVY1hwUVNGUnVlbkJuWVhKaFZqSkNTRmQwUjJOQmIza3dMekpyWkVSTGJXTktTVmhLY0VveVpYQXJaVEpXZVdJM1VEZEpkblZ3YTJGRmJrVUtOV1o1YUdGV2EyaEhWekZzYkVSa1dEWnJiU3RhT1VoMFVESlpaRUZ5TUdZM1MzRjZXbFY2YlUwclYwVnZXbkpFVVROU01DOXpTRlExYVZOWGNISllaZ3BUUm1NNFdFWnVjRVp3ZVU4MGNIZFZjM0JHY1VGdWVqRlFZV0VyZHpobk5XRjRjMlF6YlhkR1RHeExiSGRaYjJGRFJUWlpWMFl4V0dOSWVWQjZNak53Q2xKa2RsaDJVR054UjJkRVVtTkdUbUp2UjFoSmRGVk9UR3B2TURkQlIzZzRSbEpvUWxGcGR5ODNiM1ExVm5oa1ZXcGxMMnhLTnpkeU0weFpiRWxzWkd3S1kybHZOMk5WY0V3d1JWUnFUaTl3Wm1GVFJpOVJRbWg2TnpCbEsyaFRhaXQwWlcwclFteDVRM0UyTVhKaFJqQkNlWGhpTlZsVWRsVkJhVlpUWkhkQ1Fnb3lXRFlyV2psbU0wOVlOMmRtUkRCWU5XOUZRMEYzUlVGQllVNUdUVVZOZDBSbldVUldVakJRUVZGSUwwSkJVVVJCWjB0clRVSkpSMEV4VldSRmQwVkNDaTkzVVVsTlFWbENRV1k0UTBGUlFYZElVVmxFVmxJd1QwSkNXVVZHVGxVeE1rMXRMMUpRVjJFNFEyOWtVQ3M0UTFOTVV6QkpabTl4VFVFd1IwTlRjVWNLVTBsaU0wUlJSVUpEZDFWQlFUUkpRa0ZSUTFaRVlreE5hVEExYUhWMldtdGxWVk5JUlhGaVNHSXZVRFJ6VVhOaVVIQnlUV2x1ZHpjeFpGVkthWHBqU3dwaWEwWTBZM0p2VVhoTVlVbGtWVXhxTjBscWFHTllPWEpYYlVkaE5FVTNZbFF3Y2xocE4wVkxTVVpTY1RkVVNGUmFRbWRxZFRoeU9IRm5TV3BoTTBockNuVnJkVWR0U21GMVlWWldPVUY0U1dwNFdGZzBNWHBxU1VaeFkwNXRXRVZpVHpaWFVDOXFaR05LT0ZOallrdHdTRXRwYjA5UGVEWklha0V4SzFkSldGZ0tiVmRUTDBsa1lrd3dZMDR2WmpOMVNuVkpORzgyVDJ3dmRrWXpOMGxpV2xKbmVYaHRlbGxvUzFoQmVtMVZVMDAxY2xkSGIzZExTREYzWjIxNmRWQlZjUXByVmpVM1ZUQndSemQ2V0ROb2MxQm1iRGh3WnpGWWFqTjNaRXRpYzJoRVNXeGpkM2hyVFZOMFVXNURTSGQ2YUdSNVdGWXpObFIwTlRKRE1rOVVkV04zQ2xGRVJFUTJSREpqTldoUlpsTm9Rek5pWlhsaE5GZHBSM1pETHlzMmRuUXJWM0pwYzNkbVJHWUtMUzB0TFMxRlRrUWdRMFZTVkVsR1NVTkJWRVV0TFMwdExRbz0KICAgIHNlcnZlcjogaHR0cHM6Ly8xOTIuMTY4LjExMS4yNDk6NjQ0MwogIG5hbWU6IHRlc3QxCmNvbnRleHRzOgotIGNvbnRleHQ6CiAgICBjbHVzdGVyOiB0ZXN0MQogICAgdXNlcjogdGVzdDEtYWRtaW4KICBuYW1lOiB0ZXN0MS1hZG1pbkB0ZXN0MQpjdXJyZW50LWNvbnRleHQ6IHRlc3QxLWFkbWluQHRlc3QxCmtpbmQ6IENvbmZpZwpwcmVmZXJlbmNlczoge30KdXNlcnM6Ci0gbmFtZTogdGVzdDEtYWRtaW4KICB1c2VyOgogICAgY2xpZW50LWNlcnRpZmljYXRlLWRhdGE6IExTMHRMUzFDUlVkSlRpQkRSVkpVU1VaSlEwRlVSUzB0TFMwdENrMUpTVVJGZWtORFFXWjFaMEYzU1VKQlowbEpRMHBqVW1rMFpYTklXVmwzUkZGWlNrdHZXa2xvZG1OT1FWRkZURUpSUVhkR1ZFVlVUVUpGUjBFeFZVVUtRWGhOUzJFelZtbGFXRXAxV2xoU2JHTjZRV1ZHZHpCNVRWUkZlRTFVUVhoT1ZGVXpUV3BTWVVaM01IbE5ha1Y0VFZSQmVFNXFRWGxOYWxaaFRVUlJlQXBHZWtGV1FtZE9Wa0pCYjFSRWJrNDFZek5TYkdKVWNIUlpXRTR3V2xoS2VrMVNhM2RHZDFsRVZsRlJSRVY0UW5Ka1YwcHNZMjAxYkdSSFZucE1WMFpyQ21KWGJIVk5TVWxDU1dwQlRrSm5hM0ZvYTJsSE9YY3dRa0ZSUlVaQlFVOURRVkU0UVUxSlNVSkRaMHREUVZGRlFYaHZNRmRwWjBZNFdtNHdWQ3RrWlRjS1lXMHdNMDU1TldweWIyZzFWWGh0VDFkbGJucFBPVTVsVFRkaVkzUnNUbUpxTW10RWNrdEdlR3ROY3pKclZsZHlkMkpoTjFaeFdsbG9jakJGYm1aMGRnb3ZSSFptU0hFMVlYRmhReXR3ZG5GeGNUQlFlakY0TVZoS05HaHBWVmRDUzJKNVZrUktPWFJ3WWtRME9TdFBUbEJoVFVGd2VVcGFZMjlPYXpkNVRsZHhDazFKZGxkWVYxSm5iWGR3UkZRdlpWQTJSVzVCVTFKVGNHVlZkRTFQUTJ4TVUyNUhSazFXTVZCc2F6aHNkVmw0U1d0amNEbDBNbFkzY0Rjd1kwMXJWbWtLYWxOMWQzRnJkbkpxUXpCd09GWldXQzlpYUhwRVEzb3pRWFpEYVhST1FYRlBVME5yU3pOMU5rRkJibWRKWm1oblkyWmlZVlIzWkZKdVkySnJjMEpGV2dwMGEzaENTWEp5TlV0RmJuWXlPWG95YkRCS1YxQlRjWGMzUlVSVlNWcHlTR3BWVDJGcFJrdFZXV2RhZUdkaWVqaFhjWEp1WjJwUU5URktha3RXYTFKMENsRmFXamQzZDBsRVFWRkJRbTh3WjNkU2FrRlBRbWRPVmtoUk9FSkJaamhGUWtGTlEwSmhRWGRGZDFsRVZsSXdiRUpCZDNkRFoxbEpTM2RaUWtKUlZVZ0tRWGRKZDBoM1dVUldVakJxUWtKbmQwWnZRVlV4VkZoWmVXSTVSVGxhY25kTGFEQXZOM2RLU1hSTVVXZ3JhVzkzUkZGWlNrdHZXa2xvZG1OT1FWRkZUQXBDVVVGRVoyZEZRa0ZGVUVGemRrTkVjVkZYVUdSb05GZ3pWMVo0ZG5ReGVIWlBPWGRIY3pkeVIxUlliMlJLZURWbE4ycE9kbkY2YkRST2NVNXdSVmRhQ2pSRk5HSjRZVUV2TlV4a1QxUlVWRkptU0VRM1ZuTTNUREFyWlZWNGJYVlRVelpTVlZRcldtZE1XV2REWkVWMlNFcGpNRVkwVVU1d2VFNDBSbmhrV0ZNS1pVMDBhVVZKTkVWSGQxWk5VbGcwYlV4dmFrNXlkSEJVZDBOTlpVUTJaVVlyWlhwNlFqTkxkbVkyT1VseFdEZDVWVTFITWpaVVFtbDRhM1JvU1VWamJRbzJaMUJZWlZwdVdWaG9ORWwwTlhsMlNURnBPVkp1WlhoUmFFUTNhVTFRYm5scmN6RkhVMDlDVDBKV05FaGhOMk5sTUdFMWNqQTRlbE5EUjNsTmVXUTVDbFpXWm1ST2JVZHRVa1JETW1WTFRqWlBhMEZrVG01NU4xVXliMUV6VFZSMVNXWkROVGt2VTNKMU5XWlJUM1F5TUROQ1FVeHRibXBETjBkM1FuQnJPWG9LT1ZseFpXcFRTRkJ0VDBNelFsUlVlVWhpVDJVNVVtVTBVRlZuWm1GMlp6MEtMUzB0TFMxRlRrUWdRMFZTVkVsR1NVTkJWRVV0TFMwdExRbz0KICAgIGNsaWVudC1rZXktZGF0YTogTFMwdExTMUNSVWRKVGlCU1UwRWdVRkpKVmtGVVJTQkxSVmt0TFMwdExRcE5TVWxGYjJkSlFrRkJTME5CVVVWQmVHOHdWMmxuUmpoYWJqQlVLMlJsTjJGdE1ETk9lVFZxY205b05WVjRiVTlYWlc1NlR6bE9aVTAzWW1OMGJFNWlDbW95YTBSeVMwWjRhMDF6TW10V1YzSjNZbUUzVm5GYVdXaHlNRVZ1Wm5SMkwwUjJaa2h4TldGeFlVTXJjSFp4Y1hFd1VIb3hlREZZU2pSb2FWVlhRa3NLWW5sV1JFbzVkSEJpUkRRNUswOU9VR0ZOUVhCNVNscGpiMDVyTjNsT1YzRk5TWFpYV0ZkU1oyMTNjRVJVTDJWUU5rVnVRVk5TVTNCbFZYUk5UME5zVEFwVGJrZEdUVll4VUd4ck9HeDFXWGhKYTJOd09YUXlWamR3TnpCalRXdFdhV3BUZFhkeGEzWnlha013Y0RoV1ZsZ3ZZbWg2UkVONk0wRjJRMmwwVGtGeENrOVRRMnRMTTNVMlFVRnVaMGxtYUdkalptSmhWSGRrVW01alltdHpRa1ZhZEd0NFFrbHljalZMUlc1Mk1qbDZNbXd3U2xkUVUzRjNOMFZFVlVsYWNrZ0thbFZQWVdsR1MxVlpaMXA0WjJKNk9GZHhjbTVuYWxBMU1VcHFTMVpyVW5SUldsbzNkM2RKUkVGUlFVSkJiMGxDUVVkTU1IVklTVXB6V1RKSE9IbHFTQXBQTTBsalozSk9kVE5IUjBaU1UzRkZhSGt3U3pZMU5EWm9lVEo0UTNGdFdVOHZOM0Z6VG10bFJWaExMM2hUSzBWRGFteGxjMFp1VFZORWVraEJaMFZYQ2paeldrVjBUSGRsTWpkTVJrZGhRWGhQUmxKd1duRk5hM3BYV1ROc1FVUkpkeTlDU0VkM1VraFdNME5MVTA5eE9YQTNjMjFaZFhwRkt6azVlWGhXWjJjS1NGWldZWEpJYTFwaFVXZzRaMlpZWlVKWmQxcEVZM1ZsYWpaVFUxbE5aV05uTVV3MlVuaDJSa0ZuTDNFeWVWRk5XVVI1TDA5RWRsRXhiMDV2YjJSdFp3cG5SMHRGWVVOWFlVVklTVmgxVjBsd2IxWkxVM0JPY21GV1FuVnhZbmRrVkd4amFtaEtaMHd3YjFGd1oxcEVSMDE2WTNkR1pUazFjM0pvZG5VeVJEQnBDbXhJV25GSlIySkJkVEpOUzNsSVRVWm1ZMGRTZUdKalMzaFNWaXRTY3paalF6UTRlVWxyYldKUmJHTkdUbkZKTVd0Rk56VXJOa1FyVDNjMlRtcDRkMmNLZUhsaFNVcFhSVU5uV1VWQk5tRnJhM0JXYW1OUlV5dEtZWEIwYVdwTlVpOHJkR1p5TVRGV2RsTlhhalJQUjFFeFNGSlhRbkJzVGtONGFEQmFTVkp0Y0FwNVFXSlFhbXN3V0M5elFtTklNVmRRVEVOaFFuWmhaREZTWjJNeFRHWmhORWxrUjFwS1kyRlJRM1JoZFhWNlVuQk1Tak5tTlVKQ05rUmFSR3MxV1c1T0NuWlhkMnR6UVZWQ2FrUTNVVXh0YkhSck4xcE1UamhtYlZOVVlrb3pWbGRtTW00eFR6bFdaVFJXUzJ4a1ZtbENUbFpwUjBRclpFMURaMWxGUVRKWmFXa0tNRGxST1M5cU5rSmlObnBaZEc5a0wxbzFURlIwV0VrdllXRlhOVVJhVUZCNVNYTnRZMUU1U0ROTmEzSnRWR2hWTURsbmRuZG5WMkZqT1ZneVZrUnJUd3BpYkM5UlZ6QXlaV2x5TVM5TFRuazNNVEZJTkRGblNXSTVjelZGU1hwaFRtMXJOa1pyUW5oak9Hc3hXamxxTHpob1JWTmFabm8yVUdKR1QzZFVWbGh0Q2pSa1JUQlNUMmd5UXpCYVJIQkxha3hCTTJSWWNsaFJjVmh0VjJOSVEzaG1ZMmwzYWpCR1JVTm5XVUZCTm5CSWFrOUNjamxCYms4eVowVTVPVzQ1VDJzS2NIazBZMnhTUVhaeFNVczBjbVZRY21KclkyODBUa014VDBNekswUkVlVE5PVW1Wb1VtcHZaVE5MUVM4eWVsVkthR3RyYURsclRXMWxRMkpGVUVkQ2VRcGxXVVI0VUdaeldXNDRhbXh2VVc0NGFUZ3plRGxuUzFWb1VXNTNkMGcyV0VSS1MwVlJha1JGV0ZGaGVEa3JXR1pITW5KdFIwSnRWMFpsYm5GMlZXYzBDazFvSzJGS1RFeHlWMmhMYzI5TmJrMHlZWEpNTUhkTFFtZEJiVGhSVEZaRlQxZFpTV1pDYURSWWRHRkZXaXRLUm5kMU0wczJRMWRrVVdoUWJXVndWV0VLUkZOV1oweHlTV3d5Y1hGdWVEZDNXRmc0VUV0S2JXaHhkV1pTTkM5VWJGcFdiVlJRY1ROdVFVVXhTRXd4ZVdoRGVHVlZiVUZSVW1od1RrVkRibmRITlFvMEsxcFpUSEI1TVdNMFNTdDVUbXhQYWt0UlUwMDJPRUZoT1VvMlRuSlJRMlprYkdKdlpsUk9UbnBtUjFOb1pXdHVjWEp1YlZGSVUyZEdUVTlrVmsxU0NuZExVMUpCYjBkQlZVbHZkekV5TTFOaWJtdG1WV0ptU1V3M2VGTmxZWGhwWjNSc1oxQmtPV1JTZFdobmVUTXJTSEJqTkZaUlJWcFpPV1UyY1hkU1Rra0tMMGRoYlhoMWVXUjVZekp1VXpKb0wwOVhkemh2YkhGd1RVdEROMlpvU0dFeGNWTlFZV1Z5V1dSeVEwNW5Va3hQU0d3Mk0xQlFZWE5KTWtrM1Rtb3JhZ3BLV1Zsc0wwZFJkR2RpWVd3NFpYQTBiMkl5UlVGb01scG9WbGM0VTBORFUzcEJURmRGZUhndlVsazVOVVpJVUhWUWNEQTlDaTB0TFMwdFJVNUVJRkpUUVNCUVVrbFdRVlJGSUV0RldTMHRMUzB0Q2c9PQo="}, "kind": "Secret", "metadata": {"creationTimestamp": "2021-11-10T16:02:25Z", "labels": {"cluster.x-k8s.io/cluster-name": "test1"}, "managedFields": [{"apiVersion": "v1", "fieldsType": "FieldsV1", "fieldsV1": {"f:data": {".": {}, "f:value": {}}, "f:metadata": {"f:labels": {".": {}, "f:cluster.x-k8s.io/cluster-name": {}}, "f:ownerReferences": {".": {}, "k:{\"uid\":\"357d56c5-8128-4707-bcf6-b03093050365\"}": {}}}, "f:type": {}}, "manager": "manager", "operation": "Update", "time": "2021-11-10T16:02:25Z"}], "name": "test1-kubeconfig", "namespace": "metal3", "ownerReferences": [{"apiVersion": "controlplane.cluster.x-k8s.io/v1alpha4", "blockOwnerDeletion": true, "controller": true, "kind": "KubeadmControlPlane", "name": "test1", "uid": "357d56c5-8128-4707-bcf6-b03093050365"}], "resourceVersion": "4758", "uid": "09d31777-3697-4f62-967d-0c035064ca58"}, "type": "cluster.x-k8s.io/secret"}]}[0m
+Wednesday 10 November 2021  20:32:11 +0000 (0:00:00.764)       0:00:12.539 **** 
+
+TASK [v1aX_integration_test : Store target cluster kubeconfig] *****************
+[0;32mok: [localhost] => {"changed": false, "msg": ""}[0m
+Wednesday 10 November 2021  20:32:11 +0000 (0:00:00.395)       0:00:12.934 **** 
