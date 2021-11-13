@@ -1,0 +1,42 @@
+# Run playbook: ansible-playbook -i vyos.example.net, -u ansible -k -e ansible_network_os=vyos.vyos.vyos ephemeral-pods-playbook.yaml
+# Run playbook: ansible-playbook k8s-cluster-pods-playbook.yaml
+# Dry run: ansible-playbook -C k8s-cluster-pods-playbook.yaml -i inventory.ini
+- name: Check if Pods are all in running state
+  gather_facts: false
+  hosts: all
+  tasks:
+
+  - name: Search for all running pods
+    kubernetes.core.k8s_info:
+      kind: Pod
+      kubeconfig: "/home/capm3/.kube/config"
+      wait: yes
+      wait_condition:
+        status: True
+        type: Ready
+      wait_sleep: 5
+      wait_timeout: 120
+
+  # - name: Check if Target pods in running state
+  #   kubernetes.core.k8s_info:
+  #     kind: pods
+  #     kubeconfig: "/tmp/kubeconfig-test1.yaml"
+  #     field_selectors:
+  #       - status.phase!=Running
+  #   register: target_running_pods
+  #   retries: 150
+  #   delay: 20
+  #   until: (target_running_pods is succeeded) and
+  #          (target_running_pods.resources | length == 0)
+
+  # - name: Check if Ephemeral pods in running state
+  #   kubernetes.core.k8s_info:
+  #     kind: pods
+  #     kubeconfig: "/home/capm3/.kube/config"
+  #     field_selectors:
+  #       - status.phase!=Running
+  #   register: ephemeral_running_pods
+  #   retries: 150
+  #   delay: 20
+  #   until: (ephemeral_running_pods is succeeded) and
+  #          (ephemeral_running_pods.resources | length == 0)
