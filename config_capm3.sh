@@ -8,12 +8,14 @@ export IMAGE_OS=Ubuntu
 export EPHEMERAL_CLUSTER=kind
 # export EPHEMERAL_CLUSTER=minikube
 export CONTAINER_RUNTIME=docker
-export NUM_NODES=4
+export NUM_NODES=5
 export NUM_OF_MASTER_REPLICAS=3
-export NUM_OF_WORKER_REPLICAS=1
+export NUM_OF_WORKER_REPLICAS=2
 
-export CAPM3_VERSION=v1alpha5
-export CAPI_VERSION=v1alpha4
+# export CAPM3_VERSION=v1alpha5
+# export CAPI_VERSION=v1alpha4
+export CAPM3_VERSION=v1beta1
+export CAPI_VERSION=v1beta1
 
 export KUBERNETES_VERSION="v1.21.1"
 export UPGRADED_K8S_VERSION="v1.22.2"

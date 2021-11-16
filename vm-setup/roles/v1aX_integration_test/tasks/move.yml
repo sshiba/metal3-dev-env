@@ -171,6 +171,17 @@
     until: (ephemeral_running_pods is succeeded) and
            (ephemeral_running_pods.resources | length == 0)
 
+  - name: Wait for all pods to be in the Ready state on the Management cluster
+    kubernetes.core.k8s_info:
+      kind: Pod
+      kubeconfig: "/home/capm3/.kube/config"
+      wait: yes
+      wait_condition:
+        status: True
+        type: Ready
+      wait_sleep: 5
+      wait_timeout: 600
+
   - name: Pivot objects to target cluster
     shell: "clusterctl move --to-kubeconfig /tmp/kubeconfig-{{ CLUSTER_NAME }}.yaml -n {{ NAMESPACE }} -v 10"
 

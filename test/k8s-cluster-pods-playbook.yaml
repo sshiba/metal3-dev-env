@@ -1,5 +1,5 @@
 # Run playbook: ansible-playbook -i vyos.example.net, -u ansible -k -e ansible_network_os=vyos.vyos.vyos ephemeral-pods-playbook.yaml
-# Run playbook: ansible-playbook k8s-cluster-pods-playbook.yaml
+# Run playbook: ansible-playbook k8s-cluster-pods-playbook.yaml -i inventory.ini
 # Dry run: ansible-playbook -C k8s-cluster-pods-playbook.yaml -i inventory.ini
 - name: Check if Pods are all in running state
   gather_facts: false

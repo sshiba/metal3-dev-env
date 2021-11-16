@@ -3,6 +3,7 @@
 #                       Upgrade K8S version and boot-image                              |
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
 # Dry run: ansible-playbook -C upgrade.yml -e @vars/main.yml -i inventory.ini
+# Upgrade: ansible-playbook upgrade.yml -e @vars/main.yml -i inventory.ini
 - name: Check if Pods are all in running state
   gather_facts: false
   hosts: all
@@ -14,8 +15,8 @@
       IMAGE_NAME: "UBUNTU_20.04_NODE_IMAGE_K8S_{{UPGRADED_K8S_VERSION}}.qcow2"
       RAW_IMAGE_NAME: "UBUNTU_20.04_NODE_IMAGE_K8S_{{UPGRADED_K8S_VERSION}}-raw.img"
       IMAGE_LOCATION: "https://artifactory.nordix.org/artifactory/airship/images/k8s_{{UPGRADED_K8S_VERSION}}/"
-      IMAGE_URL: "http://172.22.0.1/images/{{ RAW_IMAGE_NAME }}"
-      IMAGE_CHECKSUM: "http://172.22.0.1/images/{{ RAW_IMAGE_NAME }}.{{ IMAGE_CHECKSUM_TYPE }}sum"
+      IMAGE_URL: "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_{{KUBERNETES_VERSION}}-raw.img"
+      IMAGE_CHECKSUM: "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_{{KUBERNETES_VERSION}}-raw.img.md5sum"
   
   - name: Get cluster uid
     kubernetes.core.k8s_info:
@@ -36,8 +37,8 @@
       M3MT_NAME: "{{CLUSTER_NAME}}-new-controlplane-image"
       DATA_TEMPLATE_NAME: "{{CLUSTER_NAME}}-controlplane-template"
       RAW_IMAGE_NAME: "UBUNTU_20.04_NODE_IMAGE_K8S_{{UPGRADED_K8S_VERSION}}-raw.img"
-      IMAGE_URL: "http://172.22.0.1/images/{{ RAW_IMAGE_NAME }}"
-      IMAGE_CHECKSUM: "http://172.22.0.1/images/{{ RAW_IMAGE_NAME }}.{{ IMAGE_CHECKSUM_TYPE }}sum"
+      IMAGE_URL: "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_{{KUBERNETES_VERSION}}-raw.img"
+      IMAGE_CHECKSUM: "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_{{KUBERNETES_VERSION}}-raw.img.md5sum"
       NODE_REUSE_STATUS: "false"
 
   - name: Create worker Metal3MachineTemplates
@@ -50,8 +51,8 @@
       M3MT_NAME: "{{CLUSTER_NAME}}-new-workers-image"
       DATA_TEMPLATE_NAME: "{{CLUSTER_NAME}}-workers-template"
       RAW_IMAGE_NAME: "UBUNTU_20.04_NODE_IMAGE_K8S_{{UPGRADED_K8S_VERSION}}-raw.img"
-      IMAGE_URL: "http://172.22.0.1/images/{{ RAW_IMAGE_NAME }}"
-      IMAGE_CHECKSUM: "http://172.22.0.1/images/{{ RAW_IMAGE_NAME }}.{{ IMAGE_CHECKSUM_TYPE }}sum"
+      IMAGE_URL: "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_{{KUBERNETES_VERSION}}-raw.img"
+      IMAGE_CHECKSUM: "http://172.22.0.1/images/UBUNTU_20.04_NODE_IMAGE_K8S_{{KUBERNETES_VERSION}}-raw.img.md5sum"
       NODE_REUSE_STATUS: "false"
 
   - name: Update boot-disk and kubernetes versions of controlplane nodes
