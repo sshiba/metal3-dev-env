@@ -5,6 +5,13 @@
   hosts: all
   tasks:
 
+  - name: Download Calico manifest
+    get_url:
+      url: https://docs.projectcalico.org/manifests/calico.yaml
+      dest: /tmp/
+      mode: '664'
+    register: calico_manifest
+
   - name: Apply Calico manifest
     kubernetes.core.k8s:
       state: present
@@ -13,6 +20,6 @@
       apply: yes
       validate:
         fail_on_error: no
-        strict: no
-        version: v1.21.1
+      #   strict: no
+      #   version: v1.21.1
     register: install_cni
