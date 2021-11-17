@@ -390,7 +390,7 @@
             grep -i provisioned | grep -c 'new-controlplane-image'
     environment:
       KUBECONFIG: "/tmp/kubeconfig-{{ CLUSTER_NAME }}.yaml"
-    retries: 400
+    retries: 500
     delay: 20
     register: new_image_cp_nodes
     until: new_image_cp_nodes.stdout|int == 3
@@ -500,7 +500,7 @@
       query: "[? (status.provisioning.state=='provisioned') &&
                  (starts_with(spec.consumerRef.name, '{{CLUSTER_NAME}}-new-workers-image'))]"
     register: bmh
-    retries: 400
+    retries: 500
     delay: 20
     until: (bmh is succeeded) and
            (bmh.resources | length > 0) and
