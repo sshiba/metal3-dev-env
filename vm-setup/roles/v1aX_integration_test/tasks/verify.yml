@@ -86,6 +86,9 @@
       state: present
       src: "/tmp/calico.yaml"
       kubeconfig: "/tmp/kubeconfig-{{ CLUSTER_NAME }}.yaml"
+      apply: yes
+      validate:
+        fail_on_error: no
     register: install_cni
 
   # Check for pods & nodes on the target cluster

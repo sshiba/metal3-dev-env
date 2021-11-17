@@ -1,0 +1,18 @@
+# Run playbook: ansible-playbook task-apply-calico.yaml -i inventory.ini
+# Dry run: ansible-playbook -C task-apply-calico.yaml -i inventory.ini
+- name: Check if Pods are all in running state
+  gather_facts: false
+  hosts: all
+  tasks:
+
+  - name: Apply Calico manifest
+    kubernetes.core.k8s:
+      state: present
+      src: "/tmp/calico.yaml"
+      kubeconfig: "/tmp/kubeconfig-test1.yaml"
+      apply: yes
+      validate:
+        fail_on_error: no
+        strict: no
+        version: v1.21.1
+    register: install_cni
