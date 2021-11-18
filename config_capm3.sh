@@ -8,7 +8,7 @@ export IMAGE_OS=Ubuntu
 export EPHEMERAL_CLUSTER=kind
 # export EPHEMERAL_CLUSTER=minikube
 export CONTAINER_RUNTIME=docker
-export NUM_NODES=6
+export NUM_NODES=5
 export NUM_OF_MASTER_REPLICAS=3
 export NUM_OF_WORKER_REPLICAS=2
 

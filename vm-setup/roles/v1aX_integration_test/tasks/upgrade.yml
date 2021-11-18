@@ -472,7 +472,7 @@
         spec:
           strategy:
             rollingUpdate:
-              maxSurge: 1
+              maxSurge: 0
               maxUnavailable: 1
 
   - name: Update boot-disk and kubernetes versions of worker node
