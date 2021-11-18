@@ -1,0 +1,73 @@
+# ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+#                       Upgrade Ironic                                                  |
+# ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+
+# Run playbook: ansible-playbook task-ironic-upgrade.yaml -i inventory.ini
+# Dry run: ansible-playbook -C task-ironic-upgrade.yaml -i inventory.ini
+- name: Rolling Upgrade of Ironic
+  gather_facts: false
+  hosts: all
+  vars:
+    CLUSTER_NAME: "{{ lookup('env', 'CLUSTER_NAME') | default('test1', true) }}"
+    CONTAINER_REGISTRY: "{{ lookup('env', 'CONTAINER_REGISTRY') | default('quay.io', true) }}"
+    IRONIC_IMAGE_TAG: "{{ lookup('env', 'IRONIC_IMAGE_TAG') | default('master', true) }}"
+    NAMEPREFIX: "{{ lookup('env', 'NAMEPREFIX') | default('/baremetal-operator', true) }}"
+    IRONIC_NAMESPACE: "{{ lookup('env', 'IRONIC_NAMESPACE') | default('baremetal-operator-system', true) }}"
+
+  tasks:
+  - name: Set expected ironic image based containers
+    set_fact:
+      ironic_image_containers:
+        - mariadb
+        - ironic-api
+        - ironic-dnsmasq
+        - ironic-conductor
+        - ironic-log-watch
+        - ironic-inspector
+        # There is also a keepalived container in the pods, but it is using a
+        # different image than the rest and therefore not included in the list.
+        # - ironic-endpoint-keepalived
+
+  - name: Upgrade ironic image based containers
+    kubernetes.core.k8s:
+      api_version: v1
+      kind: Deployment
+      name: "baremetal-operator-ironic"
+      namespace: "baremetal-operator-system"
+      resource_definition:
+        spec:
+          template:
+            spec:
+              containers: "{{ containers }}"
+      kubeconfig: "/tmp/kubeconfig-test1.yaml"
+    vars:
+      # Generate a list of name/image pairs from the ironic_image_containers.
+      # This is to avoid looping which would create one new revision for each container.
+      # 1. Zip to get a list of lists: [[container_name, image_name], [...]]
+      #    (all have the same image)
+      # 2. Turn it into a dict so we have {container_name: image_name, ...}
+      # 3. Convert it to a list of {name: container_name, image: image_name}
+      containers:
+        "{{ dict(ironic_image_containers |
+              zip_longest([], fillvalue=CONTAINER_REGISTRY+'/metal3-io/ironic:'+IRONIC_IMAGE_TAG)) |
+            dict2items(key_name='name', value_name='image') }}"
+
+  - name: Wait for ironic update to rollout
+    kubernetes.core.k8s_info:
+      api_version: v1
+      kind: Deployment
+      name: "{{ NAMEPREFIX }}-ironic"
+      namespace: "{{ IRONIC_NAMESPACE }}"
+      kubeconfig: "/tmp/kubeconfig-{{ CLUSTER_NAME }}.yaml"
+    retries: 100
+    delay: 10
+    register: ironic_deployment
+    # We are checking that there is 1 updated replica, that it is available, and
+    # that it is the only one (so no old replica left).
+    # Note that the these fields can be missing if the controller didn't have
+    # time to update them yet, so we need to set a default value.
+    until: (ironic_deployment is succeeded) and
+           (ironic_deployment.resources | length > 0) and
+           (ironic_deployment.resources[0].status.updatedReplicas | default(0) == 1) and
+           (ironic_deployment.resources[0].status.availableReplicas | default(0) == 1) and
+           (ironic_deployment.resources[0].status.replicas | default(0) == 1)
