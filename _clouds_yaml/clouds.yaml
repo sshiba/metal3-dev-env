@@ -3,8 +3,8 @@ clouds:
 
     auth_type: http_basic
     auth:
-      username: beEjrgcnZkhE
-      password: mT7bb6QxcdIT
+      username: tDqch2vdB5bP
+      password: xTubq1zZimea
 
 
     cacert: /etc/openstack/ironic-ca.crt

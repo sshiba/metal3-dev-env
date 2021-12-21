@@ -121,8 +121,8 @@ spec:
     users:
     - name: metal3
       sshAuthorizedKeys:
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC0aKU/BbVr0FwTPKXFry6KAQ84SoE9MKSHfmbivmo1ZGPzRH7V28X6nbFq9o25xp0h9YfOH7piu2QjPezC3m/LoozAIWJslNqInyZ8n3AO9zftd5TXwZ0U9jAUaDruDy9XgZJlpvF3JV5ksCeg3MdGNk9xUYu6V1Bbx/ESeKejgxrDdvzY7huRK3T9zwq9p2Mvt5K3QlwEWNjTdK3h0xH8V3ua8zK71Sj1X7RByspmxAeCkY9YiVXaQI5gWGPBP2WXYg0VjuKDhDeHFVpkuII1QiC/5iJtfLwWb9SSSJZIU48P2KE+LO16oEziLvMi/CNVA9+639nN55+TUlnGQGy6J9uO6CdvJYsnuvRM/uGpGcyU8xQsWy+9dlUdkYIlMTOTGjCG6jCHFTxaOS60CtsDQAMkq4pjt6bMXTF8zCODAoWPtCRW5WwRy3O0H62DJZkf2bV6BoPyp+C3NjM9C6RdzmY1ROloQfvJN0pl7DdL9tXDogSdTWK90Yefh1jTMi0=
-        capm3@capm3
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC472M4wmMkA7hh0879JIoYCDd6GT/TGt+BzgpZfGIuB5kZAuzZqup9qWabsLV7Lzvjey+c31Q7IEF51WxlqiON3AWNbyXDPqdzVtBbG6XSajM0P9oKeAAH2Z9Kp+O19yvgE9x0HD0rmPnhWqo5bQWX6wbIRuIaBuhC8Gs4nqAD5t5uiQYeE3RbEiSgfxnv9LIHxHS5FDz6ShhM7OnxB476wRPgc0bc5r9ijFW7+FvXWAWwZvauKnzgMkvs+AvRI6vDOMULDZrmlkOvoqpr1tV2ugm1L9qp7qz5JdgG+/bP6/uYzLXVCJvp0s0WQxDfCP1/ArgYL3Z3djvcC/skBoGLVWbXbwTDloUGVuNKmumE/sKiGqJIDrduNBkuYtcirtb13rt2Ept5TUQKKq+Hy0gTrNuGZ1NNE2t1N1cOtNea25X3cG2xl9oHmILkMw7tAiVmHl6f/wM6VX7d3THFcmH1bAVWyKA8hwYQFaF0DVKCojNMfdh3PyW8m7k+lguIRt0=
+        azureuser@sidneyshiba-capm3-vm
       sudo: ALL=(ALL) NOPASSWD:ALL
   machineTemplate:
     infrastructureRef:
@@ -133,7 +133,7 @@ spec:
   replicas: 3
   rolloutStrategy:
     rollingUpdate:
-      maxSurge: 0
+      maxSurge: 1
   version: v1.21.1
 ---
 apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
