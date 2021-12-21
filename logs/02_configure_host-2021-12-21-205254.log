@@ -1,0 +1,1774 @@
++ source lib/common.sh
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\g\o\/\b\i\n\:* ]]
+++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin
++++ go env
+++ eval 'GO111MODULE=""
+GOARCH="amd64"
+GOBIN=""
+GOCACHE="/home/azureuser/.cache/go-build"
+GOENV="/home/azureuser/.config/go/env"
+GOEXE=""
+GOFLAGS=""
+GOHOSTARCH="amd64"
+GOHOSTOS="linux"
+GOINSECURE=""
+GOMODCACHE="/home/azureuser/go/pkg/mod"
+GONOPROXY=""
+GONOSUMDB=""
+GOOS="linux"
+GOPATH="/home/azureuser/go"
+GOPRIVATE=""
+GOPROXY="https://proxy.golang.org,direct"
+GOROOT="/usr/local/go"
+GOSUMDB="sum.golang.org"
+GOTMPDIR=""
+GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
+GOVCS=""
+GOVERSION="go1.16.7"
+GCCGO="gccgo"
+AR="ar"
+CC="gcc"
+CXX="g++"
+CGO_ENABLED="1"
+GOMOD="/dev/null"
+CGO_CFLAGS="-g -O2"
+CGO_CPPFLAGS=""
+CGO_CXXFLAGS="-g -O2"
+CGO_FFLAGS="-g -O2"
+CGO_LDFLAGS="-g -O2"
+PKG_CONFIG="pkg-config"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build455203989=/tmp/go-build -gno-record-gcc-switches"'
++++ GO111MODULE=
++++ GOARCH=amd64
++++ GOBIN=
++++ GOCACHE=/home/azureuser/.cache/go-build
++++ GOENV=/home/azureuser/.config/go/env
++++ GOEXE=
++++ GOFLAGS=
++++ GOHOSTARCH=amd64
++++ GOHOSTOS=linux
++++ GOINSECURE=
++++ GOMODCACHE=/home/azureuser/go/pkg/mod
++++ GONOPROXY=
++++ GONOSUMDB=
++++ GOOS=linux
++++ GOPATH=/home/azureuser/go
++++ GOPRIVATE=
++++ GOPROXY=https://proxy.golang.org,direct
++++ GOROOT=/usr/local/go
++++ GOSUMDB=sum.golang.org
++++ GOTMPDIR=
++++ GOTOOLDIR=/usr/local/go/pkg/tool/linux_amd64
++++ GOVCS=
++++ GOVERSION=go1.16.7
++++ GCCGO=gccgo
++++ AR=ar
++++ CC=gcc
++++ CXX=g++
++++ CGO_ENABLED=1
++++ GOMOD=/dev/null
++++ CGO_CFLAGS='-g -O2'
++++ CGO_CPPFLAGS=
++++ CGO_CXXFLAGS='-g -O2'
++++ CGO_FFLAGS='-g -O2'
++++ CGO_LDFLAGS='-g -O2'
++++ PKG_CONFIG=pkg-config
++++ GOGCCFLAGS='-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build455203989=/tmp/go-build -gno-record-gcc-switches'
+++ export GOPATH
+++++ dirname lib/common.sh
++++ cd lib/..
++++ pwd
+++ SCRIPTDIR=/home/azureuser/projects/metal3-dev-env
++++ whoami
+++ USER=azureuser
+++ export USER=azureuser
+++ USER=azureuser
+++ '[' -z '' ']'
+++ '[' '!' -f /home/azureuser/projects/metal3-dev-env/config_azureuser.sh ']'
+++ CONFIG=/home/azureuser/projects/metal3-dev-env/config_azureuser.sh
+++ source /home/azureuser/projects/metal3-dev-env/config_azureuser.sh
++++ export KUBECONFIG=/home/azureuser/.kube/config
++++ KUBECONFIG=/home/azureuser/.kube/config
++++ export K8S_AUTH_KUBECONFIG=/home/azureuser/.kube/config
++++ K8S_AUTH_KUBECONFIG=/home/azureuser/.kube/config
++++ export IMAGE_OS=Ubuntu
++++ IMAGE_OS=Ubuntu
++++ export EPHEMERAL_CLUSTER=kind
++++ EPHEMERAL_CLUSTER=kind
++++ export CONTAINER_RUNTIME=docker
++++ CONTAINER_RUNTIME=docker
++++ export CAPM3_VERSION=v1beta1
++++ CAPM3_VERSION=v1beta1
++++ export CAPI_VERSION=v1beta1
++++ CAPI_VERSION=v1beta1
++++ export NUM_NODES=5
++++ NUM_NODES=5
++++ export NUM_OF_MASTER_REPLICAS=3
++++ NUM_OF_MASTER_REPLICAS=3
++++ export NUM_OF_WORKER_REPLICAS=2
++++ NUM_OF_WORKER_REPLICAS=2
++++ export KUBERNETES_VERSION=v1.21.1
++++ KUBERNETES_VERSION=v1.21.1
++++ export UPGRADED_K8S_VERSION=v1.22.2
++++ UPGRADED_K8S_VERSION=v1.22.2
+++ export MARIADB_HOST=mariaDB
+++ MARIADB_HOST=mariaDB
+++ export MARIADB_HOST_IP=127.0.0.1
+++ MARIADB_HOST_IP=127.0.0.1
+++ ADDN_DNS=
+++ EXT_IF=
+++ PRO_IF=
+++ MANAGE_BR_BRIDGE=y
+++ MANAGE_PRO_BRIDGE=y
+++ MANAGE_INT_BRIDGE=y
+++ INT_IF=
+++ ROOT_DISK_NAME=/dev/sda
+++ NODE_HOSTNAME_FORMAT=node-%d
+++ source /etc/os-release
++++ NAME=Ubuntu
++++ VERSION='20.04.3 LTS (Focal Fossa)'
++++ ID=ubuntu
++++ ID_LIKE=debian
++++ PRETTY_NAME='Ubuntu 20.04.3 LTS'
++++ VERSION_ID=20.04
++++ HOME_URL=https://www.ubuntu.com/
++++ SUPPORT_URL=https://help.ubuntu.com/
++++ BUG_REPORT_URL=https://bugs.launchpad.net/ubuntu/
++++ PRIVACY_POLICY_URL=https://www.ubuntu.com/legal/terms-and-policies/privacy-policy
++++ VERSION_CODENAME=focal
++++ UBUNTU_CODENAME=focal
+++ export DISTRO=ubuntu20
+++ DISTRO=ubuntu20
+++ export OS=ubuntu
+++ OS=ubuntu
+++ export OS_VERSION_ID=20.04
+++ OS_VERSION_ID=20.04
+++ SUPPORTED_DISTROS=(centos8 rhel8 ubuntu18 ubuntu20)
+++ export SUPPORTED_DISTROS
+++ [[ ! centos8 rhel8 ubuntu18 ubuntu20 =~ ubuntu20 ]]
+++ [[ ubuntu == ubuntu ]]
+++ export CONTAINER_RUNTIME=docker
+++ CONTAINER_RUNTIME=docker
+++ [[ docker == \p\o\d\m\a\n ]]
+++ export POD_NAME=
+++ POD_NAME=
+++ export POD_NAME_INFRA=
+++ POD_NAME_INFRA=
+++ export SSH_KEY=/home/azureuser/.ssh/id_rsa
+++ SSH_KEY=/home/azureuser/.ssh/id_rsa
+++ export SSH_PUB_KEY=/home/azureuser/.ssh/id_rsa.pub
+++ SSH_PUB_KEY=/home/azureuser/.ssh/id_rsa.pub
+++ '[' '!' -f /home/azureuser/.ssh/id_rsa ']'
+++ FILESYSTEM=/
+++ CAPM3_VERSION_LIST='v1alpha4 v1alpha5 v1beta1'
+++ export CAPM3_VERSION=v1beta1
+++ CAPM3_VERSION=v1beta1
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ '[' v1beta1 == v1beta1 ']'
+++ export CAPI_VERSION=v1beta1
+++ CAPI_VERSION=v1beta1
+++ export M3PATH=/home/azureuser/go/src/github.com/metal3-io
+++ M3PATH=/home/azureuser/go/src/github.com/metal3-io
+++ export BMOPATH=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator
+++ BMOPATH=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator
+++ export RUN_LOCAL_IRONIC_SCRIPT=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ RUN_LOCAL_IRONIC_SCRIPT=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ export CAPM3PATH=/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3PATH=/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
+++ export CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ export CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ export IPAMPATH=/home/azureuser/go/src/github.com/metal3-io/ip-address-manager
+++ IPAMPATH=/home/azureuser/go/src/github.com/metal3-io/ip-address-manager
+++ export IPAM_BASE_URL=metal3-io/ip-address-manager
+++ IPAM_BASE_URL=metal3-io/ip-address-manager
+++ export IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ '[' v1beta1 == v1alpha3 ']'
+++ '[' v1beta1 == v1alpha4 ']'
+++ IPAMBRANCH=main
+++ IPA_DOWNLOAD_ENABLED=true
+++ CAPI_BASE_URL=kubernetes-sigs/cluster-api
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ CAPM3BRANCH=main
+++ BMOREPO=https://github.com/metal3-io/baremetal-operator.git
+++ BMOBRANCH=master
+++ FORCE_REPO_UPDATE=true
+++ BMOCOMMIT=HEAD
+++ BMO_RUN_LOCAL=false
+++ CAPM3_RUN_LOCAL=false
+++ WORKING_DIR=/opt/metal3-dev-env
+++ NODES_FILE=/opt/metal3-dev-env/ironic_nodes.json
+++ NODES_PLATFORM=libvirt
+++ export NAMESPACE=metal3
+++ NAMESPACE=metal3
+++ export NUM_NODES=5
+++ NUM_NODES=5
+++ export NUM_OF_MASTER_REPLICAS=3
+++ NUM_OF_MASTER_REPLICAS=3
+++ export NUM_OF_WORKER_REPLICAS=2
+++ NUM_OF_WORKER_REPLICAS=2
+++ export VM_EXTRADISKS=false
+++ VM_EXTRADISKS=false
+++ export VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ export VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ export NODE_DRAIN_TIMEOUT=0s
+++ NODE_DRAIN_TIMEOUT=0s
+++ export MAX_SURGE_VALUE=1
+++ MAX_SURGE_VALUE=1
+++ export DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ export CONTAINER_REGISTRY=quay.io
+++ CONTAINER_REGISTRY=quay.io
+++ export VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ export SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ export IRONIC_TLS_SETUP=true
+++ IRONIC_TLS_SETUP=true
+++ export IRONIC_BASIC_AUTH=true
+++ IRONIC_BASIC_AUTH=true
+++ export IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ export IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ export IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ export IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ export IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ export IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ '[' v1beta1 == v1alpha4 ']'
+++ export IRONIC_NAMESPACE=baremetal-operator-system
+++ IRONIC_NAMESPACE=baremetal-operator-system
+++ export NAMEPREFIX=baremetal-operator
+++ NAMEPREFIX=baremetal-operator
+++ export RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ export BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ export OPENSTACK_CONFIG=/home/azureuser/.config/openstack/clouds.yaml
+++ OPENSTACK_CONFIG=/home/azureuser/.config/openstack/clouds.yaml
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ export CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
+++ CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
+++ export IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
+++ IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
+++ export DEFAULT_HOSTS_MEMORY=4096
+++ DEFAULT_HOSTS_MEMORY=4096
+++ export CLUSTER_NAME=test1
+++ CLUSTER_NAME=test1
+++ export CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ export KUBERNETES_VERSION=v1.21.1
+++ KUBERNETES_VERSION=v1.21.1
+++ export KUBERNETES_BINARIES_VERSION=v1.21.1
+++ KUBERNETES_BINARIES_VERSION=v1.21.1
+++ export KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ '[' docker == docker ']'
+++ export EPHEMERAL_CLUSTER=kind
+++ EPHEMERAL_CLUSTER=kind
+++ export KUSTOMIZE_VERSION=v4.1.3
+++ KUSTOMIZE_VERSION=v4.1.3
+++ export KIND_VERSION=v0.11.1
+++ KIND_VERSION=v0.11.1
+++ '[' v1.21.1 == v1.21.2 ']'
+++ export KIND_NODE_IMAGE_VERSION=v1.22.2
+++ KIND_NODE_IMAGE_VERSION=v1.22.2
+++ export MINIKUBE_VERSION=v1.23.2
+++ MINIKUBE_VERSION=v1.23.2
+++ export ANSIBLE_VERSION=4.8.0
+++ ANSIBLE_VERSION=4.8.0
+++ SKIP_RETRIES=false
+++ TEST_TIME_INTERVAL=10
+++ TEST_MAX_TIME=240
+++ FAILS=0
+++ RESULT_STR=
+++ export ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ '[' 5 -lt 5 ']'
+++ export LIBVIRT_DEFAULT_URI=qemu:///system
+++ LIBVIRT_DEFAULT_URI=qemu:///system
+++ '[' azureuser '!=' root ']'
+++ '[' /run/user/1000 == /run/user/0 ']'
+++ sudo -n uptime
+++ export USE_FIREWALLD=False
+++ USE_FIREWALLD=False
+++ [[ ubuntu20 == \r\h\e\l\8 ]]
+++ [[ ubuntu20 == \c\e\n\t\o\s\8 ]]
++++ df / --output=fstype
++++ tail -n 1
+++ FSTYPE=ext4
+++ case ${FSTYPE} in
+++ '[' '!' -d /opt/metal3-dev-env ']'
++ source lib/network.sh
+++ export CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ export POD_CIDR=192.168.0.0/18
+++ POD_CIDR=192.168.0.0/18
+++ PROVISIONING_IPV6=false
+++ IPV6_ADDR_PREFIX=fd2e:6f44:5dd8:b856
+++ [[ false == \t\r\u\e ]]
+++ export BOOT_MODE=legacy
+++ BOOT_MODE=legacy
+++ export PROVISIONING_NETWORK=172.22.0.0/24
+++ PROVISIONING_NETWORK=172.22.0.0/24
+++ [[ legacy == \l\e\g\a\c\y ]]
+++ export LIBVIRT_FIRMWARE=bios
+++ LIBVIRT_FIRMWARE=bios
+++ export LIBVIRT_SECURE_BOOT=false
+++ LIBVIRT_SECURE_BOOT=false
+++ prefixlen PROVISIONING_CIDR 172.22.0.0/24
+++ resultvar=PROVISIONING_CIDR
+++ network=172.22.0.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").prefixlen)'
+++ result=24
+++ eval PROVISIONING_CIDR=24
++++ PROVISIONING_CIDR=24
+++ export PROVISIONING_CIDR
+++ export PROVISIONING_CIDR
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").netmask)'
+++ export PROVISIONING_NETMASK=255.255.255.0
+++ PROVISIONING_NETMASK=255.255.255.0
+++ network_address PROVISIONING_IP 172.22.0.0/24 1
+++ resultvar=PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 1 - 1, None)))'
+++ result=172.22.0.1
+++ eval PROVISIONING_IP=172.22.0.1
++++ PROVISIONING_IP=172.22.0.1
+++ export PROVISIONING_IP
+++ network_address CLUSTER_PROVISIONING_IP 172.22.0.0/24 2
+++ resultvar=CLUSTER_PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=2
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 2 - 1, None)))'
+++ result=172.22.0.2
+++ eval CLUSTER_PROVISIONING_IP=172.22.0.2
++++ CLUSTER_PROVISIONING_IP=172.22.0.2
+++ export CLUSTER_PROVISIONING_IP
+++ export PROVISIONING_IP
+++ export CLUSTER_PROVISIONING_IP
+++ [[ 172.22.0.1 == *\:* ]]
+++ export PROVISIONING_URL_HOST=172.22.0.1
+++ PROVISIONING_URL_HOST=172.22.0.1
+++ export CLUSTER_URL_HOST=172.22.0.2
+++ CLUSTER_URL_HOST=172.22.0.2
+++ [[ 192.168.111.249 == *\:* ]]
+++ export CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ export CLUSTER_APIENDPOINT_PORT=6443
+++ CLUSTER_APIENDPOINT_PORT=6443
+++ network_address dhcp_range_start 172.22.0.0/24 10
+++ resultvar=dhcp_range_start
+++ network=172.22.0.0/24
+++ record=10
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 10 - 1, None)))'
+++ result=172.22.0.10
+++ eval dhcp_range_start=172.22.0.10
++++ dhcp_range_start=172.22.0.10
+++ export dhcp_range_start
+++ network_address dhcp_range_end 172.22.0.0/24 100
+++ resultvar=dhcp_range_end
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval dhcp_range_end=172.22.0.100
++++ dhcp_range_end=172.22.0.100
+++ export dhcp_range_end
+++ network_address PROVISIONING_POOL_RANGE_START 172.22.0.0/24 100
+++ resultvar=PROVISIONING_POOL_RANGE_START
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval PROVISIONING_POOL_RANGE_START=172.22.0.100
++++ PROVISIONING_POOL_RANGE_START=172.22.0.100
+++ export PROVISIONING_POOL_RANGE_START
+++ network_address PROVISIONING_POOL_RANGE_END 172.22.0.0/24 200
+++ resultvar=PROVISIONING_POOL_RANGE_END
+++ network=172.22.0.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 200 - 1, None)))'
+++ result=172.22.0.200
+++ eval PROVISIONING_POOL_RANGE_END=172.22.0.200
++++ PROVISIONING_POOL_RANGE_END=172.22.0.200
+++ export PROVISIONING_POOL_RANGE_END
+++ export PROVISIONING_POOL_RANGE_START
+++ export PROVISIONING_POOL_RANGE_END
+++ export CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ EXTERNAL_SUBNET=
+++ [[ -n '' ]]
+++ export IP_STACK=v4
+++ IP_STACK=v4
+++ [[ v4 == \v\4 ]]
+++ export EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ export EXTERNAL_SUBNET_V6=
+++ EXTERNAL_SUBNET_V6=
+++ [[ kind == \m\i\n\i\k\u\b\e ]]
+++ [[ -n 192.168.111.0/24 ]]
+++ prefixlen EXTERNAL_SUBNET_V4_PREFIX 192.168.111.0/24
+++ resultvar=EXTERNAL_SUBNET_V4_PREFIX
+++ network=192.168.111.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"192.168.111.0/24").prefixlen)'
+++ result=24
+++ eval EXTERNAL_SUBNET_V4_PREFIX=24
++++ EXTERNAL_SUBNET_V4_PREFIX=24
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ [[ -z '' ]]
+++ network_address EXTERNAL_SUBNET_V4_HOST 192.168.111.0/24 1
+++ resultvar=EXTERNAL_SUBNET_V4_HOST
+++ network=192.168.111.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 1 - 1, None)))'
+++ result=192.168.111.1
+++ eval EXTERNAL_SUBNET_V4_HOST=192.168.111.1
++++ EXTERNAL_SUBNET_V4_HOST=192.168.111.1
+++ export EXTERNAL_SUBNET_V4_HOST
+++ network_address VIRSH_DHCP_V4_START 192.168.111.0/24 20
+++ resultvar=VIRSH_DHCP_V4_START
+++ network=192.168.111.0/24
+++ record=20
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 20 - 1, None)))'
+++ result=192.168.111.20
+++ eval VIRSH_DHCP_V4_START=192.168.111.20
++++ VIRSH_DHCP_V4_START=192.168.111.20
+++ export VIRSH_DHCP_V4_START
+++ network_address VIRSH_DHCP_V4_END 192.168.111.0/24 60
+++ resultvar=VIRSH_DHCP_V4_END
+++ network=192.168.111.0/24
+++ record=60
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 60 - 1, None)))'
+++ result=192.168.111.60
+++ eval VIRSH_DHCP_V4_END=192.168.111.60
++++ VIRSH_DHCP_V4_END=192.168.111.60
+++ export VIRSH_DHCP_V4_END
+++ network_address BAREMETALV4_POOL_RANGE_START 192.168.111.0/24 100
+++ resultvar=BAREMETALV4_POOL_RANGE_START
+++ network=192.168.111.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 100 - 1, None)))'
+++ result=192.168.111.100
+++ eval BAREMETALV4_POOL_RANGE_START=192.168.111.100
++++ BAREMETALV4_POOL_RANGE_START=192.168.111.100
+++ export BAREMETALV4_POOL_RANGE_START
+++ network_address BAREMETALV4_POOL_RANGE_END 192.168.111.0/24 200
+++ resultvar=BAREMETALV4_POOL_RANGE_END
+++ network=192.168.111.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 200 - 1, None)))'
+++ result=192.168.111.200
+++ eval BAREMETALV4_POOL_RANGE_END=192.168.111.200
++++ BAREMETALV4_POOL_RANGE_END=192.168.111.200
+++ export BAREMETALV4_POOL_RANGE_END
+++ export VIRSH_DHCP_V4_START
+++ export VIRSH_DHCP_V4_END
+++ export BAREMETALV4_POOL_RANGE_START
+++ export BAREMETALV4_POOL_RANGE_END
+++ [[ -n '' ]]
+++ export EXTERNAL_SUBNET_V6_HOST=
+++ EXTERNAL_SUBNET_V6_HOST=
+++ export EXTERNAL_SUBNET_V6_PREFIX=
+++ EXTERNAL_SUBNET_V6_PREFIX=
+++ export BAREMETALV6_POOL_RANGE_START=
+++ BAREMETALV6_POOL_RANGE_START=
+++ export BAREMETALV6_POOL_RANGE_END=
+++ BAREMETALV6_POOL_RANGE_END=
+++ export REGISTRY_PORT=5000
+++ REGISTRY_PORT=5000
+++ export HTTP_PORT=6180
+++ HTTP_PORT=6180
+++ export IRONIC_INSPECTOR_PORT=5050
+++ IRONIC_INSPECTOR_PORT=5050
+++ export IRONIC_API_PORT=6385
+++ IRONIC_API_PORT=6385
+++ [[ -n 192.168.111.1 ]]
+++ export REGISTRY=192.168.111.1:5000
+++ REGISTRY=192.168.111.1:5000
+++ network_address INITIAL_IRONICBRIDGE_IP 172.22.0.0/24 9
+++ resultvar=INITIAL_IRONICBRIDGE_IP
+++ network=172.22.0.0/24
+++ record=9
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 9 - 1, None)))'
+++ result=172.22.0.9
+++ eval INITIAL_IRONICBRIDGE_IP=172.22.0.9
++++ INITIAL_IRONICBRIDGE_IP=172.22.0.9
+++ export INITIAL_IRONICBRIDGE_IP
+++ export DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ export DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ '[' true == true ']'
+++ export IRONIC_URL=https://172.22.0.2:6385/v1/
+++ IRONIC_URL=https://172.22.0.2:6385/v1/
+++ export IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
+++ IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
++ sudo '[' '!' -f /root/.ssh/id_rsa_virt_power ']'
++ sudo ssh-keygen -f /root/.ssh/id_rsa_virt_power -P ''
+Generating public/private rsa key pair.
+Your identification has been saved in /root/.ssh/id_rsa_virt_power
+Your public key has been saved in /root/.ssh/id_rsa_virt_power.pub
+The key fingerprint is:
+SHA256:7CrhDPPWJpobhgpra+OfqW28QDR6m+Tx8/HniTZOvJM root@sidneyshiba-capm3-vm
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|                 |
+| o               |
+|o .    .         |
+|..+     S        |
+|.=o=.  o         |
+|o.B*oo. +.       |
+|o*o=Xoo=Eo..     |
+|*+XX.+oo==o      |
++----[SHA256]-----+
++ sudo cat /root/.ssh/id_rsa_virt_power.pub
++ sudo tee -a /root/.ssh/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCoXPh9A7OGi4WeR8vFLvlXwJLjoIAbtWP2AjRsn2QwLn20sIrtMeAzWJjmnwLG86HKR7pfROa4Fe6A5ZbptigfhEP617iZ7lS7JVdQH8hU0z7aV4hP2SCt/d5eEcLjwz9cCzeVw4J1lZ6cjSTAYiv6psQdaEou7O1woqDIitDHfUSsLeSa2oU6iow0ji4PV4JOtcudJnAN1LZAxuc/gKE0phCEpUWVQQmHHWv5sibik9eNl5kMVuRUhAL266DxSVc1s+vLMVdzoiIUdyaQj/NQQ75oHSaAJWveQaBrKl46BdEP0zOxnDIrNUJmHPzLCMLyzcLRi4krltAyiDTxs/f7zxXtU27AloPmedOIddJw2nYfa9a0hE8A0xkG6Vn9uBUT/NxC8OdQ1TbiFPYYZ/X5flKwaxBbvR65w/+lfNSDNWJqBozuKqXDAeANXKGWgho7wqRLjh7AdGoLqFeIUBfDwglFdJUTOSyJV5iE+47XWaUyvEDRBxjPD9NFQoQr+Qs= root@sidneyshiba-capm3-vm
++ ANSIBLE_FORCE_COLOR=true
++ ansible-playbook -e working_dir=/opt/metal3-dev-env -e num_nodes=5 -e extradisks=false -e virthost=sidneyshiba-capm3-vm -e platform=libvirt -e libvirt_firmware=bios -e libvirt_secure_boot=false -e default_memory=4096 -e manage_baremetal=y -e provisioning_url_host=172.22.0.1 -e nodes_file=/opt/metal3-dev-env/ironic_nodes.json -e node_hostname_format=node-%d -i vm-setup/inventory.ini -b vm-setup/setup-playbook.yml
+[0;35m[DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names [0m
+[0;35mto new standard, use callbacks_enabled instead. This feature will be removed [0m
+[0;35mfrom ansible-core in version 2.15. Deprecation warnings can be disabled by [0m
+[0;35msetting deprecation_warnings=False in ansible.cfg.[0m
+
+PLAY [Setup dummy baremetal VMs] ***********************************************
+Tuesday 21 December 2021  20:52:55 +0000 (0:00:00.017)       0:00:00.017 ****** 
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:52:56 +0000 (0:00:01.316)       0:00:01.333 ****** 
+
+TASK [common : set_fact] *******************************************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:52:56 +0000 (0:00:00.065)       0:00:01.399 ****** 
+
+TASK [common : Set an empty default for vm_nodes if not already defined] *******
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:52:56 +0000 (0:00:00.050)       0:00:01.449 ****** 
+
+TASK [common : Populate vm_nodes if not already defined] ***********************
+[0;36mincluded: /home/azureuser/projects/metal3-dev-env/vm-setup/roles/common/tasks/vm_nodes_tasks.yml for localhost => (item={'key': 'node', 'value': {'memory': '4096', 'disk': '50', 'vcpu': '2', 'extradisks': False}})[0m
+Tuesday 21 December 2021  20:52:56 +0000 (0:00:00.098)       0:00:01.548 ****** 
+
+TASK [common : set_fact] *******************************************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:52:56 +0000 (0:00:00.064)       0:00:01.613 ****** 
+
+TASK [common : set_fact] *******************************************************
+[0;32mok: [localhost] => (item=0)[0m
+[0;32mok: [localhost] => (item=1)[0m
+[0;32mok: [localhost] => (item=2)[0m
+[0;32mok: [localhost] => (item=3)[0m
+[0;32mok: [localhost] => (item=4)[0m
+Tuesday 21 December 2021  20:52:56 +0000 (0:00:00.122)       0:00:01.735 ****** 
+
+TASK [common : set_fact] *******************************************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:52:57 +0000 (0:00:00.071)       0:00:01.807 ****** 
+
+TASK [common : debug] **********************************************************
+[0;32mok: [localhost] => {[0m
+[0;32m    "vm_nodes": [[0m
+[0;32m        {[0m
+[0;32m            "flavor": "node",[0m
+[0;32m            "name": "node_0",[0m
+[0;32m            "virtualbmc_port": 6230[0m
+[0;32m        },[0m
+[0;32m        {[0m
+[0;32m            "flavor": "node",[0m
+[0;32m            "name": "node_1",[0m
+[0;32m            "virtualbmc_port": 6231[0m
+[0;32m        },[0m
+[0;32m        {[0m
+[0;32m            "flavor": "node",[0m
+[0;32m            "name": "node_2",[0m
+[0;32m            "virtualbmc_port": 6232[0m
+[0;32m        },[0m
+[0;32m        {[0m
+[0;32m            "flavor": "node",[0m
+[0;32m            "name": "node_3",[0m
+[0;32m            "virtualbmc_port": 6233[0m
+[0;32m        },[0m
+[0;32m        {[0m
+[0;32m            "flavor": "node",[0m
+[0;32m            "name": "node_4",[0m
+[0;32m            "virtualbmc_port": 6234[0m
+[0;32m        }[0m
+[0;32m    ][0m
+[0;32m}[0m
+Tuesday 21 December 2021  20:52:57 +0000 (0:00:00.080)       0:00:01.888 ****** 
+
+TASK [common : set_fact] *******************************************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:52:57 +0000 (0:00:00.079)       0:00:01.967 ****** 
+Tuesday 21 December 2021  20:52:57 +0000 (0:00:00.042)       0:00:02.009 ****** 
+Tuesday 21 December 2021  20:52:57 +0000 (0:00:00.084)       0:00:02.093 ****** 
+Tuesday 21 December 2021  20:52:57 +0000 (0:00:00.047)       0:00:02.141 ****** 
+
+TASK [libvirt : include_tasks] *************************************************
+[0;36mincluded: /home/azureuser/projects/metal3-dev-env/vm-setup/roles/libvirt/tasks/install_setup_tasks.yml for localhost[0m
+Tuesday 21 December 2021  20:52:57 +0000 (0:00:00.053)       0:00:02.194 ****** 
+
+TASK [libvirt : Start libvirtd] ************************************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:52:58 +0000 (0:00:00.716)       0:00:02.911 ****** 
+
+TASK [libvirt : include_tasks] *************************************************
+[0;36mincluded: /home/azureuser/projects/metal3-dev-env/vm-setup/roles/libvirt/tasks/network_setup_tasks.yml for localhost[0m
+Tuesday 21 December 2021  20:52:58 +0000 (0:00:00.079)       0:00:02.990 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+Tuesday 21 December 2021  20:52:58 +0000 (0:00:00.133)       0:00:03.123 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+Tuesday 21 December 2021  20:52:58 +0000 (0:00:00.200)       0:00:03.324 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+
+TASK [libvirt : get a list of MACs to use] *************************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:52:59 +0000 (0:00:00.470)       0:00:03.794 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+
+TASK [libvirt : Create libvirt networks] ***************************************
+[0;33mchanged: [localhost] => (item={'name': 'provisioning', 'bridge': 'provisioning', 'forward_mode': 'bridge'})[0m
+[0;33mchanged: [localhost] => (item={'name': 'baremetal', 'bridge': 'baremetal', 'forward_mode': 'nat', 'address_v4': '192.168.111.1', 'netmask_v4': '255.255.255.0', 'dhcp_range_v4': ['192.168.111.20', '192.168.111.60'], 'address_v6': '', 'prefix_v6': False, 'dhcp_range_v6': ['', ''], 'lease_expiry': 60, 'nat_port_range': [1024, 65535], 'domain': 'ostest.test.metalkube.org', 'dns': {'hosts': [], 'forwarders': [{'domain': 'apps.ostest.test.metalkube.org', 'addr': '127.0.0.1'}], 'srvs': []}})[0m
+Tuesday 21 December 2021  20:52:59 +0000 (0:00:00.933)       0:00:04.728 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+
+TASK [libvirt : Start libvirt networks] ****************************************
+[0;33mchanged: [localhost] => (item={'name': 'provisioning', 'bridge': 'provisioning', 'forward_mode': 'bridge'})[0m
+[0;33mchanged: [localhost] => (item={'name': 'baremetal', 'bridge': 'baremetal', 'forward_mode': 'nat', 'address_v4': '192.168.111.1', 'netmask_v4': '255.255.255.0', 'dhcp_range_v4': ['192.168.111.20', '192.168.111.60'], 'address_v6': '', 'prefix_v6': False, 'dhcp_range_v6': ['', ''], 'lease_expiry': 60, 'nat_port_range': [1024, 65535], 'domain': 'ostest.test.metalkube.org', 'dns': {'hosts': [], 'forwarders': [{'domain': 'apps.ostest.test.metalkube.org', 'addr': '127.0.0.1'}], 'srvs': []}})[0m
+Tuesday 21 December 2021  20:53:00 +0000 (0:00:00.773)       0:00:05.502 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+
+TASK [libvirt : Mark  libvirt networks as autostarted] *************************
+[0;33mchanged: [localhost] => (item={'name': 'provisioning', 'bridge': 'provisioning', 'forward_mode': 'bridge'})[0m
+[0;33mchanged: [localhost] => (item={'name': 'baremetal', 'bridge': 'baremetal', 'forward_mode': 'nat', 'address_v4': '192.168.111.1', 'netmask_v4': '255.255.255.0', 'dhcp_range_v4': ['192.168.111.20', '192.168.111.60'], 'address_v6': '', 'prefix_v6': False, 'dhcp_range_v6': ['', ''], 'lease_expiry': 60, 'nat_port_range': [1024, 65535], 'domain': 'ostest.test.metalkube.org', 'dns': {'hosts': [], 'forwarders': [{'domain': 'apps.ostest.test.metalkube.org', 'addr': '127.0.0.1'}], 'srvs': []}})[0m
+Tuesday 21 December 2021  20:53:01 +0000 (0:00:00.658)       0:00:06.160 ****** 
+Tuesday 21 December 2021  20:53:01 +0000 (0:00:00.046)       0:00:06.207 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+Tuesday 21 December 2021  20:53:01 +0000 (0:00:00.154)       0:00:06.361 ****** 
+Tuesday 21 December 2021  20:53:01 +0000 (0:00:00.111)       0:00:06.472 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+Tuesday 21 December 2021  20:53:01 +0000 (0:00:00.183)       0:00:06.656 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+Tuesday 21 December 2021  20:53:02 +0000 (0:00:00.186)       0:00:06.842 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+Tuesday 21 December 2021  20:53:02 +0000 (0:00:00.166)       0:00:07.009 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+
+TASK [libvirt : Whitelist bridges for unprivileged access on Ubuntu or Fedora] ***
+[0;33mchanged: [localhost] => (item={'name': 'provisioning', 'bridge': 'provisioning', 'forward_mode': 'bridge'})[0m
+[0;33mchanged: [localhost] => (item={'name': 'baremetal', 'bridge': 'baremetal', 'forward_mode': 'nat', 'address_v4': '192.168.111.1', 'netmask_v4': '255.255.255.0', 'dhcp_range_v4': ['192.168.111.20', '192.168.111.60'], 'address_v6': '', 'prefix_v6': False, 'dhcp_range_v6': ['', ''], 'lease_expiry': 60, 'nat_port_range': [1024, 65535], 'domain': 'ostest.test.metalkube.org', 'dns': {'hosts': [], 'forwarders': [{'domain': 'apps.ostest.test.metalkube.org', 'addr': '127.0.0.1'}], 'srvs': []}})[0m
+Tuesday 21 December 2021  20:53:02 +0000 (0:00:00.714)       0:00:07.724 ****** 
+
+TASK [libvirt : Ensure remote working dir exists] ******************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:53:03 +0000 (0:00:00.402)       0:00:08.127 ****** 
+
+TASK [libvirt : include_tasks] *************************************************
+[0;36mincluded: /home/azureuser/projects/metal3-dev-env/vm-setup/roles/libvirt/tasks/vm_setup_tasks.yml for localhost[0m
+Tuesday 21 December 2021  20:53:03 +0000 (0:00:00.084)       0:00:08.211 ****** 
+
+TASK [libvirt : ensure libvirt volume path exists] *****************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:03 +0000 (0:00:00.253)       0:00:08.465 ****** 
+
+TASK [libvirt : Check volume pool] *********************************************
+[1;30mtask path: /home/azureuser/projects/metal3-dev-env/vm-setup/roles/libvirt/tasks/vm_setup_tasks.yml:12[0m
+[0;31mfatal: [localhost]: FAILED! => {"changed": false, "cmd": ["virsh", "pool-uuid", "oooq_pool"], "delta": "0:00:00.024820", "end": "2021-12-21 20:53:04.087778", "msg": "non-zero return code", "rc": 1, "start": "2021-12-21 20:53:04.062958", "stderr": "error: failed to get pool 'oooq_pool'\nerror: Storage pool not found: no storage pool with matching name 'oooq_pool'", "stderr_lines": ["error: failed to get pool 'oooq_pool'", "error: Storage pool not found: no storage pool with matching name 'oooq_pool'"], "stdout": "", "stdout_lines": []}[0m
+[0;36m...ignoring[0m
+Tuesday 21 December 2021  20:53:04 +0000 (0:00:00.433)       0:00:08.898 ****** 
+
+TASK [libvirt : create the volume pool xml file] *******************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:04 +0000 (0:00:00.674)       0:00:09.573 ****** 
+
+TASK [libvirt : Define volume pool] ********************************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:05 +0000 (0:00:00.307)       0:00:09.880 ****** 
+
+TASK [libvirt : Start volume pool] *********************************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:05 +0000 (0:00:00.467)       0:00:10.348 ****** 
+
+TASK [libvirt : ensure tripleo-quickstart volume pool is defined] **************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:05 +0000 (0:00:00.299)       0:00:10.648 ****** 
+
+TASK [libvirt : Mark volume pool for autostart] ********************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:06 +0000 (0:00:00.336)       0:00:10.984 ****** 
+
+TASK [libvirt : Check if vm volumes exist] *************************************
+[0;31mfailed: [localhost] (item={'name': 'node_0', 'flavor': 'node', 'virtualbmc_port': 6230}) => {"ansible_loop_var": "item", "changed": true, "cmd": ["virsh", "vol-info", "--pool", "oooq_pool", "node_0.qcow2"], "delta": "0:00:00.025175", "end": "2021-12-21 20:53:06.495868", "item": {"flavor": "node", "name": "node_0", "virtualbmc_port": 6230}, "msg": "non-zero return code", "rc": 1, "start": "2021-12-21 20:53:06.470693", "stderr": "error: failed to get vol 'node_0.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_0.qcow2'", "stderr_lines": ["error: failed to get vol 'node_0.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_0.qcow2'"], "stdout": "", "stdout_lines": []}[0m
+[0;31mfailed: [localhost] (item={'name': 'node_1', 'flavor': 'node', 'virtualbmc_port': 6231}) => {"ansible_loop_var": "item", "changed": true, "cmd": ["virsh", "vol-info", "--pool", "oooq_pool", "node_1.qcow2"], "delta": "0:00:00.025992", "end": "2021-12-21 20:53:06.740905", "item": {"flavor": "node", "name": "node_1", "virtualbmc_port": 6231}, "msg": "non-zero return code", "rc": 1, "start": "2021-12-21 20:53:06.714913", "stderr": "error: failed to get vol 'node_1.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_1.qcow2'", "stderr_lines": ["error: failed to get vol 'node_1.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_1.qcow2'"], "stdout": "", "stdout_lines": []}[0m
+[0;31mfailed: [localhost] (item={'name': 'node_2', 'flavor': 'node', 'virtualbmc_port': 6232}) => {"ansible_loop_var": "item", "changed": true, "cmd": ["virsh", "vol-info", "--pool", "oooq_pool", "node_2.qcow2"], "delta": "0:00:00.023364", "end": "2021-12-21 20:53:06.963431", "item": {"flavor": "node", "name": "node_2", "virtualbmc_port": 6232}, "msg": "non-zero return code", "rc": 1, "start": "2021-12-21 20:53:06.940067", "stderr": "error: failed to get vol 'node_2.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_2.qcow2'", "stderr_lines": ["error: failed to get vol 'node_2.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_2.qcow2'"], "stdout": "", "stdout_lines": []}[0m
+[0;31mfailed: [localhost] (item={'name': 'node_3', 'flavor': 'node', 'virtualbmc_port': 6233}) => {"ansible_loop_var": "item", "changed": true, "cmd": ["virsh", "vol-info", "--pool", "oooq_pool", "node_3.qcow2"], "delta": "0:00:00.028146", "end": "2021-12-21 20:53:07.259208", "item": {"flavor": "node", "name": "node_3", "virtualbmc_port": 6233}, "msg": "non-zero return code", "rc": 1, "start": "2021-12-21 20:53:07.231062", "stderr": "error: failed to get vol 'node_3.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_3.qcow2'", "stderr_lines": ["error: failed to get vol 'node_3.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_3.qcow2'"], "stdout": "", "stdout_lines": []}[0m
+[0;31mfailed: [localhost] (item={'name': 'node_4', 'flavor': 'node', 'virtualbmc_port': 6234}) => {"ansible_loop_var": "item", "changed": true, "cmd": ["virsh", "vol-info", "--pool", "oooq_pool", "node_4.qcow2"], "delta": "0:00:00.027143", "end": "2021-12-21 20:53:07.492476", "item": {"flavor": "node", "name": "node_4", "virtualbmc_port": 6234}, "msg": "non-zero return code", "rc": 1, "start": "2021-12-21 20:53:07.465333", "stderr": "error: failed to get vol 'node_4.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_4.qcow2'", "stderr_lines": ["error: failed to get vol 'node_4.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_4.qcow2'"], "stdout": "", "stdout_lines": []}[0m
+[0;36m...ignoring[0m
+Tuesday 21 December 2021  20:53:07 +0000 (0:00:01.338)       0:00:12.323 ****** 
+
+TASK [libvirt : Create vm vm storage] ******************************************
+[0;33mchanged: [localhost] => (item={'changed': True, 'stdout': '', 'stderr': "error: failed to get vol 'node_0.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_0.qcow2'", 'rc': 1, 'cmd': ['virsh', 'vol-info', '--pool', 'oooq_pool', 'node_0.qcow2'], 'start': '2021-12-21 20:53:06.470693', 'end': '2021-12-21 20:53:06.495868', 'delta': '0:00:00.025175', 'failed': True, 'msg': 'non-zero return code', 'invocation': {'module_args': {'_raw_params': "virsh vol-info --pool 'oooq_pool' 'node_0.qcow2'\n", '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': [], 'stderr_lines': ["error: failed to get vol 'node_0.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_0.qcow2'"], 'item': {'name': 'node_0', 'flavor': 'node', 'virtualbmc_port': 6230}, 'ansible_loop_var': 'item'})[0m
+[0;33mchanged: [localhost] => (item={'changed': True, 'stdout': '', 'stderr': "error: failed to get vol 'node_1.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_1.qcow2'", 'rc': 1, 'cmd': ['virsh', 'vol-info', '--pool', 'oooq_pool', 'node_1.qcow2'], 'start': '2021-12-21 20:53:06.714913', 'end': '2021-12-21 20:53:06.740905', 'delta': '0:00:00.025992', 'failed': True, 'msg': 'non-zero return code', 'invocation': {'module_args': {'_raw_params': "virsh vol-info --pool 'oooq_pool' 'node_1.qcow2'\n", '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': [], 'stderr_lines': ["error: failed to get vol 'node_1.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_1.qcow2'"], 'item': {'name': 'node_1', 'flavor': 'node', 'virtualbmc_port': 6231}, 'ansible_loop_var': 'item'})[0m
+[0;33mchanged: [localhost] => (item={'changed': True, 'stdout': '', 'stderr': "error: failed to get vol 'node_2.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_2.qcow2'", 'rc': 1, 'cmd': ['virsh', 'vol-info', '--pool', 'oooq_pool', 'node_2.qcow2'], 'start': '2021-12-21 20:53:06.940067', 'end': '2021-12-21 20:53:06.963431', 'delta': '0:00:00.023364', 'failed': True, 'msg': 'non-zero return code', 'invocation': {'module_args': {'_raw_params': "virsh vol-info --pool 'oooq_pool' 'node_2.qcow2'\n", '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': [], 'stderr_lines': ["error: failed to get vol 'node_2.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_2.qcow2'"], 'item': {'name': 'node_2', 'flavor': 'node', 'virtualbmc_port': 6232}, 'ansible_loop_var': 'item'})[0m
+[0;33mchanged: [localhost] => (item={'changed': True, 'stdout': '', 'stderr': "error: failed to get vol 'node_3.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_3.qcow2'", 'rc': 1, 'cmd': ['virsh', 'vol-info', '--pool', 'oooq_pool', 'node_3.qcow2'], 'start': '2021-12-21 20:53:07.231062', 'end': '2021-12-21 20:53:07.259208', 'delta': '0:00:00.028146', 'failed': True, 'msg': 'non-zero return code', 'invocation': {'module_args': {'_raw_params': "virsh vol-info --pool 'oooq_pool' 'node_3.qcow2'\n", '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': [], 'stderr_lines': ["error: failed to get vol 'node_3.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_3.qcow2'"], 'item': {'name': 'node_3', 'flavor': 'node', 'virtualbmc_port': 6233}, 'ansible_loop_var': 'item'})[0m
+[0;33mchanged: [localhost] => (item={'changed': True, 'stdout': '', 'stderr': "error: failed to get vol 'node_4.qcow2'\nerror: Storage volume not found: no storage vol with matching path 'node_4.qcow2'", 'rc': 1, 'cmd': ['virsh', 'vol-info', '--pool', 'oooq_pool', 'node_4.qcow2'], 'start': '2021-12-21 20:53:07.465333', 'end': '2021-12-21 20:53:07.492476', 'delta': '0:00:00.027143', 'failed': True, 'msg': 'non-zero return code', 'invocation': {'module_args': {'_raw_params': "virsh vol-info --pool 'oooq_pool' 'node_4.qcow2'\n", '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': [], 'stderr_lines': ["error: failed to get vol 'node_4.qcow2'", "error: Storage volume not found: no storage vol with matching path 'node_4.qcow2'"], 'item': {'name': 'node_4', 'flavor': 'node', 'virtualbmc_port': 6234}, 'ansible_loop_var': 'item'})[0m
+Tuesday 21 December 2021  20:53:09 +0000 (0:00:01.474)       0:00:13.798 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+
+TASK [libvirt : Define vm vms] *************************************************
+[0;33mchanged: [localhost] => (item={'name': 'node_0', 'flavor': 'node', 'virtualbmc_port': 6230})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_1', 'flavor': 'node', 'virtualbmc_port': 6231})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_2', 'flavor': 'node', 'virtualbmc_port': 6232})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_3', 'flavor': 'node', 'virtualbmc_port': 6233})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_4', 'flavor': 'node', 'virtualbmc_port': 6234})[0m
+[1;35m[WARNING]: 'xml' is given - ignoring 'name'[0m
+Tuesday 21 December 2021  20:53:11 +0000 (0:00:02.359)       0:00:16.157 ****** 
+Tuesday 21 December 2021  20:53:11 +0000 (0:00:00.173)       0:00:16.330 ****** 
+Tuesday 21 December 2021  20:53:11 +0000 (0:00:00.153)       0:00:16.484 ****** 
+Tuesday 21 December 2021  20:53:11 +0000 (0:00:00.185)       0:00:16.669 ****** 
+
+TASK [libvirt : Get vm uuid] ***************************************************
+[0;33mchanged: [localhost] => (item={'name': 'node_0', 'flavor': 'node', 'virtualbmc_port': 6230})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_1', 'flavor': 'node', 'virtualbmc_port': 6231})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_2', 'flavor': 'node', 'virtualbmc_port': 6232})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_3', 'flavor': 'node', 'virtualbmc_port': 6233})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_4', 'flavor': 'node', 'virtualbmc_port': 6234})[0m
+Tuesday 21 December 2021  20:53:13 +0000 (0:00:01.174)       0:00:17.844 ****** 
+
+TASK [libvirt : set_fact] ******************************************************
+[0;32mok: [localhost] => (item={'changed': True, 'stdout': '3f3ba50f-7bf5-4a88-a710-3471c81c3918', 'stderr': '', 'rc': 0, 'cmd': ['virsh', 'domuuid', 'node_0'], 'start': '2021-12-21 20:53:12.127726', 'end': '2021-12-21 20:53:12.148988', 'delta': '0:00:00.021262', 'msg': '', 'invocation': {'module_args': {'_raw_params': 'virsh domuuid "node_0"\n', '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': ['3f3ba50f-7bf5-4a88-a710-3471c81c3918'], 'stderr_lines': [], 'failed': False, 'item': {'name': 'node_0', 'flavor': 'node', 'virtualbmc_port': 6230}, 'ansible_loop_var': 'item'})[0m
+[0;32mok: [localhost] => (item={'changed': True, 'stdout': '28db03d3-e978-4cf9-833d-3aad09af1181', 'stderr': '', 'rc': 0, 'cmd': ['virsh', 'domuuid', 'node_1'], 'start': '2021-12-21 20:53:12.347489', 'end': '2021-12-21 20:53:12.368212', 'delta': '0:00:00.020723', 'msg': '', 'invocation': {'module_args': {'_raw_params': 'virsh domuuid "node_1"\n', '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': ['28db03d3-e978-4cf9-833d-3aad09af1181'], 'stderr_lines': [], 'failed': False, 'item': {'name': 'node_1', 'flavor': 'node', 'virtualbmc_port': 6231}, 'ansible_loop_var': 'item'})[0m
+[0;32mok: [localhost] => (item={'changed': True, 'stdout': '630d70ec-c3f7-4535-9772-1e609c2185cf', 'stderr': '', 'rc': 0, 'cmd': ['virsh', 'domuuid', 'node_2'], 'start': '2021-12-21 20:53:12.564623', 'end': '2021-12-21 20:53:12.587910', 'delta': '0:00:00.023287', 'msg': '', 'invocation': {'module_args': {'_raw_params': 'virsh domuuid "node_2"\n', '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': ['630d70ec-c3f7-4535-9772-1e609c2185cf'], 'stderr_lines': [], 'failed': False, 'item': {'name': 'node_2', 'flavor': 'node', 'virtualbmc_port': 6232}, 'ansible_loop_var': 'item'})[0m
+[0;32mok: [localhost] => (item={'changed': True, 'stdout': '0ca8a968-0ff4-4ee2-891a-35ce1bb6080d', 'stderr': '', 'rc': 0, 'cmd': ['virsh', 'domuuid', 'node_3'], 'start': '2021-12-21 20:53:12.780283', 'end': '2021-12-21 20:53:12.801871', 'delta': '0:00:00.021588', 'msg': '', 'invocation': {'module_args': {'_raw_params': 'virsh domuuid "node_3"\n', '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': ['0ca8a968-0ff4-4ee2-891a-35ce1bb6080d'], 'stderr_lines': [], 'failed': False, 'item': {'name': 'node_3', 'flavor': 'node', 'virtualbmc_port': 6233}, 'ansible_loop_var': 'item'})[0m
+[0;32mok: [localhost] => (item={'changed': True, 'stdout': '4268b271-db25-4ff0-b5f5-73ed5b7b948b', 'stderr': '', 'rc': 0, 'cmd': ['virsh', 'domuuid', 'node_4'], 'start': '2021-12-21 20:53:12.998759', 'end': '2021-12-21 20:53:13.021452', 'delta': '0:00:00.022693', 'msg': '', 'invocation': {'module_args': {'_raw_params': 'virsh domuuid "node_4"\n', '_uses_shell': False, 'warn': False, 'stdin_add_newline': True, 'strip_empty_ends': True, 'argv': None, 'chdir': None, 'executable': None, 'creates': None, 'removes': None, 'stdin': None}}, 'stdout_lines': ['4268b271-db25-4ff0-b5f5-73ed5b7b948b'], 'stderr_lines': [], 'failed': False, 'item': {'name': 'node_4', 'flavor': 'node', 'virtualbmc_port': 6234}, 'ansible_loop_var': 'item'})[0m
+Tuesday 21 December 2021  20:53:13 +0000 (0:00:00.152)       0:00:17.996 ****** 
+
+TASK [libvirt : set_fact BMC Driver] *******************************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:53:13 +0000 (0:00:00.083)       0:00:18.079 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+
+TASK [libvirt : Write ironic node json files] **********************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:13 +0000 (0:00:00.517)       0:00:18.597 ****** 
+Tuesday 21 December 2021  20:53:13 +0000 (0:00:00.042)       0:00:18.640 ****** 
+Tuesday 21 December 2021  20:53:13 +0000 (0:00:00.046)       0:00:18.687 ****** 
+
+TASK [virtbmc : include_tasks] *************************************************
+[0;36mincluded: /home/azureuser/projects/metal3-dev-env/vm-setup/roles/virtbmc/tasks/setup_tasks.yml for localhost[0m
+Tuesday 21 December 2021  20:53:13 +0000 (0:00:00.085)       0:00:18.772 ****** 
+
+TASK [virtbmc : Create VirtualBMC directories] *********************************
+[0;33mchanged: [localhost] => (item=/opt/metal3-dev-env/virtualbmc)[0m
+[0;33mchanged: [localhost] => (item=/opt/metal3-dev-env/virtualbmc/vbmc)[0m
+[0;33mchanged: [localhost] => (item=/opt/metal3-dev-env/virtualbmc/vbmc/conf)[0m
+[0;33mchanged: [localhost] => (item=/opt/metal3-dev-env/virtualbmc/vbmc/log)[0m
+[0;33mchanged: [localhost] => (item=/opt/metal3-dev-env/virtualbmc/sushy-tools)[0m
+Tuesday 21 December 2021  20:53:15 +0000 (0:00:01.072)       0:00:19.844 ****** 
+
+TASK [virtbmc : Create VirtualBMC configuration file] **************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:15 +0000 (0:00:00.448)       0:00:20.293 ****** 
+
+TASK [virtbmc : get virthost non_root_user userid] *****************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:15 +0000 (0:00:00.294)       0:00:20.587 ****** 
+
+TASK [virtbmc : set fact on non_root_user_uid] *********************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:53:15 +0000 (0:00:00.073)       0:00:20.661 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+
+TASK [virtbmc : set vbmc address (v4) if there is a (nat) network defined with an address] ***
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:53:16 +0000 (0:00:00.177)       0:00:20.839 ****** 
+[1;35m[WARNING]: The value '' is not a valid IP address or network, passing this[0m
+[1;35mvalue to ipaddr filter might result in breaking change in future.[0m
+
+TASK [virtbmc : set vbmc address (v6) if there is a (nat) network defined with an address] ***
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:53:16 +0000 (0:00:00.140)       0:00:20.979 ****** 
+
+TASK [virtbmc : set vbmc address from IPv4 networks if possible, otherwise IPv6] ***
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:53:16 +0000 (0:00:00.092)       0:00:21.071 ****** 
+
+TASK [virtbmc : set qemu uri for qemu:///system usage] *************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:53:16 +0000 (0:00:00.098)       0:00:21.169 ****** 
+Tuesday 21 December 2021  20:53:16 +0000 (0:00:00.071)       0:00:21.240 ****** 
+
+TASK [virtbmc : Create VirtualBMC directories] *********************************
+[0;33mchanged: [localhost] => (item={'name': 'node_0', 'flavor': 'node', 'virtualbmc_port': 6230})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_1', 'flavor': 'node', 'virtualbmc_port': 6231})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_2', 'flavor': 'node', 'virtualbmc_port': 6232})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_3', 'flavor': 'node', 'virtualbmc_port': 6233})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_4', 'flavor': 'node', 'virtualbmc_port': 6234})[0m
+Tuesday 21 December 2021  20:53:17 +0000 (0:00:01.088)       0:00:22.329 ****** 
+
+TASK [virtbmc : Create the Virtual BMCs] ***************************************
+[0;33mchanged: [localhost] => (item={'name': 'node_0', 'flavor': 'node', 'virtualbmc_port': 6230})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_1', 'flavor': 'node', 'virtualbmc_port': 6231})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_2', 'flavor': 'node', 'virtualbmc_port': 6232})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_3', 'flavor': 'node', 'virtualbmc_port': 6233})[0m
+[0;33mchanged: [localhost] => (item={'name': 'node_4', 'flavor': 'node', 'virtualbmc_port': 6234})[0m
+Tuesday 21 December 2021  20:53:19 +0000 (0:00:02.002)       0:00:24.332 ****** 
+
+TASK [virtbmc : Create a password file for Redfish Virtual BMCs] ***************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:20 +0000 (0:00:00.681)       0:00:25.014 ****** 
+
+TASK [virtbmc : Create the Redfish Virtual BMCs] *******************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:20 +0000 (0:00:00.422)       0:00:25.436 ****** 
+
+PLAY RECAP *********************************************************************
+[0;33mlocalhost[0m                  : [0;32mok=46  [0m [0;33mchanged=22  [0m unreachable=0    failed=0    [0;36mskipped=18  [0m rescued=0    [1;35mignored=2   [0m
+
+Tuesday 21 December 2021  20:53:20 +0000 (0:00:00.088)       0:00:25.525 ****** 
+=============================================================================== 
+libvirt : Define vm vms ------------------------------------------------- 2.36s
+virtbmc : Create the Virtual BMCs --------------------------------------- 2.00s
+libvirt : Create vm vm storage ------------------------------------------ 1.47s
++ sudo virsh pool-uuid default
++ sudo virsh pool-define /dev/stdin
+Pool default defined from /dev/stdin
+
++ sudo virsh pool-start default
+Pool default started
+
++ sudo virsh pool-autostart default
+Pool default marked as autostarted
+
++ [[ ubuntu == ubuntu ]]
++ source ubuntu_bridge_network_configuration.sh
+++ set -xe
+++ source lib/logging.sh
+++++ dirname ./02_configure_host.sh
++++ LOGDIR=./logs
++++ '[' '!' -d ./logs ']'
+++++ basename ./02_configure_host.sh .sh
+++++ date +%F-%H%M%S
++++ LOGFILE=./logs/02_configure_host-2021-12-21-205320.log
++++ echo 'Logging to ./logs/02_configure_host-2021-12-21-205320.log'
+Logging to ./logs/02_configure_host-2021-12-21-205320.log
++++ exec
+++++ tee ./logs/02_configure_host-2021-12-21-205320.log
+++ source lib/common.sh
++++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\g\o\/\b\i\n\:* ]]
+++++ go env
++++ eval 'GO111MODULE=""
+GOARCH="amd64"
+GOBIN=""
+GOCACHE="/home/azureuser/.cache/go-build"
+GOENV="/home/azureuser/.config/go/env"
+GOEXE=""
+GOFLAGS=""
+GOHOSTARCH="amd64"
+GOHOSTOS="linux"
+GOINSECURE=""
+GOMODCACHE="/home/azureuser/go/pkg/mod"
+GONOPROXY=""
+GONOSUMDB=""
+GOOS="linux"
+GOPATH="/home/azureuser/go"
+GOPRIVATE=""
+GOPROXY="https://proxy.golang.org,direct"
+GOROOT="/usr/local/go"
+GOSUMDB="sum.golang.org"
+GOTMPDIR=""
+GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
+GOVCS=""
+GOVERSION="go1.16.7"
+GCCGO="gccgo"
+AR="ar"
+CC="gcc"
+CXX="g++"
+CGO_ENABLED="1"
+GOMOD="/dev/null"
+CGO_CFLAGS="-g -O2"
+CGO_CPPFLAGS=""
+CGO_CXXFLAGS="-g -O2"
+CGO_FFLAGS="-g -O2"
+CGO_LDFLAGS="-g -O2"
+PKG_CONFIG="pkg-config"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build3681847654=/tmp/go-build -gno-record-gcc-switches"'
+++++ GO111MODULE=
+++++ GOARCH=amd64
+++++ GOBIN=
+++++ GOCACHE=/home/azureuser/.cache/go-build
+++++ GOENV=/home/azureuser/.config/go/env
+++++ GOEXE=
+++++ GOFLAGS=
+++++ GOHOSTARCH=amd64
+++++ GOHOSTOS=linux
+++++ GOINSECURE=
+++++ GOMODCACHE=/home/azureuser/go/pkg/mod
+++++ GONOPROXY=
+++++ GONOSUMDB=
+++++ GOOS=linux
+++++ GOPATH=/home/azureuser/go
+++++ GOPRIVATE=
+++++ GOPROXY=https://proxy.golang.org,direct
+++++ GOROOT=/usr/local/go
+++++ GOSUMDB=sum.golang.org
+++++ GOTMPDIR=
+++++ GOTOOLDIR=/usr/local/go/pkg/tool/linux_amd64
+++++ GOVCS=
+++++ GOVERSION=go1.16.7
+++++ GCCGO=gccgo
+++++ AR=ar
+++++ CC=gcc
+++++ CXX=g++
+++++ CGO_ENABLED=1
+++++ GOMOD=/dev/null
+++++ CGO_CFLAGS='-g -O2'
+++++ CGO_CPPFLAGS=
+++++ CGO_CXXFLAGS='-g -O2'
+++++ CGO_FFLAGS='-g -O2'
+++++ CGO_LDFLAGS='-g -O2'
+++++ PKG_CONFIG=pkg-config
+++++ GOGCCFLAGS='-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build3681847654=/tmp/go-build -gno-record-gcc-switches'
++++ export GOPATH
++++++ dirname lib/common.sh
+++++ cd lib/..
+++++ pwd
++++ SCRIPTDIR=/home/azureuser/projects/metal3-dev-env
+++++ whoami
++++ USER=azureuser
++++ export USER=azureuser
++++ USER=azureuser
++++ '[' -z /home/azureuser/projects/metal3-dev-env/config_azureuser.sh ']'
++++ source /home/azureuser/projects/metal3-dev-env/config_azureuser.sh
+++++ export KUBECONFIG=/home/azureuser/.kube/config
+++++ KUBECONFIG=/home/azureuser/.kube/config
+++++ export K8S_AUTH_KUBECONFIG=/home/azureuser/.kube/config
+++++ K8S_AUTH_KUBECONFIG=/home/azureuser/.kube/config
+++++ export IMAGE_OS=Ubuntu
+++++ IMAGE_OS=Ubuntu
+++++ export EPHEMERAL_CLUSTER=kind
+++++ EPHEMERAL_CLUSTER=kind
+++++ export CONTAINER_RUNTIME=docker
+++++ CONTAINER_RUNTIME=docker
+++++ export CAPM3_VERSION=v1beta1
+++++ CAPM3_VERSION=v1beta1
+++++ export CAPI_VERSION=v1beta1
+++++ CAPI_VERSION=v1beta1
+++++ export NUM_NODES=5
+++++ NUM_NODES=5
+++++ export NUM_OF_MASTER_REPLICAS=3
+++++ NUM_OF_MASTER_REPLICAS=3
+++++ export NUM_OF_WORKER_REPLICAS=2
+++++ NUM_OF_WORKER_REPLICAS=2
+++++ export KUBERNETES_VERSION=v1.21.1
+++++ KUBERNETES_VERSION=v1.21.1
+++++ export UPGRADED_K8S_VERSION=v1.22.2
+++++ UPGRADED_K8S_VERSION=v1.22.2
++++ export MARIADB_HOST=mariaDB
++++ MARIADB_HOST=mariaDB
++++ export MARIADB_HOST_IP=127.0.0.1
++++ MARIADB_HOST_IP=127.0.0.1
++++ ADDN_DNS=
++++ EXT_IF=
++++ PRO_IF=
++++ MANAGE_BR_BRIDGE=y
++++ MANAGE_PRO_BRIDGE=y
++++ MANAGE_INT_BRIDGE=y
++++ INT_IF=
++++ ROOT_DISK_NAME=/dev/sda
++++ NODE_HOSTNAME_FORMAT=node-%d
++++ source /etc/os-release
+++++ NAME=Ubuntu
+++++ VERSION='20.04.3 LTS (Focal Fossa)'
+++++ ID=ubuntu
+++++ ID_LIKE=debian
+++++ PRETTY_NAME='Ubuntu 20.04.3 LTS'
+++++ VERSION_ID=20.04
+++++ HOME_URL=https://www.ubuntu.com/
+++++ SUPPORT_URL=https://help.ubuntu.com/
+++++ BUG_REPORT_URL=https://bugs.launchpad.net/ubuntu/
+++++ PRIVACY_POLICY_URL=https://www.ubuntu.com/legal/terms-and-policies/privacy-policy
+++++ VERSION_CODENAME=focal
+++++ UBUNTU_CODENAME=focal
++++ export DISTRO=ubuntu20
++++ DISTRO=ubuntu20
++++ export OS=ubuntu
++++ OS=ubuntu
++++ export OS_VERSION_ID=20.04
++++ OS_VERSION_ID=20.04
++++ SUPPORTED_DISTROS=(centos8 rhel8 ubuntu18 ubuntu20)
++++ export SUPPORTED_DISTROS
++++ [[ ! centos8 rhel8 ubuntu18 ubuntu20 =~ ubuntu20 ]]
++++ [[ ubuntu == ubuntu ]]
++++ export CONTAINER_RUNTIME=docker
++++ CONTAINER_RUNTIME=docker
++++ [[ docker == \p\o\d\m\a\n ]]
++++ export POD_NAME=
++++ POD_NAME=
++++ export POD_NAME_INFRA=
++++ POD_NAME_INFRA=
++++ export SSH_KEY=/home/azureuser/.ssh/id_rsa
++++ SSH_KEY=/home/azureuser/.ssh/id_rsa
++++ export SSH_PUB_KEY=/home/azureuser/.ssh/id_rsa.pub
++++ SSH_PUB_KEY=/home/azureuser/.ssh/id_rsa.pub
++++ '[' '!' -f /home/azureuser/.ssh/id_rsa ']'
++++ FILESYSTEM=/
++++ CAPM3_VERSION_LIST='v1alpha4 v1alpha5 v1beta1'
++++ export CAPM3_VERSION=v1beta1
++++ CAPM3_VERSION=v1beta1
++++ '[' v1beta1 == v1alpha4 ']'
++++ '[' v1beta1 == v1alpha5 ']'
++++ '[' v1beta1 == v1beta1 ']'
++++ export CAPI_VERSION=v1beta1
++++ CAPI_VERSION=v1beta1
++++ export M3PATH=/home/azureuser/go/src/github.com/metal3-io
++++ M3PATH=/home/azureuser/go/src/github.com/metal3-io
++++ export BMOPATH=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator
++++ BMOPATH=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator
++++ export RUN_LOCAL_IRONIC_SCRIPT=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
++++ RUN_LOCAL_IRONIC_SCRIPT=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
++++ export CAPM3PATH=/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
++++ CAPM3PATH=/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
++++ export CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
++++ CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
++++ export CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
++++ CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
++++ export IPAMPATH=/home/azureuser/go/src/github.com/metal3-io/ip-address-manager
++++ IPAMPATH=/home/azureuser/go/src/github.com/metal3-io/ip-address-manager
++++ export IPAM_BASE_URL=metal3-io/ip-address-manager
++++ IPAM_BASE_URL=metal3-io/ip-address-manager
++++ export IPAMREPO=https://github.com/metal3-io/ip-address-manager
++++ IPAMREPO=https://github.com/metal3-io/ip-address-manager
++++ '[' v1beta1 == v1alpha3 ']'
++++ '[' v1beta1 == v1alpha4 ']'
++++ IPAMBRANCH=main
++++ IPA_DOWNLOAD_ENABLED=true
++++ CAPI_BASE_URL=kubernetes-sigs/cluster-api
++++ '[' v1beta1 == v1alpha4 ']'
++++ '[' v1beta1 == v1alpha5 ']'
++++ CAPM3BRANCH=main
++++ BMOREPO=https://github.com/metal3-io/baremetal-operator.git
++++ BMOBRANCH=master
++++ FORCE_REPO_UPDATE=true
++++ BMOCOMMIT=HEAD
++++ BMO_RUN_LOCAL=false
++++ CAPM3_RUN_LOCAL=false
++++ WORKING_DIR=/opt/metal3-dev-env
++++ NODES_FILE=/opt/metal3-dev-env/ironic_nodes.json
++++ NODES_PLATFORM=libvirt
++++ export NAMESPACE=metal3
++++ NAMESPACE=metal3
++++ export NUM_NODES=5
++++ NUM_NODES=5
++++ export NUM_OF_MASTER_REPLICAS=3
++++ NUM_OF_MASTER_REPLICAS=3
++++ export NUM_OF_WORKER_REPLICAS=2
++++ NUM_OF_WORKER_REPLICAS=2
++++ export VM_EXTRADISKS=false
++++ VM_EXTRADISKS=false
++++ export VM_EXTRADISKS_FILE_SYSTEM=ext4
++++ VM_EXTRADISKS_FILE_SYSTEM=ext4
++++ export VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
++++ VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
++++ export NODE_DRAIN_TIMEOUT=0s
++++ NODE_DRAIN_TIMEOUT=0s
++++ export MAX_SURGE_VALUE=1
++++ MAX_SURGE_VALUE=1
++++ export DOCKER_REGISTRY_IMAGE=registry:2.7.1
++++ DOCKER_REGISTRY_IMAGE=registry:2.7.1
++++ export CONTAINER_REGISTRY=quay.io
++++ CONTAINER_REGISTRY=quay.io
++++ export VBMC_IMAGE=quay.io/metal3-io/vbmc
++++ VBMC_IMAGE=quay.io/metal3-io/vbmc
++++ export SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
++++ SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
++++ export IRONIC_TLS_SETUP=true
++++ IRONIC_TLS_SETUP=true
++++ export IRONIC_BASIC_AUTH=true
++++ IRONIC_BASIC_AUTH=true
++++ export IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
++++ IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
++++ export IRONIC_IMAGE=quay.io/metal3-io/ironic
++++ IRONIC_IMAGE=quay.io/metal3-io/ironic
++++ export IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
++++ IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
++++ export IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
++++ IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
++++ export IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
++++ IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
++++ export IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
++++ IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
++++ '[' v1beta1 == v1alpha4 ']'
++++ export IRONIC_NAMESPACE=baremetal-operator-system
++++ IRONIC_NAMESPACE=baremetal-operator-system
++++ export NAMEPREFIX=baremetal-operator
++++ NAMEPREFIX=baremetal-operator
++++ export RESTART_CONTAINER_CERTIFICATE_UPDATED=true
++++ RESTART_CONTAINER_CERTIFICATE_UPDATED=true
++++ export BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
++++ BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
++++ export OPENSTACK_CONFIG=/home/azureuser/.config/openstack/clouds.yaml
++++ OPENSTACK_CONFIG=/home/azureuser/.config/openstack/clouds.yaml
++++ '[' v1beta1 == v1alpha4 ']'
++++ '[' v1beta1 == v1alpha5 ']'
++++ export CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
++++ CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
++++ export IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
++++ IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
++++ export DEFAULT_HOSTS_MEMORY=4096
++++ DEFAULT_HOSTS_MEMORY=4096
++++ export CLUSTER_NAME=test1
++++ CLUSTER_NAME=test1
++++ export CLUSTER_APIENDPOINT_IP=192.168.111.249
++++ CLUSTER_APIENDPOINT_IP=192.168.111.249
++++ export KUBERNETES_VERSION=v1.21.1
++++ KUBERNETES_VERSION=v1.21.1
++++ export KUBERNETES_BINARIES_VERSION=v1.21.1
++++ KUBERNETES_BINARIES_VERSION=v1.21.1
++++ export KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
++++ KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
++++ '[' docker == docker ']'
++++ export EPHEMERAL_CLUSTER=kind
++++ EPHEMERAL_CLUSTER=kind
++++ export KUSTOMIZE_VERSION=v4.1.3
++++ KUSTOMIZE_VERSION=v4.1.3
++++ export KIND_VERSION=v0.11.1
++++ KIND_VERSION=v0.11.1
++++ '[' v1.21.1 == v1.21.2 ']'
++++ export KIND_NODE_IMAGE_VERSION=v1.22.2
++++ KIND_NODE_IMAGE_VERSION=v1.22.2
++++ export MINIKUBE_VERSION=v1.23.2
++++ MINIKUBE_VERSION=v1.23.2
++++ export ANSIBLE_VERSION=4.8.0
++++ ANSIBLE_VERSION=4.8.0
++++ SKIP_RETRIES=false
++++ TEST_TIME_INTERVAL=10
++++ TEST_MAX_TIME=240
++++ FAILS=0
++++ RESULT_STR=
++++ export ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
++++ ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
++++ '[' 5 -lt 5 ']'
++++ export LIBVIRT_DEFAULT_URI=qemu:///system
++++ LIBVIRT_DEFAULT_URI=qemu:///system
++++ '[' azureuser '!=' root ']'
++++ '[' /run/user/1000 == /run/user/0 ']'
++++ sudo -n uptime
++++ export USE_FIREWALLD=False
++++ USE_FIREWALLD=False
++++ [[ ubuntu20 == \r\h\e\l\8 ]]
++++ [[ ubuntu20 == \c\e\n\t\o\s\8 ]]
+++++ df / --output=fstype
+++++ tail -n 1
++++ FSTYPE=ext4
++++ case ${FSTYPE} in
++++ '[' '!' -d /opt/metal3-dev-env ']'
+++ source lib/network.sh
++++ export CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
++++ CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
++++ export POD_CIDR=192.168.0.0/18
++++ POD_CIDR=192.168.0.0/18
++++ PROVISIONING_IPV6=false
++++ IPV6_ADDR_PREFIX=fd2e:6f44:5dd8:b856
++++ [[ false == \t\r\u\e ]]
++++ export BOOT_MODE=legacy
++++ BOOT_MODE=legacy
++++ export PROVISIONING_NETWORK=172.22.0.0/24
++++ PROVISIONING_NETWORK=172.22.0.0/24
++++ [[ legacy == \l\e\g\a\c\y ]]
++++ export LIBVIRT_FIRMWARE=bios
++++ LIBVIRT_FIRMWARE=bios
++++ export LIBVIRT_SECURE_BOOT=false
++++ LIBVIRT_SECURE_BOOT=false
++++ prefixlen PROVISIONING_CIDR 172.22.0.0/24
++++ resultvar=PROVISIONING_CIDR
++++ network=172.22.0.0/24
+++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").prefixlen)'
++++ result=24
++++ eval PROVISIONING_CIDR=24
+++++ PROVISIONING_CIDR=24
++++ export PROVISIONING_CIDR
++++ export PROVISIONING_CIDR
++++ export PROVISIONING_NETMASK=255.255.255.0
++++ PROVISIONING_NETMASK=255.255.255.0
++++ network_address PROVISIONING_IP 172.22.0.0/24 1
++++ resultvar=PROVISIONING_IP
++++ network=172.22.0.0/24
++++ record=1
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 1 - 1, None)))'
++++ result=172.22.0.1
++++ eval PROVISIONING_IP=172.22.0.1
+++++ PROVISIONING_IP=172.22.0.1
++++ export PROVISIONING_IP
++++ network_address CLUSTER_PROVISIONING_IP 172.22.0.0/24 2
++++ resultvar=CLUSTER_PROVISIONING_IP
++++ network=172.22.0.0/24
++++ record=2
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 2 - 1, None)))'
++++ result=172.22.0.2
++++ eval CLUSTER_PROVISIONING_IP=172.22.0.2
+++++ CLUSTER_PROVISIONING_IP=172.22.0.2
++++ export CLUSTER_PROVISIONING_IP
++++ export PROVISIONING_IP
++++ export CLUSTER_PROVISIONING_IP
++++ [[ 172.22.0.1 == *\:* ]]
++++ export PROVISIONING_URL_HOST=172.22.0.1
++++ PROVISIONING_URL_HOST=172.22.0.1
++++ export CLUSTER_URL_HOST=172.22.0.2
++++ CLUSTER_URL_HOST=172.22.0.2
++++ [[ 192.168.111.249 == *\:* ]]
++++ export CLUSTER_APIENDPOINT_HOST=192.168.111.249
++++ CLUSTER_APIENDPOINT_HOST=192.168.111.249
++++ export CLUSTER_APIENDPOINT_PORT=6443
++++ CLUSTER_APIENDPOINT_PORT=6443
++++ network_address dhcp_range_start 172.22.0.0/24 10
++++ resultvar=dhcp_range_start
++++ network=172.22.0.0/24
++++ record=10
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 10 - 1, None)))'
++++ result=172.22.0.10
++++ eval dhcp_range_start=172.22.0.10
+++++ dhcp_range_start=172.22.0.10
++++ export dhcp_range_start
++++ network_address dhcp_range_end 172.22.0.0/24 100
++++ resultvar=dhcp_range_end
++++ network=172.22.0.0/24
++++ record=100
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
++++ result=172.22.0.100
++++ eval dhcp_range_end=172.22.0.100
+++++ dhcp_range_end=172.22.0.100
++++ export dhcp_range_end
++++ network_address PROVISIONING_POOL_RANGE_START 172.22.0.0/24 100
++++ resultvar=PROVISIONING_POOL_RANGE_START
++++ network=172.22.0.0/24
++++ record=100
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
++++ result=172.22.0.100
++++ eval PROVISIONING_POOL_RANGE_START=172.22.0.100
+++++ PROVISIONING_POOL_RANGE_START=172.22.0.100
++++ export PROVISIONING_POOL_RANGE_START
++++ network_address PROVISIONING_POOL_RANGE_END 172.22.0.0/24 200
++++ resultvar=PROVISIONING_POOL_RANGE_END
++++ network=172.22.0.0/24
++++ record=200
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 200 - 1, None)))'
++++ result=172.22.0.200
++++ eval PROVISIONING_POOL_RANGE_END=172.22.0.200
+++++ PROVISIONING_POOL_RANGE_END=172.22.0.200
++++ export PROVISIONING_POOL_RANGE_END
++++ export PROVISIONING_POOL_RANGE_START
++++ export PROVISIONING_POOL_RANGE_END
++++ export CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
++++ CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
++++ EXTERNAL_SUBNET=
++++ [[ -n '' ]]
++++ export IP_STACK=v4
++++ IP_STACK=v4
++++ [[ v4 == \v\4 ]]
++++ export EXTERNAL_SUBNET_V4=192.168.111.0/24
++++ EXTERNAL_SUBNET_V4=192.168.111.0/24
++++ export EXTERNAL_SUBNET_V6=
++++ EXTERNAL_SUBNET_V6=
++++ [[ kind == \m\i\n\i\k\u\b\e ]]
++++ [[ -n 192.168.111.0/24 ]]
++++ prefixlen EXTERNAL_SUBNET_V4_PREFIX 192.168.111.0/24
++++ resultvar=EXTERNAL_SUBNET_V4_PREFIX
++++ network=192.168.111.0/24
+++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"192.168.111.0/24").prefixlen)'
++++ result=24
++++ eval EXTERNAL_SUBNET_V4_PREFIX=24
+++++ EXTERNAL_SUBNET_V4_PREFIX=24
++++ export EXTERNAL_SUBNET_V4_PREFIX
++++ export EXTERNAL_SUBNET_V4_PREFIX
++++ [[ -z 192.168.111.1 ]]
++++ network_address VIRSH_DHCP_V4_START 192.168.111.0/24 20
++++ resultvar=VIRSH_DHCP_V4_START
++++ network=192.168.111.0/24
++++ record=20
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 20 - 1, None)))'
++++ result=192.168.111.20
++++ eval VIRSH_DHCP_V4_START=192.168.111.20
+++++ VIRSH_DHCP_V4_START=192.168.111.20
++++ export VIRSH_DHCP_V4_START
++++ network_address VIRSH_DHCP_V4_END 192.168.111.0/24 60
++++ resultvar=VIRSH_DHCP_V4_END
++++ network=192.168.111.0/24
++++ record=60
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 60 - 1, None)))'
++++ result=192.168.111.60
++++ eval VIRSH_DHCP_V4_END=192.168.111.60
+++++ VIRSH_DHCP_V4_END=192.168.111.60
++++ export VIRSH_DHCP_V4_END
++++ network_address BAREMETALV4_POOL_RANGE_START 192.168.111.0/24 100
++++ resultvar=BAREMETALV4_POOL_RANGE_START
++++ network=192.168.111.0/24
++++ record=100
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 100 - 1, None)))'
++++ result=192.168.111.100
++++ eval BAREMETALV4_POOL_RANGE_START=192.168.111.100
+++++ BAREMETALV4_POOL_RANGE_START=192.168.111.100
++++ export BAREMETALV4_POOL_RANGE_START
++++ network_address BAREMETALV4_POOL_RANGE_END 192.168.111.0/24 200
++++ resultvar=BAREMETALV4_POOL_RANGE_END
++++ network=192.168.111.0/24
++++ record=200
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 200 - 1, None)))'
++++ result=192.168.111.200
++++ eval BAREMETALV4_POOL_RANGE_END=192.168.111.200
+++++ BAREMETALV4_POOL_RANGE_END=192.168.111.200
++++ export BAREMETALV4_POOL_RANGE_END
++++ export VIRSH_DHCP_V4_START
++++ export VIRSH_DHCP_V4_END
++++ export BAREMETALV4_POOL_RANGE_START
++++ export BAREMETALV4_POOL_RANGE_END
++++ [[ -n '' ]]
++++ export EXTERNAL_SUBNET_V6_HOST=
++++ EXTERNAL_SUBNET_V6_HOST=
++++ export EXTERNAL_SUBNET_V6_PREFIX=
++++ EXTERNAL_SUBNET_V6_PREFIX=
++++ export BAREMETALV6_POOL_RANGE_START=
++++ BAREMETALV6_POOL_RANGE_START=
++++ export BAREMETALV6_POOL_RANGE_END=
++++ BAREMETALV6_POOL_RANGE_END=
++++ export REGISTRY_PORT=5000
++++ REGISTRY_PORT=5000
++++ export HTTP_PORT=6180
++++ HTTP_PORT=6180
++++ export IRONIC_INSPECTOR_PORT=5050
++++ IRONIC_INSPECTOR_PORT=5050
++++ export IRONIC_API_PORT=6385
++++ IRONIC_API_PORT=6385
++++ [[ -n 192.168.111.1 ]]
++++ export REGISTRY=192.168.111.1:5000
++++ REGISTRY=192.168.111.1:5000
++++ network_address INITIAL_IRONICBRIDGE_IP 172.22.0.0/24 9
++++ resultvar=INITIAL_IRONICBRIDGE_IP
++++ network=172.22.0.0/24
++++ record=9
+++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 9 - 1, None)))'
++++ result=172.22.0.9
++++ eval INITIAL_IRONICBRIDGE_IP=172.22.0.9
+++++ INITIAL_IRONICBRIDGE_IP=172.22.0.9
++++ export INITIAL_IRONICBRIDGE_IP
++++ export DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
++++ DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
++++ export DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
++++ DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
++++ '[' true == true ']'
++++ export IRONIC_URL=https://172.22.0.2:6385/v1/
++++ IRONIC_URL=https://172.22.0.2:6385/v1/
++++ export IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
++++ IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
+++ '[' y == y ']'
+++ sudo ip link add ironicendpoint type veth peer name ironic-peer
+++ sudo brctl addbr provisioning
+++ sudo ip link set provisioning up
+++ [[ false == \t\r\u\e ]]
+++ sudo ip addr add dev ironicendpoint 172.22.0.1/24
+++ sudo brctl addif provisioning ironic-peer
+++ sudo ip link set ironicendpoint up
+++ sudo ip link set ironic-peer up
+++ '[' '' ']'
+++ '[' y == y ']'
++++ ip a show baremetal
+++ [[ -n 6: baremetal: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 52:54:00:f9:67:fd brd ff:ff:ff:ff:ff:ff
+    inet 192.168.111.1/24 brd 192.168.111.255 scope global baremetal
+       valid_lft forever preferred_lft forever ]]
+++ '[' '' ']'
+++ '[' y == y ']'
+++ sudo virsh net-destroy baremetal
+Network baremetal destroyed
+
+++ sudo virsh net-start baremetal
+Network baremetal started
+
+++ '[' '' ']'
++ source disable_apparmor_driver_libvirtd.sh
+++ selinux='#security_driver = "selinux"'
+++ apparmor='security_driver = "apparmor"'
+++ none='security_driver = "none"'
+++ sudo sed -i 's/#security_driver = "selinux"/security_driver = "none"/g' /etc/libvirt/qemu.conf
+++ sudo sed -i 's/security_driver = "apparmor"/security_driver = "none"/g' /etc/libvirt/qemu.conf
+++ sudo systemctl restart libvirtd
++ ANSIBLE_FORCE_COLOR=true
++ ansible-playbook -e '{use_firewalld: False}' -e 'external_subnet_v4: 192.168.111.0/24' -i vm-setup/inventory.ini -b vm-setup/firewall.yml
+[0;35m[DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names [0m
+[0;35mto new standard, use callbacks_enabled instead. This feature will be removed [0m
+[0;35mfrom ansible-core in version 2.15. Deprecation warnings can be disabled by [0m
+[0;35msetting deprecation_warnings=False in ansible.cfg.[0m
+
+PLAY [Setup dummy baremetal VMs] ***********************************************
+Tuesday 21 December 2021  20:53:22 +0000 (0:00:00.048)       0:00:00.048 ****** 
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [localhost][0m
+Tuesday 21 December 2021  20:53:23 +0000 (0:00:01.333)       0:00:01.381 ****** 
+Tuesday 21 December 2021  20:53:23 +0000 (0:00:00.037)       0:00:01.419 ****** 
+
+TASK [firewall : iptables] *****************************************************
+[0;36mincluded: /home/azureuser/projects/metal3-dev-env/vm-setup/roles/firewall/tasks/iptables.yaml for localhost[0m
+Tuesday 21 December 2021  20:53:24 +0000 (0:00:00.051)       0:00:01.470 ****** 
+
+TASK [firewall : iptables: Firewalld service stopped] **************************
+[1;30mtask path: /home/azureuser/projects/metal3-dev-env/vm-setup/roles/firewall/tasks/iptables.yaml:1[0m
+[0;31mfatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find the requested service firewalld: host"}[0m
+[0;36m...ignoring[0m
+Tuesday 21 December 2021  20:53:24 +0000 (0:00:00.638)       0:00:02.109 ****** 
+
+TASK [firewall : iptables: VBMC Ports] *****************************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:25 +0000 (0:00:00.393)       0:00:02.503 ****** 
+
+TASK [firewall : iptables: sushy Port] *****************************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:25 +0000 (0:00:00.282)       0:00:02.785 ****** 
+
+TASK [firewall : iptables: Established and related] ****************************
+[0;33mchanged: [localhost][0m
+Tuesday 21 December 2021  20:53:25 +0000 (0:00:00.270)       0:00:03.055 ****** 
+
+TASK [firewall : iptables: Ironic Ports] ***************************************
+[0;33mchanged: [localhost] => (item=6180)[0m
+[0;33mchanged: [localhost] => (item=5050)[0m
+[0;33mchanged: [localhost] => (item=6385)[0m
+[0;33mchanged: [localhost] => (item=9999)[0m
+[0;33mchanged: [localhost] => (item=80)[0m
+Tuesday 21 December 2021  20:53:26 +0000 (0:00:01.192)       0:00:04.248 ****** 
+
+TASK [firewall : iptables: Provisioning host ports] ****************************
+[0;33mchanged: [localhost] => (item=80)[0m
+[0;33mchanged: [localhost] => (item=5000)[0m
+[0;33mchanged: [localhost] => (item=53)[0m
+Tuesday 21 December 2021  20:53:27 +0000 (0:00:00.742)       0:00:04.990 ****** 
+
+TASK [firewall : iptables: PXE Ports] ******************************************
+[0;33mchanged: [localhost] => (item=5353)[0m
+[0;33mchanged: [localhost] => (item=67)[0m
+[0;33mchanged: [localhost] => (item=68)[0m
+[0;33mchanged: [localhost] => (item=546)[0m
+[0;33mchanged: [localhost] => (item=547)[0m
+[0;33mchanged: [localhost] => (item=69)[0m
+Tuesday 21 December 2021  20:53:28 +0000 (0:00:01.458)       0:00:06.449 ****** 
+
+TASK [firewall : iptables: Ironic Endpoint Keepalived] *************************
+[0;33mchanged: [localhost] => (item=112)[0m
+[0;33mchanged: [localhost] => (item=icmp)[0m
+Tuesday 21 December 2021  20:53:29 +0000 (0:00:00.602)       0:00:07.051 ****** 
+
+TASK [firewall : iptables: Allow access to baremetal network from kind] ********
+[0;33mchanged: [localhost][0m
+
+PLAY RECAP *********************************************************************
+[0;33mlocalhost[0m                  : [0;32mok=11  [0m [0;33mchanged=8   [0m unreachable=0    failed=0    [0;36mskipped=1   [0m rescued=0    [1;35mignored=1   [0m
+
+Tuesday 21 December 2021  20:53:29 +0000 (0:00:00.326)       0:00:07.378 ****** 
+=============================================================================== 
+firewall : iptables: PXE Ports ------------------------------------------ 1.46s
+Gathering Facts --------------------------------------------------------- 1.33s
+firewall : iptables: Ironic Ports --------------------------------------- 1.19s
++ '[' False == True ']'
++ '[' '' ']'
+++ sudo docker inspect registry --format '{{.State.Status}}'
+Error: No such object: registry
+++ echo error
++ reg_state='
+error'
++ [[ 
+error == \e\x\i\t\e\d ]]
++ [[ 
+error != \r\u\n\n\i\n\g ]]
++ sudo docker rm registry -f
+Error: No such container: registry
++ sudo docker run -d -p 5000:5000 --name registry registry:2.7.1
+7808d3f9364f948c6996304be04f26c9fa1f129e4514120891cca91c55dc6e55
++ sleep 5
+++ env
+++ grep -v _LOCAL_IMAGE=
+++ grep _IMAGE=
+++ grep -o '^[^=]*'
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=registry:2.7.1
++ IMAGE_NAME=registry:2.7.1
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/registry:2.7.1
++ sudo docker tag registry:2.7.1 192.168.111.1:5000/localimages/registry:2.7.1
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/registry:2.7.1
+The push refers to repository [192.168.111.1:5000/localimages/registry]
+aeccf26589a7: Preparing
+f640be0d5aad: Preparing
+aa4330046b37: Preparing
+ad10b481abe7: Preparing
+69715584ec78: Preparing
+aeccf26589a7: Pushed
+f640be0d5aad: Pushed
+ad10b481abe7: Pushed
+69715584ec78: Pushed
+aa4330046b37: Pushed
+2.7.1: digest: sha256:36cb5b157911061fb610d8884dc09e0b0300a767a350563cbfd88b4b85324ce4 size: 1363
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/baremetal-operator
++ IMAGE_NAME=baremetal-operator
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/baremetal-operator
++ sudo docker tag quay.io/metal3-io/baremetal-operator 192.168.111.1:5000/localimages/baremetal-operator
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/baremetal-operator
+Using default tag: latest
+The push refers to repository [192.168.111.1:5000/localimages/baremetal-operator]
+21bf11a603aa: Preparing
+0b3d0512394d: Preparing
+6d75f23be3dd: Preparing
+6d75f23be3dd: Pushed
+0b3d0512394d: Pushed
+21bf11a603aa: Pushed
+latest: digest: sha256:b1ab481ff5db5d92e0eaafd3a46910fb96ca6f0dc47adcfa97cdab5c0bb4d0a2 size: 950
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic-client
++ IMAGE_NAME=ironic-client
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ironic-client
++ sudo docker tag quay.io/metal3-io/ironic-client 192.168.111.1:5000/localimages/ironic-client
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/ironic-client
+Using default tag: latest
+The push refers to repository [192.168.111.1:5000/localimages/ironic-client]
+297a1a71e453: Preparing
+1591f6d87eef: Preparing
+2653d992f4ef: Preparing
+1591f6d87eef: Pushed
+297a1a71e453: Pushed
+2653d992f4ef: Pushed
+latest: digest: sha256:0abe9a3de15449f9cb7c8ec3daa5dceaf124c2e1705c51ef73dfc54f92dacec4 size: 948
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic
++ IMAGE_NAME=ironic
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ironic
++ sudo docker tag quay.io/metal3-io/ironic 192.168.111.1:5000/localimages/ironic
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/ironic
+Using default tag: latest
+The push refers to repository [192.168.111.1:5000/localimages/ironic]
+2887ce1a05ad: Preparing
+3f5658f85430: Preparing
+73b945a47080: Preparing
+3f7e15bb91a1: Preparing
+20adf6e320d7: Preparing
+c33007d20ef1: Preparing
+0732b02685ef: Preparing
+06759e89fc02: Preparing
+5d28ad2d9d5c: Preparing
+523826c0e215: Preparing
+f6a7b8b5934b: Preparing
+f1a4c011277e: Preparing
+8514271a8c2c: Preparing
+a9a75d53f23a: Preparing
+5f83bad8acd2: Preparing
+aaf1c228b4da: Preparing
+95c51ae9ba96: Preparing
+0732b02685ef: Waiting
+e7a4bda8f16d: Preparing
+06759e89fc02: Waiting
+525ed45dbdb1: Preparing
+5bc03dec6239: Preparing
+5d28ad2d9d5c: Waiting
+523826c0e215: Waiting
+95c51ae9ba96: Waiting
+e7a4bda8f16d: Waiting
+c33007d20ef1: Waiting
+aaf1c228b4da: Waiting
+525ed45dbdb1: Waiting
+5bc03dec6239: Waiting
+f1a4c011277e: Waiting
+f6a7b8b5934b: Waiting
+8514271a8c2c: Waiting
+a9a75d53f23a: Waiting
+5f83bad8acd2: Waiting
+20adf6e320d7: Pushed
+3f5658f85430: Pushed
+3f7e15bb91a1: Pushed
+2887ce1a05ad: Pushed
+c33007d20ef1: Pushed
+0732b02685ef: Pushed
+5d28ad2d9d5c: Pushed
+06759e89fc02: Pushed
+523826c0e215: Pushed
+8514271a8c2c: Pushed
+f1a4c011277e: Pushed
+5f83bad8acd2: Pushed
+f6a7b8b5934b: Pushed
+aaf1c228b4da: Pushed
+525ed45dbdb1: Pushed
+73b945a47080: Pushed
+e7a4bda8f16d: Pushed
+95c51ae9ba96: Pushed
+5bc03dec6239: Pushed
+a9a75d53f23a: Pushed
+latest: digest: sha256:8bd2bcebdee01784b5b1318a074c5fe5750760411ad5ee3a19e47dca1685fc35 size: 4496
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic-ipa-downloader
++ IMAGE_NAME=ironic-ipa-downloader
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ironic-ipa-downloader
++ sudo docker tag quay.io/metal3-io/ironic-ipa-downloader 192.168.111.1:5000/localimages/ironic-ipa-downloader
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/ironic-ipa-downloader
+Using default tag: latest
+The push refers to repository [192.168.111.1:5000/localimages/ironic-ipa-downloader]
+ec89db9873bd: Preparing
+17be93712683: Preparing
+2653d992f4ef: Preparing
+2653d992f4ef: Mounted from localimages/ironic-client
+ec89db9873bd: Pushed
+17be93712683: Pushed
+latest: digest: sha256:d2d871675b629bf66514ccda2e2616c50670f7fff9d95b983a216f3a7fdaa1aa size: 948
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/sushy-tools
++ IMAGE_NAME=sushy-tools
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/sushy-tools
++ sudo docker tag quay.io/metal3-io/sushy-tools 192.168.111.1:5000/localimages/sushy-tools
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/sushy-tools
+Using default tag: latest
+The push refers to repository [192.168.111.1:5000/localimages/sushy-tools]
+238f2ee898ef: Preparing
+580285e1db2a: Preparing
+4a727df1bd7d: Preparing
+b9800a668b57: Preparing
+3ff9c5f71066: Preparing
+d4151e7436b1: Preparing
+3b441d7cb46b: Preparing
+d3710de04cb3: Preparing
+91f7336bbfff: Preparing
+e2e8c39e0f77: Preparing
+d3710de04cb3: Waiting
+91f7336bbfff: Waiting
+e2e8c39e0f77: Waiting
+d4151e7436b1: Waiting
+3b441d7cb46b: Waiting
+4a727df1bd7d: Pushed
+580285e1db2a: Pushed
+3ff9c5f71066: Pushed
+d3710de04cb3: Pushed
+b9800a668b57: Pushed
+91f7336bbfff: Pushed
+238f2ee898ef: Pushed
+3b441d7cb46b: Pushed
+e2e8c39e0f77: Pushed
+d4151e7436b1: Pushed
+latest: digest: sha256:f90916d628816257566b92a5e90058fb32781b0a95c95c96dd6d7920423bc5ba size: 2430
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/keepalived
++ IMAGE_NAME=keepalived
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/keepalived
++ sudo docker tag quay.io/metal3-io/keepalived 192.168.111.1:5000/localimages/keepalived
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/keepalived
+Using default tag: latest
+The push refers to repository [192.168.111.1:5000/localimages/keepalived]
+366f541fef14: Preparing
+c94b2040d772: Preparing
+309a780d3dd8: Preparing
+9f54eef41275: Preparing
+309a780d3dd8: Pushed
+c94b2040d772: Pushed
+9f54eef41275: Pushed
+366f541fef14: Pushed
+latest: digest: sha256:4d2d44db445e898a08b072a29af18c325f92a06508b720ea9c95ecddc09c942c size: 1155
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/vbmc
++ IMAGE_NAME=vbmc
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/vbmc
++ sudo docker tag quay.io/metal3-io/vbmc 192.168.111.1:5000/localimages/vbmc
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/vbmc
+Using default tag: latest
+The push refers to repository [192.168.111.1:5000/localimages/vbmc]
+091a214fa651: Preparing
+95c51ae9ba96: Preparing
+e7a4bda8f16d: Preparing
+525ed45dbdb1: Preparing
+5bc03dec6239: Preparing
+e7a4bda8f16d: Mounted from localimages/ironic
+95c51ae9ba96: Mounted from localimages/ironic
+5bc03dec6239: Mounted from localimages/ironic
+525ed45dbdb1: Mounted from localimages/ironic
+091a214fa651: Pushed
+latest: digest: sha256:859a7038a299476b7f0c402869b34c1be58262c0bfbfdb6dda6c062c0af63b36 size: 1373
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ip-address-manager:main
++ IMAGE_NAME=ip-address-manager:main
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ip-address-manager:main
++ sudo docker tag quay.io/metal3-io/ip-address-manager:main 192.168.111.1:5000/localimages/ip-address-manager:main
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/ip-address-manager:main
+The push refers to repository [192.168.111.1:5000/localimages/ip-address-manager]
+13e6a06d9485: Preparing
+6d75f23be3dd: Preparing
+6d75f23be3dd: Mounted from localimages/baremetal-operator
+13e6a06d9485: Pushed
+main: digest: sha256:dc8880f770bbf91fdaf8379be5ecc94ccf9ab3ab0b8d281a26bc522cda40590f size: 739
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
++ IMAGE_NAME=cluster-api-provider-metal3:main
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/cluster-api-provider-metal3:main
++ sudo docker tag quay.io/metal3-io/cluster-api-provider-metal3:main 192.168.111.1:5000/localimages/cluster-api-provider-metal3:main
++ [[ docker == \p\o\d\m\a\n ]]
++ sudo docker push 192.168.111.1:5000/localimages/cluster-api-provider-metal3:main
+The push refers to repository [192.168.111.1:5000/localimages/cluster-api-provider-metal3]
+519c67b16402: Preparing
+6d75f23be3dd: Preparing
+6d75f23be3dd: Mounted from localimages/ip-address-manager
+519c67b16402: Pushed
+main: digest: sha256:ac11ca138767da6c9f9d453eed351a2f092435a9fb214511eb081247c361d000 size: 739
+++ env
+++ grep _LOCAL_IMAGE=
+++ grep -o '^[^=]*'
++ IRONIC_IMAGE=quay.io/metal3-io/ironic
++ VBMC_IMAGE=quay.io/metal3-io/vbmc
++ SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
++ [[ ubuntu == ubuntu ]]
++ sudo docker run -d --net host --privileged --name httpd-infra -v /opt/metal3-dev-env/ironic:/shared --entrypoint /bin/runhttpd --env PROVISIONING_INTERFACE=ironicendpoint quay.io/metal3-io/ironic
+1f2631fec05687cf749bf8d78a7e47d6e3a7cdcc6b8a75fb7ee7a8ca386fa9f8
++ sudo docker run -d --net host --name vbmc -v /opt/metal3-dev-env/virtualbmc/vbmc:/root/.vbmc -v /root/.ssh:/root/ssh quay.io/metal3-io/vbmc
+19ff805b2a3c53a6b8b34011b0d7043f25c67f3363dd1f88758f0483ceabcd00
++ sudo docker run -d --net host --name sushy-tools -v /opt/metal3-dev-env/virtualbmc/sushy-tools:/root/sushy -v /root/.ssh:/root/ssh quay.io/metal3-io/sushy-tools
+4d2e45475a76d8f2b7c303f72da2222f1a6a94d51188812858cabbc366b365be
++ OPENSTACKCLIENT_PATH=/usr/local/bin/openstack
++ command -v openstack
++ grep -v /usr/local/bin/openstack
++ sudo ln -sf /home/azureuser/projects/metal3-dev-env/openstackclient.sh /usr/local/bin/openstack
+++ dirname /usr/local/bin/openstack
++ sudo ln -sf /home/azureuser/projects/metal3-dev-env/openstackclient.sh /usr/local/bin/baremetal
++ VBMC_PATH=/usr/local/bin/vbmc
++ command -v vbmc
++ grep -v /usr/local/bin/vbmc
++ sudo ln -sf /home/azureuser/projects/metal3-dev-env/vbmc.sh /usr/local/bin/vbmc

@@ -1,0 +1,1662 @@
++ source lib/common.sh
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\g\o\/\b\i\n\:* ]]
+++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin
++++ go env
+++ eval 'GO111MODULE=""
+GOARCH="amd64"
+GOBIN=""
+GOCACHE="/home/azureuser/.cache/go-build"
+GOENV="/home/azureuser/.config/go/env"
+GOEXE=""
+GOFLAGS=""
+GOHOSTARCH="amd64"
+GOHOSTOS="linux"
+GOINSECURE=""
+GOMODCACHE="/home/azureuser/go/pkg/mod"
+GONOPROXY=""
+GONOSUMDB=""
+GOOS="linux"
+GOPATH="/home/azureuser/go"
+GOPRIVATE=""
+GOPROXY="https://proxy.golang.org,direct"
+GOROOT="/usr/local/go"
+GOSUMDB="sum.golang.org"
+GOTMPDIR=""
+GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
+GOVCS=""
+GOVERSION="go1.16.7"
+GCCGO="gccgo"
+AR="ar"
+CC="gcc"
+CXX="g++"
+CGO_ENABLED="1"
+GOMOD="/dev/null"
+CGO_CFLAGS="-g -O2"
+CGO_CPPFLAGS=""
+CGO_CXXFLAGS="-g -O2"
+CGO_FFLAGS="-g -O2"
+CGO_LDFLAGS="-g -O2"
+PKG_CONFIG="pkg-config"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build2513133715=/tmp/go-build -gno-record-gcc-switches"'
++++ GO111MODULE=
++++ GOARCH=amd64
++++ GOBIN=
++++ GOCACHE=/home/azureuser/.cache/go-build
++++ GOENV=/home/azureuser/.config/go/env
++++ GOEXE=
++++ GOFLAGS=
++++ GOHOSTARCH=amd64
++++ GOHOSTOS=linux
++++ GOINSECURE=
++++ GOMODCACHE=/home/azureuser/go/pkg/mod
++++ GONOPROXY=
++++ GONOSUMDB=
++++ GOOS=linux
++++ GOPATH=/home/azureuser/go
++++ GOPRIVATE=
++++ GOPROXY=https://proxy.golang.org,direct
++++ GOROOT=/usr/local/go
++++ GOSUMDB=sum.golang.org
++++ GOTMPDIR=
++++ GOTOOLDIR=/usr/local/go/pkg/tool/linux_amd64
++++ GOVCS=
++++ GOVERSION=go1.16.7
++++ GCCGO=gccgo
++++ AR=ar
++++ CC=gcc
++++ CXX=g++
++++ CGO_ENABLED=1
++++ GOMOD=/dev/null
++++ CGO_CFLAGS='-g -O2'
++++ CGO_CPPFLAGS=
++++ CGO_CXXFLAGS='-g -O2'
++++ CGO_FFLAGS='-g -O2'
++++ CGO_LDFLAGS='-g -O2'
++++ PKG_CONFIG=pkg-config
++++ GOGCCFLAGS='-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build2513133715=/tmp/go-build -gno-record-gcc-switches'
+++ export GOPATH
+++++ dirname lib/common.sh
++++ cd lib/..
++++ pwd
+++ SCRIPTDIR=/home/azureuser/projects/metal3-dev-env
++++ whoami
+++ USER=azureuser
+++ export USER=azureuser
+++ USER=azureuser
+++ '[' -z '' ']'
+++ '[' '!' -f /home/azureuser/projects/metal3-dev-env/config_azureuser.sh ']'
+++ CONFIG=/home/azureuser/projects/metal3-dev-env/config_azureuser.sh
+++ source /home/azureuser/projects/metal3-dev-env/config_azureuser.sh
++++ export KUBECONFIG=/home/azureuser/.kube/config
++++ KUBECONFIG=/home/azureuser/.kube/config
++++ export K8S_AUTH_KUBECONFIG=/home/azureuser/.kube/config
++++ K8S_AUTH_KUBECONFIG=/home/azureuser/.kube/config
++++ export IMAGE_OS=Ubuntu
++++ IMAGE_OS=Ubuntu
++++ export EPHEMERAL_CLUSTER=kind
++++ EPHEMERAL_CLUSTER=kind
++++ export CONTAINER_RUNTIME=docker
++++ CONTAINER_RUNTIME=docker
++++ export CAPM3_VERSION=v1beta1
++++ CAPM3_VERSION=v1beta1
++++ export CAPI_VERSION=v1beta1
++++ CAPI_VERSION=v1beta1
++++ export NUM_NODES=5
++++ NUM_NODES=5
++++ export NUM_OF_MASTER_REPLICAS=3
++++ NUM_OF_MASTER_REPLICAS=3
++++ export NUM_OF_WORKER_REPLICAS=2
++++ NUM_OF_WORKER_REPLICAS=2
++++ export KUBERNETES_VERSION=v1.21.1
++++ KUBERNETES_VERSION=v1.21.1
++++ export UPGRADED_K8S_VERSION=v1.22.2
++++ UPGRADED_K8S_VERSION=v1.22.2
+++ export MARIADB_HOST=mariaDB
+++ MARIADB_HOST=mariaDB
+++ export MARIADB_HOST_IP=127.0.0.1
+++ MARIADB_HOST_IP=127.0.0.1
+++ ADDN_DNS=
+++ EXT_IF=
+++ PRO_IF=
+++ MANAGE_BR_BRIDGE=y
+++ MANAGE_PRO_BRIDGE=y
+++ MANAGE_INT_BRIDGE=y
+++ INT_IF=
+++ ROOT_DISK_NAME=/dev/sda
+++ NODE_HOSTNAME_FORMAT=node-%d
+++ source /etc/os-release
++++ NAME=Ubuntu
++++ VERSION='20.04.3 LTS (Focal Fossa)'
++++ ID=ubuntu
++++ ID_LIKE=debian
++++ PRETTY_NAME='Ubuntu 20.04.3 LTS'
++++ VERSION_ID=20.04
++++ HOME_URL=https://www.ubuntu.com/
++++ SUPPORT_URL=https://help.ubuntu.com/
++++ BUG_REPORT_URL=https://bugs.launchpad.net/ubuntu/
++++ PRIVACY_POLICY_URL=https://www.ubuntu.com/legal/terms-and-policies/privacy-policy
++++ VERSION_CODENAME=focal
++++ UBUNTU_CODENAME=focal
+++ export DISTRO=ubuntu20
+++ DISTRO=ubuntu20
+++ export OS=ubuntu
+++ OS=ubuntu
+++ export OS_VERSION_ID=20.04
+++ OS_VERSION_ID=20.04
+++ SUPPORTED_DISTROS=(centos8 rhel8 ubuntu18 ubuntu20)
+++ export SUPPORTED_DISTROS
+++ [[ ! centos8 rhel8 ubuntu18 ubuntu20 =~ ubuntu20 ]]
+++ [[ ubuntu == ubuntu ]]
+++ export CONTAINER_RUNTIME=docker
+++ CONTAINER_RUNTIME=docker
+++ [[ docker == \p\o\d\m\a\n ]]
+++ export POD_NAME=
+++ POD_NAME=
+++ export POD_NAME_INFRA=
+++ POD_NAME_INFRA=
+++ export SSH_KEY=/home/azureuser/.ssh/id_rsa
+++ SSH_KEY=/home/azureuser/.ssh/id_rsa
+++ export SSH_PUB_KEY=/home/azureuser/.ssh/id_rsa.pub
+++ SSH_PUB_KEY=/home/azureuser/.ssh/id_rsa.pub
+++ '[' '!' -f /home/azureuser/.ssh/id_rsa ']'
+++ FILESYSTEM=/
+++ CAPM3_VERSION_LIST='v1alpha4 v1alpha5 v1beta1'
+++ export CAPM3_VERSION=v1beta1
+++ CAPM3_VERSION=v1beta1
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ '[' v1beta1 == v1beta1 ']'
+++ export CAPI_VERSION=v1beta1
+++ CAPI_VERSION=v1beta1
+++ export M3PATH=/home/azureuser/go/src/github.com/metal3-io
+++ M3PATH=/home/azureuser/go/src/github.com/metal3-io
+++ export BMOPATH=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator
+++ BMOPATH=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator
+++ export RUN_LOCAL_IRONIC_SCRIPT=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ RUN_LOCAL_IRONIC_SCRIPT=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ export CAPM3PATH=/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3PATH=/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
+++ export CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ CAPM3_BASE_URL=metal3-io/cluster-api-provider-metal3
+++ export CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ CAPM3REPO=https://github.com/metal3-io/cluster-api-provider-metal3
+++ export IPAMPATH=/home/azureuser/go/src/github.com/metal3-io/ip-address-manager
+++ IPAMPATH=/home/azureuser/go/src/github.com/metal3-io/ip-address-manager
+++ export IPAM_BASE_URL=metal3-io/ip-address-manager
+++ IPAM_BASE_URL=metal3-io/ip-address-manager
+++ export IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ IPAMREPO=https://github.com/metal3-io/ip-address-manager
+++ '[' v1beta1 == v1alpha3 ']'
+++ '[' v1beta1 == v1alpha4 ']'
+++ IPAMBRANCH=main
+++ IPA_DOWNLOAD_ENABLED=true
+++ CAPI_BASE_URL=kubernetes-sigs/cluster-api
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ CAPM3BRANCH=main
+++ BMOREPO=https://github.com/metal3-io/baremetal-operator.git
+++ BMOBRANCH=master
+++ FORCE_REPO_UPDATE=true
+++ BMOCOMMIT=HEAD
+++ BMO_RUN_LOCAL=false
+++ CAPM3_RUN_LOCAL=false
+++ WORKING_DIR=/opt/metal3-dev-env
+++ NODES_FILE=/opt/metal3-dev-env/ironic_nodes.json
+++ NODES_PLATFORM=libvirt
+++ export NAMESPACE=metal3
+++ NAMESPACE=metal3
+++ export NUM_NODES=5
+++ NUM_NODES=5
+++ export NUM_OF_MASTER_REPLICAS=3
+++ NUM_OF_MASTER_REPLICAS=3
+++ export NUM_OF_WORKER_REPLICAS=2
+++ NUM_OF_WORKER_REPLICAS=2
+++ export VM_EXTRADISKS=false
+++ VM_EXTRADISKS=false
+++ export VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ VM_EXTRADISKS_FILE_SYSTEM=ext4
+++ export VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ VM_EXTRADISKS_MOUNT_DIR=/mnt/disk2
+++ export NODE_DRAIN_TIMEOUT=0s
+++ NODE_DRAIN_TIMEOUT=0s
+++ export MAX_SURGE_VALUE=1
+++ MAX_SURGE_VALUE=1
+++ export DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ DOCKER_REGISTRY_IMAGE=registry:2.7.1
+++ export CONTAINER_REGISTRY=quay.io
+++ CONTAINER_REGISTRY=quay.io
+++ export VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ VBMC_IMAGE=quay.io/metal3-io/vbmc
+++ export SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ SUSHY_TOOLS_IMAGE=quay.io/metal3-io/sushy-tools
+++ export IRONIC_TLS_SETUP=true
+++ IRONIC_TLS_SETUP=true
+++ export IRONIC_BASIC_AUTH=true
+++ IRONIC_BASIC_AUTH=true
+++ export IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ IPA_DOWNLOADER_IMAGE=quay.io/metal3-io/ironic-ipa-downloader
+++ export IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ IRONIC_IMAGE=quay.io/metal3-io/ironic
+++ export IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ IRONIC_CLIENT_IMAGE=quay.io/metal3-io/ironic-client
+++ export IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
+++ export IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ IRONIC_IMAGE_DIR=/opt/metal3-dev-env/ironic/html/images
+++ export IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ IRONIC_KEEPALIVED_IMAGE=quay.io/metal3-io/keepalived
+++ '[' v1beta1 == v1alpha4 ']'
+++ export IRONIC_NAMESPACE=baremetal-operator-system
+++ IRONIC_NAMESPACE=baremetal-operator-system
+++ export NAMEPREFIX=baremetal-operator
+++ NAMEPREFIX=baremetal-operator
+++ export RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ RESTART_CONTAINER_CERTIFICATE_UPDATED=true
+++ export BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ BAREMETAL_OPERATOR_IMAGE=quay.io/metal3-io/baremetal-operator
+++ export OPENSTACK_CONFIG=/home/azureuser/.config/openstack/clouds.yaml
+++ OPENSTACK_CONFIG=/home/azureuser/.config/openstack/clouds.yaml
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ export CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
+++ CAPM3_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
+++ export IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
+++ IPAM_IMAGE=quay.io/metal3-io/ip-address-manager:main
+++ export DEFAULT_HOSTS_MEMORY=4096
+++ DEFAULT_HOSTS_MEMORY=4096
+++ export CLUSTER_NAME=test1
+++ CLUSTER_NAME=test1
+++ export CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ CLUSTER_APIENDPOINT_IP=192.168.111.249
+++ export KUBERNETES_VERSION=v1.21.1
+++ KUBERNETES_VERSION=v1.21.1
+++ export KUBERNETES_BINARIES_VERSION=v1.21.1
+++ KUBERNETES_BINARIES_VERSION=v1.21.1
+++ export KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ KUBERNETES_BINARIES_CONFIG_VERSION=v0.2.7
+++ '[' docker == docker ']'
+++ export EPHEMERAL_CLUSTER=kind
+++ EPHEMERAL_CLUSTER=kind
+++ export KUSTOMIZE_VERSION=v4.1.3
+++ KUSTOMIZE_VERSION=v4.1.3
+++ export KIND_VERSION=v0.11.1
+++ KIND_VERSION=v0.11.1
+++ '[' v1.21.1 == v1.21.2 ']'
+++ export KIND_NODE_IMAGE_VERSION=v1.22.2
+++ KIND_NODE_IMAGE_VERSION=v1.22.2
+++ export MINIKUBE_VERSION=v1.23.2
+++ MINIKUBE_VERSION=v1.23.2
+++ export ANSIBLE_VERSION=4.8.0
+++ ANSIBLE_VERSION=4.8.0
+++ SKIP_RETRIES=false
+++ TEST_TIME_INTERVAL=10
+++ TEST_MAX_TIME=240
+++ FAILS=0
+++ RESULT_STR=
+++ export ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ ANSIBLE_DISPLAY_SKIPPED_HOSTS=no
+++ '[' 5 -lt 5 ']'
+++ export LIBVIRT_DEFAULT_URI=qemu:///system
+++ LIBVIRT_DEFAULT_URI=qemu:///system
+++ '[' azureuser '!=' root ']'
+++ '[' /run/user/1000 == /run/user/0 ']'
+++ sudo -n uptime
+++ export USE_FIREWALLD=False
+++ USE_FIREWALLD=False
+++ [[ ubuntu20 == \r\h\e\l\8 ]]
+++ [[ ubuntu20 == \c\e\n\t\o\s\8 ]]
++++ df / --output=fstype
++++ tail -n 1
+++ FSTYPE=ext4
+++ case ${FSTYPE} in
+++ '[' '!' -d /opt/metal3-dev-env ']'
++ source lib/releases.sh
+++ CAPM3RELEASEPATH=https://api.github.com/repos/metal3-io/cluster-api-provider-metal3/releases
+++ CAPIRELEASEPATH=https://api.github.com/repos/kubernetes-sigs/cluster-api/releases
+++ '[' v1beta1 == v1alpha3 ']'
+++ '[' v1beta1 == v1alpha4 ']'
++++ get_latest_release https://api.github.com/repos/kubernetes-sigs/cluster-api/releases v1.0.
++++ set +x
++++ echo v1.0.2
+++ export CAPIRELEASE=v1.0.2
+++ CAPIRELEASE=v1.0.2
+++ '[' v1beta1 == v1alpha4 ']'
+++ '[' v1beta1 == v1alpha5 ']'
+++ export CAPM3RELEASE=v1.0.0
+++ CAPM3RELEASE=v1.0.0
+++ [[ v1.0.2 == '' ]]
+++ [[ v1.0.0 == '' ]]
++ source lib/network.sh
+++ export CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ CLUSTER_PROVISIONING_INTERFACE=ironicendpoint
+++ export POD_CIDR=192.168.0.0/18
+++ POD_CIDR=192.168.0.0/18
+++ PROVISIONING_IPV6=false
+++ IPV6_ADDR_PREFIX=fd2e:6f44:5dd8:b856
+++ [[ false == \t\r\u\e ]]
+++ export BOOT_MODE=legacy
+++ BOOT_MODE=legacy
+++ export PROVISIONING_NETWORK=172.22.0.0/24
+++ PROVISIONING_NETWORK=172.22.0.0/24
+++ [[ legacy == \l\e\g\a\c\y ]]
+++ export LIBVIRT_FIRMWARE=bios
+++ LIBVIRT_FIRMWARE=bios
+++ export LIBVIRT_SECURE_BOOT=false
+++ LIBVIRT_SECURE_BOOT=false
+++ prefixlen PROVISIONING_CIDR 172.22.0.0/24
+++ resultvar=PROVISIONING_CIDR
+++ network=172.22.0.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").prefixlen)'
+++ result=24
+++ eval PROVISIONING_CIDR=24
++++ PROVISIONING_CIDR=24
+++ export PROVISIONING_CIDR
+++ export PROVISIONING_CIDR
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"172.22.0.0/24").netmask)'
+++ export PROVISIONING_NETMASK=255.255.255.0
+++ PROVISIONING_NETMASK=255.255.255.0
+++ network_address PROVISIONING_IP 172.22.0.0/24 1
+++ resultvar=PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 1 - 1, None)))'
+++ result=172.22.0.1
+++ eval PROVISIONING_IP=172.22.0.1
++++ PROVISIONING_IP=172.22.0.1
+++ export PROVISIONING_IP
+++ network_address CLUSTER_PROVISIONING_IP 172.22.0.0/24 2
+++ resultvar=CLUSTER_PROVISIONING_IP
+++ network=172.22.0.0/24
+++ record=2
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 2 - 1, None)))'
+++ result=172.22.0.2
+++ eval CLUSTER_PROVISIONING_IP=172.22.0.2
++++ CLUSTER_PROVISIONING_IP=172.22.0.2
+++ export CLUSTER_PROVISIONING_IP
+++ export PROVISIONING_IP
+++ export CLUSTER_PROVISIONING_IP
+++ [[ 172.22.0.1 == *\:* ]]
+++ export PROVISIONING_URL_HOST=172.22.0.1
+++ PROVISIONING_URL_HOST=172.22.0.1
+++ export CLUSTER_URL_HOST=172.22.0.2
+++ CLUSTER_URL_HOST=172.22.0.2
+++ [[ 192.168.111.249 == *\:* ]]
+++ export CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ CLUSTER_APIENDPOINT_HOST=192.168.111.249
+++ export CLUSTER_APIENDPOINT_PORT=6443
+++ CLUSTER_APIENDPOINT_PORT=6443
+++ network_address dhcp_range_start 172.22.0.0/24 10
+++ resultvar=dhcp_range_start
+++ network=172.22.0.0/24
+++ record=10
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 10 - 1, None)))'
+++ result=172.22.0.10
+++ eval dhcp_range_start=172.22.0.10
++++ dhcp_range_start=172.22.0.10
+++ export dhcp_range_start
+++ network_address dhcp_range_end 172.22.0.0/24 100
+++ resultvar=dhcp_range_end
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval dhcp_range_end=172.22.0.100
++++ dhcp_range_end=172.22.0.100
+++ export dhcp_range_end
+++ network_address PROVISIONING_POOL_RANGE_START 172.22.0.0/24 100
+++ resultvar=PROVISIONING_POOL_RANGE_START
+++ network=172.22.0.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 100 - 1, None)))'
+++ result=172.22.0.100
+++ eval PROVISIONING_POOL_RANGE_START=172.22.0.100
++++ PROVISIONING_POOL_RANGE_START=172.22.0.100
+++ export PROVISIONING_POOL_RANGE_START
+++ network_address PROVISIONING_POOL_RANGE_END 172.22.0.0/24 200
+++ resultvar=PROVISIONING_POOL_RANGE_END
+++ network=172.22.0.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 200 - 1, None)))'
+++ result=172.22.0.200
+++ eval PROVISIONING_POOL_RANGE_END=172.22.0.200
++++ PROVISIONING_POOL_RANGE_END=172.22.0.200
+++ export PROVISIONING_POOL_RANGE_END
+++ export PROVISIONING_POOL_RANGE_START
+++ export PROVISIONING_POOL_RANGE_END
+++ export CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
+++ EXTERNAL_SUBNET=
+++ [[ -n '' ]]
+++ export IP_STACK=v4
+++ IP_STACK=v4
+++ [[ v4 == \v\4 ]]
+++ export EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ EXTERNAL_SUBNET_V4=192.168.111.0/24
+++ export EXTERNAL_SUBNET_V6=
+++ EXTERNAL_SUBNET_V6=
+++ [[ kind == \m\i\n\i\k\u\b\e ]]
+++ [[ -n 192.168.111.0/24 ]]
+++ prefixlen EXTERNAL_SUBNET_V4_PREFIX 192.168.111.0/24
+++ resultvar=EXTERNAL_SUBNET_V4_PREFIX
+++ network=192.168.111.0/24
++++ python -c 'import ipaddress; print(ipaddress.ip_network(u"192.168.111.0/24").prefixlen)'
+++ result=24
+++ eval EXTERNAL_SUBNET_V4_PREFIX=24
++++ EXTERNAL_SUBNET_V4_PREFIX=24
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ export EXTERNAL_SUBNET_V4_PREFIX
+++ [[ -z '' ]]
+++ network_address EXTERNAL_SUBNET_V4_HOST 192.168.111.0/24 1
+++ resultvar=EXTERNAL_SUBNET_V4_HOST
+++ network=192.168.111.0/24
+++ record=1
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 1 - 1, None)))'
+++ result=192.168.111.1
+++ eval EXTERNAL_SUBNET_V4_HOST=192.168.111.1
++++ EXTERNAL_SUBNET_V4_HOST=192.168.111.1
+++ export EXTERNAL_SUBNET_V4_HOST
+++ network_address VIRSH_DHCP_V4_START 192.168.111.0/24 20
+++ resultvar=VIRSH_DHCP_V4_START
+++ network=192.168.111.0/24
+++ record=20
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 20 - 1, None)))'
+++ result=192.168.111.20
+++ eval VIRSH_DHCP_V4_START=192.168.111.20
++++ VIRSH_DHCP_V4_START=192.168.111.20
+++ export VIRSH_DHCP_V4_START
+++ network_address VIRSH_DHCP_V4_END 192.168.111.0/24 60
+++ resultvar=VIRSH_DHCP_V4_END
+++ network=192.168.111.0/24
+++ record=60
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 60 - 1, None)))'
+++ result=192.168.111.60
+++ eval VIRSH_DHCP_V4_END=192.168.111.60
++++ VIRSH_DHCP_V4_END=192.168.111.60
+++ export VIRSH_DHCP_V4_END
+++ network_address BAREMETALV4_POOL_RANGE_START 192.168.111.0/24 100
+++ resultvar=BAREMETALV4_POOL_RANGE_START
+++ network=192.168.111.0/24
+++ record=100
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 100 - 1, None)))'
+++ result=192.168.111.100
+++ eval BAREMETALV4_POOL_RANGE_START=192.168.111.100
++++ BAREMETALV4_POOL_RANGE_START=192.168.111.100
+++ export BAREMETALV4_POOL_RANGE_START
+++ network_address BAREMETALV4_POOL_RANGE_END 192.168.111.0/24 200
+++ resultvar=BAREMETALV4_POOL_RANGE_END
+++ network=192.168.111.0/24
+++ record=200
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"192.168.111.0/24").hosts(), 200 - 1, None)))'
+++ result=192.168.111.200
+++ eval BAREMETALV4_POOL_RANGE_END=192.168.111.200
++++ BAREMETALV4_POOL_RANGE_END=192.168.111.200
+++ export BAREMETALV4_POOL_RANGE_END
+++ export VIRSH_DHCP_V4_START
+++ export VIRSH_DHCP_V4_END
+++ export BAREMETALV4_POOL_RANGE_START
+++ export BAREMETALV4_POOL_RANGE_END
+++ [[ -n '' ]]
+++ export EXTERNAL_SUBNET_V6_HOST=
+++ EXTERNAL_SUBNET_V6_HOST=
+++ export EXTERNAL_SUBNET_V6_PREFIX=
+++ EXTERNAL_SUBNET_V6_PREFIX=
+++ export BAREMETALV6_POOL_RANGE_START=
+++ BAREMETALV6_POOL_RANGE_START=
+++ export BAREMETALV6_POOL_RANGE_END=
+++ BAREMETALV6_POOL_RANGE_END=
+++ export REGISTRY_PORT=5000
+++ REGISTRY_PORT=5000
+++ export HTTP_PORT=6180
+++ HTTP_PORT=6180
+++ export IRONIC_INSPECTOR_PORT=5050
+++ IRONIC_INSPECTOR_PORT=5050
+++ export IRONIC_API_PORT=6385
+++ IRONIC_API_PORT=6385
+++ [[ -n 192.168.111.1 ]]
+++ export REGISTRY=192.168.111.1:5000
+++ REGISTRY=192.168.111.1:5000
+++ network_address INITIAL_IRONICBRIDGE_IP 172.22.0.0/24 9
+++ resultvar=INITIAL_IRONICBRIDGE_IP
+++ network=172.22.0.0/24
+++ record=9
++++ python -c 'import ipaddress; import itertools; print(next(itertools.islice(ipaddress.ip_network(u"172.22.0.0/24").hosts(), 9 - 1, None)))'
+++ result=172.22.0.9
+++ eval INITIAL_IRONICBRIDGE_IP=172.22.0.9
++++ INITIAL_IRONICBRIDGE_IP=172.22.0.9
+++ export INITIAL_IRONICBRIDGE_IP
+++ export DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+++ export DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+++ '[' true == true ']'
+++ export IRONIC_URL=https://172.22.0.2:6385/v1/
+++ IRONIC_URL=https://172.22.0.2:6385/v1/
+++ export IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
+++ IRONIC_INSPECTOR_URL=https://172.22.0.2:5050/v1/
++ export IRONIC_HOST=172.22.0.2
++ IRONIC_HOST=172.22.0.2
++ export IRONIC_HOST_IP=172.22.0.2
++ IRONIC_HOST_IP=172.22.0.2
++ sudo mkdir -p /opt/metal3-dev-env/ironic
++ sudo chown -R azureuser:azureuser /opt/metal3-dev-env/ironic
++ source lib/ironic_tls_setup.sh
+++ '[' true == true ']'
+++ pushd /opt/metal3-dev-env
+/opt/metal3-dev-env ~/projects/metal3-dev-env
+++ mkdir -p /opt/metal3-dev-env/certs
+++ pushd /opt/metal3-dev-env/certs
+/opt/metal3-dev-env/certs /opt/metal3-dev-env ~/projects/metal3-dev-env
+++ export IRONIC_BASE_URL=https://172.22.0.2
+++ IRONIC_BASE_URL=https://172.22.0.2
+++ export IRONIC_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ IRONIC_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ export IRONIC_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ IRONIC_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ export IRONIC_CERT_FILE=/opt/metal3-dev-env/certs/ironic.crt
+++ IRONIC_CERT_FILE=/opt/metal3-dev-env/certs/ironic.crt
+++ export IRONIC_KEY_FILE=/opt/metal3-dev-env/certs/ironic.key
+++ IRONIC_KEY_FILE=/opt/metal3-dev-env/certs/ironic.key
+++ export IRONIC_INSPECTOR_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ IRONIC_INSPECTOR_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ export IRONIC_INSPECTOR_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ IRONIC_INSPECTOR_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ export IRONIC_INSPECTOR_CERT_FILE=/opt/metal3-dev-env/certs/ironic-inspector.crt
+++ IRONIC_INSPECTOR_CERT_FILE=/opt/metal3-dev-env/certs/ironic-inspector.crt
+++ export IRONIC_INSPECTOR_KEY_FILE=/opt/metal3-dev-env/certs/ironic-inspector.key
+++ IRONIC_INSPECTOR_KEY_FILE=/opt/metal3-dev-env/certs/ironic-inspector.key
+++ export MARIADB_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ MARIADB_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
+++ export MARIADB_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ MARIADB_CAKEY_FILE=/opt/metal3-dev-env/certs/ironic-ca.key
+++ export MARIADB_CERT_FILE=/opt/metal3-dev-env/certs/mariadb.crt
+++ MARIADB_CERT_FILE=/opt/metal3-dev-env/certs/mariadb.crt
+++ export MARIADB_KEY_FILE=/opt/metal3-dev-env/certs/mariadb.key
+++ MARIADB_KEY_FILE=/opt/metal3-dev-env/certs/mariadb.key
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.key ']'
+++ openssl genrsa -out /opt/metal3-dev-env/certs/ironic-ca.key 2048
+Generating RSA private key, 2048 bit long modulus (2 primes)
+...+++++
+..+++++
+e is 65537 (0x010001)
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.key ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.key ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.pem ']'
+++ openssl req -x509 -new -nodes -key /opt/metal3-dev-env/certs/ironic-ca.key -sha256 -days 1825 -out /opt/metal3-dev-env/certs/ironic-ca.pem -subj '/CN=ironic CA/'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.pem ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-ca.pem ']'
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic.key ']'
+++ openssl genrsa -out /opt/metal3-dev-env/certs/ironic.key 2048
+Generating RSA private key, 2048 bit long modulus (2 primes)
+.............+++++
+...........................................................................+++++
+e is 65537 (0x010001)
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-inspector.key ']'
+++ openssl genrsa -out /opt/metal3-dev-env/certs/ironic-inspector.key 2048
+Generating RSA private key, 2048 bit long modulus (2 primes)
+....................................................+++++
+..............................................................................................................+++++
+e is 65537 (0x010001)
+++ '[' '!' -f /opt/metal3-dev-env/certs/mariadb.key ']'
+++ openssl genrsa -out /opt/metal3-dev-env/certs/mariadb.key 2048
+Generating RSA private key, 2048 bit long modulus (2 primes)
+............................................................................................................................................................................+++++
+.......................................................................................................................................+++++
+e is 65537 (0x010001)
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic.crt ']'
+++ openssl req -new -key /opt/metal3-dev-env/certs/ironic.key -out /tmp/ironic.csr -subj /CN=172.22.0.2/
+++ openssl x509 -req -in /tmp/ironic.csr -CA /opt/metal3-dev-env/certs/ironic-ca.pem -CAkey /opt/metal3-dev-env/certs/ironic-ca.key -CAcreateserial -out /opt/metal3-dev-env/certs/ironic.crt -days 825 -sha256 -extfile /dev/fd/63
++++ printf subjectAltName=IP:%s 172.22.0.2
+Signature ok
+subject=CN = 172.22.0.2
+Getting CA Private Key
+++ '[' '!' -f /opt/metal3-dev-env/certs/ironic-inspector.crt ']'
+++ openssl req -new -key /opt/metal3-dev-env/certs/ironic-inspector.key -out /tmp/ironic.csr -subj /CN=172.22.0.2/
+++ openssl x509 -req -in /tmp/ironic.csr -CA /opt/metal3-dev-env/certs/ironic-ca.pem -CAkey /opt/metal3-dev-env/certs/ironic-ca.key -CAcreateserial -out /opt/metal3-dev-env/certs/ironic-inspector.crt -days 825 -sha256 -extfile /dev/fd/62
++++ printf subjectAltName=IP:%s 172.22.0.2
+Signature ok
+subject=CN = 172.22.0.2
+Getting CA Private Key
+++ '[' '!' -f /opt/metal3-dev-env/certs/mariadb.crt ']'
+++ openssl req -new -key /opt/metal3-dev-env/certs/mariadb.key -out /tmp/mariadb.csr -subj /CN=mariaDB/
+++ openssl x509 -req -in /tmp/mariadb.csr -CA /opt/metal3-dev-env/certs/ironic-ca.pem -CAkey /opt/metal3-dev-env/certs/ironic-ca.key -CAcreateserial -out /opt/metal3-dev-env/certs/mariadb.crt -days 825 -sha256 -extfile /dev/fd/61
++++ printf subjectAltName=IP:%s 127.0.0.1
+Signature ok
+subject=CN = mariaDB
+Getting CA Private Key
+++ '[' /opt/metal3-dev-env/certs/ironic-ca.pem == /opt/metal3-dev-env/certs/ironic-ca.pem ']'
++++ base64 -w 0
+++ IRONIC_CA_CERT_B64=LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDVENDQWZHZ0F3SUJBZ0lVTy9kOS9vMENZWU1wL0xMRnJvbVNRME1wZXM4d0RRWUpLb1pJaHZjTkFRRUwKQlFBd0ZERVNNQkFHQTFVRUF3d0phWEp2Ym1saklFTkJNQjRYRFRJeE1USXlNVEl3TlRVeU4xb1hEVEkyTVRJeQpNREl3TlRVeU4xb3dGREVTTUJBR0ExVUVBd3dKYVhKdmJtbGpJRU5CTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGCkFBT0NBUThBTUlJQkNnS0NBUUVBbmIrTlV2T0t6YTdjbnFRc0s1cFM1T3NlamFIc1hDckFIVnFFaHJNc21ySFYKSW1NMTVuRkRRNjhaWmVHNGJ5aEsvVDAwTmMySGFoQllrNDl4Z3RUdERxeGE3Tll6Y0VIL3V6OHZxK2grU3dvVwp4cGIyTCtSYVpMdmdBLzlQVk1qcWlhMXVoSWtSYXVYNFVTakdHd0ozUEl3UHdhNjhnZ014VzNvQnpxTGU5SXlsCkkvdDBSUFhudXozUG8xdUl2Wjh2NER2N1ZGTmUzMGtlYVh3YUt5azRGTFluTzRJelVmekFVeEVzNmd3OFl3M0EKUy9OaXY1M09oRVFlSW5sUTU5YWxYTHhrc1Urdjg0WGZvWmNhVzkxMjRPUHBlNGg3aS9ueWVSNmwzeVNKRUo4OQpDTTRMR2RoSVcvbFFPMW9zSmVUQTdFM3kxVUdhZXVoQVd3RUVrOG9tMFFJREFRQUJvMU13VVRBZEJnTlZIUTRFCkZnUVVSZGs1TlRCOFZSL3F1N3VCUFlKQnE0TW1FbEl3SHdZRFZSMGpCQmd3Rm9BVVJkazVOVEI4VlIvcXU3dUIKUFlKQnE0TW1FbEl3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBRHpqZgpsVlN6dnJTdXRqVFVnQmxwSVlqVSttR1RBeEJJaXV4ams3ZjFLSHR1RjFFZE9JQnRUOWFwR1NockVqUXBKTGZpCjJiV09paGNJTERZZDB4UmNrcGo5YS9GYklXZjlNcnBjdklRYzZwUk0xaXMrclZ2UHlIaXFRWUxhV2ZDKzdQVE4KV1FiM1pJVzA3dzdiTmlISjc0dS9wdmRzMkpxNlVjdFN2b1FhSTcxWUZwaE1NcFNkQ0JBbzIwQ1JiOG1FaEV0Lwo5VnJjRU1WZlZHMjV5cmgvSDdJYVUvRTdqNnI3aGsxaUJVNms3WCtFRnBBN0dML1hsU2U1Zmg0N2xxWWh4TTh2Cm1hNGQxT1JKTDRaRnBCclNXU3JYSGgxRnZXTWV4SzNwRUVObU1rcHROa29TVzJVWXF4L1V4MEtXT3JUY2lWclQKRlplczUrSlBPVW5ySERIVlN3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+++ export IRONIC_CA_CERT_B64
+++ popd
+/opt/metal3-dev-env ~/projects/metal3-dev-env
+++ popd
+~/projects/metal3-dev-env
+++ unset IRONIC_NO_CA_CERT
++ source lib/ironic_basic_auth.sh
+++ '[' true == true ']'
+++ IRONIC_AUTH_DIR=/opt/metal3-dev-env/ironic/auth/
+++ mkdir -p /opt/metal3-dev-env/ironic/auth/
+++ '[' -z '' ']'
+++ '[' '!' -f /opt/metal3-dev-env/ironic/auth/ironic-username ']'
++++ tr -dc a-zA-Z0-9
++++ fold -w 12
++++ head -n 1
+++ IRONIC_USERNAME=tDqch2vdB5bP
+++ echo tDqch2vdB5bP
+++ '[' -z '' ']'
+++ '[' '!' -f /opt/metal3-dev-env/ironic/auth/ironic-password ']'
++++ tr -dc a-zA-Z0-9
++++ fold -w 12
++++ head -n 1
+++ IRONIC_PASSWORD=xTubq1zZimea
+++ echo xTubq1zZimea
+++ IRONIC_INSPECTOR_USERNAME=tDqch2vdB5bP
+++ IRONIC_INSPECTOR_PASSWORD=xTubq1zZimea
+++ export IRONIC_USERNAME
+++ export IRONIC_PASSWORD
+++ export IRONIC_INSPECTOR_USERNAME
+++ export IRONIC_INSPECTOR_PASSWORD
+++ unset IRONIC_NO_BASIC_AUTH
+++ unset IRONIC_INSPECTOR_NO_BASIC_AUTH
++ clone_repos
++ mkdir -p /home/azureuser/go/src/github.com/metal3-io
++ clone_repo https://github.com/metal3-io/baremetal-operator.git master /home/azureuser/go/src/github.com/metal3-io/baremetal-operator HEAD
++ local REPO_URL=https://github.com/metal3-io/baremetal-operator.git
++ local REPO_BRANCH=master
++ local REPO_PATH=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator
++ local REPO_COMMIT=HEAD
++ [[ -d /home/azureuser/go/src/github.com/metal3-io/baremetal-operator ]]
++ '[' '!' -d /home/azureuser/go/src/github.com/metal3-io/baremetal-operator ']'
++ pushd /home/azureuser/go/src/github.com/metal3-io
+~/go/src/github.com/metal3-io ~/projects/metal3-dev-env
++ git clone https://github.com/metal3-io/baremetal-operator.git /home/azureuser/go/src/github.com/metal3-io/baremetal-operator
+Cloning into '/home/azureuser/go/src/github.com/metal3-io/baremetal-operator'...
++ popd
+~/projects/metal3-dev-env
++ pushd /home/azureuser/go/src/github.com/metal3-io/baremetal-operator
+~/go/src/github.com/metal3-io/baremetal-operator ~/projects/metal3-dev-env
++ git checkout master
+Switched to a new branch 'master'
+Branch 'master' set up to track remote branch 'master' from 'origin'.
++ git checkout HEAD
+Your branch is up to date with 'origin/master'.
++ git pull -r
+Already up to date.
+Current branch master is up to date.
++ popd
+~/projects/metal3-dev-env
++ clone_repo https://github.com/metal3-io/cluster-api-provider-metal3 main /home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
++ local REPO_URL=https://github.com/metal3-io/cluster-api-provider-metal3
++ local REPO_BRANCH=main
++ local REPO_PATH=/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
++ local REPO_COMMIT=HEAD
++ [[ -d /home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3 ]]
++ '[' '!' -d /home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3 ']'
++ pushd /home/azureuser/go/src/github.com/metal3-io
+~/go/src/github.com/metal3-io ~/projects/metal3-dev-env
++ git clone https://github.com/metal3-io/cluster-api-provider-metal3 /home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
+Cloning into '/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3'...
++ popd
+~/projects/metal3-dev-env
++ pushd /home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
+~/go/src/github.com/metal3-io/cluster-api-provider-metal3 ~/projects/metal3-dev-env
++ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
++ git checkout HEAD
+Your branch is up to date with 'origin/main'.
++ git pull -r
+Already up to date.
+Current branch main is up to date.
++ popd
+~/projects/metal3-dev-env
++ clone_repo https://github.com/metal3-io/ip-address-manager main /home/azureuser/go/src/github.com/metal3-io/ip-address-manager
++ local REPO_URL=https://github.com/metal3-io/ip-address-manager
++ local REPO_BRANCH=main
++ local REPO_PATH=/home/azureuser/go/src/github.com/metal3-io/ip-address-manager
++ local REPO_COMMIT=HEAD
++ [[ -d /home/azureuser/go/src/github.com/metal3-io/ip-address-manager ]]
++ '[' '!' -d /home/azureuser/go/src/github.com/metal3-io/ip-address-manager ']'
++ pushd /home/azureuser/go/src/github.com/metal3-io
+~/go/src/github.com/metal3-io ~/projects/metal3-dev-env
++ git clone https://github.com/metal3-io/ip-address-manager /home/azureuser/go/src/github.com/metal3-io/ip-address-manager
+Cloning into '/home/azureuser/go/src/github.com/metal3-io/ip-address-manager'...
++ popd
+~/projects/metal3-dev-env
++ pushd /home/azureuser/go/src/github.com/metal3-io/ip-address-manager
+~/go/src/github.com/metal3-io/ip-address-manager ~/projects/metal3-dev-env
++ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
++ git checkout HEAD
+Your branch is up to date with 'origin/main'.
++ git pull -r
+Already up to date.
+Current branch main is up to date.
++ popd
+~/projects/metal3-dev-env
++ /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/remove_local_ironic.sh
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic$'
++ sudo docker ps --all
++ grep -w 'ironic$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-api$'
++ sudo docker ps --all
++ grep -w 'ironic-api$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-conductor$'
++ sudo docker ps --all
++ grep -w 'ironic-conductor$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-inspector$'
++ sudo docker ps --all
++ grep -w 'ironic-inspector$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'dnsmasq$'
++ sudo docker ps --all
++ grep -w 'dnsmasq$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'httpd$'
++ sudo docker ps --all
++ grep -w 'httpd$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'mariadb$'
++ sudo docker ps --all
++ grep -w 'mariadb$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ipa-downloader$'
++ sudo docker ps --all
++ grep -w 'ipa-downloader$'
+11680e8a6105   quay.io/metal3-io/ironic-ipa-downloader   "/usr/local/bin/get-…"   2 minutes ago    Exited (0) 2 minutes ago                                               ipa-downloader
++ sudo docker rm ipa-downloader -f
+ipa-downloader
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-endpoint-keepalived$'
++ sudo docker ps --all
++ grep -w 'ironic-endpoint-keepalived$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-log-watch$'
++ sudo docker ps --all
++ grep -w 'ironic-log-watch$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'httpd-reverse-proxy$'
++ sudo docker ps --all
++ grep -w 'httpd-reverse-proxy$'
++ set +xe
++ create_clouds_yaml
++ mkdir -p /home/azureuser/projects/metal3-dev-env/_clouds_yaml
++ '[' true == true ']'
++ cp /opt/metal3-dev-env/certs/ironic-ca.pem /home/azureuser/projects/metal3-dev-env/_clouds_yaml/ironic-ca.crt
++ render_j2_config /home/azureuser/projects/metal3-dev-env/clouds.yaml.j2
++ python3 -c 'import os; import sys; import jinja2; sys.stdout.write(jinja2.Template(sys.stdin.read()).render(env=os.environ))'
++ '[' kind '!=' tilt ']'
++ start_management_cluster
++ '[' kind == kind ']'
++ launch_kind
++ cat
++ sudo su -l -c 'kind create cluster --name kind --image=kindest/node:v1.22.2 --config=- ' azureuser
+Creating cluster "kind" ...
+ • Ensuring node image (kindest/node:v1.22.2) 🖼  ...
+ ✓ Ensuring node image (kindest/node:v1.22.2) 🖼
+ • Preparing nodes 📦   ...
+ ✓ Preparing nodes 📦 
+ • Writing configuration 📜  ...
+ ✓ Writing configuration 📜
+ • Starting control-plane 🕹️  ...
+ ✓ Starting control-plane 🕹️
+ • Installing CNI 🔌  ...
+ ✓ Installing CNI 🔌
+ • Installing StorageClass 💾  ...
+ ✓ Installing StorageClass 💾
+Set kubectl context to "kind-kind"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-kind
+
+Thanks for using kind! 😊
++ kubectl create namespace metal3
+namespace/metal3 created
++ '[' kind '!=' tilt ']'
++ patch_clusterctl
++ pushd /home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
+~/go/src/github.com/metal3-io/cluster-api-provider-metal3 ~/projects/metal3-dev-env
++ mkdir -p /home/azureuser/.cluster-api
++ touch /home/azureuser/.cluster-api/clusterctl.yaml
++ '[' -n '' ']'
++ update_component_image CAPM3 quay.io/metal3-io/cluster-api-provider-metal3:main
++ IMPORT=CAPM3
++ ORIG_IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
++ TMP_IMAGE=cluster-api-provider-metal3:main
++ TMP_IMAGE_NAME=cluster-api-provider-metal3
++ TMP_IMAGE_TAG=main
++ '[' cluster-api-provider-metal3 == main ']'
++ '[' CAPM3 == BMO ']'
++ '[' CAPM3 == CAPM3 ']'
++ export MANIFEST_IMG=192.168.111.1:5000/localimages/cluster-api-provider-metal3
++ MANIFEST_IMG=192.168.111.1:5000/localimages/cluster-api-provider-metal3
++ export MANIFEST_TAG=main
++ MANIFEST_TAG=main
++ make set-manifest-image
+make[1]: Entering directory '/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3'
+Updating kustomize image patch file for manager resource
+sed -i'' -e 's@image: .*@image: '"192.168.111.1:5000/localimages/cluster-api-provider-metal3:main"'@' ./config/default/capm3/manager_image_patch.yaml
+make[1]: Leaving directory '/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3'
++ '[' v1beta1 == v1alpha4 ']'
++ '[' -n '' ']'
++ update_component_image IPAM quay.io/metal3-io/ip-address-manager:main
++ IMPORT=IPAM
++ ORIG_IMAGE=quay.io/metal3-io/ip-address-manager:main
++ TMP_IMAGE=ip-address-manager:main
++ TMP_IMAGE_NAME=ip-address-manager
++ TMP_IMAGE_TAG=main
++ '[' ip-address-manager == main ']'
++ '[' IPAM == BMO ']'
++ '[' IPAM == CAPM3 ']'
++ '[' IPAM == IPAM ']'
++ export MANIFEST_IMG_IPAM=192.168.111.1:5000/localimages/ip-address-manager
++ MANIFEST_IMG_IPAM=192.168.111.1:5000/localimages/ip-address-manager
++ export MANIFEST_TAG_IPAM=main
++ MANIFEST_TAG_IPAM=main
++ make set-manifest-image-ipam
+make[1]: Entering directory '/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3'
+Updating kustomize image patch file for IPAM controller
+sed -i'' -e 's@image: .*@image: '"192.168.111.1:5000/localimages/ip-address-manager:main"'@' ./config/ipam/image_patch.yaml
+make[1]: Leaving directory '/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3'
++ update_capm3_imports
++ pushd /home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
+~/go/src/github.com/metal3-io/cluster-api-provider-metal3 ~/go/src/github.com/metal3-io/cluster-api-provider-metal3 ~/projects/metal3-dev-env
++ '[' true == false ']'
++ '[' v1beta1 == v1alpha4 ']'
++ cp config/ipam/kustomization.yaml config/ipam/kustomization.yaml.orig
++ make hack/tools/bin/kustomize
+make[1]: Entering directory '/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3'
+cd hack/tools; ./install_kustomize.sh
+Verifying kustomize version
+kustomize not found, installing
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   674  100   674    0     0   8753      0 --:--:-- --:--:-- --:--:--  8868
+  0 5094k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 5094k  100 5094k    0     0  21.5M      0 --:--:-- --:--:-- --:--:-- 84.3M
+kustomize
+make[1]: Leaving directory '/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3'
++ '[' v1beta1 == v1alpha4 ']'
++ ./hack/tools/bin/kustomize build /home/azureuser/go/src/github.com/metal3-io/ip-address-manager/config/default
++ sed -i -e 's#https://github.com/metal3-io/ip-address-manager/releases/download/v.*/ipam-components.yaml#metal3-ipam-components.yaml#' config/ipam/kustomization.yaml
++ popd
+~/go/src/github.com/metal3-io/cluster-api-provider-metal3 ~/projects/metal3-dev-env
++ make release-manifests
+make[1]: Entering directory '/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3'
+cd hack/tools; ./install_kustomize.sh
+Verifying kustomize version
+mkdir -p out/
+hack/tools/bin/kustomize build config/default > out/infrastructure-components.yaml
+cp metadata.yaml out/metadata.yaml
+cp examples/clusterctl-templates/clusterctl-cluster.yaml out/cluster-template.yaml
+cp examples/clusterctl-templates/example_variables.rc out/example_variables.rc
+make[1]: Leaving directory '/home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3'
++ '[' v1beta1 == v1alpha4 ']'
++ mv config/ipam/kustomization.yaml.orig config/ipam/kustomization.yaml
++ rm config/ipam/metal3-ipam-components.yaml
++ rm -rf /home/azureuser/.cluster-api/overrides/infrastructure-metal3/v1.0.0
++ mkdir -p /home/azureuser/.cluster-api/overrides/infrastructure-metal3/v1.0.0
++ cp out/cluster-template.yaml out/infrastructure-components.yaml out/metadata.yaml /home/azureuser/.cluster-api/overrides/infrastructure-metal3/v1.0.0
++ popd
+~/projects/metal3-dev-env
++ launch_cluster_api_provider_metal3
++ pushd /home/azureuser/go/src/github.com/metal3-io/cluster-api-provider-metal3
+~/go/src/github.com/metal3-io/cluster-api-provider-metal3 ~/projects/metal3-dev-env
++ clusterctl init --core cluster-api:v1.0.2 --bootstrap kubeadm:v1.0.2 --control-plane kubeadm:v1.0.2 --infrastructure=metal3:v1.0.0 -v5
+Using configuration File="/home/azureuser/.cluster-api/clusterctl.yaml"
+Installing the clusterctl inventory CRD
+Creating CustomResourceDefinition="providers.clusterctl.cluster.x-k8s.io"
+Fetching providers
+Fetching File="core-components.yaml" Provider="cluster-api" Type="CoreProvider" Version="v1.0.2"
+Fetching File="bootstrap-components.yaml" Provider="kubeadm" Type="BootstrapProvider" Version="v1.0.2"
+Fetching File="control-plane-components.yaml" Provider="kubeadm" Type="ControlPlaneProvider" Version="v1.0.2"
+Using Override="infrastructure-components.yaml" Provider="infrastructure-metal3" Version="v1.0.0"
+Fetching File="metadata.yaml" Provider="cluster-api" Type="CoreProvider" Version="v1.0.2"
+Fetching File="metadata.yaml" Provider="kubeadm" Type="BootstrapProvider" Version="v1.0.2"
+Fetching File="metadata.yaml" Provider="kubeadm" Type="ControlPlaneProvider" Version="v1.0.2"
+Using Override="metadata.yaml" Provider="infrastructure-metal3" Version="v1.0.0"
+Creating Namespace="cert-manager-test"
+Installing cert-manager Version="v1.5.3"
+Fetching File="cert-manager.yaml" Provider="cert-manager" Type="" Version="v1.5.3"
+Creating Namespace="cert-manager"
+Creating CustomResourceDefinition="certificaterequests.cert-manager.io"
+Creating CustomResourceDefinition="certificates.cert-manager.io"
+Creating CustomResourceDefinition="challenges.acme.cert-manager.io"
+Creating CustomResourceDefinition="clusterissuers.cert-manager.io"
+Creating CustomResourceDefinition="issuers.cert-manager.io"
+Creating CustomResourceDefinition="orders.acme.cert-manager.io"
+Creating ServiceAccount="cert-manager-cainjector" Namespace="cert-manager"
+Creating ServiceAccount="cert-manager" Namespace="cert-manager"
+Creating ServiceAccount="cert-manager-webhook" Namespace="cert-manager"
+Creating ClusterRole="cert-manager-cainjector"
+Creating ClusterRole="cert-manager-controller-issuers"
+Creating ClusterRole="cert-manager-controller-clusterissuers"
+Creating ClusterRole="cert-manager-controller-certificates"
+Creating ClusterRole="cert-manager-controller-orders"
+Creating ClusterRole="cert-manager-controller-challenges"
+Creating ClusterRole="cert-manager-controller-ingress-shim"
+Creating ClusterRole="cert-manager-view"
+Creating ClusterRole="cert-manager-edit"
+Creating ClusterRole="cert-manager-controller-approve:cert-manager-io"
+Creating ClusterRole="cert-manager-controller-certificatesigningrequests"
+Creating ClusterRole="cert-manager-webhook:subjectaccessreviews"
+Creating ClusterRoleBinding="cert-manager-cainjector"
+Creating ClusterRoleBinding="cert-manager-controller-issuers"
+Creating ClusterRoleBinding="cert-manager-controller-clusterissuers"
+Creating ClusterRoleBinding="cert-manager-controller-certificates"
+Creating ClusterRoleBinding="cert-manager-controller-orders"
+Creating ClusterRoleBinding="cert-manager-controller-challenges"
+Creating ClusterRoleBinding="cert-manager-controller-ingress-shim"
+Creating ClusterRoleBinding="cert-manager-controller-approve:cert-manager-io"
+Creating ClusterRoleBinding="cert-manager-controller-certificatesigningrequests"
+Creating ClusterRoleBinding="cert-manager-webhook:subjectaccessreviews"
+Creating Role="cert-manager-cainjector:leaderelection" Namespace="kube-system"
+Creating Role="cert-manager:leaderelection" Namespace="kube-system"
+Creating Role="cert-manager-webhook:dynamic-serving" Namespace="cert-manager"
+Creating RoleBinding="cert-manager-cainjector:leaderelection" Namespace="kube-system"
+Creating RoleBinding="cert-manager:leaderelection" Namespace="kube-system"
+Creating RoleBinding="cert-manager-webhook:dynamic-serving" Namespace="cert-manager"
+Creating Service="cert-manager" Namespace="cert-manager"
+Creating Service="cert-manager-webhook" Namespace="cert-manager"
+Creating Deployment="cert-manager-cainjector" Namespace="cert-manager"
+Creating Deployment="cert-manager" Namespace="cert-manager"
+Creating Deployment="cert-manager-webhook" Namespace="cert-manager"
+Creating MutatingWebhookConfiguration="cert-manager-webhook"
+Creating ValidatingWebhookConfiguration="cert-manager-webhook"
+Waiting for cert-manager to be available...
+Updating Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Issuer="test-selfsigned" Namespace="cert-manager-test"
+Creating Certificate="selfsigned-cert" Namespace="cert-manager-test"
+Deleting Namespace="cert-manager-test"
+Deleting Issuer="test-selfsigned" Namespace="cert-manager-test"
+Deleting Certificate="selfsigned-cert" Namespace="cert-manager-test"
+Installing Provider="cluster-api" Version="v1.0.2" TargetNamespace="capi-system"
+Creating objects Provider="cluster-api" Version="v1.0.2" TargetNamespace="capi-system"
+Creating Namespace="capi-system"
+Creating CustomResourceDefinition="clusterclasses.cluster.x-k8s.io"
+Creating CustomResourceDefinition="clusterresourcesetbindings.addons.cluster.x-k8s.io"
+Creating CustomResourceDefinition="clusterresourcesets.addons.cluster.x-k8s.io"
+Creating CustomResourceDefinition="clusters.cluster.x-k8s.io"
+Creating CustomResourceDefinition="machinedeployments.cluster.x-k8s.io"
+Creating CustomResourceDefinition="machinehealthchecks.cluster.x-k8s.io"
+Creating CustomResourceDefinition="machinepools.cluster.x-k8s.io"
+Creating CustomResourceDefinition="machines.cluster.x-k8s.io"
+Creating CustomResourceDefinition="machinesets.cluster.x-k8s.io"
+Creating ServiceAccount="capi-manager" Namespace="capi-system"
+Creating Role="capi-leader-election-role" Namespace="capi-system"
+Creating ClusterRole="capi-system-capi-aggregated-manager-role"
+Creating ClusterRole="capi-system-capi-manager-role"
+Creating RoleBinding="capi-leader-election-rolebinding" Namespace="capi-system"
+Creating ClusterRoleBinding="capi-system-capi-manager-rolebinding"
+Creating Service="capi-webhook-service" Namespace="capi-system"
+Creating Deployment="capi-controller-manager" Namespace="capi-system"
+Creating Certificate="capi-serving-cert" Namespace="capi-system"
+Creating Issuer="capi-selfsigned-issuer" Namespace="capi-system"
+Creating MutatingWebhookConfiguration="capi-mutating-webhook-configuration"
+Creating ValidatingWebhookConfiguration="capi-validating-webhook-configuration"
+Creating inventory entry Provider="cluster-api" Version="v1.0.2" TargetNamespace="capi-system"
+Installing Provider="bootstrap-kubeadm" Version="v1.0.2" TargetNamespace="capi-kubeadm-bootstrap-system"
+Creating objects Provider="bootstrap-kubeadm" Version="v1.0.2" TargetNamespace="capi-kubeadm-bootstrap-system"
+Creating Namespace="capi-kubeadm-bootstrap-system"
+Creating CustomResourceDefinition="kubeadmconfigs.bootstrap.cluster.x-k8s.io"
+Creating CustomResourceDefinition="kubeadmconfigtemplates.bootstrap.cluster.x-k8s.io"
+Creating ServiceAccount="capi-kubeadm-bootstrap-manager" Namespace="capi-kubeadm-bootstrap-system"
+Creating Role="capi-kubeadm-bootstrap-leader-election-role" Namespace="capi-kubeadm-bootstrap-system"
+Creating ClusterRole="capi-kubeadm-bootstrap-system-capi-kubeadm-bootstrap-manager-role"
+Creating RoleBinding="capi-kubeadm-bootstrap-leader-election-rolebinding" Namespace="capi-kubeadm-bootstrap-system"
+Creating ClusterRoleBinding="capi-kubeadm-bootstrap-system-capi-kubeadm-bootstrap-manager-rolebinding"
+Creating Service="capi-kubeadm-bootstrap-webhook-service" Namespace="capi-kubeadm-bootstrap-system"
+Creating Deployment="capi-kubeadm-bootstrap-controller-manager" Namespace="capi-kubeadm-bootstrap-system"
+Creating Certificate="capi-kubeadm-bootstrap-serving-cert" Namespace="capi-kubeadm-bootstrap-system"
+Creating Issuer="capi-kubeadm-bootstrap-selfsigned-issuer" Namespace="capi-kubeadm-bootstrap-system"
+Creating ValidatingWebhookConfiguration="capi-kubeadm-bootstrap-validating-webhook-configuration"
+Creating inventory entry Provider="bootstrap-kubeadm" Version="v1.0.2" TargetNamespace="capi-kubeadm-bootstrap-system"
+Installing Provider="control-plane-kubeadm" Version="v1.0.2" TargetNamespace="capi-kubeadm-control-plane-system"
+Creating objects Provider="control-plane-kubeadm" Version="v1.0.2" TargetNamespace="capi-kubeadm-control-plane-system"
+Creating Namespace="capi-kubeadm-control-plane-system"
+Creating CustomResourceDefinition="kubeadmcontrolplanes.controlplane.cluster.x-k8s.io"
+Creating CustomResourceDefinition="kubeadmcontrolplanetemplates.controlplane.cluster.x-k8s.io"
+Creating ServiceAccount="capi-kubeadm-control-plane-manager" Namespace="capi-kubeadm-control-plane-system"
+Creating Role="capi-kubeadm-control-plane-leader-election-role" Namespace="capi-kubeadm-control-plane-system"
+Creating ClusterRole="capi-kubeadm-control-plane-system-capi-kubeadm-control-plane-aggregated-manager-role"
+Creating ClusterRole="capi-kubeadm-control-plane-system-capi-kubeadm-control-plane-manager-role"
+Creating RoleBinding="capi-kubeadm-control-plane-leader-election-rolebinding" Namespace="capi-kubeadm-control-plane-system"
+Creating ClusterRoleBinding="capi-kubeadm-control-plane-system-capi-kubeadm-control-plane-manager-rolebinding"
+Creating Service="capi-kubeadm-control-plane-webhook-service" Namespace="capi-kubeadm-control-plane-system"
+Creating Deployment="capi-kubeadm-control-plane-controller-manager" Namespace="capi-kubeadm-control-plane-system"
+Creating Certificate="capi-kubeadm-control-plane-serving-cert" Namespace="capi-kubeadm-control-plane-system"
+Creating Issuer="capi-kubeadm-control-plane-selfsigned-issuer" Namespace="capi-kubeadm-control-plane-system"
+Creating MutatingWebhookConfiguration="capi-kubeadm-control-plane-mutating-webhook-configuration"
+Creating ValidatingWebhookConfiguration="capi-kubeadm-control-plane-validating-webhook-configuration"
+Creating inventory entry Provider="control-plane-kubeadm" Version="v1.0.2" TargetNamespace="capi-kubeadm-control-plane-system"
+Installing Provider="infrastructure-metal3" Version="v1.0.0" TargetNamespace="capm3-system"
+Creating objects Provider="infrastructure-metal3" Version="v1.0.0" TargetNamespace="capm3-system"
+Creating Namespace="capm3-system"
+Creating CustomResourceDefinition="ipaddresses.ipam.metal3.io"
+Creating CustomResourceDefinition="ipclaims.ipam.metal3.io"
+Creating CustomResourceDefinition="ippools.ipam.metal3.io"
+Creating CustomResourceDefinition="metal3clusters.infrastructure.cluster.x-k8s.io"
+Creating CustomResourceDefinition="metal3dataclaims.infrastructure.cluster.x-k8s.io"
+Creating CustomResourceDefinition="metal3datas.infrastructure.cluster.x-k8s.io"
+Creating CustomResourceDefinition="metal3datatemplates.infrastructure.cluster.x-k8s.io"
+Creating CustomResourceDefinition="metal3machines.infrastructure.cluster.x-k8s.io"
+Creating CustomResourceDefinition="metal3machinetemplates.infrastructure.cluster.x-k8s.io"
+Creating CustomResourceDefinition="metal3remediations.infrastructure.cluster.x-k8s.io"
+Creating CustomResourceDefinition="metal3remediationtemplates.infrastructure.cluster.x-k8s.io"
+Creating ServiceAccount="capm3-manager" Namespace="capm3-system"
+Creating ServiceAccount="ipam-manager" Namespace="capm3-system"
+Creating Role="capm3-leader-election-role" Namespace="capm3-system"
+Creating Role="ipam-leader-election-role" Namespace="capm3-system"
+Creating ClusterRole="capm3-system-capm3-manager-role"
+Creating ClusterRole="capm3-system-ipam-manager-role"
+Creating RoleBinding="capm3-leader-election-rolebinding" Namespace="capm3-system"
+Creating RoleBinding="ipam-leader-election-rolebinding" Namespace="capm3-system"
+Creating ClusterRoleBinding="capm3-system-capm3-manager-rolebinding"
+Creating ClusterRoleBinding="capm3-system-ipam-manager-rolebinding"
+Creating Service="capm3-webhook-service" Namespace="capm3-system"
+Creating Service="ipam-webhook-service" Namespace="capm3-system"
+Creating Deployment="capm3-controller-manager" Namespace="capm3-system"
+Creating Deployment="ipam-controller-manager" Namespace="capm3-system"
+Creating Certificate="capm3-serving-cert" Namespace="capm3-system"
+Creating Certificate="ipam-serving-cert" Namespace="capm3-system"
+Creating Issuer="capm3-selfsigned-issuer" Namespace="capm3-system"
+Creating Issuer="ipam-selfsigned-issuer" Namespace="capm3-system"
+Creating MutatingWebhookConfiguration="capm3-mutating-webhook-configuration"
+Creating MutatingWebhookConfiguration="ipam-mutating-webhook-configuration"
+Creating ValidatingWebhookConfiguration="capm3-validating-webhook-configuration"
+Creating ValidatingWebhookConfiguration="ipam-validating-webhook-configuration"
+Creating inventory entry Provider="infrastructure-metal3" Version="v1.0.0" TargetNamespace="capm3-system"
+
+Your management cluster has been initialized successfully!
+
+You can now create your first workload cluster by running the following:
+
+  clusterctl generate cluster [name] --kubernetes-version [version] | kubectl apply -f -
+
+Using configuration File="/home/azureuser/.cluster-api/clusterctl.yaml"
++ '[' false == true ']'
++ '[' false == true ']'
++ popd
+~/projects/metal3-dev-env
++ '[' kind '!=' tilt ']'
++ '[' v1beta1 '!=' v1alpha4 ']'
++ launch_baremetal_operator
++ pushd /home/azureuser/go/src/github.com/metal3-io/baremetal-operator
+~/go/src/github.com/metal3-io/baremetal-operator ~/projects/metal3-dev-env
++ cp /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml.orig
++ update_kustomization_images /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ FILE_PATH=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
+++ env
+++ grep _LOCAL_IMAGE=
+++ grep -o '^[^=]*'
+++ env
+++ grep -v _LOCAL_IMAGE=
+++ grep _IMAGE=
+++ grep -o '^[^=]*'
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=registry:2.7.1
++ IMAGE_NAME=registry:2.7.1
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/registry:2.7.1
++ sed -i -E 's registry:2.7.1$ 192.168.111.1:5000/localimages/registry:2.7.1 g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/baremetal-operator
++ IMAGE_NAME=baremetal-operator
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/baremetal-operator
++ sed -i -E 's quay.io/metal3-io/baremetal-operator$ 192.168.111.1:5000/localimages/baremetal-operator g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic-client
++ IMAGE_NAME=ironic-client
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ironic-client
++ sed -i -E 's quay.io/metal3-io/ironic-client$ 192.168.111.1:5000/localimages/ironic-client g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic
++ IMAGE_NAME=ironic
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ironic
++ sed -i -E 's quay.io/metal3-io/ironic$ 192.168.111.1:5000/localimages/ironic g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic-ipa-downloader
++ IMAGE_NAME=ironic-ipa-downloader
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ironic-ipa-downloader
++ sed -i -E 's quay.io/metal3-io/ironic-ipa-downloader$ 192.168.111.1:5000/localimages/ironic-ipa-downloader g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/sushy-tools
++ IMAGE_NAME=sushy-tools
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/sushy-tools
++ sed -i -E 's quay.io/metal3-io/sushy-tools$ 192.168.111.1:5000/localimages/sushy-tools g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/keepalived
++ IMAGE_NAME=keepalived
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/keepalived
++ sed -i -E 's quay.io/metal3-io/keepalived$ 192.168.111.1:5000/localimages/keepalived g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/vbmc
++ IMAGE_NAME=vbmc
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/vbmc
++ sed -i -E 's quay.io/metal3-io/vbmc$ 192.168.111.1:5000/localimages/vbmc g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ip-address-manager:main
++ IMAGE_NAME=ip-address-manager:main
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ip-address-manager:main
++ sed -i -E 's quay.io/metal3-io/ip-address-manager:main$ 192.168.111.1:5000/localimages/ip-address-manager:main g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
++ IMAGE_NAME=cluster-api-provider-metal3:main
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/cluster-api-provider-metal3:main
++ sed -i -E 's quay.io/metal3-io/cluster-api-provider-metal3:main$ 192.168.111.1:5000/localimages/cluster-api-provider-metal3:main g' /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/manager/manager.yaml
++ cp /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/default/ironic.env /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/default/ironic.env.orig
++ cat
++ sudo tee /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/config/default/ironic.env
+DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+IRONIC_ENDPOINT=https://172.22.0.2:6385/v1/
+IRONIC_INSPECTOR_ENDPOINT=https://172.22.0.2:5050/v1/
++ /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/deploy.sh true false true true true
+make[1]: Entering directory '/home/azureuser/go/src/github.com/metal3-io/baremetal-operator'
+cd hack/tools; go build -o /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/bin/kustomize sigs.k8s.io/kustomize/kustomize/v3
+go: downloading sigs.k8s.io/kustomize/kustomize/v3 v3.10.0
+go: downloading github.com/spf13/cobra v1.2.1
+go: downloading sigs.k8s.io/kustomize/cmd/config v0.9.1
+go: downloading sigs.k8s.io/kustomize/api v0.8.0
+go: downloading github.com/spf13/pflag v1.0.5
+go: downloading sigs.k8s.io/kustomize/kyaml v0.10.9
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading sigs.k8s.io/yaml v1.2.0
+go: downloading gopkg.in/yaml.v2 v2.4.0
+go: downloading github.com/go-errors/errors v1.0.1
+go: downloading github.com/olekukonko/tablewriter v0.0.5
+go: downloading github.com/go-openapi/spec v0.19.5
+go: downloading gopkg.in/inf.v0 v0.9.1
+go: downloading github.com/mattn/go-runewidth v0.0.9
+go: downloading github.com/yujunz/go-getter v1.5.1-lite.0.20201201013212-6d9c071adddf
+go: downloading github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510
+go: downloading github.com/hashicorp/go-multierror v1.1.1
+go: downloading github.com/evanphx/json-patch v4.9.0+incompatible
+go: downloading github.com/imdario/mergo v0.3.8
+go: downloading github.com/go-openapi/swag v0.19.5
+go: downloading github.com/go-openapi/jsonpointer v0.19.3
+go: downloading github.com/go-openapi/jsonreference v0.19.3
+go: downloading github.com/hashicorp/errwrap v1.0.0
+go: downloading github.com/PuerkitoBio/purell v1.1.1
+go: downloading github.com/mailru/easyjson v0.7.0
+go: downloading golang.org/x/text v0.3.6
+go: downloading golang.org/x/net v0.0.0-20210428140749-89ef3d95e781
+go: downloading github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+go: downloading github.com/hashicorp/go-version v1.1.0
+go: downloading github.com/mitchellh/go-homedir v1.1.0
+go: downloading github.com/ulikunitz/xz v0.5.8
+go: downloading github.com/mitchellh/go-testing-interface v1.0.0
+go: downloading github.com/hashicorp/go-cleanhttp v0.5.2
+go: downloading github.com/hashicorp/go-safetemp v1.0.0
+go: downloading github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d
+go: downloading go.starlark.net v0.0.0-20200306205701-8dd3e2ee1dd5
+go: downloading github.com/qri-io/starlib v0.4.2-0.20200213133954-ff2e8cd5ef8d
+go: downloading github.com/go-openapi/strfmt v0.19.5
+go: downloading github.com/go-openapi/validate v0.19.8
+go: downloading gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+go: downloading github.com/davecgh/go-spew v1.1.1
+go: downloading github.com/stretchr/testify v1.7.0
+go: downloading github.com/xlab/treeprint v0.0.0-20181112141820-a009c3971eca
+go: downloading github.com/monochromegane/go-gitignore v0.0.0-20200626010858-205db1a8cc00
+go: downloading github.com/mitchellh/mapstructure v1.4.1
+go: downloading go.mongodb.org/mongo-driver v1.5.1
+go: downloading github.com/asaskevich/govalidator v0.0.0-20190424111038-f61b66f89f4a
+go: downloading github.com/go-openapi/errors v0.19.2
+go: downloading github.com/pmezard/go-difflib v1.0.0
+go: downloading github.com/go-openapi/runtime v0.19.4
+go: downloading github.com/go-openapi/analysis v0.19.5
+go: downloading github.com/go-openapi/loads v0.19.4
+go: downloading github.com/go-stack/stack v1.8.0
+make[1]: Leaving directory '/home/azureuser/go/src/github.com/metal3-io/baremetal-operator'
+~/go/src/github.com/metal3-io/baremetal-operator ~/go/src/github.com/metal3-io/baremetal-operator
+namespace/baremetal-operator-system created
+customresourcedefinition.apiextensions.k8s.io/baremetalhosts.metal3.io created
+customresourcedefinition.apiextensions.k8s.io/bmceventsubscriptions.metal3.io created
+customresourcedefinition.apiextensions.k8s.io/firmwareschemas.metal3.io created
+customresourcedefinition.apiextensions.k8s.io/hostfirmwaresettings.metal3.io created
+customresourcedefinition.apiextensions.k8s.io/preprovisioningimages.metal3.io created
+serviceaccount/baremetal-operator-controller-manager created
+role.rbac.authorization.k8s.io/baremetal-operator-leader-election-role created
+clusterrole.rbac.authorization.k8s.io/baremetal-operator-manager-role created
+clusterrole.rbac.authorization.k8s.io/baremetal-operator-metrics-reader created
+clusterrole.rbac.authorization.k8s.io/baremetal-operator-proxy-role created
+rolebinding.rbac.authorization.k8s.io/baremetal-operator-leader-election-rolebinding created
+clusterrolebinding.rbac.authorization.k8s.io/baremetal-operator-manager-rolebinding created
+clusterrolebinding.rbac.authorization.k8s.io/baremetal-operator-proxy-rolebinding created
+configmap/baremetal-operator-ironic created
+configmap/baremetal-operator-manager-config created
+secret/ironic-credentials-765b8t4fgh created
+secret/ironic-inspector-credentials-765b8t4fgh created
+service/baremetal-operator-controller-manager-metrics-service created
+service/baremetal-operator-webhook-service created
+deployment.apps/baremetal-operator-controller-manager created
+certificate.cert-manager.io/baremetal-operator-serving-cert created
+issuer.cert-manager.io/baremetal-operator-selfsigned-issuer created
+validatingwebhookconfiguration.admissionregistration.k8s.io/baremetal-operator-validating-webhook-configuration created
+~/go/src/github.com/metal3-io/baremetal-operator
++ '[' false == true ']'
++ popd
+~/projects/metal3-dev-env
++ launch_ironic
++ pushd /home/azureuser/go/src/github.com/metal3-io/baremetal-operator
+~/go/src/github.com/metal3-io/baremetal-operator ~/projects/metal3-dev-env
++ cp /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/ironic-deployment/keepalived/ironic_bmo_configmap.env /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/ironic-deployment/keepalived/ironic_bmo_configmap.env.orig
++ cat
++ sudo tee /opt/metal3-dev-env/ironic/ironic_bmo_configmap.env
+HTTP_PORT=6180
+PROVISIONING_IP=172.22.0.2
+PROVISIONING_CIDR=24
+PROVISIONING_INTERFACE=ironicendpoint
+DHCP_RANGE=172.22.0.10,172.22.0.100
+DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+IRONIC_ENDPOINT=https://172.22.0.2:6385/v1/
+IRONIC_INSPECTOR_ENDPOINT=https://172.22.0.2:5050/v1/
+CACHEURL=http://172.22.0.1/images
+IRONIC_FAST_TRACK=true
+RESTART_CONTAINER_CERTIFICATE_UPDATED="true"
++ '[' libvirt == libvirt ']'
++ echo IRONIC_KERNEL_PARAMS=console=ttyS0
++ sudo tee -a /opt/metal3-dev-env/ironic/ironic_bmo_configmap.env
+IRONIC_KERNEL_PARAMS=console=ttyS0
++ '[' kind '!=' minikube ']'
++ update_images
+++ env
+++ grep _LOCAL_IMAGE=
+++ grep -o '^[^=]*'
+++ env
+++ grep -v _LOCAL_IMAGE=
+++ grep _IMAGE=
+++ grep -o '^[^=]*'
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=registry:2.7.1
++ IMAGE_NAME=registry:2.7.1
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/registry:2.7.1
++ eval DOCKER_REGISTRY_IMAGE=192.168.111.1:5000/localimages/registry:2.7.1
+++ DOCKER_REGISTRY_IMAGE=192.168.111.1:5000/localimages/registry:2.7.1
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/baremetal-operator
++ IMAGE_NAME=baremetal-operator
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/baremetal-operator
++ eval BAREMETAL_OPERATOR_IMAGE=192.168.111.1:5000/localimages/baremetal-operator
+++ BAREMETAL_OPERATOR_IMAGE=192.168.111.1:5000/localimages/baremetal-operator
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic-client
++ IMAGE_NAME=ironic-client
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ironic-client
++ eval IRONIC_CLIENT_IMAGE=192.168.111.1:5000/localimages/ironic-client
+++ IRONIC_CLIENT_IMAGE=192.168.111.1:5000/localimages/ironic-client
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic
++ IMAGE_NAME=ironic
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ironic
++ eval IRONIC_IMAGE=192.168.111.1:5000/localimages/ironic
+++ IRONIC_IMAGE=192.168.111.1:5000/localimages/ironic
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ironic-ipa-downloader
++ IMAGE_NAME=ironic-ipa-downloader
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ironic-ipa-downloader
++ eval IPA_DOWNLOADER_IMAGE=192.168.111.1:5000/localimages/ironic-ipa-downloader
+++ IPA_DOWNLOADER_IMAGE=192.168.111.1:5000/localimages/ironic-ipa-downloader
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/sushy-tools
++ IMAGE_NAME=sushy-tools
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/sushy-tools
++ eval SUSHY_TOOLS_IMAGE=192.168.111.1:5000/localimages/sushy-tools
+++ SUSHY_TOOLS_IMAGE=192.168.111.1:5000/localimages/sushy-tools
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/keepalived
++ IMAGE_NAME=keepalived
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/keepalived
++ eval IRONIC_KEEPALIVED_IMAGE=192.168.111.1:5000/localimages/keepalived
+++ IRONIC_KEEPALIVED_IMAGE=192.168.111.1:5000/localimages/keepalived
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/vbmc
++ IMAGE_NAME=vbmc
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/vbmc
++ eval VBMC_IMAGE=192.168.111.1:5000/localimages/vbmc
+++ VBMC_IMAGE=192.168.111.1:5000/localimages/vbmc
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/ip-address-manager:main
++ IMAGE_NAME=ip-address-manager:main
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/ip-address-manager:main
++ eval IPAM_IMAGE=192.168.111.1:5000/localimages/ip-address-manager:main
+++ IPAM_IMAGE=192.168.111.1:5000/localimages/ip-address-manager:main
++ for IMAGE_VAR in $(env | grep -v "_LOCAL_IMAGE=" | grep "_IMAGE=" | grep -o "^[^=]*")
++ IMAGE=quay.io/metal3-io/cluster-api-provider-metal3:main
++ IMAGE_NAME=cluster-api-provider-metal3:main
++ LOCAL_IMAGE=192.168.111.1:5000/localimages/cluster-api-provider-metal3:main
++ eval CAPM3_IMAGE=192.168.111.1:5000/localimages/cluster-api-provider-metal3:main
+++ CAPM3_IMAGE=192.168.111.1:5000/localimages/cluster-api-provider-metal3:main
++ /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
++++ dirname /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/run_local_ironic.sh
+++ cd /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/..
+++ pwd
++ SCRIPTDIR=/home/azureuser/go/src/github.com/metal3-io/baremetal-operator
++ IRONIC_IMAGE=192.168.111.1:5000/localimages/ironic
++ IRONIC_INSPECTOR_IMAGE=quay.io/metal3-io/ironic
++ IRONIC_KEEPALIVED_IMAGE=192.168.111.1:5000/localimages/keepalived
++ IPA_DOWNLOADER_IMAGE=192.168.111.1:5000/localimages/ironic-ipa-downloader
++ MARIADB_IMAGE=quay.io/metal3-io/mariadb:main
++ IPA_BASEURI=
++ IRONIC_DATA_DIR=/opt/metal3-dev-env/ironic
++ CONTAINER_RUNTIME=docker
++ HTTP_PORT=6180
++ PROVISIONING_IP=172.22.0.1
++ CLUSTER_PROVISIONING_IP=172.22.0.2
++ PROVISIONING_INTERFACE=ironicendpoint
++ CLUSTER_DHCP_RANGE=172.22.0.10,172.22.0.100
++ IRONIC_KERNEL_PARAMS=console=ttyS0
++ IRONIC_BOOT_ISO_SOURCE=local
++ export NAMEPREFIX=baremetal-operator
++ NAMEPREFIX=baremetal-operator
++ IRONIC_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
++ IRONIC_CERT_FILE=/opt/metal3-dev-env/certs/ironic.crt
++ IRONIC_KEY_FILE=/opt/metal3-dev-env/certs/ironic.key
++ IRONIC_TLS_SETUP=true
++ IRONIC_INSPECTOR_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
++ IRONIC_INSPECTOR_CERT_FILE=/opt/metal3-dev-env/certs/ironic-inspector.crt
++ IRONIC_INSPECTOR_KEY_FILE=/opt/metal3-dev-env/certs/ironic-inspector.key
++ MARIADB_CACERT_FILE=/opt/metal3-dev-env/certs/ironic-ca.pem
++ MARIADB_CERT_FILE=/opt/metal3-dev-env/certs/mariadb.crt
++ MARIADB_KEY_FILE=/opt/metal3-dev-env/certs/mariadb.key
++ IPA_DOWNLOAD_ENABLED=true
++ USE_LOCAL_IPA=false
++ LOCAL_IPA_PATH=/tmp/dib
++ '[' -n /opt/metal3-dev-env/certs/mariadb.key ']'
++ chmod 604 /opt/metal3-dev-env/certs/mariadb.key
++ '[' -n /opt/metal3-dev-env/certs/ironic.crt ']'
++ export IRONIC_BASE_URL=https://172.22.0.2
++ IRONIC_BASE_URL=https://172.22.0.2
++ '[' -z /opt/metal3-dev-env/certs/ironic-ca.pem ']'
++ DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
++ DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
++ DEPLOY_ISO_URL=
++ IRONIC_ENDPOINT=https://172.22.0.2:6385/v1/
++ IRONIC_INSPECTOR_ENDPOINT=https://172.22.0.2:5050/v1/
++ CACHEURL=http://172.22.0.1/images
++ IRONIC_FAST_TRACK=true
++ INSPECTOR_REVERSE_PROXY_SETUP=true
++ [[ true == *false* ]]
++ IRONIC_INSPECTOR_VLAN_INTERFACES=all
++ sudo mkdir -p /opt/metal3-dev-env/ironic
++ sudo mkdir -p /opt/metal3-dev-env/ironic/auth
++ cat
++ sudo tee /opt/metal3-dev-env/ironic/ironic-vars.env
+HTTP_PORT=6180
+PROVISIONING_IP=172.22.0.2
+PROVISIONING_INTERFACE=ironicendpoint
+DHCP_RANGE=172.22.0.10,172.22.0.100
+DEPLOY_KERNEL_URL=http://172.22.0.2:6180/images/ironic-python-agent.kernel
+DEPLOY_RAMDISK_URL=http://172.22.0.2:6180/images/ironic-python-agent.initramfs
+DEPLOY_ISO_URL=
+IRONIC_ENDPOINT=https://172.22.0.2:6385/v1/
+IRONIC_INSPECTOR_ENDPOINT=https://172.22.0.2:5050/v1/
+CACHEURL=http://172.22.0.1/images
+IRONIC_FAST_TRACK=true
+IRONIC_KERNEL_PARAMS=console=ttyS0
+IRONIC_BOOT_ISO_SOURCE=local
+INSPECTOR_REVERSE_PROXY_SETUP=true
+IRONIC_INSPECTOR_VLAN_INTERFACES=all
+IPA_BASEURI=
++ '[' true == true ']'
++ cat
++ kubectl apply -f -
+secret/ironic-cacert created
++ sudo docker pull 192.168.111.1:5000/localimages/ironic
+Using default tag: latest
+latest: Pulling from localimages/ironic
+Digest: sha256:8bd2bcebdee01784b5b1318a074c5fe5750760411ad5ee3a19e47dca1685fc35
+Status: Image is up to date for 192.168.111.1:5000/localimages/ironic:latest
+192.168.111.1:5000/localimages/ironic:latest
++ sudo docker pull quay.io/metal3-io/ironic
+Using default tag: latest
+latest: Pulling from metal3-io/ironic
+Digest: sha256:444518fec926d2b9bc00b1d7e77f687177025e3e8cc789cc7e0e318cc152e96f
+Status: Image is up to date for quay.io/metal3-io/ironic:latest
+quay.io/metal3-io/ironic:latest
++ sudo docker pull 192.168.111.1:5000/localimages/keepalived
+Using default tag: latest
+latest: Pulling from localimages/keepalived
+Digest: sha256:4d2d44db445e898a08b072a29af18c325f92a06508b720ea9c95ecddc09c942c
+Status: Image is up to date for 192.168.111.1:5000/localimages/keepalived:latest
+192.168.111.1:5000/localimages/keepalived:latest
++ CERTS_MOUNTS=
++ '[' -n /opt/metal3-dev-env/certs/ironic-ca.pem ']'
++ CERTS_MOUNTS='-v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt '
++ '[' -n /opt/metal3-dev-env/certs/ironic.crt ']'
++ CERTS_MOUNTS='-v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt '
++ '[' -n /opt/metal3-dev-env/certs/ironic.key ']'
++ CERTS_MOUNTS='-v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key '
++ '[' -n /opt/metal3-dev-env/certs/ironic-ca.pem ']'
++ CERTS_MOUNTS='-v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key  -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt '
++ '[' -n /opt/metal3-dev-env/certs/ironic-inspector.crt ']'
++ CERTS_MOUNTS='-v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key  -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt  -v /opt/metal3-dev-env/certs/ironic-inspector.crt:/certs/ironic-inspector/tls.crt '
++ '[' -n /opt/metal3-dev-env/certs/ironic-inspector.key ']'
++ CERTS_MOUNTS='-v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key  -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt  -v /opt/metal3-dev-env/certs/ironic-inspector.crt:/certs/ironic-inspector/tls.crt  -v /opt/metal3-dev-env/certs/ironic-inspector.key:/certs/ironic-inspector/tls.key '
++ '[' -n /opt/metal3-dev-env/certs/ironic-ca.pem ']'
++ CERTS_MOUNTS='-v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key  -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt  -v /opt/metal3-dev-env/certs/ironic-inspector.crt:/certs/ironic-inspector/tls.crt  -v /opt/metal3-dev-env/certs/ironic-inspector.key:/certs/ironic-inspector/tls.key  -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/mariadb/tls.crt '
++ '[' -n /opt/metal3-dev-env/certs/mariadb.crt ']'
++ CERTS_MOUNTS='-v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key  -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt  -v /opt/metal3-dev-env/certs/ironic-inspector.crt:/certs/ironic-inspector/tls.crt  -v /opt/metal3-dev-env/certs/ironic-inspector.key:/certs/ironic-inspector/tls.key  -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/mariadb/tls.crt  -v /opt/metal3-dev-env/certs/mariadb.crt:/certs/mariadb/tls.crt '
++ '[' -n /opt/metal3-dev-env/certs/mariadb.key ']'
++ CERTS_MOUNTS='-v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt  -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key  -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt  -v /opt/metal3-dev-env/certs/ironic-inspector.crt:/certs/ironic-inspector/tls.crt  -v /opt/metal3-dev-env/certs/ironic-inspector.key:/certs/ironic-inspector/tls.key  -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/mariadb/tls.crt  -v /opt/metal3-dev-env/certs/mariadb.crt:/certs/mariadb/tls.crt  -v /opt/metal3-dev-env/certs/mariadb.key:/certs/mariadb/tls.key '
++ BASIC_AUTH_MOUNTS=
++ IRONIC_HTPASSWD=
++ '[' -n tDqch2vdB5bP ']'
++ envsubst
++ envsubst
++ BASIC_AUTH_MOUNTS='-v /opt/metal3-dev-env/ironic/auth/ironic-auth-config:/auth/ironic/auth-config'
++ BASIC_AUTH_MOUNTS='-v /opt/metal3-dev-env/ironic/auth/ironic-auth-config:/auth/ironic/auth-config -v /opt/metal3-dev-env/ironic/auth/ironic-rpc-auth-config:/auth/ironic-rpc/auth-config'
+++ htpasswd -n -b -B tDqch2vdB5bP xTubq1zZimea
++ IRONIC_HTPASSWD='--env HTTP_BASIC_HTPASSWD=tDqch2vdB5bP:$2y$05$ixVI5Eg8Um59VchqmMQda.Q3R7uuOgKteZmuxjU89akzzjr7bLu5.'
++ IRONIC_INSPECTOR_HTPASSWD=
++ '[' -n tDqch2vdB5bP ']'
++ envsubst
++ BASIC_AUTH_MOUNTS='-v /opt/metal3-dev-env/ironic/auth/ironic-auth-config:/auth/ironic/auth-config -v /opt/metal3-dev-env/ironic/auth/ironic-rpc-auth-config:/auth/ironic-rpc/auth-config -v /opt/metal3-dev-env/ironic/auth/ironic-inspector-auth-config:/auth/ironic-inspector/auth-config'
+++ htpasswd -n -b -B tDqch2vdB5bP xTubq1zZimea
++ IRONIC_INSPECTOR_HTPASSWD='--env HTTP_BASIC_HTPASSWD=tDqch2vdB5bP:$2y$05$oNkP1mB/7QLknLKIRIOxYe5yKNFIsx1zebgkBL3F5.tM8DJkHelZK'
++ sudo mkdir -p /opt/metal3-dev-env/ironic/html/images
++ false
++ /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/tools/remove_local_ironic.sh
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic$'
++ sudo docker ps --all
++ grep -w 'ironic$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-api$'
++ sudo docker ps --all
++ grep -w 'ironic-api$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-conductor$'
++ sudo docker ps --all
++ grep -w 'ironic-conductor$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-inspector$'
++ sudo docker ps --all
++ grep -w 'ironic-inspector$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'dnsmasq$'
++ sudo docker ps --all
++ grep -w 'dnsmasq$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'httpd$'
++ sudo docker ps --all
++ grep -w 'httpd$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'mariadb$'
++ sudo docker ps --all
++ grep -w 'mariadb$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ipa-downloader$'
++ sudo docker ps --all
++ grep -w 'ipa-downloader$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-endpoint-keepalived$'
++ sudo docker ps --all
++ grep -w 'ironic-endpoint-keepalived$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'ironic-log-watch$'
++ sudo docker ps --all
++ grep -w 'ironic-log-watch$'
++ for name in ironic ironic-api ironic-conductor ironic-inspector dnsmasq httpd mariadb ipa-downloader ironic-endpoint-keepalived ironic-log-watch httpd-reverse-proxy
++ sudo docker ps
++ grep -w 'httpd-reverse-proxy$'
++ sudo docker ps --all
++ grep -w 'httpd-reverse-proxy$'
++ set +xe
+++ sha256sum
++++ date
+++ cut -c-20
++++ hostname
+++ echo 'Tue Dec 21 20:57:40 UTC 2021
+sidneyshiba-capm3-vm'
++ mariadb_password=c3808159205eb6dd573f
++ POD=
++ [[ docker == \p\o\d\m\a\n ]]
++ true
++ sudo docker run -d --net host --privileged --name ipa-downloader --env-file /opt/metal3-dev-env/ironic/ironic-vars.env -v /opt/metal3-dev-env/ironic:/shared 192.168.111.1:5000/localimages/ironic-ipa-downloader /usr/local/bin/get-resource.sh
+16e78bb6df4fe50fa4b1f26e616074e785a7986be13de470f08de97e6f6c55e5
++ sudo docker wait ipa-downloader
+0
++ sudo docker run -d --net host --privileged --name dnsmasq --env-file /opt/metal3-dev-env/ironic/ironic-vars.env -v /opt/metal3-dev-env/ironic:/shared --entrypoint /bin/rundnsmasq 192.168.111.1:5000/localimages/ironic
+af660a2ff6f0e7369c5a91534795f03bc1a9f7d1aa86bc7448a9f87a8cfc520b
++ sudo docker run -d --net host --privileged --name mariadb -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt -v /opt/metal3-dev-env/certs/ironic-inspector.crt:/certs/ironic-inspector/tls.crt -v /opt/metal3-dev-env/certs/ironic-inspector.key:/certs/ironic-inspector/tls.key -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/mariadb/tls.crt -v /opt/metal3-dev-env/certs/mariadb.crt:/certs/mariadb/tls.crt -v /opt/metal3-dev-env/certs/mariadb.key:/certs/mariadb/tls.key --env-file /opt/metal3-dev-env/ironic/ironic-vars.env -v /opt/metal3-dev-env/ironic:/shared --env MARIADB_PASSWORD=c3808159205eb6dd573f quay.io/metal3-io/mariadb:main
+Unable to find image 'quay.io/metal3-io/mariadb:main' locally
+main: Pulling from metal3-io/mariadb
+203c612978b4: Already exists
+e3ff3ac72de5: Already exists
+758c773fb4aa: Already exists
+5186e8704530: Already exists
+05798f843f10: Pulling fs layer
+bd1a3f433451: Pulling fs layer
+8350a80a8b2f: Pulling fs layer
+bd1a3f433451: Verifying Checksum
+bd1a3f433451: Download complete
+05798f843f10: Download complete
+05798f843f10: Pull complete
+bd1a3f433451: Pull complete
+8350a80a8b2f: Verifying Checksum
+8350a80a8b2f: Download complete
+8350a80a8b2f: Pull complete
+Digest: sha256:2ef2d0438a906ff1b86d06d5ffd289b87f1e4276c8c5b3ff4f7e486bad32325c
+Status: Downloaded newer image for quay.io/metal3-io/mariadb:main
+fea85fa1fb0817e54783318dbcde02deba06ba366c96e5651c6ffcf8d5060ca0
++ sudo docker run -d --net host --privileged --name ironic-api -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt -v /opt/metal3-dev-env/certs/ironic-inspector.crt:/certs/ironic-inspector/tls.crt -v /opt/metal3-dev-env/certs/ironic-inspector.key:/certs/ironic-inspector/tls.key -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/mariadb/tls.crt -v /opt/metal3-dev-env/certs/mariadb.crt:/certs/mariadb/tls.crt -v /opt/metal3-dev-env/certs/mariadb.key:/certs/mariadb/tls.key -v /opt/metal3-dev-env/ironic/auth/ironic-auth-config:/auth/ironic/auth-config -v /opt/metal3-dev-env/ironic/auth/ironic-rpc-auth-config:/auth/ironic-rpc/auth-config -v /opt/metal3-dev-env/ironic/auth/ironic-inspector-auth-config:/auth/ironic-inspector/auth-config --env 'HTTP_BASIC_HTPASSWD=tDqch2vdB5bP:$2y$05$ixVI5Eg8Um59VchqmMQda.Q3R7uuOgKteZmuxjU89akzzjr7bLu5.' --env-file /opt/metal3-dev-env/ironic/ironic-vars.env --env MARIADB_PASSWORD=c3808159205eb6dd573f --entrypoint /bin/runironic-api -v /opt/metal3-dev-env/ironic:/shared 192.168.111.1:5000/localimages/ironic
+04a4bb138c0420c631b2f6471922713564f46b0019ea41c1f1371920f6fa0828
++ sudo docker run -d --net host --privileged --name ironic-conductor -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt -v /opt/metal3-dev-env/certs/ironic-inspector.crt:/certs/ironic-inspector/tls.crt -v /opt/metal3-dev-env/certs/ironic-inspector.key:/certs/ironic-inspector/tls.key -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/mariadb/tls.crt -v /opt/metal3-dev-env/certs/mariadb.crt:/certs/mariadb/tls.crt -v /opt/metal3-dev-env/certs/mariadb.key:/certs/mariadb/tls.key -v /opt/metal3-dev-env/ironic/auth/ironic-auth-config:/auth/ironic/auth-config -v /opt/metal3-dev-env/ironic/auth/ironic-rpc-auth-config:/auth/ironic-rpc/auth-config -v /opt/metal3-dev-env/ironic/auth/ironic-inspector-auth-config:/auth/ironic-inspector/auth-config --env 'HTTP_BASIC_HTPASSWD=tDqch2vdB5bP:$2y$05$ixVI5Eg8Um59VchqmMQda.Q3R7uuOgKteZmuxjU89akzzjr7bLu5.' --env-file /opt/metal3-dev-env/ironic/ironic-vars.env --env MARIADB_PASSWORD=c3808159205eb6dd573f --entrypoint /bin/runironic-conductor -v /opt/metal3-dev-env/ironic:/shared 192.168.111.1:5000/localimages/ironic
+86a5d23998e450c8bb7c99c39e83f35722cde8ac3c09a5ca456712d5109227af
++ sudo docker run -d --net host --privileged --name ironic-endpoint-keepalived --env-file /opt/metal3-dev-env/ironic/ironic-vars.env -v /opt/metal3-dev-env/ironic:/shared 192.168.111.1:5000/localimages/keepalived
+9229b2b31a685d33331df2679f49fb6081ec03dfe2e90bf6d9863776202af1da
++ sudo docker run -d --net host --privileged --name ironic-log-watch --entrypoint /bin/runlogwatch.sh -v /opt/metal3-dev-env/ironic:/shared 192.168.111.1:5000/localimages/ironic
+4776bd21187675d49ded2ce3ded27e8efc179a5d282b540bf5edb039b818609e
++ sudo docker run -d --net host --privileged --name ironic-inspector -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic/tls.crt -v /opt/metal3-dev-env/certs/ironic.crt:/certs/ironic/tls.crt -v /opt/metal3-dev-env/certs/ironic.key:/certs/ironic/tls.key -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/ironic-inspector/tls.crt -v /opt/metal3-dev-env/certs/ironic-inspector.crt:/certs/ironic-inspector/tls.crt -v /opt/metal3-dev-env/certs/ironic-inspector.key:/certs/ironic-inspector/tls.key -v /opt/metal3-dev-env/certs/ironic-ca.pem:/certs/ca/mariadb/tls.crt -v /opt/metal3-dev-env/certs/mariadb.crt:/certs/mariadb/tls.crt -v /opt/metal3-dev-env/certs/mariadb.key:/certs/mariadb/tls.key -v /opt/metal3-dev-env/ironic/auth/ironic-auth-config:/auth/ironic/auth-config -v /opt/metal3-dev-env/ironic/auth/ironic-rpc-auth-config:/auth/ironic-rpc/auth-config -v /opt/metal3-dev-env/ironic/auth/ironic-inspector-auth-config:/auth/ironic-inspector/auth-config --env 'HTTP_BASIC_HTPASSWD=tDqch2vdB5bP:$2y$05$oNkP1mB/7QLknLKIRIOxYe5yKNFIsx1zebgkBL3F5.tM8DJkHelZK' --env-file /opt/metal3-dev-env/ironic/ironic-vars.env --entrypoint /bin/runironic-inspector -v /opt/metal3-dev-env/ironic:/shared quay.io/metal3-io/ironic
+c799a6e97c8eaf141bc4c8650f623c6e4d3a7edd739e058979544e4be767d9cf
++ mv /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/ironic-deployment/keepalived/ironic_bmo_configmap.env.orig /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/ironic-deployment/keepalived/ironic_bmo_configmap.env
++ popd
+~/projects/metal3-dev-env
++ '[' kind '!=' tilt ']'
++ '[' v1beta1 == v1alpha4 ']'
++ BMO_NAME_PREFIX=baremetal-operator
++ [[ false != true ]]
++ kubectl rollout status deployment baremetal-operator-controller-manager -n baremetal-operator-system --timeout=5m
+Waiting for deployment "baremetal-operator-controller-manager" rollout to finish: 0 of 1 updated replicas are available...
+deployment "baremetal-operator-controller-manager" successfully rolled out
++ apply_bm_hosts
++ pushd /home/azureuser/go/src/github.com/metal3-io/baremetal-operator
+~/go/src/github.com/metal3-io/baremetal-operator ~/projects/metal3-dev-env
++ list_nodes
++ make_bm_hosts
++ read -r name address user password mac
++ cat /opt/metal3-dev-env/ironic_nodes.json
++ jq '.nodes[] | {
+           name,
+           driver,
+           address:.driver_info.address,
+           port:.driver_info.port,
+           user:.driver_info.username,
+           password:.driver_info.password,
+           mac: .ports[0].address
+           } |
+           .name + " " +
+           .address + " " +
+           .user + " " + .password + " " + .mac'
++ sed 's/"//g'
++ go run /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/cmd/make-bm-worker/main.go -address ipmi://192.168.111.1:6230 -password password -user admin -boot-mac 00:a5:43:3a:00:e8 -boot-mode legacy node-0
++ read -r name address user password mac
++ go run /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/cmd/make-bm-worker/main.go -address redfish+http://192.168.111.1:8000/redfish/v1/Systems/28db03d3-e978-4cf9-833d-3aad09af1181 -password password -user admin -boot-mac 00:a5:43:3a:00:ec -boot-mode legacy node-1
++ read -r name address user password mac
++ go run /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/cmd/make-bm-worker/main.go -address ipmi://192.168.111.1:6232 -password password -user admin -boot-mac 00:a5:43:3a:00:f0 -boot-mode legacy node-2
++ read -r name address user password mac
++ go run /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/cmd/make-bm-worker/main.go -address redfish+http://192.168.111.1:8000/redfish/v1/Systems/0ca8a968-0ff4-4ee2-891a-35ce1bb6080d -password password -user admin -boot-mac 00:a5:43:3a:00:f4 -boot-mode legacy node-3
++ read -r name address user password mac
++ go run /home/azureuser/go/src/github.com/metal3-io/baremetal-operator/cmd/make-bm-worker/main.go -address ipmi://192.168.111.1:6234 -password password -user admin -boot-mac 00:a5:43:3a:00:f8 -boot-mode legacy node-4
++ read -r name address user password mac
+++ list_nodes
+++ cat /opt/metal3-dev-env/ironic_nodes.json
+++ jq '.nodes[] | {
+           name,
+           driver,
+           address:.driver_info.address,
+           port:.driver_info.port,
+           user:.driver_info.username,
+           password:.driver_info.password,
+           mac: .ports[0].address
+           } |
+           .name + " " +
+           .address + " " +
+           .user + " " + .password + " " + .mac'
+++ sed 's/"//g'
++ [[ -n node-0 ipmi://192.168.111.1:6230 admin password 00:a5:43:3a:00:e8
+node-1 redfish+http://192.168.111.1:8000/redfish/v1/Systems/28db03d3-e978-4cf9-833d-3aad09af1181 admin password 00:a5:43:3a:00:ec
+node-2 ipmi://192.168.111.1:6232 admin password 00:a5:43:3a:00:f0
+node-3 redfish+http://192.168.111.1:8000/redfish/v1/Systems/0ca8a968-0ff4-4ee2-891a-35ce1bb6080d admin password 00:a5:43:3a:00:f4
+node-4 ipmi://192.168.111.1:6234 admin password 00:a5:43:3a:00:f8 ]]
++ echo 'bmhosts_crs.yaml is applying'
+bmhosts_crs.yaml is applying
++ kubectl apply -f /opt/metal3-dev-env/bmhosts_crs.yaml -n metal3
++ echo 'bmhosts_crs.yaml is successfully applied'
+bmhosts_crs.yaml is successfully applied
++ popd
+~/projects/metal3-dev-env
