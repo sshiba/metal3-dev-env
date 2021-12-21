@@ -1,0 +1,16 @@
+export KUBECONFIG=$HOME/.kube/config
+export K8S_AUTH_KUBECONFIG=$KUBECONFIG
+
+export IMAGE_OS=Ubuntu
+export EPHEMERAL_CLUSTER=kind
+export CONTAINER_RUNTIME=docker
+
+export CAPM3_VERSION=v1beta1
+export CAPI_VERSION=v1beta1
+
+export NUM_NODES=5
+export NUM_OF_MASTER_REPLICAS=3
+export NUM_OF_WORKER_REPLICAS=2
+
+export KUBERNETES_VERSION="v1.21.1"
+export UPGRADED_K8S_VERSION="v1.22.2"
